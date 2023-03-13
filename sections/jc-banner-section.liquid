@@ -1,0 +1,18 @@
+<div class="banner-section">
+  <div class="banner-section-content-wrapper">
+    <p class="banner-section-text">{{section.settings.banner_text}}</p>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Banner Section" ,
+      "settings": [
+        {
+           "type": "textarea",
+           "id": "banner_text",
+           "label": "Banner Text"
+        }       
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,17 @@
+<div class="hero-wrapper-meta">
+  <div class="container-mid">
+    <p class="date-text-article">{{ article.published_at | time_tag: format: 'date' }}</p>
+    <h1 class="hero-heading-article">{{ article.title }}</h1>
+    {% if article.image %}
+    <div class="img-block-holder-article">
+      <img src="{{ article.image | img_url: '800x' }}" class="top-img-article">
+    </div>
+    {% endif %}
+    <div class= "meta-content-wrapper-article rte">
+      {{ article.content }}
+    </div>
+    <div class="btn-wrapper-article">
+      <a href="/blogs/thoughts" class="btn-main w-button">Back to Blog</a>
+    </div>
+  </div>
+</div>

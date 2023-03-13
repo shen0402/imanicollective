@@ -1,0 +1,103 @@
+<div class="mid-wrapper-custom">
+  <div class="container-mid">
+    <div class="mid-heading-internal">{{section.settings.main_heading}}</div>
+    <h4 class="mid-sub-heading-internal">{{section.settings.sub_heading}}</h4>
+    <div class="row-section-custom">
+      <p class="row-section-text-custom">{{section.settings.image_row_heading}}</p>
+      <div class="flex-row-custom">
+        <div class="flex-col-custom"><img src="{{ section.settings.image_1 | img_url: '400x' }}" alt="{{image.alt}}" class="flex-img-custom">
+          <h4 class="flex-heading-custom">{{section.settings.image_heading_1}}</h4>
+        </div>
+        <div class="flex-col-custom"><img src="{{ section.settings.image_2 | img_url: '400x' }}" alt="{{image.alt}}" class="flex-img-custom">
+          <h4 class="flex-heading-custom">{{section.settings.image_heading_2}}</h4>
+        </div>
+        <div class="flex-col-custom"><img src="{{ section.settings.image_3 | img_url: '400x' }}" alt="{{image.alt}}" class="flex-img-custom">
+          <h4 class="flex-heading-custom">{{section.settings.image_heading_3}}</h4>
+        </div>
+        <div class="flex-col-custom"><img src="{{ section.settings.image_4 | img_url: '400x' }}" alt="{{image.alt}}" class="flex-img-custom">
+          <h4 class="flex-heading-custom">{{section.settings.image_heading_4}}</h4>
+        </div>
+      </div>
+    </div>
+    <div class="box-section-custom">
+      <div class="box-content-custom">
+        <h4 class="box-heading-custom">{{section.settings.box_heading}}</h4>
+        <div class="box-text-custom">{{section.settings.box_text}}</div>
+        <div class="box-btn-wrapper-custom"><a href="#order-form" class="btn-main w-button hero-scroll-link">Order a Custom Piece Now</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Content Section" ,
+      "settings": [
+        {
+           "type": "richtext",
+           "id": "main_heading",
+           "label": "Heading Text"
+        },
+        {
+           "type": "textarea",
+           "id": "sub_heading",
+           "label": "Sub Heading Text"
+        },
+        {
+           "type": "text",
+           "id": "image_row_heading",
+           "label": "Image Row Heading"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_1",
+            "label": "Image 1"
+         },
+         {
+            "type": "text",
+            "id": "image_heading_1",
+            "label": "Image 1 Heading"
+         },
+         {
+             "type": "image_picker",
+             "id": "image_2",
+             "label": "Image 2"
+          },
+          {
+             "type": "text",
+             "id": "image_heading_2",
+             "label": "Image 2 Heading"
+          },
+          {
+              "type": "image_picker",
+              "id": "image_3",
+              "label": "Image 3"
+           },
+           {
+              "type": "text",
+              "id": "image_heading_3",
+              "label": "Image 3 Heading"
+           },
+           {
+               "type": "image_picker",
+               "id": "image_4",
+               "label": "Image 4"
+            },
+            {
+               "type": "text",
+               "id": "image_heading_4",
+               "label": "Image 4 Heading"
+            },
+            {
+               "type": "text",
+               "id": "box_heading",
+               "label": "Box Heading"
+            },
+            {
+               "type": "richtext",
+               "id": "box_text",
+               "label": "Box Text"
+            }
+    ]
+  }
+{% endschema %}

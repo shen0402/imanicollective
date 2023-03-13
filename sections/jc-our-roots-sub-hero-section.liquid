@@ -1,0 +1,53 @@
+<div class="sub-hero-wrapper-internal">
+  <div class="container-xs">
+    <h3 class="sub-hero-heading">{{section.settings.main_heading}}</h3>
+  </div>
+</div>
+
+<div class="row-section-internal">
+  <div class="container-mid">
+    <div class="row-internal w-row">
+      <div class="content-col-internal w-col w-col-8">
+        <div class="content-col-inner-internal">
+          <h4 class="content-col-heading-internal">{{section.settings.sub_heading}}</h4>
+          <div class="content-col-text-internal">
+          	{{section.settings.content_text}}
+          </div>
+        </div>
+      </div>
+      <div class="col-right-internal w-col w-col-4">
+        <div class="col-img-holder-internal"><img src="{{ section.settings.main_image | img_url: '1000x' }}" alt="{{image.alt}}" class="col-img-internal">
+          <div class="col-img-design-block-internal"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Content Section 1" ,
+      "settings": [
+        {
+           "type": "textarea",
+           "id": "main_heading",
+           "label": "Main Heading Text"
+        },
+        {
+           "type": "textarea",
+           "id": "sub_heading",
+           "label": "Sub Heading Text"
+        },
+        {
+           "type": "richtext",
+           "id": "content_text",
+           "label": "Content Text"
+        },
+         {
+            "type": "image_picker",
+            "id": "main_image",
+            "label": "Main Image"
+         }
+    ]
+  }
+{% endschema %}

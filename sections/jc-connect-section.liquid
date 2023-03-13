@@ -1,0 +1,40 @@
+<div class="connect-section">
+  <div class="container-xl">
+    <div class="connect-row w-row">
+      <div class="connect-col-left w-col w-col-6"><img src="{{ section.settings.main_image | img_url: '1000x' }}" alt="{{image.alt}}" class="connect-img"><img src="//cdn.shopify.com/s/files/1/2534/9108/files/message-min.png" alt="Paper and Pencil" class="connect-center-img"><img src="//cdn.shopify.com/s/files/1/2534/9108/files/white-border-min.png" alt="White Border" class="connect-border-img">
+        <div class="connect-design-div"></div>
+      </div>
+      <div class="connect-col-right w-col w-col-6">
+        <div class="connect-col-content-wrapper">
+          <div class="connect-heading">{{section.settings.main_heading}}</div>
+          <img src="//cdn.shopify.com/s/files/1/2534/9108/files/message-min.png" alt="Paper and Pencil" class="connect-center-img-mobile">
+          <div class="connect-text">{{section.settings.sub_heading }}</div>
+          <div class="connect-btn-wrapper"><a href="/pages/artisans" class="btn-alt w-button">Write Now</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Connect Section" ,
+      "settings": [
+        {
+           "type": "richtext",
+           "id": "main_heading",
+           "label": "Heading Text"
+        },
+         {
+            "type": "richtext",
+            "id": "sub_heading",
+            "label": "Sub Heading Text"
+         },
+         {
+            "type": "image_picker",
+            "id": "main_image",
+            "label": "Image"
+         }
+    ]
+  }
+{% endschema %}

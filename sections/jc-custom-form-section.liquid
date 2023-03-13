@@ -1,0 +1,64 @@
+<div id="order-form" class="form-section-custom">
+  <div class="container-small">
+    <h4 class="form-section-heading-custom">{{section.settings.main_heading}}</h4>
+    <p class="form-section-text-custom">{{section.settings.sub_heading}}</p>
+    <div class="form-section-block-custom w-form">
+
+        {% form 'contact' %}
+        {% if form.posted_successfully? %}
+          <div class="jc-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+        {% else %}
+        <input type="hidden" name="contact[form-name]" value="Custom Pieces Order Form">
+        <div class="form-section-custom-group w-row">
+          <div class="form-section-custom-col w-col w-col-6"><input type="text" class="form-section-custom-input w-input" maxlength="256" name="contact[Name]" data-name="Name" placeholder="Name*" id="Name" required=""></div>
+          <div class="form-section-custom-col w-col w-col-6"><input type="email" class="form-section-custom-input w-input" maxlength="256" name="contact[email]" data-name="Email" placeholder="Email*" id="Email" required=""></div>
+        </div>
+        <div class="form-section-custom-group w-row">
+          <div class="form-section-custom-col w-col w-col-6"><input type="text" class="form-section-custom-input w-input" maxlength="256" name="contact[Phone-Number]" data-name="Phone Number" placeholder="Phone Number" id="Phone-Number"></div>
+          <div class="form-section-custom-col w-col w-col-6"><select id="Product-Inerested-In" name="contact[Product-Inerested-In]" class="form-section-custom-input w-select"><option value="blank">What product are you interested in customizing?</option><option value="hang-sign">hang sign</option><option value="tote">tote</option><option value="pillow">pillow</option><option value="something-else">something else</option></select></div>
+        </div>
+        <div class="form-section-custom-group w-row">
+          <div class="form-section-custom-col w-col w-col-6"><input type="text" class="form-section-custom-input w-input" maxlength="256" name="contact[Quantity-Wanted]" data-name="Quantity Wanted" placeholder="What quantity do you want to order?" id="Quantity-Wanted"></div>
+          <div class="form-section-custom-col w-col w-col-6"><input type="text" class="form-section-custom-input w-input" maxlength="256" name="contact[Timeline]" data-name="Timeline" placeholder="What is your timeline (when do you need the items by)?" id="Timeline"></div>
+        </div>
+        <div class="form-section-text-custom-bottom">{{section.settings.bottom_text}}</div>
+        <div class="form-section-custom-btn-wrapper"><input type="submit" value="Submit" data-wait="Please wait..." class="btn-main form-section-custom-btn w-button"></div>
+        {% endif %}
+      {% endform %}
+
+      <div class="w-form-done">
+        <div>Thank you! Your submission has been received!</div>
+      </div>
+      <div class="w-form-fail">
+        <div>Oops! Something went wrong while submitting the form.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Form Section" ,
+      "settings": [
+        {
+           "type": "text",
+           "id": "main_heading",
+           "label": "Heading Text"
+        },
+        {
+            "type": "textarea",
+            "id": "sub_heading",
+            "label": "Sub Heading"
+        },
+        {
+            "type": "richtext",
+            "id": "bottom_text",
+            "label": "Bottom Text"
+        }
+    ]
+  }
+{% endschema %}
+
+

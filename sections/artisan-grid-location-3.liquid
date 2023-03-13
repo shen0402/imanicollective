@@ -1,0 +1,174 @@
+
+{% if section.blocks.size > 0 %}
+  
+
+  <div class="location-heading-wrapper-artisan">
+    <h3 class="location-heading-artisan">{{section.settings.heading_text}}</h3>
+  </div>
+  <div class="flex-row-artisan">
+
+    {% for block in section.blocks %}
+    <div class="flex-col-artisan"><a href="#" class="flex-link-artisan w-inline-block" data-ix="artisan-modal-open"><img src="{{ block.settings.artisan_image | img_url: '400x' }}" alt="{{block.settings.artisan_name}} Headshot" class="flex-img-artisan"><h6 class="flex-link-heading-artisan">{{block.settings.artisan_name}}</h6></a>
+      <div class="modal-artisan">
+        <div class="modal-content-wrapper">
+          <div class="modal-top-wrapper">
+          <div class="modal-top-img-holder"><img src="{{ block.settings.artisan_image | img_url: '400x' }}" alt="" class="modal-img"></div>
+          <div class="modal-top-content-col">
+            <p class="modal-top-content-text"><strong>Name:</strong> {{block.settings.artisan_name}}</p>
+
+            <p class="modal-top-content-text-alt">What year did you start working for Imani Collective?</p>
+            <p class="modal-top-content-text">{{block.settings.artisan_year_started}}</p>
+
+            <p class="modal-top-content-text-alt">What is your position at Imani Collective?</p>
+            <p class="modal-top-content-text">{{block.settings.artisan_position}}</p>
+
+            <p class="modal-top-content-text-alt">What do you enjoy about working for Imani Collective?</p>
+            <p class="modal-top-content-text">{{block.settings.artisan_love_most}}</p>
+
+            <p class="modal-top-content-text-alt">What holistic program benefits you the most?</p>
+            <p class="modal-top-content-text">{{block.settings.artisan_holistic_program}}</p>
+
+            <p class="modal-top-content-text-alt">What is a skill / something cool you have learned while working here?</p>
+            <p class="modal-top-content-text">{{block.settings.artisan_skill}}</p>
+
+            <p class="modal-top-content-text-alt">What is your dream holiday destination and why?</p>
+            <p class="modal-top-content-text">{{block.settings.artisan_dream_destination}}</p>
+
+            <p class="modal-top-content-text-alt">What is your favorite hobby?</p>
+            <p class="modal-top-content-text">{{block.settings.artisan_hobby}}</p>
+
+            <p class="modal-top-content-text-alt">Words to live by?</p>
+            <p class="modal-top-content-text">{{block.settings.artisan_words_to_live}}</p>
+
+          </div>
+        </div>
+          <div class="modal-bottom-wrapper">
+            <div class="modal-form-block w-form">
+
+              {% form 'contact' %}
+              {% if form.posted_successfully? %}
+                <div class="jc-form-done">
+                  <div>Thank you! Your submission has been received!</div>
+                </div>
+              {% else %}
+              <input type="hidden" name="contact[form-name]" value="Artisan Form {{block.settings.artisan_name}}">
+                <div class="modal-form-heading">SEND <span style="text-transform: uppercase;">{{block.settings.artisan_name}}</span> YOUR THANKS!</div>
+                <div class="modal-form-text">Your purchase truly empowers and so do your words!</div>
+                <div class="modal-form-group w-row">
+                  <div class="modal-form-col w-col w-col-6"><input type="text" class="modal-form-input w-input" maxlength="256" name="contact[Your-Name]" data-name="Your-Name" placeholder="Your Name*" id="Your-Name" required=""></div>
+                  <div class="modal-form-col w-col w-col-6"><input type="email" class="modal-form-input w-input" maxlength="256" name="contact[email]" data-name="Email" placeholder="Your Email Address" id="email" required=""></div>
+                </div>
+                <div class="modal-input-wrapper"><textarea placeholder="Share your appreciation! All of our thank you letters are printed and displayed on our community board!" maxlength="5000" id="Message" name="contact[Message]" data-name="Message" class="modal-form-input modal-form-input-area w-input"></textarea></div>
+                <div class="modal-btn-wrapper"><input type="submit" value="Submit" data-wait="Please wait..." class="modal-form-btn w-button"></div>
+                {% endif %}
+              {% endform %}
+
+    
+            </div>
+          </div><a href="#" class="modal-close-btn" data-ix="artisan-modal-close">X</a></div>
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+
+
+  
+{% endif %}
+
+
+
+
+{% schema %}
+{
+  "name": "Artisans - Turkana" ,
+  "settings": [
+      {
+         "type": "text",
+         "id": "heading_text",
+         "default": "Turkana",
+         "label": "Location Name"
+      }
+  ],
+  "blocks": [
+      {
+        "type": "text",
+        "name": "Artisans",
+        "settings": [
+          
+          {
+            "label": "Name",
+            "id": "artisan_name",
+            "type": "text"
+          },
+          {
+            "label": "Artisan Image",
+            "id": "artisan_image",
+            "type": "image_picker"
+          },
+          {
+            "label": "Position",
+            "id": "artisan_position",
+            "type": "text"
+          },
+          {
+            "label": "What do you enjoy most...",
+            "id": "artisan_love_most",
+            "type": "textarea"
+          },
+          
+          {
+            "label": "Year Started",
+            "id": "artisan_year_started",
+            "type": "text"
+          },
+          {
+            "label": "Holistic Program",
+            "id": "artisan_holistic_program",
+            "type": "text"
+          },
+          {
+            "label": "Skill Learned",
+            "id": "artisan_skill",
+            "type": "text"
+          },
+          {
+            "label": "Dream Destination",
+            "id": "artisan_dream_destination",
+            "type": "text"
+          },
+          {
+            "label": "Hobby",
+            "id": "artisan_hobby",
+            "type": "text"
+          },
+          {
+            "label": "Words to live by",
+            "id": "artisan_words_to_live",
+            "type": "text"
+          },
+          {
+            "label": "Years With Imani",
+            "id": "years_with_imani",
+            "type": "text"
+          },
+          {
+            "label": "Family",
+            "id": "artisan_family",
+            "type": "text"
+          },
+          
+          {
+            "label": "Fun Fact",
+            "id": "artisan_fun_fact",
+            "type": "textarea"
+          }
+
+        ]
+      }
+    ]
+}
+{% endschema %}
+
+
+

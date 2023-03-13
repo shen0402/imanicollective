@@ -1,0 +1,30 @@
+<script type="text/javascript">
+	$('#price-sort').on('change', function() {
+	  var current_value = this.value;
+	  if (current_value == 'none') {
+	    return false;
+	  }
+	  else {
+	    var shop_url = '{{shop.url}}';
+	    var collection_url = '{{collection.url}}';
+	    var param_url = current_value;
+	    var full_url = shop_url+collection_url+'?sort_by='+current_value+'#main-content';
+	    window.location.href = full_url;
+	  }
+
+	});
+
+	$('#color-filter').on('change', function() {
+	  var current_value = this.value;
+	  if (current_value == 'none') {
+	    return false;
+	  } 
+	  else {
+	    var shop_url = '{{shop.url}}';
+	    var param_url = current_value;
+	    var full_url = shop_url+param_url+'#main-content';
+	    window.location.href = full_url;
+	  }
+
+	});
+</script>

@@ -1,0 +1,80 @@
+
+<div class="hero-text-wrapper hero-text-wrapper-give">
+  <div class="container-large">
+    <h1 class="hero-text-heading">{{section.settings.main_heading}}</h1>
+    <p class="hero-text-sub-heading-give">{{section.settings.box_text}}</p>
+  </div>
+</div>
+
+<div class="sub-hero-wrapper-give">
+  <div class="container-large">
+    <div class="sub-hero-content-wrapper-give">
+      <div class="col-img-holder-give col-img-holder-give-mobile"><img src="{{ section.settings.main_image | img_url: '800x' }}" alt="{{image.alt}}" class="col-img-give">
+        <div class="col-img-design-block-give"></div>
+      </div>
+      <h2 class="sub-hero-heading-give">{{section.settings.second_heading}}</h2>
+      <p class="sub-hero-text-give">{{section.settings.second_text}}</p>
+    </div>
+  </div>
+</div>
+
+<div class="row-section-give">
+  <div class="container-mid">
+    <div class="row-give w-row">
+      <div class="content-col-give w-col w-col-8">
+        <div class="content-col-inner-give">
+          <h3 class="content-col-heading-give">{{section.settings.third_heading}}</h3>
+          <div class="content-col-text-give">{{section.settings.third_content}}</div>
+        </div>
+      </div>
+      <div class="col-right-give w-col w-col-4">
+        <div class="col-img-holder-give"><img src="{{ section.settings.main_image | img_url: '800x' }}" alt="{{image.alt}}" class="col-img-give">
+          <div class="col-img-design-block-give"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Top Content Section" ,
+      "settings": [
+        {
+           "type": "text",
+           "id": "main_heading",
+           "label": "Heading Text"
+        },
+        {
+           "type": "textarea",
+           "id": "box_text",
+           "label": "Box Text"
+        },
+         {
+            "type": "text",
+            "id": "second_heading",
+            "label": "Second Heading"
+         },
+         {
+            "type": "textarea",
+            "id": "second_text",
+            "label": "Second Text Paragraph"
+         },
+         {
+            "type": "text",
+            "id": "third_heading",
+            "label": "Third Heading"
+         },
+         {
+            "type": "richtext",
+            "id": "third_content",
+            "label": "Third Content Text"
+         },
+         {
+            "type": "image_picker",
+            "id": "main_image",
+            "label": "Bottom Image"
+         }
+    ]
+  }
+{% endschema %}

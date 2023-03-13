@@ -1,0 +1,76 @@
+<div class="bottom-content-wrapper-brand">
+  <h4 class="bottom-heading-brand">{{section.settings.main_heading}}</h4>
+  <p class="bottom-sub-heading-brand"><a href="https://www.instagram.com/imanicollective/" class="bottom-sub-heading-brand-link" target="_blank">@IMANICOLLECTIVE</a></p>
+  <div class="bottom-flex-row-wrapper-brand">
+    <div class="bottom-flex-row-brand">
+      <div class="bottom-flex-col-brand"><img src="{{ section.settings.image_1 | img_url: '800x' }}" alt="{{image.alt}}" class="bottom-flex-img-brand"></div>
+      <div class="bottom-flex-col-brand"><img src="{{ section.settings.image_2 | img_url: '800x' }}" alt="{{image.alt}}" class="bottom-flex-img-brand"></div>
+      <div class="bottom-flex-col-brand"><img src="{{ section.settings.image_3 | img_url: '800x' }}" alt="{{image.alt}}" class="bottom-flex-img-brand"></div>
+      <div class="bottom-flex-col-brand"><img src="{{ section.settings.image_4 | img_url: '800x' }}" alt="{{image.alt}}" class="bottom-flex-img-brand"></div>
+    </div>
+  </div>
+
+  <div class="bottom-form-wrapper-brand">
+    <h5 class="bottom-form-heading-brand">{{section.settings.bottom_text}}</h5>
+    <div class="bottom-form-block-brand w-form">
+
+      {% form 'customer' %}
+      {% if form.posted_successfully? %}
+        <div class="jc-form-done">
+          <div>Thank you! Your subscription has been confirmed!</div>
+        </div>
+      {% else %}
+        <input type="hidden" name="contact[accepts_marketing]" value="true">
+        <input type="email" class="bottom-form-input-brand w-input" maxlength="256" name="contact[email]" data-name="Email 4" id="email" required="">
+        <input type="submit" value="Submit" data-wait="Please wait..." class="btn-main w-button">
+        {% endif %}
+      {% endform %}
+
+      <div class="w-form-done">
+        <div>Thank you! Your submission has been received!</div>
+      </div>
+      <div class="w-form-fail">
+        <div>Oops! Something went wrong while submitting the form.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Banner Section" ,
+      "settings": [
+        {
+           "type": "text",
+           "id": "main_heading",
+           "label": "Heading Text"
+        },
+         {
+            "type": "text",
+            "id": "bottom_text",
+            "label": "Bottom Text"
+         },
+         {
+            "type": "image_picker",
+            "id": "image_1",
+            "label": "Image 1"
+         },
+         {
+            "type": "image_picker",
+            "id": "image_2",
+            "label": "Image 2"
+         },
+         {
+            "type": "image_picker",
+            "id": "image_3",
+            "label": "Image 3"
+         },
+         {
+            "type": "image_picker",
+            "id": "image_4",
+            "label": "Image 4"
+         }
+    ]
+  }
+{% endschema %}  

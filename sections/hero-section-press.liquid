@@ -1,0 +1,33 @@
+<div class="hero-wrapper-internal">
+  <div class="container-xl">
+    <div class="hero-flex-row">
+      <div class="hero-flex-col-internal-shop">
+        <div class="hero-flex-col-inner-internal-press">
+          <h1 class="hero-heading">{{section.settings.main_heading}}</h1>
+          <div class="hero-btn-wrapper"><a href="#upcoming-events" class="btn-main-hero hero-scroll-link w-button">See Event Schedule</a></div>
+        </div>
+      </div>
+      <div class="hero-flex-col-large-internal-shop">
+        <div class="hero-flex-bg-holder-internal hero-flex-bg-press" {% if section.settings.hero_image %}style="background-image: url('{{ section.settings.hero_image | img_url: '1000x' }}');"{% endif %}></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Hero Section" ,
+      "settings": [
+        {
+           "type": "text",
+           "id": "main_heading",
+           "label": "Heading Text"
+        },
+         {
+            "type": "image_picker",
+            "id": "hero_image",
+            "label": "Hero Image"
+         }
+    ]
+  }
+{% endschema %}

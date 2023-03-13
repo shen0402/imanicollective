@@ -1,0 +1,117 @@
+<h2 class="bottom-heading-impact">{{section.settings.main_heading}}</h2>
+<h3 class="bottom-sub-heading-impact">{{section.settings.sub_heading}}</h3>
+<div class="bottom-row-section-impact">
+  <div class="bottom-row-impact w-row">
+    <div class="w-col w-col-6">
+      <div class="bottom-col-inner-impact">
+        <div class="bottom-flex-row-impact">
+          <div class="bottom-flex-col-left-impact">
+            <div class="bottom-flex-col-number-impact">{{section.settings.number_text_1}}</div>
+            <div class="bottom-flex-col-bg-impact"></div>
+          </div>
+          <div class="bottom-flex-col-impact">
+            <p class="bottom-flex-text-impact">{{section.settings.number_content_text_1}}</p>
+          </div>
+        </div>
+        <div class="bottom-flex-row-impact">
+          <div class="bottom-flex-col-left-impact">
+            <div class="bottom-flex-col-number-impact">{{section.settings.number_text_2}}</div>
+            <div class="bottom-flex-col-bg-impact"></div>
+          </div>
+          <div class="bottom-flex-col-impact">
+            <p class="bottom-flex-text-impact">{{section.settings.number_content_text_2}}</p>
+          </div>
+        </div>
+        <div class="bottom-flex-row-impact">
+          <div class="bottom-flex-col-left-impact">
+            <div class="bottom-flex-col-number-impact">{{section.settings.number_text_3}}</div>
+            <div class="bottom-flex-col-bg-impact"></div>
+          </div>
+          <div class="bottom-flex-col-impact">
+            <p class="bottom-flex-text-impact">{{section.settings.number_content_text_3}}</p>
+          </div>
+        </div>
+        <div class="bottom-flex-row-impact">
+          <div class="bottom-flex-col-left-impact">
+            <div class="bottom-flex-col-number-impact">{{section.settings.number_text_4}}</div>
+            <div class="bottom-flex-col-bg-impact"></div>
+          </div>
+          <div class="bottom-flex-col-impact">
+            <p class="bottom-flex-text-impact">{{section.settings.number_content_text_4}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-col-right-impact w-col w-col-6">
+      <div class="bottom-col-img-holder-impact"><img src="{{ section.settings.main_image | img_url: '1000x' }}" alt="{{image.alt}}" class="bottom-col-img-impact">
+        <div class="bottom-col-design-block-impact"></div><img src="//cdn.shopify.com/s/files/1/2534/9108/files/white-border-impact-min-2.png" alt="White Border" class="bottom-col-border-img-impact"></div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Content Section 2" ,
+      "settings": [
+        {
+           "type": "text",
+           "id": "main_heading",
+           "label": "Main Heading"
+        },
+        {
+           "type": "text",
+           "id": "sub_heading",
+           "label": "Sub Heading"
+        },
+        {
+           "type": "image_picker",
+           "id": "main_image",
+           "label": "Main Image"
+        },
+        {
+           "type": "text",
+           "id": "number_text_1",
+           "label": "Number Text 1"
+        },
+        {
+           "type": "textarea",
+           "id": "number_content_text_1",
+           "label": "Content Text 1"
+        },
+        {
+           "type": "text",
+           "id": "number_text_2",
+           "label": "Number Text 2"
+        },
+        {
+           "type": "textarea",
+           "id": "number_content_text_2",
+           "label": "Content Text 2"
+        },
+        {
+           "type": "text",
+           "id": "number_text_3",
+           "label": "Number Text 3"
+        },
+        {
+           "type": "textarea",
+           "id": "number_content_text_3",
+           "label": "Content Text 3"
+        },
+        {
+           "type": "text",
+           "id": "number_text_4",
+           "label": "Number Text 4"
+        },
+        {
+           "type": "textarea",
+           "id": "number_content_text_4",
+           "label": "Content Text 4"
+        }
+
+    ]
+  }
+{% endschema %}
+
+
+

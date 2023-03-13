@@ -1,0 +1,65 @@
+<div class="bottom-wrapper-custom">
+  <div class="container-large">
+    <h4 class="bottom-heading-custom">{{section.settings.main_heading}}</h4>
+  </div>
+  <div class="bottom-flex-row-wrapper-custom">
+    <div class="bottom-bg-custom"></div>
+    <div class="container-large">
+      <div class="bottom-flex-row-custom">
+        <div class="bottom-flex-col-custom"><img src="{{ section.settings.image_1 | img_url: '600x' }}" alt="{{image.alt}}" class="bottom-flex-img-custom"></div>
+        <div class="bottom-flex-col-custom"><img src="{{ section.settings.image_2 | img_url: '600x' }}" alt="{{image.alt}}"  class="bottom-flex-img-custom"></div>
+        <div class="bottom-flex-col-custom"><img src="{{ section.settings.image_3 | img_url: '600x' }}" alt="{{image.alt}}"  class="bottom-flex-img-custom"></div>
+        <div class="bottom-flex-col-custom"><img src="{{ section.settings.image_4 | img_url: '600x' }}" alt="{{image.alt}}"  class="bottom-flex-img-custom"></div>
+      </div>
+    </div>
+  </div>
+  <div class="testimonial-wrapper-custom">
+    <div class="container-xs">
+      <p class="testimonial-text-custom">{{section.settings.testimonial_text}}</p>
+      <p class="testimonial-name-text-custom">{{section.settings.testimonial_name_text}}</p>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Banner Section" ,
+      "settings": [
+        {
+           "type": "text",
+           "id": "main_heading",
+           "label": "Heading Text"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_1",
+            "label": "Image 1"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_2",
+            "label": "Image 2"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_3",
+            "label": "Image 3"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_4",
+            "label": "Image 4"
+        },
+        {
+            "type": "textarea",
+            "id": "testimonial_text",
+            "label": "Testimonial Text"
+        },
+        {
+            "type": "text",
+            "id": "testimonial_name_text",
+            "label": "Testimonial Name Text"
+        }
+    ]
+  }
+{% endschema %}

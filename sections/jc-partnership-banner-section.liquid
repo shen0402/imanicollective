@@ -1,0 +1,30 @@
+<div class="banner-section-give">
+  <div class="container-small">
+    <h3 class="banner-heading-give">{{section.settings.main_heading}}</h3>
+    <div class="banner-text-give">{{section.settings.content_text}}</div>
+    <p class="banner-text-give-alt">{{section.settings.content_text_alt}}</p>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Banner Section" ,
+      "settings": [
+        {
+           "type": "text",
+           "id": "main_heading",
+           "label": "Heading Text"
+        },
+        {
+           "type": "richtext",
+           "id": "content_text",
+           "label": "Content Text"
+        },
+        {
+           "type": "text",
+           "id": "content_text_alt",
+           "label": "Bottom Bold text"
+        }
+    ]
+  }
+{% endschema %}

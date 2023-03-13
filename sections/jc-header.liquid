@@ -1,0 +1,56 @@
+<div class="fixed-wrapper">
+  <div class="announce-bar-wrapper">
+    <div class="container-large">
+      <div class="announce-bar-text">{{section.settings.announce_text}}</div>
+    </div>
+  </div>
+  <div class="fixed-nav-wrapper">
+    <div class="container-large">
+      <div class="fixed-nav-flex-row">
+        <div class="fixed-nav-social-row"><div class="fixed-nav-logo-scroll-wrapper"><a href="/" class="fixed-nav-logo-scroll-link"><img src="//cdn.shopify.com/s/files/1/2534/9108/files/imani-collective-logo-min.png" class="fixed-nav-logo-scroll-img" width="192"></a></div><a href="https://www.facebook.com/imanicollective/" class="fixed-nav-social-link w-inline-block" target="_blank"><img src="//cdn.shopify.com/s/files/1/2534/9108/files/facebook-tan-min.png" alt="Facebook Logo" class="fixed-nav-social-img"></a><a href="https://www.instagram.com/imanicollective/" class="fixed-nav-social-link w-inline-block" target="_blank"><img src="//cdn.shopify.com/s/files/1/2534/9108/files/instagram-tan-min.png" alt="Instagram  Logo" class="fixed-nav-social-img"></a></div>
+        <div class="fixed-nav-icons-wrapper">
+
+          <a href="#" class="fixed-nav-icon-flex-link search-modal-open fixed-nav-icon-flex-link-first w-inline-block">
+            <div>search</div><img src="//cdn.shopify.com/s/files/1/2534/9108/files/searching-magnifying-glass-min.png" alt="Magnifying Glass" class="fixed-nav-icon-img"></a>
+          {% if customer %}
+
+          <div class="fixed-nav-dropdown-wrapper">
+            <a href="/account" class="fixed-nav-dropdown-link w-inline-block">
+              <div class="fixed-nav-dropdown-text">Hi, {{customer.first_name}}!</div>
+            </a>
+            <div data-delay="0" class="fixed-nav-dropdown w-dropdown">
+              <div class="fixed-nav-dropdown-toggle w-dropdown-toggle"><img src="//cdn.shopify.com/s/files/1/2534/9108/files/cheveron-down-min.png" alt="User Avatar" class="fixed-nav-icon-img"></div>
+              <nav class="fixed-nav-dropdown-menu w-dropdown-list"><a href="/account/logout" class="fixed-nav-dropdown-menu-link w-dropdown-link">Logout</a></nav>
+            </div>
+          </div>
+
+            {% else %}
+            <a href="/account/login" class="fixed-nav-icon-flex-link fixed-nav-icon-flex-link-left w-inline-block">
+              <div>sign in</div><img src="//cdn.shopify.com/s/files/1/2534/9108/files/user-avatar-min.png" alt="User Avatar" class="fixed-nav-icon-img"></a>
+            {% endif %}
+          <a href="/cart" class="fixed-nav-icon-flex-link fixed-nav-icon-flex-link-right w-inline-block">
+            <div>cart</div><img src="//cdn.shopify.com/s/files/1/2534/9108/files/shopping-cart-min.png" alt="Shopping Cart" class="fixed-nav-icon-img"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hero-nav-logo-wrapper">
+  <div class="container-large"><a href="/" class="hero-nav-logo-link w-inline-block w--current"><img src="//cdn.shopify.com/s/files/1/2534/9108/files/imani-collective-logo-min.png" alt="Imani Collective Logo" width="600" class="hero-nav-logo-img"></a></div>
+</div>
+{% schema %}
+  {
+    "name": "Announcement Text" ,
+      "settings": [
+        {
+           "type": "richtext",
+           "id": "announce_text",
+           "default": "<p>Subscribe to our newsletter to get 10% off your first purchase</p>",
+           "label": "Announcement Text"
+        }
+
+    ]
+  }
+{% endschema %}
+

@@ -1,0 +1,280 @@
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+{%- assign product_image_zoom_size = '1024x1024' -%}
+{%- assign product_image_scale = '2' -%}
+{%- assign enable_zoom = section.settings.enable_zoom -%}
+{%- assign compare_at_price = current_variant.compare_at_price -%}
+{%- assign price = current_variant.price -%}
+{%- assign jc_available = current_variant.available -%}
+
+{% if jc_available == true %}
+  {% assign jc_btn_text = 'Add To Cart' %}
+  {% else %}
+  {% assign jc_btn_text = 'Sold Out' %}
+{% endif %}
+
+
+<div class="page-wrapper-product">
+  <div class="container-large">
+    <div class="breadcrumb-wrapper-product">
+      <a href="/collections/all" class="breadcrumb-link w-inline-block">
+        <div>shop</div>
+      </a>
+      <div class="breadcrumb-breaker">/</div>
+
+      {% for collection in product.collections %}
+          {% if collection.id != 18134433827 and collection.id != 18134663203%}
+            <a href="{{collection.url}}" class="breadcrumb-link w-inline-block">
+              <div>{{collection.title}}</div>
+            </a>
+            <div class="breadcrumb-breaker">/</div>
+          {% endif %}
+          
+      {% endfor %}
+
+      <a href="{{product.url}}" class="breadcrumb-link breadcrumb-link-active w-inline-block">
+        <div>{{product.title}}</div>
+      </a>
+    </div>
+    <div class="outer-row-product w-row">
+      <div class="col-left-product w-col w-col-6">
+        <div class="tabs-wrapper-product">
+          <div data-duration-in="300" data-duration-out="100" class="tabs-product w-tabs">
+            <div class="w-tab-content">
+
+              {% for image in product.images %}
+                <div data-w-tab="Tab {{ forloop.index }}" class="w-tab-pane {% if forloop.index == 1 %}w--tab-active{% endif %}">
+                  <div class="tab-inner-product"><img src="{{ image | img_url: '1100x' }}" alt="" class="tab-img-product"></div>
+                </div>
+              {% endfor %}
+              
+
+            </div>
+            <div class="tabs-menu-product w-tab-menu">
+              {% for image in product.images %}
+                <a data-w-tab="Tab {{ forloop.index }}" class="tab-menu-link-product w-inline-block w-tab-link {% if forloop.index == 1 %}w--current{% endif %}" jc-variant-id="{{ image | img_url: '800x' }}">
+                  <div class="tab-menu-link-inner-product">
+                    <img src="{{ image | img_url: '400x' }}" alt="" class="tab-menu-link-img-product">
+                  </div>
+                  
+                </a>
+              {% endfor %}
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-right-product w-col w-col-6">
+        <div class="col-right-inner-product">
+          <h1 class="col-heading-product">{{ product.title }}</h1>
+
+          {% if compare_at_price > price  %}
+           <div class="price-text-product">
+            <span style="text-decoration: line-through;font-weight: 400;letter-spacing: 2px;">{{compare_at_price | money }}</span> <span id="price">{{current_variant.price | money }}</span>
+           </div>
+           {% else %}
+          <div class="price-text-product" id="price">
+         {{current_variant.price | money }}
+          </div>
+          {% endif %}
+
+          <div class="product-options-wrapper">
+            <div class="form-block w-form">
+
+              {% comment %}
+                  {% form "product", product %}
+
+                    {% if product.has_only_default_variant %} 
+                      <select name="id" class="product-page-input-hidden w-select">
+                        {% for variant in product.variants %}
+                          <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %}  value="{{ variant.id }}">{{ variant.title }}</option>
+                        {% endfor %}
+                      </select>
+
+                      {% else %}
+
+                      
+                        <div class="product-options-flex-row">
+                          <div class="product-options-label">Option:</div>
+                          <div class="select-style">
+                            <select name="id" class="product-page-select w-select" >
+                              {% for variant in product.variants %}
+                                <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %}  value="{{ variant.id }}">{{ variant.title }}</option>
+                              {% endfor %}
+                            </select>
+                          </div>
+                        </div>
+                  
+                    {% endif %}
+
+
+                      <div class="product-options-flex-row">
+                        <div class="product-options-label">Quantity</div>
+                          <input type="number" class="product-page-input w-input" maxlength="256" name="quantity" placeholder="1" id="field-2">
+                        </div>
+                      <div class="product-btn-wrapper"><input type="submit" value="Add to Cart" data-wait="Please wait..." class="btn-alt w-button"></div>
+                  {% endform %}
+                  {% endcomment %}
+
+              {% form "product", product %}
+                  {% if product.variants.size > 1 %}
+                    {% if product.options[0] %}
+                      {% assign used = '' %}
+                    <div class="product-options-flex-row">
+                      <label for="select-one" class="product-options-label">{{ product.options[0] }}</label>
+                      <div class="select-style">
+                        <select id='select-one' class="product-page-select w-select">
+                          {% for variant in product.variants %}
+                            {% unless used contains variant.option1 %}
+                              <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.option1 }}">{{ variant.option1 }}</option>
+                              {% capture used %}{{ used }} {{ variant.option1 }}{% endcapture %}
+                            {% endunless %}
+                          {% endfor %}
+                        </select>
+                      </div>
+                    </div>
+
+                    {% endif %}
+                    {% if product.options[1] %}
+                      {% assign used = '' %}
+                    <div class="product-options-flex-row">
+                      <label for="select-one" class="product-options-label">{{ product.options[1] }}</label>
+                      <div class="select-style">
+                        <select id='select-two' class="product-page-select w-select">
+                          {% for variant in product.variants %}
+                            {% unless used contains variant.option2 %}
+                              <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.option2 }}">{{ variant.option2 }}</option>
+                              {% capture used %}{{ used }} {{ variant.option2 }}{% endcapture %}
+                            {% endunless %}
+                          {% endfor %}
+                        </select>
+                      </div>
+                    </div>
+                    {% endif %}
+                    {% if product.options[2] %}
+                      {% assign used = '' %}
+                    <div class="product-options-flex-row">
+                      <label for="select-one" class="product-options-label">{{ product.options[2] }}</label>
+                      <div class="select-style">
+                        <select id='select-three' class="product-page-select w-select">
+                          {% for variant in product.variants %}
+                            {% unless used contains variant.option3 %}
+                              <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.option3 }}">{{ variant.option3 }}</option>
+                              {% capture used %}{{ used }} {{ variant.option3 }}{% endcapture %}
+                            {% endunless %}
+                          {% endfor %}
+                        </select>
+                     </div>
+                   </div>
+                    {% endif %}
+                  {% endif %}
+              
+                   <div class="jc-swatch-wrapper">
+                   {% render 'swatchify-conts' with product, psType: 'product'%}
+                  </div>
+                  <input type="hidden"name="id" id="product-select" value="{{ product.variants.first.id }}" />
+                  <div class="product-options-flex-row">
+                    <div class="product-options-label">Quantity</div>
+                      <input type="number" class="product-page-input w-input" value="1" min="1" name="quantity" id="field-2">
+                    </div>
+                  <div class="product-btn-wrapper">
+                    <input id="jc-add-to-cart-btn" type="submit" value="{{jc_btn_text}}" data-wait="Please wait..." class="btn-alt w-button">
+                  </div>        
+                {% endform %}
+
+             
+              <div class="w-form-done">
+                <div>Thank you! Your submission has been received!</div>
+              </div>
+              <div class="w-form-fail">
+                <div>Oops! Something went wrong while submitting the form.</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="product-social-wrapper">
+            <div class="product-social-heading">Share</div>
+            <div class="product-social-flex-row"><a href="//www.facebook.com/sharer.php?u={{ shop.url | append: product.url }}" class="product-social-link w-inline-block" target="_blank"><img src="//cdn.shopify.com/s/files/1/2534/9108/files/facebook-tan-min.png" alt="Facebook Logo" class="product-social-img" ></a><a href="//twitter.com/share?text={{ product.title | url_param_escape }}&amp;url={{ shop.url | append: product.url }}" class="product-social-link w-inline-block" target="_blank"><img src="//cdn.shopify.com/s/files/1/2534/9108/files/twitter-tan-min.png" alt="Twitter Logo" class="product-social-img"></a><a href="//pinterest.com/pin/create/button/?url={{ shop.url | append: product.url }}&amp;media={{ product | img_url: '1024x1024' }}&amp;description={{ product.title | url_param_escape }}" class="product-social-link w-inline-block" target="_blank"><img src="//cdn.shopify.com/s/files/1/2534/9108/files/pinterest-min.png" alt="Pinterest Logo" class="product-social-img"></a></div>
+          </div>
+          <div class="product-description-wrapper">
+            <div class="product-description-text">{{product.description}}</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% unless product.type == 'Gift Card' %}
+    <div class="bottom-section-product">
+      <h3 class="mid-heading-internal">Similar Products</h3>
+      <div class="container-mid">
+        <div class="flex-row-bottom-product">
+
+          {% for collection in product.collections %}
+              {% if collection.id != 18134433827 and collection.id != 18134663203%}
+                {% assign same_collection = collection %}
+                {% for product in same_collection.products limit:4 %}
+                  <div class="flex-col-bottom-product">
+                    <div class="flex-col-inner-bottom-product"><a href="{{product.url}}" class="flex-col-link-block-bottom-product w-inline-block">
+                      <div class="flex-col-img-bottom-product-holder" style="background-image: url({{ product.featured_image | img_url: '800x' }});"></div>
+                      <div class="flex-col-title-bottom-product">{{product.title}}</div><div class="flex-col-price-bottom-product">{{ product.price | money }}</div></a></div>
+                  </div>
+                {% endfor %}
+                {% break %}
+              {% endif %}
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+{% endunless %}
+
+
+<div class="connect-section">
+  <div class="container-xl">
+    <div class="connect-row w-row">
+      <div class="connect-col-left w-col w-col-6"><img src="//cdn.shopify.com/s/files/1/2534/9108/files/artisan-min.jpg" alt="" class="connect-img"><img src="//cdn.shopify.com/s/files/1/2534/9108/files/message-min.png" alt="Paper and Pencil" class="connect-center-img"><img src="//cdn.shopify.com/s/files/1/2534/9108/files/white-border-min.png" alt="White Border" class="connect-border-img">
+        <div class="connect-design-div"></div>
+      </div>
+      <div class="connect-col-right w-col w-col-6">
+        <div class="connect-col-content-wrapper">
+          <h4 class="connect-heading">Love Your<br>Purchase?</h4>
+          <img src="//cdn.shopify.com/s/files/1/2534/9108/files/message-min.png" alt="Paper and Pencil" class="connect-center-img-mobile">
+          <p class="connect-text">drop a note to<br>the woman who<br>made your<br>product</p>
+          <div class="connect-btn-wrapper"><a href="/pages/artisans" class="btn-alt w-button">Write Now</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<style type="text/css">
+  .swatchify-cont .ps-option.ps-default .ps-swatch {
+    color: #af7552;
+    font-weight: bold;
+  }
+  .swatchify-cont .ps-option.ps-default .ps-swatch.ps-selected {
+    border-color: #af7552;
+  }
+  .swatchify-cont.ps-style-5 .ps-option:not(.ps-default) .ps-swatch {
+    padding: 1px;
+  }
+  .swatchify-cont .ps-header {
+        font-family: Brandon, sans-serif;
+         color: #af7552;
+         font-size: 18px;
+         line-height: 18px;
+         letter-spacing: 1px;
+         margin-bottom: 0px;
+         font-weight: 400;
+        
+  }
+  .swatchify-cont .ps-header span {
+    text-transform: none;
+  }
+</style>

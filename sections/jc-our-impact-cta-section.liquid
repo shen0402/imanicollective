@@ -1,0 +1,27 @@
+<div class="cta-section-impact">
+  <div class="container-large">
+    <div class="cta-content-wrapper">
+      <h3 class="cta-heading-impact">{{section.settings.main_heading}}</h3>
+      <div class="cta-btn-wrapper"><a href="{{section.settings.file_url}}" class="btn-main w-button" target="_blank">Download Now</a></div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "CTA Section" ,
+      "settings": [
+        {
+           "type": "text",
+           "id": "main_heading",
+           "label": "Heading Text"
+        },
+         {
+            "type": "url",
+            "id": "file_url",
+            "label": "File URL",
+            "info": "First Upload file to files section in Shopidy Admin (Settings -> Files), then put the file URL here."
+         }
+    ]
+  }
+{% endschema %}

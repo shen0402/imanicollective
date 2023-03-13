@@ -1,0 +1,37 @@
+{% section 'hero-section-press' %}
+
+
+
+<div class="bottom-wrapper-press">
+  <div class="bottom-bg-holder-press"></div>
+  <div class="container-large" id="upcoming-events">
+
+    {% section 'events' %}
+
+  </div>
+</div>
+
+<div class="mid-wrapper-press">
+  <div class="container-large">
+
+    {% section 'press' %}
+
+  </div>
+  <div id="email-list" class="press-email-anchor"></div>
+</div>
+
+
+{% section 'jc-press-cta-section' %}
+
+
+
+<script type="text/javascript">
+  $('.hero-scroll-link').click(function()
+        {
+          $('html, body').animate({
+              scrollTop: $( $.attr(this, 'href') ).offset().top-100
+          }, 1000);
+          return false;
+        });
+</script>
+

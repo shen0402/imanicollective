@@ -1,0 +1,77 @@
+<div class="hero-wrapper">
+  <div class="container-xl">
+    <div class="hero-flex-row">
+      <div class="hero-flex-col-large">
+        <div class="hero-flex-col-inner">
+          <h1 class="hero-heading">{{section.settings.main_heading}}</h1>
+          <h2 class="hero-sub-heading">{{section.settings.sub_heading }}</h2>
+          <div class="hero-btn-wrapper"><a href="{{ section.settings.btn_url }}" class="btn-main w-button">{{section.settings.btn_text }}</a></div>
+        </div>
+      </div>
+      <div class="hero-flex-col hero-flex-col-middle">
+        <div class="hero-flex-bg-holder" {% if section.settings.first_image %}style="background-image: url('{{ section.settings.first_image | img_url: '1000x' }}');"{% endif %}></div>
+      </div>
+      <div class="hero-flex-col">
+        <div class="hero-flex-bg-holder hero-flex-bg-holder-2" {% if section.settings.second_image %}style="background-image: url('{{ section.settings.second_image | img_url: '1000x' }}');"{% endif %}></div>
+      </div>
+    </div>
+      {% unless section.settings.below_hero_heading == blank %}
+        <div class="sub-hero-tagline-wrapper">
+        <h3 class="sub-hero-heading">{{section.settings.below_hero_heading}}</h3>
+        </div>
+      {% endunless %}
+    
+
+
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Hero Section" ,
+      "settings": [
+        {
+           "type": "text",
+           "id": "main_heading",
+           "default": "Ethically Made by Artisans",
+           "label": "Main Heading"
+        },
+        {
+           "type": "text",
+           "id": "sub_heading",
+           "default": "in mombasa, kenya",
+           "label": "Sub Heading"
+        },
+        {
+           "type": "text",
+           "id": "btn_text",
+           "default": "Learn More",
+           "label": "Button Text"
+        },
+        {
+          "id": "btn_url",
+          "type": "url",
+          "label": "Button Link"
+        },
+        {
+           "type": "image_picker",
+           "id": "first_image",
+           "label": "First Image"
+        },
+        {
+           "type": "image_picker",
+           "id": "second_image",
+           "label": "Second Image"
+        },
+        {
+           "type": "text",
+           "id": "below_hero_heading",
+           "default": "Ethically made by empowered artisans in Kenya",
+           "label": "Below Hero Heading"
+        }
+
+
+    ]
+  }
+{% endschema %}
+

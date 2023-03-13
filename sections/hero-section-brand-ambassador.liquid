@@ -1,0 +1,50 @@
+<div class="hero-wrapper-internal">
+  <div class="container-xl">
+    <div class="hero-flex-row">
+      <div class="hero-flex-col-large-internal">
+        <div class="hero-flex-bg-holder-internal hero-flex-bg-brand" {% if section.settings.hero_image %}style="background-image: url('{{ section.settings.hero_image | img_url: '1400x' }}');"{% endif %}></div>
+      </div>
+      <div class="hero-flex-col-internal">
+        <div class="hero-flex-col-inner-internal">
+          <div class="hero-heading">{{section.settings.main_heading}}</div>
+          {% if section.settings.btn_url == blank %}
+              <div class="hero-btn-wrapper"><a href="#" class="btn-main w-button modal-form-open" data-ix="modal-form-open">{{section.settings.btn_text}}</a></div>
+            {% else %}
+              <div class="hero-btn-wrapper"><a href="{{section.settings.btn_url}}" class="btn-main w-button">{{section.settings.btn_text}}</a></div>
+          {% endif %}
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Hero Section" ,
+      "settings": [
+        {
+           "type": "richtext",
+           "id": "main_heading",
+           "label": "Heading Text"
+        },
+        {
+            "type": "image_picker",
+            "id": "hero_image",
+            "label": "Hero Image"
+         },
+         {
+            "type": "text",
+            "id": "btn_text",
+            "default": "Reach Out",
+            "label": "Button Text"
+         },
+         {
+            "type": "url",
+            "id": "btn_url",
+            "info": "Setting this will disabled the Pop-Up",
+            "label": "Button URL"
+         }
+    ]
+  }
+{% endschema %}

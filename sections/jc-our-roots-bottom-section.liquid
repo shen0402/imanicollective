@@ -1,0 +1,36 @@
+<div class="bottom-row-section-internal">
+  <div class="container-xl">
+    <div class="bottom-row-internal w-row">
+      <div class="bottom-col-left-internal w-col w-col-7">
+        <div class="bottom-col-img-holder-internal"><img src="{{ section.settings.main_image | img_url: '1000x' }}" alt="{{image.alt}}" class="bottom-col-img-internal">
+          <div class="bottom-col-design-block-internal"></div><img src="//cdn.shopify.com/s/files/1/2534/9108/files/white-border-min_1.png" alt="White Border" class="bottom-col-border-img-internal"></div>
+      </div>
+      <div class="bottom-col-right-internal w-col w-col-5">
+        <div class="bottom-col-inner-internal">
+          <div class="content-col-text-holder-internal">
+            <p class="content-col-text-internal">{{section.settings.content_text}}</p>
+          </div>
+          <div class="bottom-col-btn-wrapper-internal"><a href="/pages/artisans" class="btn-alt w-button">Meet The Collective</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Content Section 2" ,
+      "settings": [
+        {
+           "type": "textarea",
+           "id": "content_text",
+           "label": "Content Text"
+        },
+         {
+            "type": "image_picker",
+            "id": "main_image",
+            "label": "Main Image"
+         }
+    ]
+  }
+{% endschema %}

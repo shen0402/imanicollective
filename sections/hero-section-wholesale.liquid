@@ -1,0 +1,41 @@
+<div class="hero-wrapper-internal">
+  <div class="container-xl">
+    <div class="hero-flex-row">
+      <div class="hero-flex-col-internal-shop">
+        <div class="hero-flex-col-inner-internal-wholesale">
+          <h1 class="hero-heading">{{section.settings.main_heading}}</h1>
+          <h2 class="hero-sub-heading">{{section.settings.sub_heading}}</h2>
+          <div class="hero-btn-wrapper-wholesale">
+            <iframe src="https://www.faire.com/embed/bw_f0fgbvfr04" width="240" height="50" scrolling="no" style="margin:0;border:none;display:block;max-width:100%;"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="hero-flex-col-large-internal-shop">
+        <div class="hero-flex-bg-holder-internal hero-flex-bg-wholesale" {% if section.settings.hero_image %}style="background-image: url('{{ section.settings.hero_image | img_url: '1400x' }}');"{% endif %}></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Hero Section" ,
+      "settings": [
+        {
+           "type": "text",
+           "id": "main_heading",
+           "label": "Heading Text"
+        },
+        {
+           "type": "text",
+           "id": "sub_heading",
+           "label": "Sub Text"
+        },
+         {
+            "type": "image_picker",
+            "id": "hero_image",
+            "label": "Hero Image"
+         }
+    ]
+  }
+{% endschema %}

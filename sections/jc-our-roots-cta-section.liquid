@@ -1,0 +1,33 @@
+<div class="bottom-cta-internal">
+  <div class="container-xl">
+    <div class="bottom-cta-flex-row">
+      <div class="bottom-cta-flex-col-large">
+        <div class="bottom-cta-flex-col-bg-holder" {% if section.settings.main_image %}style="background-image: url('{{ section.settings.main_image | img_url: '1400x' }}');"{% endif %}></div>
+      </div>
+      <div class="bottom-cta-flex-col">
+        <div class="bottom-cta-flex-col-inner">
+          <div class="bottom-cta-heading">{{section.settings.main_heading}}</div>
+          <div class="bottom-cta-btn-wrapper"><a href="/pages/brand-ambassador" class="btn-main w-button">Learn More</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "CTA" ,
+      "settings": [
+        {
+           "type": "richtext",
+           "id": "main_heading",
+           "label": "Heading Text"
+        },
+         {
+            "type": "image_picker",
+            "id": "main_image",
+            "label": "Main Image"
+         }
+    ]
+  }
+{% endschema %}

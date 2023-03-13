@@ -1,0 +1,39 @@
+<div class="cta-section-shop" {% if section.settings.main_image %}style="background-image: url('{{ section.settings.main_image | img_url: '1600x' }}');"{% endif %}>
+  <div class="container-large">
+    <div class="cta-content-wrapper">
+      <h3 class="cta-heading-shop">{{section.settings.main_heading}}</h3>
+      <div class="cta-btn-wrapper"><a href="{{section.settings.button_url}}" class="btn-alt w-button">{{section.settings.button_text}}</a></div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "CTA Collection All" ,
+      "settings": [
+      	{
+            "type": "image_picker",
+            "id": "main_image",
+            "label": "Background Image"
+        },
+        {
+           "type": "text",
+           "id": "main_heading",
+           "default": "Want to Become a Wholesaler?",
+           "label": "Heading Text"
+        },
+        {
+            "type": "text",
+            "id": "button_text",
+            "default": "Learn More",
+            "label": "Button Text"
+        },
+        {
+            "type": "url",
+            "id": "button_url",
+            "label": "Button Link"
+        }
+         
+    ]
+  }
+{% endschema %}

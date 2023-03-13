@@ -1,0 +1,61 @@
+<div class="bottom-row-section-alt-impact">
+  <h3 class="bottom-heading-alt-impact">{{section.settings.main_heading}}</h3>
+  <div class="bottom-row-alt-impact w-row">
+    <div class="bottom-col-left-alt-impact w-col w-col-6">
+      <div class="bottom-col-img-holder-alt-impact"><img src="{{ section.settings.main_image | img_url: '1000x' }}" alt="{{image.alt}}" class="bottom-col-img-alt-impact"></div>
+    </div>
+    <div class="w-col w-col-6">
+      <div class="bottom-col-inner-alt-impact">
+        <div class="bottom-col-text-impact">{{section.settings.content_text_1}}</div>
+        <h4 class="bottom-col-heading-impact">{{section.settings.content_heading_1}}</h4>
+        <div class="bottom-col-text-impact">{{section.settings.content_text_2}}</div>
+        <h4 class="bottom-col-heading-impact">{{section.settings.content_heading_2}}</h4>
+        <div class="bottom-col-text-impact bottom-col-text-impact-last">{{section.settings.content_text_3}}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Content Section 3" ,
+      "settings": [
+        {
+           "type": "text",
+           "id": "main_heading",
+           "label": "Heading Text"
+        },
+        {
+           "type": "image_picker",
+           "id": "main_image",
+           "label": "Main Image"
+        },
+         {
+            "type": "richtext",
+            "id": "content_text_1",
+            "label": "Content Text 1"
+         },
+         {
+            "type": "text",
+            "id": "content_heading_1",
+            "label": "Content Heading 1"
+         },
+         {
+            "type": "richtext",
+            "id": "content_text_2",
+            "label": "Content Text 2"
+         },
+         {
+            "type": "text",
+            "id": "content_heading_2",
+            "label": "Content Heading 2"
+         },
+         {
+            "type": "richtext",
+            "id": "content_text_3",
+            "label": "Content Text 3"
+         }
+    ]
+  }
+{% endschema %}

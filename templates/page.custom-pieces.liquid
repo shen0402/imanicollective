@@ -1,0 +1,15 @@
+{% section 'hero-section-custom' %}
+{% section 'jc-custom-content-section' %}
+{% section 'jc-custom-banner-section' %}
+{% section 'jc-custom-form-section' %}
+{% section 'jc-connect-section' %}
+
+<script type="text/javascript">
+  $('.hero-scroll-link').click(function()
+        {
+          $('html, body').animate({
+              scrollTop: $( $.attr(this, 'href') ).offset().top-103
+          }, 1000);
+          return false;
+        });
+</script>

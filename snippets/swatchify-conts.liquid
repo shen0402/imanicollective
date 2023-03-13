@@ -1,0 +1,197 @@
+{%- assign psProduct = swatchify-conts %}
+
+{%- assign showProduct = true -%}
+{%- assign showCollection = true -%}
+{%- assign spOptions = 'Color|sp|' | split: '|sp|' -%}
+{%- assign spOptionsLabels = 'Color|sp|' | split: '|sp|' -%}
+{%- assign spCollOptions = 'Color|sp|' | split: '|sp|' -%}
+{%- assign spDefaultOptions = '' | split: '|sp|' -%}
+{%- assign productStyle = 7 -%}
+{%- assign headerColon = ':' -%}
+{%- assign tooltip = false -%}
+{%- assign productAlign = 'left' -%}
+{%- assign linkedOption = true -%}
+{%- assign prodHeaderChange = true -%}
+{%- assign collStyle = 2 -%}
+{%- assign collAlign = 'center' -%}
+{%- assign numOfSwatches = 3 -%}
+{%- assign collShowMoreThenOne = true -%}
+{%- assign collSwitchImage = true -%}
+{%- assign collRedirect = 1 -%}
+{%- assign xMore = '|psx| More' -%}
+{%- assign collHideUnavailable = true -%}
+{%- assign horScroll = false -%}
+{%- assign horArrowLeft = 'ps-arr1-left.svg' | asset_url -%}
+{%- assign horArrowRight = 'ps-arr1-right.svg' | asset_url -%}
+
+{%- if psProduct -%}
+
+    {%- if psProduct.options.size > 1 or psProduct.options.size == 1 and psProduct.options[0] != "Title" and psProduct.options[0].value[0] != "Default Title" -%}
+
+        {%- if psType == 'product' and showProduct -%}
+
+            {%- assign psApplySwatches = nil -%}
+            {%- for option in psProduct.options_with_values -%}
+
+                {%- if spOptions contains option.name -%}
+                    {%- assign psApplySwatches = true -%}
+                    {%- break -%}
+                {%- endif -%}
+
+            {%- endfor -%}
+
+            {%- if psApplySwatches -%}
+                {%- if linkedOption -%}
+                    {%- assign psAvailable = "" %}
+
+                    {%- for variant in psProduct.variants %}
+                        {%- assign psTitle = '' %}
+                        {%- if variant.available %}
+                            {%- if variant.option1 %} {%- assign psTitle = psTitle | append: variant.option1 | escape %}{% endif %}
+                            {%- if variant.option2 %} {%- assign psTitle = psTitle | append: '|/' | append: variant.option2 | escape %}{% endif %}
+                            {%- if variant.option3 %} {%- assign psTitle = psTitle | append: '|/' | append: variant.option3 | escape %}{% endif %}
+
+                            {%- assign psAvailable = psAvailable | append: psTitle | append: '/|' %}
+                        {%- endif %}
+
+                        {%- assign psAvailable = psAvailable | replace: '&#39;', "'" | replace: '&amp;' , '&' %}
+                    {%- endfor %}
+                {%- endif -%}
+
+                <div id="swatchify-cont-{{psProduct.id}}" class='swatchify-cont ps-align-{{productAlign}} ps-style-{{productStyle}}' data-ps-options-num="{{psProduct.options.size}}" {%- if linkedOption -%}data-ps-available="{{ psAvailable }}"{%- endif -%}>
+                    {%- for option in psProduct.options_with_values -%}
+                  
+                      {%- assign psUseDefaultStyle = nil -%}
+                  
+                      {%- if spDefaultOptions contains option.name -%}
+                        {%- assign psUseDefaultStyle = true -%}
+                      {%- endif -%}
+                  
+                        {%- if spOptions contains option.name -%}
+
+                            {%- assign psParsedOptionName = option.name | replace: "'", '|ps0|' | replace: '"', '|ps1|' -%}
+
+                            {%- for optionName in spOptions -%}
+                                {%- if optionName == option.name -%}
+                                {%- assign psOptionName = spOptionsLabels[forloop.index0] -%}
+                                {%- break; -%}
+                                {%- endif -%}
+                            {%- endfor -%}
+
+                            <div class='ps-option {% if psUseDefaultStyle %} ps-default {%- endif -%}'
+                                 data-option-index='{{ forloop.index0 }}'
+                                 data-option-name='{{ psParsedOptionName }}'>
+                                {%- if prodHeaderChange -%}
+                                    <label class='ps-header'>{{ psOptionName }}{%- if psOptionName != "" -%}{{ headerColon }} {%- endif -%}
+                                        <span>{{ option.selected_value }}</span>
+                                    </label>
+                                {%- else -%}
+                                    <label class='ps-header'>{{ psOptionName }}{%- if psOptionName != '' -%}{{ headerColon }}{%- endif -%}</label>
+                                {%- endif -%}
+                                {%- for value in option.values -%}
+                                    <div class='ps-swatch{% if option.selected_value == value %} ps-selected{%- endif -%}'
+                                         data-swatch-name='{{ value | replace: "'", '|ps0|' | replace: '"', '|ps1|' }}'>
+                                      
+                                      <div class="ps-swatch-cont">
+                                        {%- if psUseDefaultStyle -%} 
+                                        	<span> {{ value | replace: "'" }} </span>
+                                        {%- else -%}
+                                        	<svg width="100%" height="100%"></svg>
+                                        {%- endif -%}
+                                      </div>
+                                      
+                                      {%- if tooltip -%} <div class='ps-tooltip'>{{ value }}</div> {%- endif -%}
+                                      
+                                      {%- if productStyle == 9 -%} <span>{{ value | replace: "'", '|ps0|' | replace: '"', '|ps1|' }}</span> {%- endif -%}
+                                    </div>
+                                {%- endfor -%}
+                            </div>
+                        {%- endif -%}
+                    {%- endfor -%}
+                </div>
+                <script>window.SellerPanda.Swatchify.addProdCont({{psProduct.id}})</script>
+            {%- endif -%}
+
+            {%- elsif psType == 'collection' and showCollection -%}
+
+            {%- for option in psProduct.options_with_values -%}
+
+                {%- if spDefaultOptions contains option.name -%}
+                  {%- continue -%}
+                {%- endif -%}
+
+                {%- assign shownSwatches = 0 -%}
+
+                {%- if spCollOptions contains option.name -%}
+                    {%- if collShowMoreThenOne and option.values.size == 1 -%}
+                      {%- continue -%}
+                    {%- endif -%}
+
+                    {%- assign optionIndexName = "option" | append: forloop.index -%}
+
+                    {%- assign psParsedOptionName = option.name | replace: "'", '|ps0|' | replace: '"', '|ps1|' -%}
+
+                    <div id="swatchify-coll-cont-{{psProduct.id}}" class='swatchify-coll-cont ps-coll-align-{{collAlign}} ps-coll-style-{{collStyle}} {% if horScroll %}ps-hor-scroll{%- endif -%}' data-option-name='{{ psParsedOptionName }}'>
+                      
+                      {%- if horScroll %} <span class="ps-arrow-left"><img src="{{horArrowLeft}}"></span> <div class='ps-hor-cont'> {%- endif -%}                      
+                        
+                        {%- for value in option.values -%}
+                        
+                          {%- if horScroll == false and numOfSwatches > 0 and shownSwatches >= numOfSwatches -%} {%- break -%} {%- endif -%}
+                      
+                            {%- if collSwitchImage or collHideUnavailable or collRedirect != 0 -%}
+
+                            {%- assign unAvailable = false -%}
+                                {%- assign imageUrl = nil %}
+                                
+                                {%- for variant in psProduct.variants -%}
+                                    {%- if variant[optionIndexName] != value -%}{%- continue -%}{%- endif -%}
+                      
+                                    {%- if collHideUnavailable and variant.available and unAvailable == false -%}
+                                      {%- assign unAvailable = true -%}
+                                    {%- endif -%}
+                      
+                                {%- endfor -%}
+                      
+                                {%- for variant in psProduct.variants -%}
+                                    {%- if variant[optionIndexName] != value -%}{%- continue -%}{%- endif -%}
+                      
+                                    {%- assign variantUrl = variant.url %}
+
+                                    {%- if variant.image.src != nil %}
+                                        {%- assign imageUrl = variant.image.src | img_url: '2048x2048' %}
+                                        {%- break -%}
+                                    {%- endif -%}
+                                {%- endfor -%}
+                            {%- endif -%}
+                      
+                            {%- if collHideUnavailable and unAvailable == false -%}{%- continue -%}{%- endif -%}
+                      
+                            {%- assign shownSwatches = shownSwatches | plus: 1 -%}
+                      
+                            <div class='ps-coll-swatch {% if collRedirect != 0 or collSwitchImage %}ps-clickable{% endif %}'
+                                 data-swatch-name='{{ value | replace: "'", '|ps0|' | replace: '"', '|ps1|' }}'
+                                 {%- if collRedirect != 0 -%}data-coll-url='{{ variantUrl }}'{%- endif -%}
+                                 {%- if collSwitchImage -%}data-coll-img='{{ imageUrl }}'{%- endif -%}
+                                 >
+                              <div class="ps-coll-swatch-cont"><svg width="100%" height="100%"></svg></div>
+                            </div>
+                        {%- endfor -%}
+
+                      {%- if horScroll %} </div> <span class="ps-arrow-right"><img src="{{horArrowRight}}"></span> {%- endif -%}
+                      
+                        {%- if xMore and horScroll == false and numOfSwatches > 0 and option.values.size > numOfSwatches -%}
+                            {%- assign haveMore = option.values.size | minus: shownSwatches -%}
+                            {%- assign xMore = xMore | replace: '|psx|', haveMore -%}
+
+                            <label class='ps-have-more' data-product-url='https://{{shop.domain}}{{psProduct.url}}'>{{ xMore }}</label>
+                        {%- endif -%}
+                    </div>
+
+                    <script>window.SellerPanda.Swatchify.addCollCont({{psProduct.id}})</script>
+                {%- break -%}
+                {%- endif -%}
+            {%- endfor -%}
+        {%- endif -%}
+    {%- endif -%}
+{%- endif -%}

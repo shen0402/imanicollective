@@ -1,0 +1,64 @@
+<div class="mid-wrapper-wholesale" id="get-started">
+  <div class="container-mid">
+    <div class="outer-row-wholesale w-row">
+      <div class="col-left-wholesale w-col w-col-6 w-col-stack">
+        <div class="col-left-inner-wholesale">
+          <div class="box-wrapper-wholesale">
+            <h3 class="box-heading-wholesale">{{section.settings.box_heading}}</h3>
+            <div class="box-text-wholesale">{{section.settings.box_text}}</div>
+          </div><img src="{{ section.settings.main_image | img_url: '1000x' }}" alt="{{image.alt}}" class="col-left-img-wholesale"></div>
+      </div>
+      <div class="col-right-whole-sale w-col w-col-6 w-col-stack">
+        <div class="col-right-inner-wholesale">
+          <div class="form-block-wholesale w-form">
+            <form id="email-form-2" name="email-form-2" data-name="Email Form 2" action="#">
+              <div class="form-group-wholesale"><label for="name" class="form-label-wholesale">Your Name<span class="required">*</span></label><input type="text" class="form-input-wholesale w-input" maxlength="256" name="name" data-name="Name" id="name" required=""></div>
+              <div class="form-group-wholesale"><label for="Business-Name" class="form-label-wholesale">Business Name<span class="required">*</span></label><input type="text" class="form-input-wholesale w-input" maxlength="256" name="Business-Name" data-name="Business Name" id="Business-Name" required=""></div>
+              <div class="form-group-wholesale"><label for="Email-4" class="form-label-wholesale">Email Address<span class="required">*</span></label><input type="email" class="form-input-wholesale w-input" maxlength="256" name="Email" data-name="Email" id="Email-4" required=""></div>
+              <div class="form-group-wholesale"><label for="Phone-Number" class="form-label-wholesale">Phone Number<span class="required">*</span></label><input type="text" class="form-input-wholesale w-input" maxlength="256" name="Phone-Number" data-name="Phone Number" id="Phone-Number" required=""></div>
+              <div class="form-group-wholesale"><label for="Website" class="form-label-wholesale">Website<span class="required">*</span></label><input type="text" class="form-input-wholesale w-input" maxlength="256" name="Website" data-name="Website" id="Website" required=""></div>
+              <div class="form-group-wholesale"><label for="EIN-Number" class="form-label-wholesale">EIN Number</label><input type="text" maxlength="256" name="EIN-Number" data-name="EIN Number" id="EIN-Number" class="form-input-wholesale w-input"></div>
+              <div class="form-group-wholesale form-group-wholesale-area"><label for="How-did-you-hear-about-us" class="form-label-wholesale">How Did You Hear About Us?<span class="required">*</span><span class="required"></span></label><textarea name="How-did-you-hear-about-us" maxlength="5000" id="How-did-you-hear-about-us" data-name="How did you hear about us" class="form-input-wholesale form-input-wholesale-area w-input"></textarea></div>
+              <div class="form-group-wholesale form-group-wholesale-area"><label for="Where-will-you-sell-our-products" class="form-label-wholesale">Where Will You Sell Our Products?<span class="required">*</span></label><textarea name="Where-will-you-sell-our-products" maxlength="5000" id="Where-will-you-sell-our-products" data-name="Where will you sell our products" class="form-input-wholesale form-input-wholesale-area w-input"></textarea></div>
+              <div class="form-group-wholesale form-group-wholesale-area"><label for="what-products-and-quantities-are-you-interested-in" class="form-label-wholesale">What Product And Quantities Are You Interested In?<span class="required">*</span></label><textarea name="what-products-and-quantities-are-you-interested-in" maxlength="5000" id="what-products-and-quantities-are-you-interested-in" data-name="what products and quantities are you interested in" class="form-input-wholesale form-input-wholesale-area w-input"></textarea></div>
+              <div class="form-btn-wrapper-wholesale"><input type="submit" value="Send" data-wait="Please wait..." class="btn-main w-button"></div>
+            </form>
+            <div class="w-form-done">
+              <div>Thank you! Your submission has been received!</div>
+            </div>
+            <div class="w-form-fail">
+              <div>Oops! Something went wrong while submitting the form.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Form Section" ,
+      "settings": [
+        {
+           "type": "text",
+           "id": "box_heading",
+           "label": "Box Heading"
+        },
+        {
+           "type": "richtext",
+           "id": "box_text",
+           "label": "Box Text"
+        },
+         {
+            "type": "image_picker",
+            "id": "main_image",
+            "label": "Main Image"
+         }
+    ]
+  }
+{% endschema %}
+
+

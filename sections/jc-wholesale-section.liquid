@@ -1,0 +1,23 @@
+<div class="mid-wrapper-wholesale" id="get-started">
+	<div class="container-mid">
+		<iframe src="https://www.faire.com/embed/bw_556rjrfohl" width="500" height="700" scrolling="no" style="margin:0 auto;border:none;display:block;max-width:100%;"></iframe>
+		<div class="bottom-wrapper-wholesale">
+			<div class="bottom-text-wholesale">{{section.settings.bottom_text}}</div>
+		</div>
+	</div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Wholesale Section" ,
+      "settings": [
+        {
+           "type": "richtext",
+           "id": "bottom_text",
+           "label": "Bottom Text"
+        }
+       
+    ]
+  }
+{% endschema %}

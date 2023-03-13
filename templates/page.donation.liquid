@@ -1,0 +1,16 @@
+
+{% section 'hero-section-donation' %}
+{% section 'jc-donation-content-section' %}
+{% section 'jc-donation-cta-section' %}
+
+
+
+<script type="text/javascript">
+  $('.hero-scroll-link').click(function()
+        {
+          $('html, body').animate({
+              scrollTop: $( $.attr(this, 'href') ).offset().top-103
+          }, 1000);
+          return false;
+        });
+</script>

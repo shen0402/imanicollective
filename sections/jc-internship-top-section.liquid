@@ -1,0 +1,25 @@
+<div class="mid-wrapper-internship">
+  <div class="container-small">
+    <h3 class="mid-heading-internal">{{section.settings.main_heading}}</h3>
+    <div class="mid-text-internship">{{section.settings.content_text}}</div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Content Section 1" ,
+      "settings": [
+        {
+           "type": "text",
+           "id": "main_heading",
+           "label": "Heading Text"
+        },
+         {
+            "type": "richtext",
+            "id": "content_text",
+            "label": "Content Text"
+         }
+    ]
+  }
+{% endschema %}

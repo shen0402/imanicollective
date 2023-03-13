@@ -1,0 +1,16 @@
+<div class="container-large">
+  <h1 class="hero-text-heading">{{section.settings.main_heading}}</h1>
+</div>
+
+{% schema %}
+  {
+    "name": "Hero Text" ,
+      "settings": [
+        {
+           "type": "textarea",
+           "id": "main_heading",
+           "label": "Heading Text"
+        }
+    ]
+  }
+{% endschema %}

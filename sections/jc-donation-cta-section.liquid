@@ -1,0 +1,21 @@
+<div class="cta-section-donate" >
+  <div class="container-large">
+    <div class="cta-content-wrapper-donate">
+      <h3 class="cta-heading-donate">{{section.settings.main_heading}}</h3>
+      <div class="cta-btn-wrapper-donate"><a href="/pages/volunteer" class="cta-btn-donate w-button">Volunteer</a></div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "CTA Section" ,
+      "settings": [
+        {
+           "type": "text",
+           "id": "main_heading",
+           "label": "Heading Text"
+        }
+    ]
+  }
+{% endschema %}

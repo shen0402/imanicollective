@@ -1,0 +1,18 @@
+<div class="hero-text-wrapper">
+  <div class="container-small">
+    <p class="hero-text-sub-heading">{{section.settings.main_heading}}</p>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Hero Text" ,
+      "settings": [
+        {
+           "type": "textarea",
+           "id": "main_heading",
+           "label": "Heading Text"
+        }
+    ]
+  }
+{% endschema %}

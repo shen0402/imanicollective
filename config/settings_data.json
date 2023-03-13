@@ -1,0 +1,3095 @@
+{
+  "current": {
+    "color_text": "#3d4246",
+    "color_body_text": "#69727b",
+    "color_sale_text": "#557b97",
+    "color_button": "#557b97",
+    "color_button_text": "#fff",
+    "color_small_button_text_border": "#3d4246",
+    "color_text_field_text": "#000",
+    "color_text_field_border": "#949494",
+    "color_text_field": "#fff",
+    "color_image_overlay_text": "#fff",
+    "color_image_overlay": "#3d4246",
+    "image_overlay_opacity": 40,
+    "color_borders": "#e8e9eb",
+    "color_body_bg": "#fff",
+    "type_header_font": "work_sans_n6",
+    "type_header_base_size": 26,
+    "type_base_font": "work_sans_n4",
+    "type_base_size": 16,
+    "type_bold_product_titles": false,
+    "share_image": "shopify:\/\/shop_images\/1_30738891-4602-4019-8ec0-76422e3e9121.jpg",
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "social_twitter_link": "",
+    "social_facebook_link": "https:\/\/facebook.com\/imanicollective",
+    "social_pinterest_link": "https:\/\/pinterest.com\/imanicollective",
+    "social_instagram_link": "http:\/\/instagram.com\/imanicollective",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UClegWWpKGWjt0z0lpzjEzSw\/featured",
+    "social_vimeo_link": "",
+    "favicon": "",
+    "enable_ajax": true,
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#eac394",
+    "checkout_button_color": "#f1e3d5",
+    "checkout_error_color": "#db5251",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "align_logo": "left",
+          "logo": "",
+          "logo_max_width": 100,
+          "main_linklist": "main-menu",
+          "message": false,
+          "home_page_only": true,
+          "message_text": "Announce something here",
+          "message_link": "",
+          "color_bg": "#7796a8",
+          "color_text": "#fff"
+        }
+      },
+      "hero": {
+        "type": "hero",
+        "settings": {
+          "image": "",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "medium",
+          "text_size": "large",
+          "title": "Image with text overlay",
+          "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "slideshow": {
+        "type": "slideshow",
+        "blocks": {
+          "slideshow-0": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "alignment": "center center",
+              "slide_title": "Image slide",
+              "subheading": "Tell your brand's story through images",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "slideshow-1": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "alignment": "center center",
+              "slide_title": "Image slide",
+              "subheading": "Tell your brand's story through images",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "slideshow-0",
+          "slideshow-1"
+        ],
+        "settings": {
+          "slideshow_height": "adapt",
+          "text_size": "medium",
+          "text_alignment": "center center",
+          "show_overlay": true,
+          "autorotate": false,
+          "autorotate_speed": 5
+        }
+      },
+      "featured-collections": {
+        "type": "collection",
+        "settings": {
+          "title": "Featured collection",
+          "collection": "frontpage",
+          "grid": 3,
+          "rows": 2,
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "feature-row": {
+        "type": "feature-row",
+        "settings": {
+          "image": "",
+          "layout": "left",
+          "title": "Image with text",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "link_list": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "text": {
+            "type": "text",
+            "settings": {
+              "title": "Talk about your business",
+              "text": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
+            }
+          },
+          "newsletter": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Newsletter"
+            }
+          }
+        },
+        "block_order": [
+          "link_list",
+          "text",
+          "newsletter"
+        ],
+        "settings": {
+          "show_payment_icons": false,
+          "color_footer_bg": "#f5f5f5",
+          "color_footer_text": "#3d4246"
+        }
+      },
+      "jc-header": {
+        "type": "jc-header",
+        "settings": {
+          "announce_text": "<p><a href=\"https:\/\/imanicollective.attn.tv\/p\/RUK\/landing-page\" target=\"_blank\" title=\"https:\/\/imanicollective.attn.tv\/p\/RUK\/landing-page\">sign up for our email & text<\/a> for 15% OFF your first order<\/p><p>free shipping on domestic US orders over $50<\/p>"
+        }
+      },
+      "jc-hero-nav": {
+        "type": "jc-hero-nav",
+        "settings": {
+          "give_url": "https:\/\/www.globalgiving.org\/projects\/renovations-for-holistic-center-for-86-artisans\/",
+          "open_new_tab": true
+        }
+      },
+      "events": {
+        "type": "events",
+        "blocks": {
+          "1579713434676": {
+            "type": "text",
+            "settings": {
+              "event_date": "",
+              "event_name": "No upcoming events",
+              "event_time": "we have no upcoming events at this time. please check back in the future! We look forward to seeing you all at markets soon. Happy New Year!",
+              "event_location": "",
+              "event_blurb": ""
+            }
+          }
+        },
+        "block_order": [
+          "1579713434676"
+        ],
+        "settings": {
+          "heading_text": "Upcoming Events"
+        }
+      },
+      "jc-footer": {
+        "type": "jc-footer",
+        "settings": {
+          "give_url": "https:\/\/crm.bloomerang.co\/HostedDonation?ApiKey=pub_8b403100-f948-11ec-af60-02eab0531019&WidgetId=594944",
+          "open_new_tab": true
+        }
+      },
+      "press": {
+        "type": "press",
+        "blocks": {
+          "a860ed7c-224b-48e6-9136-8a07ebbc08fc": {
+            "type": "text",
+            "settings": {
+              "press_date": "September 2020",
+              "press_name": "Cause Consumer - Home Goods That Do Good",
+              "press_url": "https:\/\/www.causeconsumer.org\/2020\/09\/28\/home-goods-that-better-community\/",
+              "press_image": "shopify:\/\/shop_images\/Untitled_design_3.png"
+            }
+          },
+          "1579713113191": {
+            "type": "text",
+            "settings": {
+              "press_date": "November 2019",
+              "press_name": "Cause Box Feature",
+              "press_url": "https:\/\/causebox.com\/blog\/impact-stories-collectively-created",
+              "press_image": "shopify:\/\/shop_images\/ICcauseboxwhite-01.png"
+            }
+          },
+          "1573678048947": {
+            "type": "text",
+            "settings": {
+              "press_date": "January 2019",
+              "press_name": "Wit & Grace Magazine - JAN 2019 Special Edition Print",
+              "press_url": "https:\/\/www.witandgracemag.com\/",
+              "press_image": "shopify:\/\/shop_images\/witandgrace-w-min.png"
+            }
+          },
+          "1573678146588": {
+            "type": "text",
+            "settings": {
+              "press_date": "January 2019",
+              "press_name": "Babes Who Hustle - Babe #239",
+              "press_url": "https:\/\/www.babeswhohustle.com\/home\/babes\/jnuccio",
+              "press_image": "shopify:\/\/shop_images\/babeswhohustle-w-min.png"
+            }
+          },
+          "1573678170497": {
+            "type": "text",
+            "settings": {
+              "press_date": "January 2019",
+              "press_name": "The Cause Bar - The Changemaker Series",
+              "press_url": "https:\/\/www.thecausebar.com\/blog\/the-cause-bar-changemaker-series-an-interview-with-jenny-nuccio-founder-imani-collective",
+              "press_image": "shopify:\/\/shop_images\/thecausebar-w-min.png"
+            }
+          },
+          "1573678198547": {
+            "type": "text",
+            "settings": {
+              "press_date": "November 2018",
+              "press_name": "November 2018 The Fearless Woman Podcast - Episode 10",
+              "press_url": "https:\/\/itunes.apple.com\/us\/podcast\/the-fearless-woman-podcast\/id1415568468?mt=2",
+              "press_image": "shopify:\/\/shop_images\/thefearlesswoman-w-min.png"
+            }
+          },
+          "1573678229709": {
+            "type": "text",
+            "settings": {
+              "press_date": "October 2018",
+              "press_name": "Coffee + People Podcast - Episode 44",
+              "press_url": "https:\/\/itunes.apple.com\/us\/podcast\/coffee-people-podcast\/id1335201813?mt=2#episodeGuid=tag%3Asoundcloud%2C2010%3Atracks%2F528744792",
+              "press_image": "shopify:\/\/shop_images\/coffee_peoplepodcast-w-min.png"
+            }
+          },
+          "1573678251753": {
+            "type": "text",
+            "settings": {
+              "press_date": "October 2018",
+              "press_name": "Dough - Issue #8",
+              "press_url": "https:\/\/www.joindough.com\/shop-from-women-owned-businesses\/imani-collective?rq=jenny%20nucci",
+              "press_image": "shopify:\/\/shop_images\/dough-w-min.png"
+            }
+          },
+          "1574448528863": {
+            "type": "text",
+            "settings": {
+              "press_date": "October 2018",
+              "press_name": "\"How To Be Sure 'Artisan Made' means 'Ethically Made'\" - Yellow Co. Blog",
+              "press_url": "https:\/\/yellowco.co\/blog\/2018\/10\/31\/does-artisan-made-mean-ethically-made\/",
+              "press_image": "shopify:\/\/shop_images\/yellowco-w-min.png"
+            }
+          },
+          "1574448601039": {
+            "type": "text",
+            "settings": {
+              "press_date": "September 2018",
+              "press_name": "The Things She Does Podcast - Episode 56",
+              "press_url": "https:\/\/itunes.apple.com\/us\/podcast\/the-things-she-does-podcast\/id1293616681",
+              "press_image": "shopify:\/\/shop_images\/thethingsshedoes-w-min.png"
+            }
+          },
+          "1574448636391": {
+            "type": "text",
+            "settings": {
+              "press_date": "May 2018",
+              "press_name": "The Okie Home",
+              "press_url": "http:\/\/theokiehome.com\/imani-collective\/",
+              "press_image": "shopify:\/\/shop_images\/theokiehome-w-min.png"
+            }
+          },
+          "1574448665098": {
+            "type": "text",
+            "settings": {
+              "press_date": "May 2018",
+              "press_name": "Social Flourish Podcast - Episode 14 - What It Means to Leave a Legacy Globally",
+              "press_url": "https:\/\/www.socialflourish.com\/podcast\/episode-14-what-it-means-to-leave-a-legacy-globally"
+            }
+          },
+          "1574448714240": {
+            "type": "text",
+            "settings": {
+              "press_date": "May 2018",
+              "press_name": "Voyage Dallas Magazine Article",
+              "press_url": "http:\/\/voyagedallas.com\/interview\/meet-jenny-nuccio-imani-collective-deep-ellum\/",
+              "press_image": "shopify:\/\/shop_images\/voyagedallas-w-min.png"
+            }
+          },
+          "1574448745394": {
+            "type": "text",
+            "settings": {
+              "press_date": "April 2018",
+              "press_name": "It's Time for Coffee - 005 Jenny Nuccio",
+              "press_url": "http:\/\/itstimeforcoffee.libsyn.com\/005-jenny-nuccio",
+              "press_image": "shopify:\/\/shop_images\/timeforcoffee-w-min.png"
+            }
+          },
+          "1574448791788": {
+            "type": "text",
+            "settings": {
+              "press_date": "April 2018",
+              "press_name": "Sister House Collective - Do Good Brand Series",
+              "press_url": "https:\/\/www.sisterhousecollective.com\/do-good-brand-series\/2018\/9\/3\/jenny-nuccio-imani-collective"
+            }
+          },
+          "1574448823300": {
+            "type": "text",
+            "settings": {
+              "press_date": "April 2018",
+              "press_name": "5280 Denver Mile High Magazine Feature - Can't Miss Artisans",
+              "press_url": "http:\/\/www.5280.com\/2018\/04\/6-cant-miss-makers-at-this-months-spring-flea\/",
+              "press_image": "shopify:\/\/shop_images\/5280-w-min.png"
+            }
+          },
+          "1574448847511": {
+            "type": "text",
+            "settings": {
+              "press_date": "",
+              "press_name": "Lonely Planet - Come see our artisans in Kenya!",
+              "press_url": "https:\/\/www.lonelyplanet.com\/kenya\/mombasa\/shopping\/imani-collective\/a\/poi-sho\/1580043\/355339",
+              "press_image": "shopify:\/\/shop_images\/lonelyplanet-w-min.png"
+            }
+          },
+          "1574448871463": {
+            "type": "text",
+            "settings": {
+              "press_date": "October 2017",
+              "press_name": "Munchin with Moguls – Episode 22 - Creating an Authentic Community that goes Across Global Boundaries",
+              "press_url": "https:\/\/itunes.apple.com\/us\/podcast\/munchin-with-moguls\/id1236381199",
+              "press_image": "shopify:\/\/shop_images\/munchinwithmoguls-w-min.png"
+            }
+          },
+          "1574448925193": {
+            "type": "text",
+            "settings": {
+              "press_date": "",
+              "press_name": "Citizen Photography",
+              "press_url": "https:\/\/www.citizen-photography.com\/imani-collective",
+              "press_image": "shopify:\/\/shop_images\/citizenphotography-w-min.png"
+            }
+          },
+          "1574448947439": {
+            "type": "text",
+            "settings": {
+              "press_date": "October 2017",
+              "press_name": "San Antonio Express News",
+              "press_url": "http:\/\/www.expressnews.com\/lifestyle\/article\/S-A-woman-weaves-life-in-Kenya-to-help-single-12287555.php?t=29aa7f28af01065692&cmpid=email-premium#photo-14371619",
+              "press_image": "shopify:\/\/shop_images\/sanantonioexpressnews-w-min.png"
+            }
+          },
+          "1574448978240": {
+            "type": "text",
+            "settings": {
+              "press_date": "October 2017",
+              "press_name": "78209 Magazine – October 2017 Issue",
+              "press_url": "http:\/\/78209magazine.com\/the-buzz-in-78209\/in-the-loop-12",
+              "press_image": "shopify:\/\/shop_images\/78209magazine-w-min.png"
+            }
+          },
+          "1574449026886": {
+            "type": "text",
+            "settings": {
+              "press_date": "October 2017",
+              "press_name": "Globe In Feature",
+              "press_url": "https:\/\/globein.com\/blog\/imanixchange-dream\/",
+              "press_image": "shopify:\/\/shop_images\/globein-w-min.png"
+            }
+          }
+        },
+        "block_order": [
+          "a860ed7c-224b-48e6-9136-8a07ebbc08fc",
+          "1579713113191",
+          "1573678048947",
+          "1573678146588",
+          "1573678170497",
+          "1573678198547",
+          "1573678229709",
+          "1573678251753",
+          "1574448528863",
+          "1574448601039",
+          "1574448636391",
+          "1574448665098",
+          "1574448714240",
+          "1574448745394",
+          "1574448791788",
+          "1574448823300",
+          "1574448847511",
+          "1574448871463",
+          "1574448925193",
+          "1574448947439",
+          "1574448978240",
+          "1574449026886"
+        ],
+        "settings": {
+          "heading_text": "recent articles"
+        }
+      },
+      "artisan-grid": {
+        "type": "artisan-grid",
+        "settings": {
+          "heading_text": "Artisans"
+        }
+      },
+      "jc-connect-section": {
+        "type": "jc-connect-section",
+        "settings": {
+          "main_heading": "<p>connect to<br\/>the artisan<\/p>",
+          "sub_heading": "<p>drop a note to<br\/>the woman who<br\/>made your<br\/>product<\/p>",
+          "main_image": "shopify:\/\/shop_images\/artisan-min_8cb143f0-9d03-4144-8fb9-a9b44dda7483.jpg"
+        }
+      },
+      "jc-pop-up-form": {
+        "type": "jc-pop-up-form",
+        "settings": {
+          "main_heading": "Subscribe to Our Newsletter"
+        }
+      },
+      "hero-section": {
+        "type": "hero-section",
+        "settings": {
+          "main_heading": "new girl power collection",
+          "sub_heading": "",
+          "btn_text": "shop collection",
+          "btn_url": "shopify:\/\/collections\/girl-power-collection",
+          "first_image": "shopify:\/\/shop_images\/Photo_20Feb_2015_202023_209_2018_2034_20PM.jpg",
+          "second_image": "shopify:\/\/shop_images\/IMG_3186.jpg",
+          "below_hero_heading": "Ethically made by empowered artisans in Kenya"
+        }
+      },
+      "jc-modal-form": {
+        "type": "jc-modal-form",
+        "settings": {
+        }
+      },
+      "leadership-grid": {
+        "type": "leadership-grid",
+        "blocks": {
+          "1581005602038": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Jenny Nuccio",
+              "leadership_position": "Founder + CEO",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-14T134019.478.jpg"
+            }
+          },
+          "1581005932741": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Hailey Bickham",
+              "leadership_position": "Art Director",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2022-11-01T113652.461.jpg"
+            }
+          },
+          "1581005647702": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Femida Otieno",
+              "leadership_position": "Head of Corporate Partnerships",
+              "leadership_image": "shopify:\/\/shop_images\/6.jpg"
+            }
+          },
+          "dd769074-b306-4e2f-bcfd-6bafdfa7b945": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "David Mwangi Mwenda",
+              "leadership_position": "Head of Finance and Administration",
+              "leadership_image": "shopify:\/\/shop_images\/9.jpg"
+            }
+          },
+          "78ee9d1f-af09-4e24-aa27-230ed2fae651": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Kelly Wanjala",
+              "leadership_position": "Head of Operations",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-14T134416.807.jpg"
+            }
+          },
+          "1581005949992": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Kevin Mbogho",
+              "leadership_position": "Head of Sustainability",
+              "leadership_image": "shopify:\/\/shop_images\/5.jpg"
+            }
+          },
+          "4908834b-b310-4a49-960e-e955b083c335": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Paloma Diaz",
+              "leadership_position": "Lead Designer",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2022-11-07T132835.378.jpg"
+            }
+          },
+          "1581005987285": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Annette Wilson",
+              "leadership_position": "Director of Marketing",
+              "leadership_image": "shopify:\/\/shop_images\/1_bd0d0db3-149e-4b7e-a8bd-81ac250680d3.jpg"
+            }
+          },
+          "2a89ae3c-1677-44a5-bbe5-878e3c5a8613": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Maxine Ellerston",
+              "leadership_position": "Marketing Assistant",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2022-11-07T133657.199.jpg"
+            }
+          },
+          "1581006021988": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Belinda Agallo",
+              "leadership_position": "Interim Executive Director - Kenya",
+              "leadership_image": "shopify:\/\/shop_images\/4_de81e1b4-a920-4f93-a7db-ae5c26a9a488.jpg"
+            }
+          },
+          "fa71b473-20ee-45d1-a6ad-0a273da739fa": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Ellie Williams",
+              "leadership_position": "Director of Operations and Sales",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2022-10-31T111200.515.jpg"
+            }
+          },
+          "72bb4043-7fe9-431f-9a60-3f4d17ad1f9a": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Blake Bennett",
+              "leadership_position": "Fulfillment Associate",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-14T140143.533.jpg"
+            }
+          },
+          "dda59d3d-b82c-47fa-a248-3d194ec18d05": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Allison Shaw",
+              "leadership_position": "Director of Events - Stateside",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design-2.jpg"
+            }
+          },
+          "1581006128959": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Rahab Mumbi",
+              "leadership_position": "Events and Markets Coordinator - Kenya",
+              "leadership_image": "shopify:\/\/shop_images\/1_da0d695f-40d8-46dd-957d-887500c719ee.jpg"
+            }
+          },
+          "1581006145810": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Caroline Wacera",
+              "leadership_position": "Head of Supplies",
+              "leadership_image": "shopify:\/\/shop_images\/3_15b49e09-ef4a-470e-8197-0fd3848cb11c.jpg"
+            }
+          },
+          "ec6c95fa-57a5-41dd-be83-739d1720198f": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Valentine Mbaabu",
+              "leadership_position": "Head of Communications & PR",
+              "leadership_image": "shopify:\/\/shop_images\/7.jpg"
+            }
+          },
+          "d5515625-4298-49b5-b732-846b0d6fe470": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Dennis Onyancha",
+              "leadership_position": "Kenya Content Creator",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_95.jpg"
+            }
+          },
+          "cd1ed79a-89c3-4e4e-974d-f88d53c11e22": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Ramadhan Munga",
+              "leadership_position": "Production Assitant + Head of Screen Printing",
+              "leadership_image": "shopify:\/\/shop_images\/8.jpg"
+            }
+          },
+          "7e0e2edb-d1f9-412f-96b0-0234e49a1213": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Rachel Akoth",
+              "leadership_position": "Production Assistant - Old Town",
+              "leadership_image": "shopify:\/\/shop_images\/14.jpg"
+            }
+          },
+          "1581006167032": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Fridah Akumu",
+              "leadership_position": "Production Assistant - Mtepeni",
+              "leadership_image": "shopify:\/\/shop_images\/fridah-headshot-min_cddc5388-cddc-4ba0-8dce-926aaaa94bdd.jpg"
+            }
+          },
+          "d4c92679-b2e7-4c6a-9654-e83e22ad7cab": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Brian Munyoki",
+              "leadership_position": "Turkana Director",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_94.jpg"
+            }
+          },
+          "ace0d160-a719-4599-a3ce-43f75493eadd": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Belinda Napuu",
+              "leadership_position": "Production Assistant - Turkana",
+              "leadership_image": "shopify:\/\/shop_images\/67.jpg"
+            }
+          },
+          "6927a909-a7fa-4738-93b4-876fc541f251": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Fredrick Odhiambo",
+              "leadership_position": "Finance Assistant",
+              "leadership_image": "shopify:\/\/shop_images\/2_348a221d-db9a-4db2-be53-cd5749289072.jpg"
+            }
+          },
+          "b71ae0a8-4fc5-49ab-a754-1940070cd4ea": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Mwanamzungu Ramadhan",
+              "leadership_position": "Quality Control - Old Town",
+              "leadership_image": "shopify:\/\/shop_images\/13.jpg"
+            }
+          },
+          "232bcf68-ca17-4158-8317-e3e7695a5234": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Cuty Akiniyi",
+              "leadership_position": "Quality Control - Old Town",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_53.jpg"
+            }
+          },
+          "d16f88b3-722a-400b-8bc5-ccd336d2ef46": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Zawadi Nyazi",
+              "leadership_position": "Quality Control - Mtepeni",
+              "leadership_image": "shopify:\/\/shop_images\/11.jpg"
+            }
+          },
+          "6a4c8422-f509-4a9f-aa85-d71cfb7ab684": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Mbodze Tsuma",
+              "leadership_position": "Quality Control - Mtepeni",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_57.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1581005602038",
+          "1581005932741",
+          "1581005647702",
+          "dd769074-b306-4e2f-bcfd-6bafdfa7b945",
+          "78ee9d1f-af09-4e24-aa27-230ed2fae651",
+          "1581005949992",
+          "4908834b-b310-4a49-960e-e955b083c335",
+          "1581005987285",
+          "2a89ae3c-1677-44a5-bbe5-878e3c5a8613",
+          "1581006021988",
+          "fa71b473-20ee-45d1-a6ad-0a273da739fa",
+          "72bb4043-7fe9-431f-9a60-3f4d17ad1f9a",
+          "dda59d3d-b82c-47fa-a248-3d194ec18d05",
+          "1581006128959",
+          "1581006145810",
+          "ec6c95fa-57a5-41dd-be83-739d1720198f",
+          "d5515625-4298-49b5-b732-846b0d6fe470",
+          "cd1ed79a-89c3-4e4e-974d-f88d53c11e22",
+          "7e0e2edb-d1f9-412f-96b0-0234e49a1213",
+          "1581006167032",
+          "d4c92679-b2e7-4c6a-9654-e83e22ad7cab",
+          "ace0d160-a719-4599-a3ce-43f75493eadd",
+          "6927a909-a7fa-4738-93b4-876fc541f251",
+          "b71ae0a8-4fc5-49ab-a754-1940070cd4ea",
+          "232bcf68-ca17-4158-8317-e3e7695a5234",
+          "d16f88b3-722a-400b-8bc5-ccd336d2ef46",
+          "6a4c8422-f509-4a9f-aa85-d71cfb7ab684"
+        ],
+        "settings": {
+          "heading_text": "Leadership"
+        }
+      },
+      "jc-banner-section": {
+        "type": "jc-banner-section",
+        "settings": {
+          "banner_text": "Passionately pursuing a holistic approach to empowerment, we are convinced that we aren’t just better together — we’re our best together."
+        }
+      },
+      "jc-cta-section": {
+        "type": "jc-cta-section",
+        "settings": {
+          "main_heading": "Visit Kenya",
+          "sub_heading": "come and meet the team!",
+          "main_image": "shopify:\/\/shop_images\/kenya-landscape-min_5034edcd-7a98-4c14-9715-0aad4910c8b9.jpg"
+        }
+      },
+      "hero-section-our-roots": {
+        "type": "hero-section-our-roots",
+        "settings": {
+          "main_heading": "<p>Our Roots<br\/>Run Deep<\/p>",
+          "hero_image": "shopify:\/\/shop_images\/Our-Roots-hero-min_8d59d097-101c-4d34-8adc-3efb4ac6e28c.jpg"
+        }
+      },
+      "jc-our-roots-sub-hero-section": {
+        "type": "jc-our-roots-sub-hero-section",
+        "settings": {
+          "main_heading": "Together, we unleash greatness within artisans + their communities by crafting ethical lifestyle products that cultivate holistic empowerment and opportunity",
+          "sub_heading": "it started with sixteen women",
+          "content_text": "<p>Sixteen women looking for a better way to provide for their families. Sixteen women who believed they were worth more than the saturated fruit selling street markets. Sixteen women intrigued enough by Jenny’s vision to stick by her side and grow together.<\/p><p>Imani Collective started in a small village outside of Mombasa, Kenya. Our founder, Jenny Nuccio, traveled there looking to help fund education projects for kids. As she got to know the families she realized that the children who were struggling the most came from single income homes where their mother’s did not have many job opportunities and often sold fruit for mere pennies a day. Jenny fell in love with the people and decided to move to Kenya full time to learn from and invest in the community. Through broken English and Swahili, she and the sixteen women awkwardly laughed their way into deep friendship and mutual partnership. They taught her how to cook over an open fire, how to wash her clothes, and of course, how to carry her water like a local. In return, Jenny taught them how to sew. Through creating this collective, she realized they were not just better together, they are their best together.<\/p>",
+          "main_image": "shopify:\/\/shop_images\/Mtwapa_4th_Sept_28_of_29_1.jpg"
+        }
+      },
+      "jc-our-roots-banner-section": {
+        "type": "jc-our-roots-banner-section",
+        "settings": {
+          "banner_text": "<p>&quot;Trust me,&quot; she said.<br\/>&quot;We’re going to build something beautiful.&quot;<br\/>And they did.<\/p>"
+        }
+      },
+      "jc-our-roots-bottom-section": {
+        "type": "jc-our-roots-bottom-section",
+        "settings": {
+          "content_text": "Imani Collective now employs over eighty Kenyan women + men in Mtepeni Village and Mombasa, along with half a dozen women stateside. Together, we unleash a woman’s greatness through empowerment + opportunity + community.",
+          "main_image": "shopify:\/\/shop_images\/independence_day_1_881197c0-5636-457a-bc4a-094b69b84328.jpg"
+        }
+      },
+      "jc-our-roots-cta-section": {
+        "type": "jc-our-roots-cta-section",
+        "settings": {
+          "main_heading": "<p>Become<br\/>A Brand Ambassador<\/p>",
+          "main_image": "shopify:\/\/shop_images\/IMG-6505.jpg"
+        }
+      },
+      "jc-leadership-hero-section": {
+        "type": "jc-leadership-hero-section",
+        "settings": {
+          "main_heading": "Our leadership spans globally across the US and Kenya."
+        }
+      },
+      "jc-leadership-cta-section": {
+        "type": "jc-leadership-cta-section",
+        "settings": {
+          "main_heading": "<p>Work<br\/>With Imani<\/p>",
+          "sub_heading": "",
+          "main_image": "shopify:\/\/shop_images\/Untitled_design_-_2022-10-30T113956.904.jpg"
+        }
+      },
+      "jc-artisan-cta-section": {
+        "type": "jc-artisan-cta-section",
+        "settings": {
+          "main_heading": "Get Involved",
+          "sub_heading": "<p>See the different ways<br\/>you can get involved<br\/>with Imani Collective<\/p>",
+          "main_image": "shopify:\/\/shop_images\/good-times-min_530ee0cd-b247-4dc5-beee-5b6495396f7b.jpg"
+        }
+      },
+      "jc-our-impact-hero-section": {
+        "type": "jc-our-impact-hero-section",
+        "settings": {
+          "main_heading": "Our Impact at a Glance"
+        }
+      },
+      "jc-our-impact-number-section": {
+        "type": "jc-our-impact-number-section",
+        "settings": {
+          "number_1": "130",
+          "heading_1": "artisans + staff",
+          "number_2": "3",
+          "heading_2": "locations",
+          "number_3": "24",
+          "heading_3": "children in our in-house childcare",
+          "number_4": "1,200",
+          "heading_4": "hours of training per artisan",
+          "number_5": "34,000",
+          "heading_5": "meals served in 2021",
+          "number_6": "1000",
+          "heading_6": "hour of education"
+        }
+      },
+      "jc-our-impact-top-content-section": {
+        "type": "jc-our-impact-top-content-section",
+        "settings": {
+          "content_text": "Dignified employment is a key ingredient for economic development and poverty alleviation in developing countries around the world. Over the past 5 years, Imani Collective’s innovative model for providing women, men and their families with consistent wages, skills training, community and access to education has proven highly successful at improving artisan livelihoods and well-being."
+        }
+      },
+      "jc-our-impact-mid-content-section": {
+        "type": "jc-our-impact-mid-content-section",
+        "settings": {
+          "main_heading": "Artisan Income",
+          "sub_heading": "Consistent, Fair + Transparent Pay",
+          "main_image": "shopify:\/\/shop_images\/weaving-rug-min_14558640-50c3-4f5d-ae14-e6179079e37c.jpg",
+          "number_text_1": "46%",
+          "number_content_text_1": "Approximately 46% of Kenyans live below the international poverty line of $1.90 per day, as defined by the World Bank.",
+          "number_text_2": "2.6x",
+          "number_content_text_2": "Imani Collective pays more than 2.6 times more than minimum wage along with unmatched benefits.",
+          "number_text_3": "91%",
+          "number_content_text_3": "Of our artisans reported that they are satisfied with their income this year. We provide our artisans with fair, steady wages that honor the time and skill that go into making each and every product by hand, with heart.",
+          "number_text_4": "79%",
+          "number_content_text_4": "Of our artisans reported that they have a secure way to provide for their family. We recognize that in order to empower women, we must also empower their families. Our artisans’ access to a consistent source of income, as well as child education tuition sponsorships, emergency medical funding, in-house child enrichment program and financial literacy training, have enabled our women to invest in their skills and provide opportunities for their children to advance."
+        }
+      },
+      "jc-our-impact-bottom-content-section": {
+        "type": "jc-our-impact-bottom-content-section",
+        "settings": {
+          "main_heading": "Production",
+          "main_image": "shopify:\/\/shop_images\/Impact-Production-Picture-min_d7ce144b-78cf-4cbd-9bef-9ec795f982fc.jpg",
+          "content_text_1": "<p><br\/>We are continually inspired by the beauty of traditional African artisanship and look forward to elevating our artisans’ craft and showcasing Imani’s unique aesthetic each and every year. We have developed a diverse yet cohesive product line that not only spans five years of artisan craft and modern design, but also holds increasingly competitive value in the marketplace!<\/p>",
+          "content_heading_1": "It Starts Local",
+          "content_text_2": "<p>We strive to be ethically-responsible and environmentally-friendly when sourcing our local, raw + organic materials. By sourcing from local markets + vendors we are investing in the local economy which is essential to overall economic development in the area.<\/p><p>We support the integrity of ethically sourced, artisan made goods and create opportunities for men and women to make them.<\/p>",
+          "content_heading_2": "Raw Materials",
+          "content_text_3": "<p>Wool, organic dye, cotton, leather, felt, stuffing, clay.<\/p>"
+        }
+      },
+      "jc-our-impact-cta-section": {
+        "type": "jc-our-impact-cta-section",
+        "settings": {
+          "main_heading": "Download Our 2021 Impact Report",
+          "file_url": "https:\/\/mcusercontent.com\/3a1ecc51bdea229e05327c57e\/files\/8ae8ddbf-3852-6be1-7d77-5b53c203e051\/ImaniCollective_2021ImpactReport_Final.pdf"
+        }
+      },
+      "hero-section-brand-ambassador": {
+        "type": "hero-section-brand-ambassador",
+        "settings": {
+          "main_heading": "<p>join our affiliate program<\/p>",
+          "hero_image": "shopify:\/\/shop_images\/IMG-7836.jpg",
+          "btn_text": "Reach Out",
+          "btn_url": ""
+        }
+      },
+      "jc-brand-ambassador-top-section": {
+        "type": "jc-brand-ambassador-top-section",
+        "settings": {
+          "main_heading": "Calling all creators",
+          "content_text": "We want to see our artisan made goods in your beautiful homes + spaces. We want to share our heart with you + watch you share it with the world. You don’t need to have thousands of followers to apply. We just want to spread some Imani Collective goodness!",
+          "box_heading": "Now taking Affiliate Program Applications",
+          "button_text": "Click to apply",
+          "button_url": "https:\/\/theimanicollective.grin.live\/affiliateapplication"
+        }
+      },
+      "jc-brand-ambassador-bottom-section": {
+        "type": "jc-brand-ambassador-bottom-section",
+        "settings": {
+          "main_heading": "check out our brand ambassadors sharing our story",
+          "bottom_text": "Enter your email below to receive an application when they go live!",
+          "image_1": "shopify:\/\/shop_images\/Ashley01.jpg",
+          "image_2": "shopify:\/\/shop_images\/2_02340522-6e9a-4e9d-a1ce-f6a7f6a93828.jpg",
+          "image_3": "shopify:\/\/shop_images\/missash_1_1.JPG",
+          "image_4": "shopify:\/\/shop_images\/Brand-Ambassador-Footer-4-min_55cca1ff-74c7-49d2-848f-1e73aa1ef766.jpg"
+        }
+      },
+      "hero-section-internship": {
+        "type": "hero-section-internship",
+        "settings": {
+          "main_heading": "<p>Work<\/p><p>With Us!<\/p>",
+          "hero_image": "shopify:\/\/shop_images\/BA6B8853.jpg"
+        }
+      },
+      "jc-modal-form-intern-apply": {
+        "type": "jc-modal-form-intern-apply",
+        "settings": {
+        }
+      },
+      "jc-internship-top-section": {
+        "type": "jc-internship-top-section",
+        "settings": {
+          "main_heading": "Want to experience working with an ethical brand?",
+          "content_text": "<p>Whether you're looking to hone in on your design skills, learn more about marketing strategy, or spend time in Kenya seeing our ethical manufacturing firsthand, we have the place for you to learn and make an impact.<\/p><p>Opportunities are available in SLC, Utah,  Dallas, Texas and Mombasa, Kenya.<\/p>"
+        }
+      },
+      "jc-internship-banner-section": {
+        "type": "jc-internship-banner-section",
+        "settings": {
+          "content_text": "<p>\"Trust me,\" she said.<br>\"We&rsquo;re going to build something beautiful.\"<br>And they did.<\/p>"
+        }
+      },
+      "jc-internship-bottom-section": {
+        "type": "jc-internship-bottom-section",
+        "settings": {
+          "main_heading_1": "CHIEF ADVANCEMENT OFFICER",
+          "sub_heading_1": "Full Time Remote Position - Requires Travel",
+          "left_col_heading_1": "<p><strong>Job description: <\/strong><\/p>",
+          "left_col_text_1": "<p>- Advance the mission and goals of the nonprofit alongside the Founder <\/p><p>- Create strategy to strengthen the financials of the nonprofit<\/p><p>- Develop annual plans and budgets in all areas <\/p><p>- Create and execute fundraising plans<\/p>",
+          "right_col_heading_1": "",
+          "right_col_text_1": "<p>- Provide leadership to constituent relations programs<\/p><p>- Ensure dynamic processes in all phases of donor qualifications<\/p><p>-Work closely with Founder in all phases of advancement and campaign leadership activities<\/p><p>Questions about this position? Please email partnerships @imanicollective.com<\/p>",
+          "main_heading_2": "KENYA INTERNSHIP",
+          "sub_heading_2": "Mombasa, Kenya",
+          "left_col_heading_2": "<p><strong>what you'll do:<\/strong><\/p>",
+          "left_col_text_2": "<p>- Work directly with our artisans<\/p><p>- Help source materials for products<\/p><p>- Assist with growing our holistic programs<\/p><p>- Communicate with both Kenya and US teams<\/p>",
+          "right_col_heading_2": "<p><strong>what you’ll get:<\/strong><\/p>",
+          "right_col_text_2": "<p>- Credit towards Institution Requirements<\/p><p>- Experiencing another culture<\/p><p>- Experience working in the ethical manufacturing industry<\/p><p>- Letter of recommendation<\/p><p>- Resume Building with work experience<\/p><p>- Discounts on Imani products<\/p>"
+        }
+      },
+      "jc-internship-cta-section": {
+        "type": "jc-internship-cta-section",
+        "settings": {
+          "main_heading": "Visit Kenya",
+          "sub_heading": "come and meet the team!",
+          "main_image": "shopify:\/\/shop_images\/kenya-landscape-min_5034edcd-7a98-4c14-9715-0aad4910c8b9.jpg"
+        }
+      },
+      "hero-section-volunteer": {
+        "type": "hero-section-volunteer",
+        "settings": {
+          "main_heading": "We Love Volunteers!",
+          "hero_image": "shopify:\/\/shop_images\/volunteer-hero-min-2_253d141b-2ed4-442d-8e16-8466d3b0778a.jpg"
+        }
+      },
+      "jc-modal-form-volunteer": {
+        "type": "jc-modal-form-volunteer",
+        "settings": {
+        }
+      },
+      "jc-volunteer-content-section": {
+        "type": "jc-volunteer-content-section",
+        "settings": {
+          "main_heading": "<p>we&rsquo;re always looking to<br>expand and grow<\/p>",
+          "content_text": "<p>We are always looking for help in our markets and various events throughout the year. If you are in the Dallas area or know of a market or event you would like to represent us in, let us know!<\/p>",
+          "box_heading": "Tell us a little about yourself and our team will get back to you as soon as possible."
+        }
+      },
+      "jc-volunteer-cta-section": {
+        "type": "jc-volunteer-cta-section",
+        "settings": {
+          "main_heading": "Visit Kenya",
+          "sub_heading": "come and meet the team!",
+          "main_image": "shopify:\/\/shop_images\/kenya-landscape-min_5034edcd-7a98-4c14-9715-0aad4910c8b9.jpg"
+        }
+      },
+      "jc-partnership-top-section": {
+        "type": "jc-partnership-top-section",
+        "settings": {
+          "main_heading": "give back partnerships",
+          "box_text": "With Imani, a give back partnership is about impact and awareness. Together, we will work to create impact that is meaningful for your company, employees, customers and our local + global communities.",
+          "second_heading": "What is Give Back?",
+          "second_text": "A give back partnership is a mutually beneficial commitment between a business and a non-profit organization. The business gives a portion of their profit to support a cause they believe in and in return, the business gains marketing exposure and a positive reputation. It is a unique way for you to use your business to make the world a better place by working with us to end the generational cycles of poverty. The partnership creates a way for your business to be socially responsible and become part of the solution.",
+          "third_heading": "What are the Benefits For You?",
+          "third_content": "<p>As a give back partner with Imani, you are clearly and boldly communicating to your staff and clientele that you care about leveraging your business to make a difference in the world. You proactively use your brand to raise awareness and inspire your community to be engaged.<\/p>\n<p>You become part of a movement that is creating a high impact, and transforming lives globally.<\/p>\n<p>As a Give Back Partner with Imani Collective, we celebrate your commitment to changemaking. We will recognize your efforts by consistently featuring you + your company in electronic and print materials we send to our community so that they can know you and support your business.<\/p>",
+          "main_image": "shopify:\/\/shop_images\/custom-print-bag-min_c120fba8-7551-4ff9-a68d-c8294e79b418.jpg"
+        }
+      },
+      "jc-modal-form-partnerships": {
+        "type": "jc-modal-form-partnerships",
+        "settings": {
+        }
+      },
+      "jc-partnership-banner-section": {
+        "type": "jc-partnership-banner-section",
+        "settings": {
+          "main_heading": "Why Partner with Imani Collective?",
+          "content_text": "<p>Imani Collective is a community of dreamers + shakers who aren&rsquo;t afraid to ask, &ldquo;why not?&rdquo; Daily, we passionately pursue a holistic approach to empowerment because we believe that once we realize what we&rsquo;re made of, we can own what we&rsquo;re made for.<\/p>\n<p>So why us? We are in the business of loving well and transforming lives through economic stability, job security, education and training. Together, we empower women, break the generational cycle of poverty, create opportunity, and change futures.<\/p>\n<p>We believe we aren&rsquo;t just better together, we are our best together.<\/p>",
+          "content_text_alt": "We believe we will be our very best with you."
+        }
+      },
+      "jc-partnership-bottom-section": {
+        "type": "jc-partnership-bottom-section",
+        "settings": {
+          "main_heading": "Holistic Programs",
+          "list_text": "<p>Skills Training<\/p>\n<p>Child Enrichment Program<\/p>\n<p>Daily Nutritious meals<\/p>\n<p>Personal Budgeting Assistance<\/p>\n<p>Business Training Seminars<\/p>\n<p>RISE: personal development courses<\/p>\n<p>Medical Emergency Fund<\/p>\n<p>Dream Management<\/p>\n<p>Education Scholarships for our Artisans&rsquo; Children<\/p>",
+          "main_image": "shopify:\/\/shop_images\/kids-min_f53033f4-ff4e-4809-8147-7fb30c38c585.jpg",
+          "box_heading": "How Much To Give Back?",
+          "box_text": "Many partners choose to give between 10-20% of their monthly profit. Other business owners choose to give a set amount per transaction. This is a personal decision and whatever ‘give back’ you choose, we are grateful for your partnership."
+        }
+      },
+      "jc-partnership-cta-section": {
+        "type": "jc-partnership-cta-section",
+        "settings": {
+          "main_heading": "Visit Kenya",
+          "sub_heading": "come and meet the team!",
+          "main_image": "shopify:\/\/shop_images\/kenya-landscape-min_5034edcd-7a98-4c14-9715-0aad4910c8b9.jpg"
+        }
+      },
+      "hero-section-experience": {
+        "type": "hero-section-experience",
+        "settings": {
+          "main_heading": "The Imani Experience",
+          "sub_heading": "come and meet the team!",
+          "hero_image": "shopify:\/\/shop_images\/imani-experience-hero-min-2_f735bae5-bbc0-4462-bd86-9babf3dbc0d4.jpg"
+        }
+      },
+      "jc-modal-form-experience": {
+        "type": "jc-modal-form-experience",
+        "settings": {
+        }
+      },
+      "jc-experience-content-section": {
+        "type": "jc-experience-content-section",
+        "settings": {
+          "main_heading": "want to go visit our artisans in Kenya?",
+          "content_text": "Join us in immersing ourselves in the new: new culture, new friendships, new food, new conversations. We will spend time at both Imani workshops in Old Town + Mtepeni - where you will have the opportunity to learn + explore what is happening in the \"boots on the ground\" operations of Imani Collective. You will serve a key role in assisting us to strengthen, improve + grow our holistic programs, and continue to advocate for us globally. Your Imani Experience will be tailored specifically to your team based on the experience, passions + skills you possess individually + collectively.",
+          "date_text": "<p>D A T E S  :<\/p><p>April 14-23, 2023<br\/>May 19-28, 2023 for our 10 Year Anniversary!<\/p><p>OR<br\/>Create your own dates in 2023<\/p><p><br\/><\/p><p><a href=\"https:\/\/mcusercontent.com\/3a1ecc51bdea229e05327c57e\/files\/5cc1e9dd-7e09-0701-d0d2-f2e04c7d98a0\/Imani_Experience_5.pdf\" target=\"_blank\" title=\"https:\/\/mcusercontent.com\/3a1ecc51bdea229e05327c57e\/files\/5cc1e9dd-7e09-0701-d0d2-f2e04c7d98a0\/Imani_Experience_5.pdf\">Click here for all our upcoming trip details including what you'll do, where you'll stay, etc. <\/a><\/p><p><\/p><p><a href=\"https:\/\/forms.gle\/fNhhQn5frkM17Koi7\" target=\"_blank\" title=\"https:\/\/forms.gle\/fNhhQn5frkM17Koi7\">Click here to fill our our interest form.<\/a><\/p><p><\/p><p>Email partnerships@imanicollective.com for more information.<\/p>",
+          "image_1": "shopify:\/\/shop_images\/lifestyle1-min_b0544ec5-d78b-4a01-b215-658861e9ef2e.jpg",
+          "image_2": "shopify:\/\/shop_images\/lifestyle2-min_f0096419-5629-4031-a470-f308f0a83a15.jpg",
+          "image_3": "shopify:\/\/shop_images\/lifestyle3-min_50d4171d-66d1-4105-b90b-80d2e8f32034.jpg"
+        }
+      },
+      "jc-experience-cta-section": {
+        "type": "jc-experience-cta-section",
+        "settings": {
+          "main_heading": "More information coming soon.",
+          "main_image": "shopify:\/\/shop_images\/kenya-landscape-min_5034edcd-7a98-4c14-9715-0aad4910c8b9.jpg"
+        }
+      },
+      "hero-section-press": {
+        "type": "hero-section-press",
+        "settings": {
+          "main_heading": "JOIN US AT AN UPCOMING EVENT!",
+          "hero_image": "shopify:\/\/shop_images\/Boho-10-10-20-47.jpg"
+        }
+      },
+      "hero-section-donation": {
+        "type": "hero-section-donation",
+        "settings": {
+          "main_heading": "Give to Imani Collective",
+          "hero_image": "shopify:\/\/shop_images\/donations-hero-min_fa1ec7a1-9459-4443-baa2-94ba4d038a64.jpg"
+        }
+      },
+      "jc-donation-content-section": {
+        "type": "jc-donation-content-section",
+        "settings": {
+          "main_heading": "support our artisans",
+          "content_text": "We believe that women and their children hold the key to this social change. We know that when women rise in the economy, the whole country rises. So, we invest in generations of women because we have confidence in their ability to achieve (and exceed) their goals. We believe that women around the globe have the capacity, creativity, and determination to uplift themselves, their families, and their communities—all they need are the resources. We unleash a women’s greatness through empowerment, opportunity + community."
+        }
+      },
+      "jc-donation-cta-section": {
+        "type": "jc-donation-cta-section",
+        "settings": {
+          "main_heading": "get involved with imani collective"
+        }
+      },
+      "hero-section-wholesale": {
+        "type": "hero-section-wholesale",
+        "settings": {
+          "main_heading": "Wholesale",
+          "sub_heading": "shop our collection on Faire",
+          "hero_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-06T125433.194.jpg"
+        }
+      },
+      "jc-wholesale-form-section": {
+        "type": "jc-wholesale-form-section",
+        "settings": {
+          "box_heading": "Fill Out The Form To Become A Wholesaler",
+          "box_text": "<p>Let us know a little bit more about you and our team will assist you in 1-3 business days.<\/p>\n<p>Thank you for your interest to learn about women empowerment and the desire to create change in your community.<\/p>",
+          "main_image": "shopify:\/\/shop_images\/Wholesale-Picture-min_ccaab172-5094-4159-920a-017f3c2f6441.jpg"
+        }
+      },
+      "hero-section-blog": {
+        "type": "hero-section-blog",
+        "settings": {
+          "main_heading": "The Imani Collective Blog",
+          "sub_heading": "stay up to date with us",
+          "hero_image": "shopify:\/\/shop_images\/Blog-CTA-Picture_e0530912-7552-4435-b30c-4d08d978d624.jpg"
+        }
+      },
+      "hero-section-contact": {
+        "type": "hero-section-contact",
+        "settings": {
+          "main_heading": "Get in Touch With Imani",
+          "hero_image": "shopify:\/\/shop_images\/contact-hero-min_d941cc91-0472-4426-9184-fca65f6838ba.jpg"
+        }
+      },
+      "jc-form-section-contact": {
+        "type": "jc-form-section-contact",
+        "settings": {
+          "top_text": "If you have any questions about our artisans or the wonderful products they produce, please fill out the form below and we’ll be in contact shortly.",
+          "main_image": "shopify:\/\/shop_images\/rainbow-pillow-min_97ff624d-9c2c-435d-b2bc-b2199b9f5986.jpg"
+        }
+      },
+      "jc-IG-section-contact": {
+        "type": "jc-IG-section-contact",
+        "settings": {
+          "main_heading": "Don't forget to follow us!"
+        }
+      },
+      "hero-section-custom": {
+        "type": "hero-section-custom",
+        "settings": {
+          "main_heading": "Custom Pieces",
+          "sub_heading": "Want Something Custom + Ethical?",
+          "hero_image": "shopify:\/\/shop_images\/custom-pieces-hero-min-2_0978f404-90be-4b9d-be0c-dde4706d1dc2.jpg"
+        }
+      },
+      "jc-custom-content-section": {
+        "type": "jc-custom-content-section",
+        "settings": {
+          "main_heading": "<p>Want To Order<br>Something Custom + Ethical?<\/p>",
+          "sub_heading": "We look forward to working with you to make beautiful products that unleash greatness from Kenya to around the world!",
+          "image_row_heading": "(Items pictured below are a sampling of what we offer.)",
+          "image_1": "shopify:\/\/shop_images\/custom-pillow-min_8accd8ce-4d97-4118-b2bc-22c6c2478140.png",
+          "image_heading_1": "Throw Pillows",
+          "image_2": "shopify:\/\/shop_images\/custom-clutch-min_392136a2-58f4-49ea-bd54-9defae77a7b8.png",
+          "image_heading_2": "Clutches",
+          "image_3": "shopify:\/\/shop_images\/custom-tote-min_042d73cc-37a8-4614-a6e8-3e706a37ff3b.png",
+          "image_heading_3": "Totes",
+          "image_4": "shopify:\/\/shop_images\/custom-wall-hanging-min_4d972396-5dc6-44df-88af-7586f2c92b5d.png",
+          "image_heading_4": "Wall Hangings",
+          "box_heading": "Let’s Get Started On Your Creation!",
+          "box_text": "<p>To inquire, please email:&nbsp;<a href=\"mailto:custom@imanicollective.com\" title=\"mailto:custom@imanicollective.com\">custom@imanicollective.com<\/a><\/p>"
+        }
+      },
+      "jc-custom-banner-section": {
+        "type": "jc-custom-banner-section",
+        "settings": {
+          "main_heading": "Here Are Some Examples Of Collaborative Designs We’ve Created:",
+          "image_1": "shopify:\/\/shop_images\/instagram1-min_1f3890f7-ebab-4b89-88c8-c45009b4b3d8.jpg",
+          "image_2": "shopify:\/\/shop_images\/instagram2-min_9b9e85c6-0921-4db1-b169-e7a2463e4175.jpg",
+          "image_3": "shopify:\/\/shop_images\/plants-are-rad-min_1ec1e95c-1c43-4cf8-9afd-20778a2c7d12.jpg",
+          "image_4": "shopify:\/\/shop_images\/instagram4-min_9ca50d35-c154-4bf2-91d2-459c7bd6743f.jpg",
+          "testimonial_text": "\"I absolutely love partnering with Imani. The opportunity to know that your purchase is doing good while being connected in a special way to the makers is the best way to shop. For my custom order, the team was wonderful to work with! They were timely, helpful, and committed to creating something my business would be proud of.\"",
+          "testimonial_name_text": "HOLLY, FOUNDER OF GLOBAL MADE"
+        }
+      },
+      "jc-custom-form-section": {
+        "type": "jc-custom-form-section",
+        "settings": {
+          "main_heading": "custom pieces order form",
+          "sub_heading": "Thanks for reaching out to Imani Collective!  We’re excited to collaborate with you! Please expect a reply within the next 48 hours. And if you haven’t already, please provide the following information so that we may get started on your request right away!",
+          "bottom_text": "<p>If you have artwork already, please email to&nbsp;<a href=\"mailto:custom@imanicollective.com\" title=\"mailto:custom@imanicollective.com\">custom@imanicollective.com<\/a>.&nbsp;We look forward to connecting with you!<\/p>"
+        }
+      },
+      "jc-collection-bottom-row": {
+        "type": "jc-collection-bottom-row",
+        "settings": {
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "display_type": "all",
+          "sort": "alphabetical",
+          "grid": 3
+        }
+      },
+      "jc-landing-page": {
+        "type": "jc-landing-page",
+        "blocks": {
+          "1586192479047": {
+            "type": "text",
+            "settings": {
+              "button_text": "IMANICOLLECTIVE.COM",
+              "button_link": "https:\/\/imanicollective.com\/"
+            }
+          },
+          "1586192503056": {
+            "type": "text",
+            "settings": {
+              "button_text": "DONATE",
+              "button_link": "https:\/\/imanicollective-ourimpact.org"
+            }
+          },
+          "a292edb9-474f-4344-8614-441f28680985": {
+            "type": "text",
+            "settings": {
+              "button_text": "JOIN OUR TEXT LIST",
+              "button_link": "https:\/\/imanicollective.attn.tv\/p\/RUK\/landing-page"
+            }
+          },
+          "29c173f4-f663-4910-8dd0-78473b8bb368": {
+            "type": "text",
+            "settings": {
+              "button_text": "SHOP WHOLESALE",
+              "button_link": "https:\/\/imanicollective.com\/pages\/wholesale"
+            }
+          },
+          "d079be91-6c9e-44b4-9f5d-8978329790c8": {
+            "type": "text",
+            "settings": {
+              "button_text": "AFFILIATE PROGRAM",
+              "button_link": "https:\/\/theimanicollective.grin.live\/affiliateapplication"
+            }
+          },
+          "a3ed1404-9111-4c76-ab5a-4752b0271111": {
+            "type": "text",
+            "settings": {
+              "button_text": "2022 IMPACT REPORT",
+              "button_link": "https:\/\/mcusercontent.com\/3a1ecc51bdea229e05327c57e\/files\/f5131e38-88dc-698c-8d39-8dc2eb82ddd4\/impact_report_2022_reduced_size.pdf"
+            }
+          },
+          "a51188fe-8fbb-452e-8fb8-0244b63ad8dc": {
+            "type": "text",
+            "settings": {
+              "button_text": "SUBSCRIBE TO EMAIL LIST",
+              "button_link": "https:\/\/imani-collective.myshopify.com\/pages\/press-and-events#email-list"
+            }
+          },
+          "0f60cb8b-2847-4ec2-b21a-67f4ce452c9a": {
+            "type": "text",
+            "settings": {
+              "button_text": "ETSY SHOP",
+              "button_link": "https:\/\/www.etsy.com\/shop\/ImaniCollective"
+            }
+          },
+          "1586192489659": {
+            "type": "text",
+            "settings": {
+              "button_text": "EAST AFRICA SHOP",
+              "button_link": "https:\/\/www.instagram.com\/imanicollectivesoko\/"
+            }
+          }
+        },
+        "block_order": [
+          "1586192479047",
+          "1586192503056",
+          "a292edb9-474f-4344-8614-441f28680985",
+          "29c173f4-f663-4910-8dd0-78473b8bb368",
+          "d079be91-6c9e-44b4-9f5d-8978329790c8",
+          "a3ed1404-9111-4c76-ab5a-4752b0271111",
+          "a51188fe-8fbb-452e-8fb8-0244b63ad8dc",
+          "0f60cb8b-2847-4ec2-b21a-67f4ce452c9a",
+          "1586192489659"
+        ],
+        "settings": {
+        }
+      },
+      "jc-wholesale-section": {
+        "type": "jc-wholesale-section",
+        "settings": {
+          "bottom_text": "<p>Not on Faire? Shop wholesale directly through us at <a href=\"https:\/\/imanicollective-wholesale.com\/\" target=\"_blank\" title=\"https:\/\/imanicollective-wholesale.com\/\">https:\/\/imanicollective-wholesale.com\/<\/a> <\/p><p>*Must have a legitimate shop + place a $150 minumum order.<\/p><p>.<\/p><p>OR<\/p><p>.<\/p><p><a href=\"https:\/\/brand.peeba.com\/widget\" target=\"_blank\" title=\"https:\/\/brand.peeba.com\/widget\"><strong>SHOP OUR COLLECTION ON PEEBA<\/strong><\/a><\/p><p>.<\/p><p>We would love to partner with you! Please reach out to us with any questions about wholesaling with us at <a href=\"mailto:orders@imanicollective.com\" title=\"mailto:orders@imanicollective.com\">orders@imanicollective.com<\/a><\/p>"
+        }
+      },
+      "jc-press-cta-section": {
+        "type": "jc-press-cta-section",
+        "settings": {
+          "main_heading": "Join Our Email List",
+          "main_image": "shopify:\/\/shop_images\/ICemaillist_-01.jpg"
+        }
+      },
+      "jc-cta-collection-all": {
+        "type": "jc-cta-collection-all",
+        "settings": {
+          "main_image": "shopify:\/\/shop_images\/Untitled_design_45.jpg",
+          "main_heading": "Want to Become a Wholesaler?",
+          "button_text": "Learn More",
+          "button_url": "shopify:\/\/pages\/wholesale"
+        }
+      },
+      "jc-cta-collection": {
+        "type": "jc-cta-collection",
+        "settings": {
+          "main_image": "shopify:\/\/shop_images\/Untitled_design_45.jpg",
+          "main_heading": "want to become a wholesaler?",
+          "button_text": "Learn More",
+          "button_url": "https:\/\/imanicollective.com\/pages\/wholesale"
+        }
+      },
+      "jc-artisan-hero-banner": {
+        "type": "jc-artisan-hero-banner",
+        "settings": {
+        }
+      },
+      "artisan-grid-location-1": {
+        "type": "artisan-grid-location-1",
+        "blocks": {
+          "d0ddfd55-2671-4b9f-8bff-64c17ed0f62d": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Agnes Ndinda",
+              "artisan_image": "shopify:\/\/shop_images\/36.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "49759142-d88b-4456-bc9a-9050d16dc065": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Agneta James",
+              "artisan_image": "shopify:\/\/shop_images\/1_12ec475e-63f5-4bdc-b00b-a1773b5ffda5.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "Helps me get income to provide for my children",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "655e7ba0-cb1e-41db-b1f4-7af101e12a74": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Asha Kimai",
+              "artisan_image": "shopify:\/\/shop_images\/2_e33a910b-b010-410f-b880-0c3ac35aa528.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "27693294-de77-404d-8c0d-0b444f9c2ccd": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Caroline Kavemba",
+              "artisan_image": "shopify:\/\/shop_images\/3_1cb73be0-b63b-4c81-8fb5-aea48439b2e3.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "2783d17e-1368-47c0-9f87-0ca6d8cbbe24": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Caroline Mumbi",
+              "artisan_image": "shopify:\/\/shop_images\/4_e921a214-5e86-4ee2-b5c0-8161eb9f7367.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "8f130102-4db9-4afe-8d54-03900e9adbb0": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Damaris Thuo",
+              "artisan_image": "shopify:\/\/shop_images\/6_207e79ac-4677-4fd3-9bef-ba6612c916f8.jpg",
+              "artisan_position": "Shop Attendant",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "3a3e320f-df47-41de-84ef-f05915c2f306": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Esther Kazungu",
+              "artisan_image": "shopify:\/\/shop_images\/7_4826297a-eaf1-4b12-941f-2174296fe5b2.jpg",
+              "artisan_position": "",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "49d9e1b8-ca06-4b67-9331-648d7f947c64": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Esther Njeri",
+              "artisan_image": "shopify:\/\/shop_images\/8_77879cde-9919-4b91-a96f-ee33d3a7a811.jpg",
+              "artisan_position": "",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "f07a50a1-92ff-4a49-8f04-d5d694ae9976": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Evaline Achieng",
+              "artisan_image": "shopify:\/\/shop_images\/10.jpg",
+              "artisan_position": "",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "96beea6f-8187-4a90-84e9-d115230c6f13": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Fatma Mohamed",
+              "artisan_image": "shopify:\/\/shop_images\/9_837b32f7-7bc4-4abc-b940-0eebf9304f55.jpg",
+              "artisan_position": "",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "4d87ec2c-3e7d-4261-b4aa-2c1cb2936d52": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Husna Abad",
+              "artisan_image": "shopify:\/\/shop_images\/11_df30e41c-c500-4354-99b6-6d687494ded5.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "14e472ed-5db9-4891-adff-f270be0b10b5": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Janet Nyevu",
+              "artisan_image": "shopify:\/\/shop_images\/12_806a97ef-6cc0-40f4-bca8-faa0e9928867.jpg",
+              "artisan_position": "",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "2b9635ab-5236-4276-86d1-b071c3445ff9": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "John Kirogo",
+              "artisan_image": "shopify:\/\/shop_images\/13_5618e297-1dcf-4b9b-b096-737f588955af.jpg",
+              "artisan_position": "Weaver",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "9ed0aaa1-771d-4267-9d38-d0c9067b9939": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Joyce Njeri",
+              "artisan_image": "shopify:\/\/shop_images\/14_b85a7fd1-2358-47b4-8d38-8bf6df176cc0.jpg",
+              "artisan_position": "",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "9d3147c2-53fb-4ad8-baff-79643c47fc4e": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Justa Kawira",
+              "artisan_image": "shopify:\/\/shop_images\/15_5c1bd632-e226-4ab0-bdc4-277ed2053553.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "6ee920a2-a506-4c65-b154-e5212b57d0a3": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Linah Kianda",
+              "artisan_image": "shopify:\/\/shop_images\/16.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "28a428d0-3e03-49af-991e-f4058ab9ebcf": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Loice Mkambe",
+              "artisan_image": "shopify:\/\/shop_images\/18.jpg",
+              "artisan_position": "Seamstress",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "580a1962-20c2-4ee8-8e6d-a1f298ca9461": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Mariam Abad",
+              "artisan_image": "shopify:\/\/shop_images\/17.jpg",
+              "artisan_position": "Seamstress",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "d92cc49f-5398-433a-b196-9f9349382412": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Mercy Ali",
+              "artisan_image": "shopify:\/\/shop_images\/20.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "19350cd9-5291-411f-90ce-a96949462ac0": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Mercy Ojwang'",
+              "artisan_image": "shopify:\/\/shop_images\/19.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "7f05284b-273c-4180-809b-5ce9f289cf7f": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Millicent Kaingu",
+              "artisan_image": "shopify:\/\/shop_images\/21.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "a3fcc2fa-6120-4fbb-9256-c2e86b876597": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Mwananaisha Kasim",
+              "artisan_image": "shopify:\/\/shop_images\/22.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "a98e422d-4bf8-42b1-8b30-8dbe597ac503": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Peter Karangi",
+              "artisan_image": "shopify:\/\/shop_images\/24.jpg",
+              "artisan_position": "Weaver",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "b294b662-8db4-4a7e-b885-81518a0eb8b9": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Prisca Dzame",
+              "artisan_image": "shopify:\/\/shop_images\/25.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "11215e14-c06f-4a2d-9c8c-b520ec0048b8": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Priscilla Egwa",
+              "artisan_image": "shopify:\/\/shop_images\/26.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "9a8a4e7f-3cb4-4b66-9a84-03b3e332f7d3": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Purity Maina",
+              "artisan_image": "shopify:\/\/shop_images\/28.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "33f674ed-ad07-420e-95b4-779dccb0f7dc": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Rehema Mangale",
+              "artisan_image": "shopify:\/\/shop_images\/27.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "0d713588-6eaa-43e1-b9ac-d22949b6d72d": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Sanga Nyamawi",
+              "artisan_image": "shopify:\/\/shop_images\/29.jpg",
+              "artisan_position": "Weaver",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "dcc6ab99-2d15-46f0-8bc3-2a8fd550e44c": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Selina Jimbi",
+              "artisan_image": "shopify:\/\/shop_images\/30.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "43af6cf3-600d-45a9-b854-67940a8c4a21": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Serapia Kombo",
+              "artisan_image": "shopify:\/\/shop_images\/31.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "b8a0c317-9f2c-4efc-bb87-54f11f868dfa": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Teressia Njeri",
+              "artisan_image": "shopify:\/\/shop_images\/32.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "a5b5f260-ea18-4f68-804c-df6105c17d88": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Wycliffe Kising'u",
+              "artisan_image": "shopify:\/\/shop_images\/34.jpg",
+              "artisan_position": "Weaver",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "4f46a333-6344-43db-8c7f-3f24d17da55e": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Zephrine Ngombo",
+              "artisan_image": "shopify:\/\/shop_images\/33.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "f3711c4b-9231-48b9-83f3-ad50ec1821e4": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "ZIlda Jefwa",
+              "artisan_image": "shopify:\/\/shop_images\/35.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          }
+        },
+        "block_order": [
+          "d0ddfd55-2671-4b9f-8bff-64c17ed0f62d",
+          "49759142-d88b-4456-bc9a-9050d16dc065",
+          "655e7ba0-cb1e-41db-b1f4-7af101e12a74",
+          "27693294-de77-404d-8c0d-0b444f9c2ccd",
+          "2783d17e-1368-47c0-9f87-0ca6d8cbbe24",
+          "8f130102-4db9-4afe-8d54-03900e9adbb0",
+          "3a3e320f-df47-41de-84ef-f05915c2f306",
+          "49d9e1b8-ca06-4b67-9331-648d7f947c64",
+          "f07a50a1-92ff-4a49-8f04-d5d694ae9976",
+          "96beea6f-8187-4a90-84e9-d115230c6f13",
+          "4d87ec2c-3e7d-4261-b4aa-2c1cb2936d52",
+          "14e472ed-5db9-4891-adff-f270be0b10b5",
+          "2b9635ab-5236-4276-86d1-b071c3445ff9",
+          "9ed0aaa1-771d-4267-9d38-d0c9067b9939",
+          "9d3147c2-53fb-4ad8-baff-79643c47fc4e",
+          "6ee920a2-a506-4c65-b154-e5212b57d0a3",
+          "28a428d0-3e03-49af-991e-f4058ab9ebcf",
+          "580a1962-20c2-4ee8-8e6d-a1f298ca9461",
+          "d92cc49f-5398-433a-b196-9f9349382412",
+          "19350cd9-5291-411f-90ce-a96949462ac0",
+          "7f05284b-273c-4180-809b-5ce9f289cf7f",
+          "a3fcc2fa-6120-4fbb-9256-c2e86b876597",
+          "a98e422d-4bf8-42b1-8b30-8dbe597ac503",
+          "b294b662-8db4-4a7e-b885-81518a0eb8b9",
+          "11215e14-c06f-4a2d-9c8c-b520ec0048b8",
+          "9a8a4e7f-3cb4-4b66-9a84-03b3e332f7d3",
+          "33f674ed-ad07-420e-95b4-779dccb0f7dc",
+          "0d713588-6eaa-43e1-b9ac-d22949b6d72d",
+          "dcc6ab99-2d15-46f0-8bc3-2a8fd550e44c",
+          "43af6cf3-600d-45a9-b854-67940a8c4a21",
+          "b8a0c317-9f2c-4efc-bb87-54f11f868dfa",
+          "a5b5f260-ea18-4f68-804c-df6105c17d88",
+          "4f46a333-6344-43db-8c7f-3f24d17da55e",
+          "f3711c4b-9231-48b9-83f3-ad50ec1821e4"
+        ],
+        "settings": {
+          "heading_text": "Old Town Mombasa"
+        }
+      },
+      "artisan-grid-location-2": {
+        "type": "artisan-grid-location-2",
+        "blocks": {
+          "6f8e8d20-eb89-4c87-a84a-34e99e820877": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Amina Chihunga",
+              "artisan_image": "shopify:\/\/shop_images\/37.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "e569df28-ce84-428e-9cfa-56114d2fb31f": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Christine Chengo",
+              "artisan_image": "shopify:\/\/shop_images\/38.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "52da01b0-3136-4b05-b65a-9fd2231c1def": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Elizabeth Munga",
+              "artisan_image": "shopify:\/\/shop_images\/39.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "467b5c86-3775-4249-89ec-e4e488c93641": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Elizabeth Mwangonde",
+              "artisan_image": "shopify:\/\/shop_images\/41.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "61049215-832d-443b-9be8-6e60f4a070a5": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Evaline Rama",
+              "artisan_image": "shopify:\/\/shop_images\/40.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "e7b765a1-61b0-4605-b504-1f70d20469ca": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Everlyne Mbaru",
+              "artisan_image": "shopify:\/\/shop_images\/42.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "563df531-ef2a-4b94-a2be-b8966ab720d5": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Fatuma Joseph",
+              "artisan_image": "shopify:\/\/shop_images\/43.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "8859c9dd-6fc7-47fa-9c8b-9a5eb91fe9c7": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Furaha Chengo",
+              "artisan_image": "shopify:\/\/shop_images\/46.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "186c1871-7608-466e-a660-79ec6793221a": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Grace Zawadi",
+              "artisan_image": "shopify:\/\/shop_images\/45.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "216656b2-62eb-4884-822f-461f726b4453": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Irene Kahindi",
+              "artisan_image": "shopify:\/\/shop_images\/47.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "f34537e2-ce73-4bcd-a229-1b9575fe25d2": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Janet Choni",
+              "artisan_image": "shopify:\/\/shop_images\/48.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "259aa10d-0075-4330-947d-018f02d8e360": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Linah Kopo",
+              "artisan_image": "shopify:\/\/shop_images\/49.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "12e6274e-9cdf-4c67-8d8b-379b878a563c": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Linet Jumwa",
+              "artisan_image": "shopify:\/\/shop_images\/50.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "4ad82287-6075-444b-9fd6-5eeecdbedc54": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Loice Bomu",
+              "artisan_image": "shopify:\/\/shop_images\/51.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "7327a7a8-5d4d-48e8-8f0e-49dbe304fd58": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Mary Chengo",
+              "artisan_image": "shopify:\/\/shop_images\/52.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "f6f2913d-864a-4e46-8cf3-32276fd9a267": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Mary Mbuze",
+              "artisan_image": "shopify:\/\/shop_images\/53.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "a33993c2-20c2-4c62-b8ab-de2e922b37d8": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Mercy Mwamumba",
+              "artisan_image": "shopify:\/\/shop_images\/54.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "638ac650-314b-4991-9cd5-5dc110e5b5f6": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Mercy Sammy",
+              "artisan_image": "shopify:\/\/shop_images\/55.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "f13335b8-c27c-49d5-b72c-db7cb843b49c": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Patricia Kenga",
+              "artisan_image": "shopify:\/\/shop_images\/56.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "3033231c-997a-4f6b-8367-bad3e6e1c2f5": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Patricia Ramadhan",
+              "artisan_image": "shopify:\/\/shop_images\/58.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "1dc17221-1779-424b-96ed-91c16f35eb1c": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Phelister Tsuma",
+              "artisan_image": "shopify:\/\/shop_images\/57.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "3f12ce3a-1b70-4b18-b74d-48e685bc9614": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Regina Katana",
+              "artisan_image": "shopify:\/\/shop_images\/60.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "740bacd3-91c3-4a55-b2c0-a43ddf30559b": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Risper Kalama",
+              "artisan_image": "shopify:\/\/shop_images\/59.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "4baf4bed-e83c-4ed2-bd4a-0cb1f635c923": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Saumu Karisa",
+              "artisan_image": "shopify:\/\/shop_images\/61.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "d60e6dfa-a1b4-4996-ba96-93f56a523260": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Selina Kabuhatisha",
+              "artisan_image": "shopify:\/\/shop_images\/62.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "1301d20e-dd67-4004-8f50-20dc5089401e": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Zawadi Michael",
+              "artisan_image": "shopify:\/\/shop_images\/63.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          }
+        },
+        "block_order": [
+          "6f8e8d20-eb89-4c87-a84a-34e99e820877",
+          "e569df28-ce84-428e-9cfa-56114d2fb31f",
+          "52da01b0-3136-4b05-b65a-9fd2231c1def",
+          "467b5c86-3775-4249-89ec-e4e488c93641",
+          "61049215-832d-443b-9be8-6e60f4a070a5",
+          "e7b765a1-61b0-4605-b504-1f70d20469ca",
+          "563df531-ef2a-4b94-a2be-b8966ab720d5",
+          "8859c9dd-6fc7-47fa-9c8b-9a5eb91fe9c7",
+          "186c1871-7608-466e-a660-79ec6793221a",
+          "216656b2-62eb-4884-822f-461f726b4453",
+          "f34537e2-ce73-4bcd-a229-1b9575fe25d2",
+          "259aa10d-0075-4330-947d-018f02d8e360",
+          "12e6274e-9cdf-4c67-8d8b-379b878a563c",
+          "4ad82287-6075-444b-9fd6-5eeecdbedc54",
+          "7327a7a8-5d4d-48e8-8f0e-49dbe304fd58",
+          "f6f2913d-864a-4e46-8cf3-32276fd9a267",
+          "a33993c2-20c2-4c62-b8ab-de2e922b37d8",
+          "638ac650-314b-4991-9cd5-5dc110e5b5f6",
+          "f13335b8-c27c-49d5-b72c-db7cb843b49c",
+          "3033231c-997a-4f6b-8367-bad3e6e1c2f5",
+          "1dc17221-1779-424b-96ed-91c16f35eb1c",
+          "3f12ce3a-1b70-4b18-b74d-48e685bc9614",
+          "740bacd3-91c3-4a55-b2c0-a43ddf30559b",
+          "4baf4bed-e83c-4ed2-bd4a-0cb1f635c923",
+          "d60e6dfa-a1b4-4996-ba96-93f56a523260",
+          "1301d20e-dd67-4004-8f50-20dc5089401e"
+        ],
+        "settings": {
+          "heading_text": "Mtepeni Village"
+        }
+      },
+      "artisan-grid-location-3": {
+        "type": "artisan-grid-location-3",
+        "blocks": {
+          "5ee6e400-5786-4d55-aa31-e7dd949c6849": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Ameja Ewosi",
+              "artisan_image": "shopify:\/\/shop_images\/64.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "f9c2ec57-e901-4bdc-87db-ee2c43fba48c": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Beatrice Akiru",
+              "artisan_image": "shopify:\/\/shop_images\/65.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "3a8d7402-6b5e-4cf7-bcca-72a2db03e9dd": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Belinda Napuu",
+              "artisan_image": "shopify:\/\/shop_images\/67.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "63ae0ce3-8a61-4e66-9033-b9cf05e876b7": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Catherine Kerugu Wangui",
+              "artisan_image": "shopify:\/\/shop_images\/66.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "c5e638e7-2953-4531-91d2-5980c0c80b82": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Elizabeth Lojao",
+              "artisan_image": "shopify:\/\/shop_images\/68.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "417207ae-6d9a-42cb-abbe-17bf4831db95": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Esther Adadpall Lomoru",
+              "artisan_image": "shopify:\/\/shop_images\/69.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "9ea843ed-6ffb-4bfa-90a7-367ac752220d": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Josephine Arukudi Lobeanga",
+              "artisan_image": "shopify:\/\/shop_images\/70.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "5b978d5b-93cb-4ddf-b528-8e7eb8bf8ea2": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Marian Athekon Merimug",
+              "artisan_image": "shopify:\/\/shop_images\/72.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "41499efe-4646-4926-82db-4993123e03ae": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Pauline Akiru",
+              "artisan_image": "shopify:\/\/shop_images\/71.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "fe33e07c-0afb-4841-8f5a-3d64ed17bd6e": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Regina Lokale",
+              "artisan_image": "shopify:\/\/shop_images\/73.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "fd5bc821-6d85-4e52-a76b-338e07c4319c": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Sarah Arnodei",
+              "artisan_image": "shopify:\/\/shop_images\/74.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "48825142-00a2-43e6-a9b1-964ec1aeb7e7": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Shallyne Eloto",
+              "artisan_image": "shopify:\/\/shop_images\/75.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          },
+          "8ef4d4a2-f525-41a8-b683-b6d2bcb010d5": {
+            "type": "text",
+            "settings": {
+              "artisan_name": "Tracy Alimlim Ekeno",
+              "artisan_image": "shopify:\/\/shop_images\/76.jpg",
+              "artisan_position": "Artisan",
+              "artisan_love_most": "",
+              "artisan_year_started": "",
+              "artisan_holistic_program": "",
+              "artisan_skill": "",
+              "artisan_dream_destination": "",
+              "artisan_hobby": "",
+              "artisan_words_to_live": "",
+              "years_with_imani": "",
+              "artisan_family": "",
+              "artisan_fun_fact": ""
+            }
+          }
+        },
+        "block_order": [
+          "5ee6e400-5786-4d55-aa31-e7dd949c6849",
+          "f9c2ec57-e901-4bdc-87db-ee2c43fba48c",
+          "3a8d7402-6b5e-4cf7-bcca-72a2db03e9dd",
+          "63ae0ce3-8a61-4e66-9033-b9cf05e876b7",
+          "c5e638e7-2953-4531-91d2-5980c0c80b82",
+          "417207ae-6d9a-42cb-abbe-17bf4831db95",
+          "9ea843ed-6ffb-4bfa-90a7-367ac752220d",
+          "5b978d5b-93cb-4ddf-b528-8e7eb8bf8ea2",
+          "41499efe-4646-4926-82db-4993123e03ae",
+          "fe33e07c-0afb-4841-8f5a-3d64ed17bd6e",
+          "fd5bc821-6d85-4e52-a76b-338e07c4319c",
+          "48825142-00a2-43e6-a9b1-964ec1aeb7e7",
+          "8ef4d4a2-f525-41a8-b683-b6d2bcb010d5"
+        ],
+        "settings": {
+          "heading_text": "Turkana"
+        }
+      },
+      "jc-search-modal": {
+        "type": "jc-search-modal",
+        "settings": {
+        }
+      },
+      "jc-our-impact-btn-section": {
+        "type": "jc-our-impact-btn-section",
+        "settings": {
+          "impact_url": "https:\/\/mcusercontent.com\/3a1ecc51bdea229e05327c57e\/files\/8884374d-3a35-840f-01d5-f6ad3d7f9b62\/Sustainability_Report_2022_Edit_2.01.pdf"
+        }
+      }
+    },
+    "content_for_index": [
+      "hero",
+      "featured-collections",
+      "feature-row",
+      "slideshow"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "color_text": "#3d4246",
+      "color_body_text": "#69727b",
+      "color_sale_text": "#557B97",
+      "color_borders": "#e8e9eb",
+      "color_button": "#557B97",
+      "color_button_text": "#fff",
+      "color_small_button_text_border": "#3d4246",
+      "color_text_field": "#fff",
+      "color_text_field_text": "#000",
+      "color_text_field_border": "#949494",
+      "color_image_overlay_text": "#fff",
+      "color_image_overlay": "#3d4246",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#fff",
+      "type_header_font": "work_sans_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "work_sans_n4",
+      "type_base_size": 16,
+      "type_bold_product_titles": false,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+              }
+            },
+            "slideshow-1": {
+              "type": "image",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "slideshow-1"
+          ],
+          "settings": {
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "link_list": {
+              "type": "link_list",
+              "settings": {
+              }
+            },
+            "text": {
+              "type": "text",
+              "settings": {
+              }
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "link_list",
+            "text",
+            "newsletter"
+          ],
+          "settings": {
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "feature-row",
+        "slideshow"
+      ]
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#6d6d6d",
+      "color_sale_text": "#DA2F0C",
+      "color_borders": "#e4e4e4",
+      "color_button": "#DA2F0C",
+      "color_button_text": "#ffffff",
+      "color_small_button_text_border": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_text_field_border": "#909090",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#f8f8f8",
+      "type_header_font": "muli_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "muli_n4",
+      "type_base_size": 18,
+      "type_bold_product_titles": true,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "align_logo": "left",
+            "logo": "",
+            "logo_max_width": 135,
+            "main_linklist": "main-menu",
+            "message": true,
+            "color_bg": "#162950",
+            "color_text": "#ffffff"
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "alignment": "center",
+            "hero_size": "x-large",
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center center"
+              }
+            },
+            "1492095993817": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "1492095993817"
+          ],
+          "settings": {
+            "slideshow_height": "medium",
+            "text_size": "medium",
+            "autorotate": false,
+            "autorotate_speed": 5
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "grid": 3,
+            "rows": 1,
+            "show_vendor": true,
+            "show_view_all": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "image_size": "medium",
+            "show_quantity_selector": false,
+            "show_variant_labels": true,
+            "show_vendor": false,
+            "enable_zoom": true,
+            "show_share_buttons": true
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "layout": "grid",
+            "grid": 2,
+            "rows": 2,
+            "show_collection_image": true,
+            "show_vendor": false,
+            "sort_enable": true,
+            "tags_enable": true
+          }
+        },
+        "1492033809691": {
+          "type": "map",
+          "settings": {
+          }
+        },
+        "1492033877875": {
+          "type": "quotes",
+          "blocks": {
+            "1492033877875-0": {
+              "type": "quote",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1492033877875-0"
+          ],
+          "settings": {
+          }
+        },
+        "1492033924902": {
+          "type": "custom-content",
+          "blocks": {
+            "1492033924902-0": {
+              "type": "text",
+              "settings": {
+                "width": "100%",
+                "alignment": "center",
+                "align_text": "center"
+              }
+            }
+          },
+          "block_order": [
+            "1492033924902-0"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "1492096252560": {
+          "type": "collection-list",
+          "blocks": {
+            "1492096252560-0": {
+              "type": "featured_collection",
+              "settings": {
+              }
+            },
+            "1492096252560-1": {
+              "type": "featured_collection",
+              "settings": {
+              }
+            },
+            "1492096252560-2": {
+              "type": "featured_collection",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ],
+          "settings": {
+            "grid": 3
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "grid",
+            "blog_show_author": true,
+            "blog_show_date": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "show_share_buttons": true
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": {
+            "cart_notes_enable": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "link_list": {
+              "type": "link_list",
+              "settings": {
+              }
+            },
+            "text": {
+              "type": "text",
+              "settings": {
+              }
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "link_list",
+            "text",
+            "newsletter"
+          ],
+          "settings": {
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ]
+    }
+  }
+}

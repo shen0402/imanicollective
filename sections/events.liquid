@@ -1,0 +1,97 @@
+<h3 class="mid-heading-internal mid-heading-internal-events">Upcoming Events</h3>
+<div class="bottom-flex-row-press">
+
+  {% for block in section.blocks %}
+   <div class="bottom-flex-col-press">
+     <div class="bottom-flex-col-inner-press">
+       <div class="bottom-flex-col-top-wrapper-press">
+         <div class="bottom-flex-col-heading-wrapper-press">
+           <div class="bottom-flex-col-date-text-press">{{block.settings.event_date}}</div>
+           <h4 class="bottom-flex-col-heading-press">{{block.settings.event_name}}</h4>
+           <div class="bottom-flex-col-location-text-press">{{block.settings.event_location}}</div>
+           <div class="bottom-flex-col-location-text-press">{{block.settings.event_time}}</div>
+         </div>
+         <div class="bottom-flex-col-text-press">{{block.settings.event_blurb}}</div>
+       </div>
+       <div class="bottom-flex-col-btn-wrapper-press"><a href="{{ block.settings.event_url }}" class="btn-alt w-button" target="_blank">Learn More</a></div>
+     </div>
+   </div>
+  {% endfor %}  
+
+</div>
+
+
+
+{% schema %}
+{
+  "name": "Events" ,
+  "settings": [
+      {
+         "type": "text",
+         "id": "heading_text",
+         "default": "Upcoming Events",
+         "label": "Heading Text"
+      }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Event",
+      "settings": [
+        
+        {
+          "label": "Event Date",
+          "id": "event_date",
+          "type": "text"
+        },
+        {
+          "label": "Event Name",
+          "id": "event_name",
+          "type": "text"
+        },
+        {
+          "label": "Event Time",
+          "id": "event_time",
+          "type": "text"
+        },
+        {
+          "label": "Event Location",
+          "id": "event_location",
+          "type": "text"
+        },
+        {
+          "label": "Event Summary Text",
+          "id": "event_blurb",
+          "type": "textarea"
+        },
+        {
+          "label": "URL To Events",
+          "id": "event_url",
+          "type": "url"
+        }
+
+
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tabs",
+      "category": "Custom Content",
+      "blocks": [
+        {
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+<div class="container-large">
+  <p class="hero-text-sub-heading-impact">{{section.settings.content_text}}</p>
+</div> 
+
+
+{% schema %}
+  {
+    "name": "Content Section 1" ,
+      "settings": [
+        {
+           "type": "textarea",
+           "id": "content_text",
+           "label": "Content Text"
+        }
+    ]
+  }
+{% endschema %}

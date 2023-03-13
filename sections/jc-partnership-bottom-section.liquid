@@ -1,0 +1,64 @@
+<div class="bottom-section-give">
+  <div class="container-xl">
+    <h3 class="mid-heading-internal">{{section.settings.main_heading}}</h3>
+    <div class="bottom-row-give w-row">
+      <div class="bottom-col-left-give w-col w-col-6">
+        <div class="bottom-col-inner-give">
+
+          {{section.settings.list_text}}
+
+        </div>
+      </div>
+      <div class="bottom-col-right-give w-col w-col-6">
+        <div class="bottom-col-img-holder-give"><img src="{{ section.settings.main_image | img_url: '1400x' }}" alt="{{image.alt}}" class="bottom-col-img-give">
+          <div class="bottom-col-design-block-give"></div><img src="//cdn.shopify.com/s/files/1/2534/9108/files/white-border-impact-min-2.png" alt="White Border" class="bottom-col-border-img-give"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="box-section-give">
+  <div class="box-content-give">
+    <h4 class="box-heading-volunteer">{{section.settings.box_heading}}</h4>
+    <p class="box-text-give">{{section.settings.box_text}}</p>
+    <div class="box-btn-wrapper-custom"><a href="#" class="btn-main w-button modal-form-open" data-ix="modal-form-open">Request More Information</a></div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Bottom Content Section" ,
+      "settings": [
+        {
+           "type": "text",
+           "id": "main_heading",
+           "label": "Heading Text"
+        },
+        {
+           "type": "richtext",
+           "id": "list_text",
+           "label": "List Text"
+        },
+        {
+           "type": "image_picker",
+           "id": "main_image",
+           "label": "Main Image"
+        },
+        {
+           "type": "text",
+           "id": "box_heading",
+           "label": "Box Heading"
+        },
+        {
+           "type": "textarea",
+           "id": "box_text",
+           "label": "Box Text"
+        }
+    ]
+  }
+{% endschema %}
+
+
+
+
+

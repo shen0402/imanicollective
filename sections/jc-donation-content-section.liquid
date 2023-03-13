@@ -1,0 +1,28 @@
+<div class="mid-wrapper-donate">
+  <div class="container-mid">
+    <h2 class="mid-heading-donate">{{section.settings.main_heading}}</h2>
+    <p class="mid-text-donate">{{section.settings.content_text}}</p>
+    <div class="embed-wrapper-donate" id="donate-now">
+      <div class="w-embed w-iframe w-script">
+        <script type="text/javascript" src="https://www.paypalobjects.com/api/checkout.js" async=""></script><iframe id="keela_form" style="width: 100%; min-height: 900px;" frameborder="0" src="https://donate.keela.co/embed/imani-collective/default-donation-form-232"></iframe></div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Content Section" ,
+      "settings": [
+        {
+           "type": "text",
+           "id": "main_heading",
+           "label": "Heading Text"
+        },
+         {
+            "type": "textarea",
+            "id": "content_text",
+            "label": "Content Text"
+         }
+    ]
+  }
+{% endschema %}

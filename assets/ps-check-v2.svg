@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23.6" height="23.6" viewBox="0 0 23.6 23.6">
+  <defs>
+    <filter id="check-white" x="1.21" y="3.162" width="21.479" height="19.038" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="check2" transform="translate(3.8 3.8)">
+    <g id="Rectangle" transform="translate(-2 -2)" fill="#0fb6e4" stroke="#fff" stroke-miterlimit="10" stroke-width="1.8">
+      <rect width="20" height="20" rx="10" stroke="none"/>
+      <rect x="-0.9" y="-0.9" width="21.8" height="21.8" rx="10.9" fill="none"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -3.8, -3.8)" filter="url(#check-white)">
+      <path id="check-white-2" data-name="check-white" d="M10.985,1.912,4.519,8.71a1.028,1.028,0,0,1-1.506,0L.312,5.871a1.163,1.163,0,0,1,0-1.584,1.029,1.029,0,0,1,1.506,0L3.766,6.335,9.479.328a1.028,1.028,0,0,1,1.506,0,1.159,1.159,0,0,1,0,1.583" transform="translate(6.3 7.16)" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

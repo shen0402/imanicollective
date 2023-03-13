@@ -1,0 +1,199 @@
+<div class="footer-wrapper">
+  <div class="fotoer-top-wrapper">
+    <div class="container-mid">
+      <div class="footer-row w-row">
+        <div class="w-col w-col-4">
+          <div class="footer-col-heading">Get in Touch</div>
+          <div class="footer-col-content-block">
+            <div class="footer-link-wrapper">
+              <a href="mailto:info@imanicollective.com" class="footer-link-block w-inline-block">
+                <div>info@imanicollective.com</div>
+              </a>
+            </div>
+            <div class="footer-link-wrapper">
+              <a href="tel:+19402680745" class="footer-link-block w-inline-block">
+                <div>usa | +1 940.268.0745</div>
+              </a>
+            </div>
+            <div class="footer-link-wrapper">
+              <a href="tel:+254718372242" class="footer-link-block w-inline-block">
+                <div>kenya | +254 718.372.242</div>
+              </a>
+            </div>
+          </div>
+          <div class="footer-col-content-block">
+            <div class="footer-content-block-heading">headquarters</div>
+            <div class="footer-link-wrapper">
+              <div class="footer-col-text">Imani Collective</div>
+              <a href="https://goo.gl/maps/eWCY9ztwmg7r9RBa6" class="footer-link-block w-inline-block" target="_blank">
+                <div>4653 Nall Road<br>Farmers Branch, TX 75244</div>
+              </a>
+            </div>
+          </div>
+          <div class="footer-col-content-block">
+            <div class="footer-content-block-heading">artisan workshop/gift shop</div>
+            <div class="footer-link-wrapper">
+              <div class="footer-col-text">Ndia Kuu Rd.</div>
+              <div class="footer-col-text">Mombasa, Kenya</div>
+              <div class="footer-col-text">(Old Town | By Fort Jesus)</div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-col-center w-col w-col-4">
+          <div class="footer-col-heading">Navigation</div>
+          <div class="footer-col-menu-wrapper">
+            <div class="footer-link-wrapper footer-link-wrapper-menu">
+              <a href="/collections/all" class="footer-link-block w-inline-block">
+                <div>shop</div>
+              </a>
+            </div>
+            <div class="footer-link-wrapper footer-link-wrapper-menu">
+              <a href="/pages/volunteer" class="footer-link-block w-inline-block">
+                <div>volunteer</div>
+              </a>
+            </div>
+            <div class="footer-link-wrapper footer-link-wrapper-menu">
+              <a href="{{ section.settings.give_url }}" class="footer-link-block w-inline-block" {% if section.settings.open_new_tab == true %}target="_blank"{% endif %}>
+                <div>give</div>
+              </a>
+            </div>
+            <div class="footer-link-wrapper footer-link-wrapper-menu">
+              <a href="/pages/wholesale" class="footer-link-block w-inline-block">
+                <div>wholesale</div>
+              </a>
+            </div>
+            <div class="footer-link-wrapper footer-link-wrapper-menu">
+              <a href="/blogs/thoughts" class="footer-link-block w-inline-block">
+                <div>blog</div>
+              </a>
+            </div>
+            <div class="footer-link-wrapper footer-link-wrapper-menu">
+              <a href="/pages/give" class="footer-link-block w-inline-block">
+                <div>partnerships</div>
+              </a>
+            </div>
+            <div class="footer-link-wrapper footer-link-wrapper-menu">
+              <a href="/pages/press-and-events" class="footer-link-block w-inline-block">
+                <div>press</div>
+              </a>
+            </div>
+            <div class="footer-link-wrapper footer-link-wrapper-menu">
+              <a href="/pages/contact" class="footer-link-block w-inline-block">
+                <div>contact</div>
+              </a>
+            </div>
+          </div>
+          <div class="footer-newsletter-wrapper">
+            <div class="footer-form-block w-form">
+
+              {% form 'customer' %}
+              {% if form.posted_successfully? %}
+                <div class="jc-form-done">
+                  <div>Thank you! Your subscription has been confirmed!</div>
+                </div>
+              {% else %}
+              <input type="hidden" name="contact[accepts_marketing]" value="true">
+                <div class="footer-newsletter-flex-row">
+                  <div class="footer-newsletter-flex-col">
+                    <div class="footer-newsletter-heading">Subscribe to Our Newsletter</div><input type="email" class="footer-form-input w-input" maxlength="256" name="contact[email]" data-name="Email 2" placeholder="email address" id="email" required=""></div>
+                  <div class="footer-newsletter-flex-col-right">
+                    <div class="footer-newsletter-btn-holder"><input type="submit" value=" " class="footer-newsletter-btn w-button"><img src="//cdn.shopify.com/s/files/1/2534/9108/files/newsletter-white-min.png" alt="Envelope Send" class="footer-newsletter-img"></div>
+                  </div>
+                </div>
+                {% endif %}
+              {% endform %}
+
+              <div class="w-form-done">
+                <div>Thank you! Your submission has been received!</div>
+              </div>
+              <div class="w-form-fail">
+                <div>Oops! Something went wrong while submitting the form.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-col-right w-col w-col-4">
+          <div class="footer-col-heading">Customer Care</div>
+          <div class="footer-link-wrapper">
+            {% if customer %}
+              <a href="/account" class="footer-link-block w-inline-block">
+                <div>my account</div>
+              </a>
+              {% else %}
+              <a href="/account/login" class="footer-link-block w-inline-block">
+                <div>my account</div>
+              </a>
+            {% endif %}
+            
+          </div>
+          <div class="footer-link-wrapper">
+            <a href="/pages/custom-pieces" class="footer-link-block w-inline-block">
+              <div>custom pieces</div>
+            </a>
+          </div>
+
+          {% comment %}
+          <div class="footer-link-wrapper">
+            <a href="#" class="footer-link-block w-inline-block">
+              <div>return policy</div>
+            </a>
+          </div>
+          <div class="footer-link-wrapper">
+            <a href="#" class="footer-link-block w-inline-block">
+              <div>terms &amp; conditions</div>
+            </a>
+          </div>
+          {% endcomment %}
+          
+          <div class="footer-link-wrapper">
+            <a href="/pages/privacy-policy" class="footer-link-block w-inline-block">
+              <div>privacy policy</div>
+            </a>
+          </div>
+          <div class="footer-link-wrapper">
+            <a href="/pages/shipping-returns" class="footer-link-block w-inline-block">
+              <div>shipping + returns</div>
+            </a>
+          </div>
+          <div class="footer-wholesale-wrapper">
+            <a href="/pages/wholesale" class="footer-wholesale-link-block w-inline-block">
+              <div>interested in wholesale?</div><img src="//cdn.shopify.com/s/files/1/2534/9108/files/wholesale-white-min.png" alt="Box" class="footer-wholesale-img"></a>
+          </div>
+          <div class="footer-social-wrapper">
+            <div class="footer-col-heading">Follow Us</div>
+            <div class="footer-social-row"><a href="https://www.facebook.com/imanicollective/" class="footer-social-link w-inline-block" target="_blank"><img src="//cdn.shopify.com/s/files/1/2534/9108/files/facebook-white-min.png" alt="Facebook Logo White" class="footer-social-img"><img src="//cdn.shopify.com/s/files/1/2534/9108/files/facebook-tan-min.png" alt="Facebook Logo Tan" class="footer-social-img-hover"></a><a href="https://www.instagram.com/imanicollective/" class="footer-social-link w-inline-block" target="_blank"><img src="//cdn.shopify.com/s/files/1/2534/9108/files/instagram-white-min.png" alt="Instagram Logo White" class="footer-social-img"><img src="//cdn.shopify.com/s/files/1/2534/9108/files/instagram-tan-min.png" alt="Facebook Logo Tan" class="footer-social-img-hover"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom-wrapper">
+    <div class="container-large">
+      <div class="footer-bottom-text">Designed by <a href="https://www.sidekickwebstudio.com/" target="_blank" class="footer-bottom-text-link">Sidekick Web Studio</a> | © 2020</div>
+    </div>
+  </div>
+
+</div>
+
+{% schema %}
+{
+  "name": "Footer" ,
+  "settings": [
+      {
+         "label": "Give URL",
+         "id": "give_url",
+         "type": "url"
+      },
+      {
+         "label": "Open in new tab?",
+         "id": "open_new_tab",
+         "default":   false,
+         "type": "checkbox"
+      }
+  ]
+  
+}
+{% endschema %}
+
+

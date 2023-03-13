@@ -1,0 +1,66 @@
+<h1 class="mid-heading-leader">{{section.settings.heading_text}}</h1>
+<div class="mid-flex-row-leader">
+
+  {% for block in section.blocks %}
+    <div class="mid-flex-col-leader">
+      <div class="mid-flex-col-inner-leader"><img src="{{ block.settings.leadership_image | img_url: '400x' }}" alt="{{block.settings.leadership_name}} Headshot" class="mid-flex-col-img-leader">
+        <div class="mid-flex-col-bottom-wrapper">
+          <h5 class="mid-flex-col-heading-leadership">{{block.settings.leadership_name}}</h5>
+          <h6 class="mid-flex-col-sub-heading-leadership">{{block.settings.leadership_position}}</h6>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  
+
+</div> <!--flex row -->
+
+
+
+{% schema %}
+{
+  "name": "Leadership" ,
+  "settings": [
+      {
+         "type": "text",
+         "id": "heading_text",
+         "label": "Heading"
+      }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Leadership",
+      "settings": [
+        
+        {
+          "label": "Name",
+          "id": "leadership_name",
+          "type": "text"
+        },
+        {
+          "label": "Position",
+          "id": "leadership_position",
+          "type": "text"
+        },
+        {
+          "label": "Leadership Image (400px by 400px dimensions)",
+          "id": "leadership_image",
+          "type": "image_picker"
+        }     
+
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+
+
+
+
+
+
+
+
+

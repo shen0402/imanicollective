@@ -1,0 +1,36 @@
+<div class="hero-wrapper-landing">
+  <div class="hero-logo-wrapper-landing"><a href="/" class="hero-logo-link-landing w-inline-block"><img src="//cdn.shopify.com/s/files/1/2534/9108/files/imani-collective-logo-min.png" alt="Imani Collective" class="hero-logo-img-landing"></a></div>
+  <div class="hero-content-wrapper-landing">
+    {% for block in section.blocks %}
+      <div class="hero-btn-wrapper-landing"><a href="{{block.settings.button_link}}" class="btn-landing w-button" target="_blank">{{block.settings.button_text}}</a></div>
+    {% endfor %}
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Buttons" ,
+  "max_blocks": 10, 
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Button",
+      "settings": [
+        
+        {
+          "label": "Button Text",
+          "id": "button_text",
+          "type": "text"
+        },
+        {
+          "label": "Button Link",
+          "id": "button_link",
+          "type": "url"
+        }    
+
+      ]
+    }
+  ]
+}
+{% endschema %}

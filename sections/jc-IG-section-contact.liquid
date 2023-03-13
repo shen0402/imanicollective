@@ -1,0 +1,25 @@
+<div class="ig-section-contact">
+  <div class="ig-bg-contact"></div>
+  <div class="container-large">
+    <div class="ig-content-holder-contact">
+      <h5 class="ig-section-heading-contact">{{section.settings.main_heading}}</h5>
+      <h5 class="ig-section-sub-heading-contact"><a href="https://www.instagram.com/imanicollective/" class="ig-section-sub-heading-contact-link" target="_blank">@IMANICOLLECTIVE</a></h5>
+      <div class="ig-dyn-holder">
+          <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/86e30277654b5cb090f79f580dfc8ecb.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Instagram Section" ,
+      "settings": [
+        {
+           "type": "text",
+           "id": "main_heading",
+           "label": "Section Heading"
+        }
+    ]
+  }
+{% endschema %}

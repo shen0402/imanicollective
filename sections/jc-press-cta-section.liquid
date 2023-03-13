@@ -1,0 +1,50 @@
+<div class="cta-section-press" {% if section.settings.main_image %}style="background-image: url('{{ section.settings.main_image | img_url: '1600x' }}');"{% endif %}>
+  <div class="container-large">
+    <div class="cta-content-wrapper">
+      <h3 class="cta-heading-category cta-heading-press">{{section.settings.main_heading}}</h3>
+      <div class="bottom-form-block-brand w-form">
+
+        {% form 'customer' %}
+        {% if form.posted_successfully? %}
+          <div class="jc-form-done">
+            <div>Thank you! Your subscription has been confirmed!</div>
+          </div>
+        {% else %}
+          <input type="hidden" name="contact[accepts_marketing]" value="true">
+          <input type="email" class="bottom-form-input-brand bottom-form-input-press w-input" maxlength="256" name="contact[email]" data-name="Email 4" id="email" required="">
+          <input type="submit" value="Sign Up" data-wait="Please wait..." class="btn-main w-button">
+          {% endif %}
+        {% endform %}
+
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Newsletter Section" ,
+      "settings": [
+        {
+           "type": "text",
+           "id": "main_heading",
+           "label": "Heading Text",
+           "default": "Join Our Email List"
+        },
+        {
+            "type": "image_picker",
+            "id": "main_image",
+            "label": "Background Image"
+         }
+    ]
+  }
+{% endschema %}

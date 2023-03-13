@@ -1,0 +1,35 @@
+<div class="mid-wrapper-volunteer">
+  <div class="container-small">
+    <div class="mid-heading-internal">{{section.settings.main_heading}}</div>
+    <div class="mid-text-volunteer">{{section.settings.content_text}}</div>
+    <div class="box-section-volunteer">
+      <div class="box-content-volunteer">
+        <h4 class="box-heading-volunteer">{{section.settings.box_heading}}</h4>
+        <div class="box-btn-wrapper-custom"><a href="#" class="btn-main w-button modal-form-open" data-ix="modal-form-open">Request More Information</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Content Section" ,
+      "settings": [
+        {
+           "type": "richtext",
+           "id": "main_heading",
+           "label": "Heading Text"
+        },
+        {
+           "type": "richtext",
+           "id": "content_text",
+           "label": "Content Text"
+        },
+         {
+            "type": "textarea",
+            "id": "box_heading",
+            "label": "Box Heading"
+         }
+    ]
+  }
+{% endschema %}

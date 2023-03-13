@@ -1,0 +1,18 @@
+<div class="banner-section">
+  <div class="banner-section-content-wrapper">
+    <div class="banner-section-text">{{section.settings.banner_text}}</div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Banner Section" ,
+      "settings": [
+        {
+           "type": "richtext",
+           "id": "banner_text",
+           "label": "Banner Text"
+        }
+    ]
+  }
+{% endschema %}

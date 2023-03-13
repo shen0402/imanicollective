@@ -1,0 +1,78 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"  defer="defer"></script>
+<div class="cta-modal">
+  <div class="cta-modal-content-wrapper">
+    <div class="cta-modal-heading">{{section.settings.main_heading}}</div>
+    <div class="cta-modal-text-wrapper">
+      <div class="cta-modal-top-text">to get</div>
+      <div class="cta-modal-main-text">10% off</div>
+      <div class="cta-modal-top-text">your first purchase</div>
+    </div>
+    <div class="cta-modal-form-block w-form">
+      {% form 'customer' %}
+      {% if form.posted_successfully? %}
+        <div class="jc-form-done">
+          <div>Thank you! Your subscription has been confirmed!</div>
+        </div>
+      {% else %}
+      <input type="hidden" name="contact[accepts_marketing]" value="true">
+      <input type="email" class="cta-modal-input w-input" maxlength="256" name="contact[email]" data-name="Email 3" placeholder="Your Email Address*" id="email" required=""><input type="submit" value="Subscribe" data-wait="Please wait..." class="cta-modal-btn w-button">
+      {% endif %}
+      {% endform %}
+      <div class="w-form-done">
+        <div>Thank you! Your submission has been received!</div>
+      </div>
+      <div class="w-form-fail">
+        <div>Oops! Something went wrong while submitting the form.</div>
+      </div>
+    </div><img src="//cdn.shopify.com/s/files/1/2534/9108/files/white-border-min_2.png" alt="" class="cta-modal-border-img"><a href="#" class="cta-modal-close-btn">X</a></div>
+</div>
+
+<script>
+$(document).ready(function(){
+
+   
+  if (!$.cookie('jc_alert')) {
+
+      setTimeout(function(){ 
+      
+        $('.cta-modal').fadeIn(500);
+        $('body').css('overflow', 'hidden');
+      
+      }, 2000);
+
+        var date = new Date();
+        date.setTime(date.getTime() + 2592000000); 
+        $.cookie('jc_alert', true, { expires: date });
+       
+        }
+});
+</script>
+<script>
+$(document).ready(function(){
+
+  $('.cta-modal-close-btn').click(function(e) {
+      e.preventDefault();
+     $('body').css('overflow', 'auto');
+     $('.cta-modal').fadeTo(500, 0, function(){
+
+        $('.cta-modal').hide();
+
+     });
+
+  });
+  
+});
+</script>
+
+{% schema %}
+  {
+    "name": "Pop-Up Form" ,
+      "settings": [
+        {
+           "type": "text",
+           "id": "main_heading",
+           "label": "Heading Text"
+        } 
+    ]
+  }
+{% endschema %}

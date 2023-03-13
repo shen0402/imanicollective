@@ -1,0 +1,59 @@
+<div class="mid-wrapper-experience">
+  <div class="container-mid">
+    <div class="mid-content-wrapper-experience">
+      <h3 class="mid-heading-internal">{{section.settings.main_heading}}</h3>
+      <p class="mid-text-internal">{{section.settings.content_text}}</p>
+      <div class="mid-sub-text-experience">
+      	{{section.settings.date_text}}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bottom-wrapper-experience">
+  <div class="container-xl">
+    <div class="bottom-flex-row-experience">
+      <div class="bottom-flex-col-experience"><img src="{{ section.settings.image_1 | img_url: '1000x' }}" alt="{{image.alt}}" class="bottom-flex-img-experience"></div>
+      <div class="bottom-flex-col-experience"><img src="{{ section.settings.image_2 | img_url: '1000x' }}" alt="{{image.alt}}" class="bottom-flex-img-experience"></div>
+      <div class="bottom-flex-col-experience"><img src="{{ section.settings.image_3 | img_url: '1000x' }}" alt="{{image.alt}}" class="bottom-flex-img-experience"></div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Content Section 1" ,
+      "settings": [
+        {
+           "type": "text",
+           "id": "main_heading",
+           "label": "Heading Text"
+        },
+         {
+            "type": "textarea",
+            "id": "content_text",
+            "label": "Content Text"
+         },
+         {
+            "type": "richtext",
+            "id": "date_text",
+            "label": "Date Text"
+         },
+         {
+            "type": "image_picker",
+            "id": "image_1",
+            "label": "Image 1"
+         },
+         {
+            "type": "image_picker",
+            "id": "image_2",
+            "label": "Image 2"
+         },
+         {
+            "type": "image_picker",
+            "id": "image_3",
+            "label": "Image 3"
+         }
+    ]
+  }
+{% endschema %}

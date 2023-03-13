@@ -1,0 +1,157 @@
+{% assign jc_collection = collection %}
+{% assign jc_collection_id = jc_collection.id  %}
+{% comment %}
+Pillow Collection
+{% endcomment %}
+{% if jc_collection_id == 156899672130 %}
+
+<div class="bottom-wrapper-category">
+  <div class="container-mid">
+    <h3 class="mid-heading-internal">Other Product Categories</h3>
+    <div class="bottom-flex-row-category">
+
+      {% for link in linklists.pillow-categories.links %}
+        {% assign collection = link.object %}
+        <div class="bottom-flex-col-category">
+          <a href="{{collection.url}}" class="bottom-flex-link-category w-inline-block" {% if collection.image %}style="background-image: url('{{ collection.image | img_url: '400x' }}');"{% endif %}>
+            <div class="bottom-flex-btn-text-category"><span class="bottom-flex-btn-text-inner-category">{{link.title}}</span></div>
+          </a>
+        </div>
+
+      {% endfor %} 
+    </div>
+  </div>
+</div>
+
+{% endif %}
+
+{% comment %}
+Holiday Collection
+{% endcomment %}
+{% if jc_collection_id == 156900458562 %}
+
+<div class="bottom-wrapper-category">
+  <div class="container-mid">
+    <h3 class="mid-heading-internal">Other Product Categories</h3>
+    <div class="bottom-flex-row-category">
+
+      {% for link in linklists.holiday-categories.links %}
+        {% assign collection = link.object %}
+        <div class="bottom-flex-col-category">
+          <a href="{{collection.url}}" class="bottom-flex-link-category w-inline-block" {% if collection.image %}style="background-image: url('{{ collection.image | img_url: '400x' }}');"{% endif %}>
+            <div class="bottom-flex-btn-text-category"><span class="bottom-flex-btn-text-inner-category">{{link.title}}</span></div>
+          </a>
+        </div>
+
+      {% endfor %} 
+    </div>
+  </div>
+</div>
+
+{% endif %}
+
+{% comment %}
+Rugs Collection
+{% endcomment %}
+{% if jc_collection_id == 156900425794 %}
+
+<div class="bottom-wrapper-category">
+  <div class="container-mid">
+    <h3 class="mid-heading-internal">Other Product Categories</h3>
+    <div class="bottom-flex-row-category">
+
+      {% for link in linklists.rug-categories.links %}
+        {% assign collection = link.object %}
+        <div class="bottom-flex-col-category">
+          <a href="{{collection.url}}" class="bottom-flex-link-category w-inline-block" {% if collection.image %}style="background-image: url('{{ collection.image | img_url: '400x' }}');"{% endif %}>
+            <div class="bottom-flex-btn-text-category"><span class="bottom-flex-btn-text-inner-category">{{link.title}}</span></div>
+          </a>
+        </div>
+
+      {% endfor %} 
+    </div>
+  </div>
+</div>
+
+{% endif %}
+
+
+{% comment %}
+Sale Collection
+{% endcomment %}
+{% if jc_collection_id == 156900327490 %}
+
+<div class="bottom-wrapper-category">
+  <div class="container-mid">
+    <h3 class="mid-heading-internal">Other Product Categories</h3>
+    <div class="bottom-flex-row-category">
+
+      {% for link in linklists.sale-categories.links %}
+        {% assign collection = link.object %}
+        <div class="bottom-flex-col-category">
+          <a href="{{collection.url}}" class="bottom-flex-link-category w-inline-block" {% if collection.image %}style="background-image: url('{{ collection.image | img_url: '400x' }}');"{% endif %}>
+            <div class="bottom-flex-btn-text-category"><span class="bottom-flex-btn-text-inner-category">{{link.title}}</span></div>
+          </a>
+        </div>
+
+      {% endfor %} 
+    </div>
+  </div>
+</div>
+
+{% endif %}
+
+{% comment %}
+Totes Collection
+{% endcomment %}
+{% if jc_collection_id == 156900130882 %}
+
+<div class="bottom-wrapper-category">
+  <div class="container-mid">
+    <h3 class="mid-heading-internal">Other Product Categories</h3>
+    <div class="bottom-flex-row-category">
+
+      {% for link in linklists.totes-categories.links %}
+        {% assign collection = link.object %}
+        <div class="bottom-flex-col-category">
+          <a href="{{collection.url}}" class="bottom-flex-link-category w-inline-block" {% if collection.image %}style="background-image: url('{{ collection.image | img_url: '400x' }}');"{% endif %}>
+            <div class="bottom-flex-btn-text-category"><span class="bottom-flex-btn-text-inner-category">{{link.title}}</span></div>
+          </a>
+        </div>
+
+      {% endfor %} 
+    </div>
+  </div>
+</div>
+
+{% endif %}
+
+{% comment %}
+Wall Hangings Collection
+{% endcomment %}
+{% if jc_collection_id == 156899868738 %}
+<script type="text/javascript">
+  console.log('inside walls');
+</script>
+<div class="bottom-wrapper-category">
+  <div class="container-mid">
+    <h3 class="mid-heading-internal">Other Product Categories</h3>
+    <div class="bottom-flex-row-category">
+
+      {% for link in linklists.wall-hanging-categories.links %}
+        {% assign collection = link.object %}
+        <div class="bottom-flex-col-category">
+          <a href="{{collection.url}}" class="bottom-flex-link-category w-inline-block" {% if collection.image %}style="background-image: url('{{ collection.image | img_url: '400x' }}');"{% endif %}>
+            <div class="bottom-flex-btn-text-category"><span class="bottom-flex-btn-text-inner-category">{{link.title}}</span></div>
+          </a>
+        </div>
+
+      {% endfor %} 
+    </div>
+  </div>
+</div>
+
+{% endif %}
+
+
+

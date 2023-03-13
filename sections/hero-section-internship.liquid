@@ -1,0 +1,33 @@
+<div class="hero-wrapper-internal">
+  <div class="container-xl">
+    <div class="hero-flex-row">
+      <div class="hero-flex-col-large-internal">
+        <div class="hero-flex-bg-holder-internal hero-flex-bg-intern" {% if section.settings.hero_image %}style="background-image: url('{{ section.settings.hero_image | img_url: '1400x' }}');"{% endif %}></div>
+      </div>
+      <div class="hero-flex-col-internal">
+        <div class="hero-flex-col-inner-internal-intern">
+          <div class="hero-heading">{{section.settings.main_heading}}</div>
+          <div class="hero-btn-wrapper"><a href="#intern-apply" class="btn-main hero-scroll-link w-button">Apply Now</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Hero Section" ,
+      "settings": [
+        {
+           "type": "richtext",
+           "id": "main_heading",
+           "label": "Heading Text"
+        },
+         {
+            "type": "image_picker",
+            "id": "hero_image",
+            "label": "Hero Image"
+         }
+    ]
+  }
+{% endschema %}

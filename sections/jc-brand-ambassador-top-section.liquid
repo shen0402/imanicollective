@@ -1,0 +1,43 @@
+    <h3 class="mid-heading-internal">{{section.settings.main_heading}}</h3>
+    <p class="mid-text-volunteer">{{section.settings.content_text}}</p>
+    <div class="box-section-volunteer">
+      <div class="box-content-volunteer">
+        <h4 class="box-heading-volunteer">{{section.settings.box_heading}}</h4>
+        <div class="box-btn-wrapper-custom"><a href="{{section.settings.button_url}}" class="btn-main w-button" target="_blank" >{{section.settings.button_text}}</a></div>
+      </div>
+    </div>
+
+  {% schema %}
+    {
+      "name": "Content Section 1" ,
+        "settings": [
+          {
+             "type": "text",
+             "id": "main_heading",
+             "label": "Heading Text"
+          },
+           {
+              "type": "textarea",
+              "id": "content_text",
+              "label": "Content Text"
+           },
+           {
+              "type": "text",
+              "id": "box_heading",
+              "label": "Box Heading"
+           },
+           {
+              "type": "text",
+              "id": "button_text",
+              "label": "Button Text",
+              "default": "CLICK HERE TO APPLY"
+           },
+           {
+              "type": "url",
+              "id": "button_url",
+              "label": "Button URL"
+           }
+
+      ]
+    }
+  {% endschema %}  

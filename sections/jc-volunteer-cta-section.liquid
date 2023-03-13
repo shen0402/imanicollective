@@ -1,0 +1,32 @@
+<div class="cta-section" {% if section.settings.main_image %}style="background-image: url('{{ section.settings.main_image | img_url: '1600x' }}');"{% endif %}>
+  <div class="container-large">
+    <div class="cta-content-wrapper">
+      <h3 class="cta-heading">{{section.settings.main_heading}}</h3>
+      <p class="cta-text">{{section.settings.sub_heading}}</p>
+      <div class="cta-btn-wrapper"><a href="/pages/experience" class="btn-main w-button">Learn More</a></div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "CTA Section" ,
+      "settings": [
+        {
+           "type": "text",
+           "id": "main_heading",
+           "label": "Heading Text"
+        },
+         {
+            "type": "text",
+            "id": "sub_heading",
+            "label": "Sub Heading Text"
+         },
+         {
+            "type": "image_picker",
+            "id": "main_image",
+            "label": "Background Image"
+         }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,44 @@
+<div class="modal-form-wrapper">
+  <div class="modal-content-wrapper-form">
+    <div class="modal-content-inner-form">
+      <div class="modal-form-block-form w-form">
+
+        {% form 'contact' %}
+        {% if form.posted_successfully? %}
+          <div class="jc-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+        {% else %}
+        <input type="hidden" name="contact[form-name]" value="Internship Pop-up Form">
+          <div class="modal-form-heading-form">Reach Out</div>
+          <div class="modal-form-group w-row">
+            <div class="modal-form-col w-col w-col-6"><input type="text" class="modal-form-input w-input" maxlength="256" name="contact[Name]" data-name="Name" placeholder="Name*" id="Name" required=""></div>
+            <div class="modal-form-col w-col w-col-6"><input type="email" class="modal-form-input w-input" maxlength="256" name="contact[email]" data-name="Email" placeholder="Email Address*" id="email" required=""></div>
+          </div>
+          <div class="modal-input-wrapper"><textarea data-name="Message" maxlength="5000" id="Message" name="contact[Message]" placeholder="Message" class="modal-form-input modal-form-input-area w-input"></textarea></div>
+          <div class="modal-btn-wrapper"><input type="submit" value="Submit" data-wait="Please wait..." class="modal-form-btn w-button"></div>
+          {% endif %}
+        {% endform %}
+
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </div>
+    </div><a href="#" class="modal-close-btn-form" data-ix="modal-form-close">X</a></div>
+</div>
+<script>
+
+  $('.modal-form-open').click(function(e) {
+    e.preventDefault();
+  $('body').css('overflow', 'hidden');
+  });
+
+  $('.modal-close-btn-form').click(function(e) {
+    e.preventDefault();
+  $('body').css('overflow', 'auto');
+  });
+
+</script>

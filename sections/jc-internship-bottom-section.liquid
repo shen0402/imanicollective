@@ -1,0 +1,193 @@
+<div class="bottom-section-intern" id="intern-apply">
+  <div class="container-large">
+    <div class="flex-row-intern">
+      <div class="flex-col-intern">
+        <div class="flex-col-inner-intern">
+          <div>
+            <div class="flex-col-heading-intern">{{section.settings.main_heading_1}}</div>
+            <div class="flex-col-sub-heading-intern">{{section.settings.sub_heading_1}}</div>
+            <div class="flex-col-row-intern w-row">
+              <div class="w-col w-col-6">
+                <div class="flex-col-sub-col-heading">{{section.settings.left_col_heading_1}}</div>
+                <div class="flex-col-list-intern-updated">
+                  {{section.settings.left_col_text_1}}
+                </div>
+                {% comment %}
+                <ul class="flex-col-list-intern">
+                  <li class="flex-col-list-item-intern">
+                    <div class="flex-col-list-item-text-intern">Assist marketing director with social media + marketing needs</div>
+                  </li>
+                  <li class="flex-col-list-item-intern">
+                    <div class="flex-col-list-item-text-intern">Run booth and share our story at markets + events</div>
+                  </li>
+                  <li class="flex-col-list-item-intern">
+                    <div class="flex-col-list-item-text-intern">Research/Contribute to new marketing ideas + approaches</div>
+                  </li>
+                </ul>
+                {% endcomment %}
+              </div>
+              <div class="w-col w-col-6">
+                <div class="flex-col-sub-col-heading">{{section.settings.right_col_heading_1}}</div>
+                <div class="flex-col-list-intern-updated">
+                  {{section.settings.right_col_text_1}}
+                </div>
+                {% comment %}
+                <ul class="flex-col-list-intern">
+                  <li class="flex-col-list-item-intern">
+                    <div class="flex-col-list-item-text-intern">Credit towards Institution Requirements</div>
+                  </li>
+                  <li class="flex-col-list-item-intern">
+                    <div class="flex-col-list-item-text-intern">Experience working in the ethical manufacturing industry</div>
+                  </li>
+                  <li class="flex-col-list-item-intern">
+                    <div class="flex-col-list-item-text-intern">Letter of recommendation</div>
+                  </li>
+                  <li class="flex-col-list-item-intern">
+                    <div class="flex-col-list-item-text-intern">Resume Building with work experience</div>
+                  </li>
+                  <li class="flex-col-list-item-intern">
+                    <div class="flex-col-list-item-text-intern">Discounts on Imani products</div>
+                  </li>
+                </ul>
+                {% endcomment %}
+              </div>
+            </div>
+          </div>
+          <div class="flex-col-btn-wrapper-intern"><a href="#" class="flex-col-btn-intern modal-form-open w-button" data-ix="modal-form-intern-open">Apply</a></div>
+        </div>
+      </div>
+      <div class="flex-col-intern">
+        <div class="flex-col-inner-intern">
+          <div>
+            <div class="flex-col-heading-intern">{{section.settings.main_heading_2}}</div>
+            <div class="flex-col-sub-heading-intern">{{section.settings.sub_heading_2}}</div>
+            <div class="flex-col-row-intern w-row">
+              <div class="w-col w-col-6">
+                <div class="flex-col-sub-col-heading">{{section.settings.left_col_heading_2}}</div>
+                <div class="flex-col-list-intern-updated">
+                  {{section.settings.left_col_text_2}}
+                </div>
+                {% comment %}
+                <ul class="flex-col-list-intern">
+                  <li class="flex-col-list-item-intern">
+                    <div class="flex-col-list-item-text-intern">Work directly with our artisans</div>
+                  </li>
+                  <li class="flex-col-list-item-intern">
+                    <div class="flex-col-list-item-text-intern">Help source materials for products</div>
+                  </li>
+                  <li class="flex-col-list-item-intern">
+                    <div class="flex-col-list-item-text-intern">Assist with growing our holistic programs</div>
+                  </li>
+                  <li class="flex-col-list-item-intern">
+                    <div class="flex-col-list-item-text-intern">Communicate with both Kenya and US teams</div>
+                  </li>
+                </ul>
+                {% endcomment %}
+              </div>
+              <div class="w-col w-col-6">
+                <div class="flex-col-sub-col-heading">{{section.settings.right_col_heading_2}}</div>
+                <div class="flex-col-list-intern-updated">
+                  {{section.settings.right_col_text_2}}
+                </div>
+                {% comment %}
+                <ul class="flex-col-list-intern">
+                  <li class="flex-col-list-item-intern">
+                    <div class="flex-col-list-item-text-intern">Credit towards Institution Requirements</div>
+                  </li>
+                  <li class="flex-col-list-item-intern">
+                    <div class="flex-col-list-item-text-intern">Experiencing another culture</div>
+                  </li>
+                  <li class="flex-col-list-item-intern">
+                    <div class="flex-col-list-item-text-intern">Experience working in the ethical manufacturing industry</div>
+                  </li>
+                  <li class="flex-col-list-item-intern">
+                    <div class="flex-col-list-item-text-intern">Letter of recommendation</div>
+                  </li>
+                  <li class="flex-col-list-item-intern">
+                    <div class="flex-col-list-item-text-intern">Resume Building with work experience</div>
+                  </li>
+                  <li class="flex-col-list-item-intern">
+                    <div class="flex-col-list-item-text-intern">Discounts on Imani products</div>
+                  </li>
+                </ul>
+                {% endcomment %}
+              </div>
+            </div>
+          </div>
+          <div class="flex-col-btn-wrapper-intern"><a href="#" class="flex-col-btn-intern modal-form-open w-button" data-ix="modal-form-intern-open">Apply</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Internships" ,
+      "settings": [
+        {
+           "type": "text",
+           "id": "main_heading_1",
+           "label": "Heading Text 1"
+        },
+        {
+           "type": "text",
+           "id": "sub_heading_1",
+           "label": "Sub Heading Text 1"
+        },
+        {
+          "type": "richtext",
+          "id": "left_col_heading_1",
+          "label": "Left Column Heading 1"
+       },
+         {
+            "type": "richtext",
+            "id": "left_col_text_1",
+            "label": "Left Column List 1"
+         },
+         {
+          "type": "richtext",
+          "id": "right_col_heading_1",
+          "label": "Right Column Heading 1"
+       },
+         {
+            "type": "richtext",
+            "id": "right_col_text_1",
+            "label": "Right Column List 1"
+         },
+         {
+            "type": "text",
+            "id": "main_heading_2",
+            "label": "Heading Text 2"
+         },
+         {
+            "type": "text",
+            "id": "sub_heading_2",
+            "label": "Sub Heading Text 2"
+         },
+         {
+          "type": "richtext",
+          "id": "left_col_heading_2",
+          "label": "Left Column Heading 2"
+       },
+          {
+             "type": "richtext",
+             "id": "left_col_text_2",
+             "label": "Left Column List 2"
+          },
+          {
+            "type": "richtext",
+            "id": "right_col_heading_2",
+            "label": "Right Column Heading 2"
+         },
+          {
+             "type": "richtext",
+             "id": "right_col_text_2",
+             "label": "Right Column List 2"
+          }
+    ]
+  }
+{% endschema %}
+
