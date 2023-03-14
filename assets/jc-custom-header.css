@@ -172,9 +172,10 @@
 }
 
 .mega-menu__image-label {
-    display: block;
+    display: flex;
     margin-top: 5px;
     letter-spacing: 2px;
+    align-items: center;
 }
 
 .jc-custom-announcement-bar {
@@ -212,9 +213,21 @@ body {
     display: flex;
 }
 
+.mega-menu__image-arrow {
+    width: 25px;
+    height: auto;
+    margin-top: -2px;
+    margin-left: 3px;
+    transition: 0.3s;
+}
+
 @media (min-width: 768px) {
     .fixed-nav-icon-flex-link:hover, .fixed-nav-social-link:hover {
         transform: scale(1.1);
+    }
+
+    .mega-menu__image-link:hover .mega-menu__image-arrow {
+        transform: translateX(5px);
     }
 }
 
