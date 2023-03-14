@@ -2781,7 +2781,11 @@
         ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/imani-collective-logo-min_fea4fc89-7797-42b1-ad2c-bbe91214b287.png",
-          "menu": "main-menu-sidekick-custom"
+          "menu": "main-menu-sidekick-custom",
+          "announcement_message": "<p>Subscribe to our newsletter to receive 10% off your first order<\/p>",
+          "announcement_color": "#474645",
+          "announcement_back": "#af7552",
+          "announcement_image": "shopify:\/\/shop_images\/announcement_bar_d7d2155e-1cc5-441f-b613-62201174be42.png"
         }
       }
     },

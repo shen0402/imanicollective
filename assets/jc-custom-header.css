@@ -173,6 +173,9 @@
 
 .jc-custom-announcement-bar {
     padding: 10px 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .jc-custom-announcement-bar p {
@@ -183,8 +186,6 @@
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
 @media (max-width: 989px) {
