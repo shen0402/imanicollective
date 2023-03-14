@@ -2750,9 +2750,11 @@
               "image1": "shopify:\/\/shop_images\/BA6B2556-min.jpg",
               "label1": "Shop all",
               "link1": "shopify:\/\/collections",
+              "size1": "small",
               "image2": "shopify:\/\/shop_images\/Screen_Shot_2022-12-20_at_1.37.16_PM-min.png",
               "label2": "New arrivals",
-              "link2": "shopify:\/\/collections\/just-launched"
+              "link2": "shopify:\/\/collections\/just-launched",
+              "size2": "small"
             }
           },
           "00a8ea38-8391-460a-9fb5-dc55a2d5539d": {
@@ -2763,9 +2765,11 @@
               "image1": "shopify:\/\/shop_images\/Jenny_Oldtown_6_of_22_-min.jpg",
               "label1": "Our story",
               "link1": "shopify:\/\/pages\/our-roots",
+              "size1": "large",
               "image2": "shopify:\/\/shop_images\/Old_town_19_of_24_-min.jpg",
               "label2": "Impact",
-              "link2": "shopify:\/\/pages\/our-impact"
+              "link2": "shopify:\/\/pages\/our-impact",
+              "size2": "small"
             }
           }
         },

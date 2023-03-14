@@ -115,7 +115,7 @@
 
 .mega-menu__image-item {
     width: 50%;
-    padding: 5px;
+    padding: 5px 10px;
 }
 
 .large .image-size--large {
@@ -149,6 +149,10 @@
     padding-top: 130%;
     position: relative;
     overflow: hidden;
+}
+
+.image-size--large .mega-menu__image {
+    padding-top: 85%;
 }
 
 .mega-menu__image img {
