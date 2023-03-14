@@ -2724,6 +2724,61 @@
         "settings": {
           "impact_url": "https:\/\/mcusercontent.com\/3a1ecc51bdea229e05327c57e\/files\/8884374d-3a35-840f-01d5-f6ad3d7f9b62\/Sustainability_Report_2022_Edit_2.01.pdf"
         }
+      },
+      "jc-custom-header": {
+        "type": "jc-custom-header",
+        "blocks": {
+          "8c1e6b9c-c3b4-4421-82d8-a367ee344640": {
+            "type": "social_links",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/shop_-_all_products_fb_icon_c4bdef73-ef3e-4f9c-b72e-c626d64bd285.png",
+              "link": "https:\/\/www.facebook.com\/imanicollective\/"
+            }
+          },
+          "b44f779d-437d-4275-9106-ea3d1469e315": {
+            "type": "social_links",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/shop_-_all_products_IG_icon_fdfa3ea1-a167-4414-bf91-72815bc97e4b.png",
+              "link": "https:\/\/www.instagram.com\/imanicollective\/"
+            }
+          },
+          "32034b86-00a8-4fb4-95ff-8a0e343b957d": {
+            "type": "mega_menu",
+            "settings": {
+              "menu_handle": "Shop",
+              "megamenu": "shop",
+              "image1": "shopify:\/\/shop_images\/BA6B2556-min.jpg",
+              "label1": "Shop all",
+              "link1": "shopify:\/\/collections",
+              "image2": "shopify:\/\/shop_images\/Screen_Shot_2022-12-20_at_1.37.16_PM-min.png",
+              "label2": "New arrivals",
+              "link2": "shopify:\/\/collections\/just-launched"
+            }
+          },
+          "00a8ea38-8391-460a-9fb5-dc55a2d5539d": {
+            "type": "mega_menu",
+            "settings": {
+              "menu_handle": "Our model",
+              "megamenu": "our-story",
+              "image1": "shopify:\/\/shop_images\/Jenny_Oldtown_6_of_22_-min.jpg",
+              "label1": "Our story",
+              "link1": "shopify:\/\/pages\/our-roots",
+              "image2": "shopify:\/\/shop_images\/Old_town_19_of_24_-min.jpg",
+              "label2": "Impact",
+              "link2": "shopify:\/\/pages\/our-impact"
+            }
+          }
+        },
+        "block_order": [
+          "8c1e6b9c-c3b4-4421-82d8-a367ee344640",
+          "b44f779d-437d-4275-9106-ea3d1469e315",
+          "32034b86-00a8-4fb4-95ff-8a0e343b957d",
+          "00a8ea38-8391-460a-9fb5-dc55a2d5539d"
+        ],
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/imani-collective-logo-min_fea4fc89-7797-42b1-ad2c-bbe91214b287.png",
+          "menu": "main-menu-sidekick-custom"
+        }
       }
     },
     "content_for_index": [

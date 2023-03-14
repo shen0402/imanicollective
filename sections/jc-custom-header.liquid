@@ -62,7 +62,11 @@
                   {{ link.title | escape }}
                 </a>
                 <div class="mega-menu">
-                  <ul class="mega-menu__list">
+                  {% assign image_link_width = 'small' %}
+                  {% if block.settings.size1 == 'large' or block.settings.size2 == 'large' %}
+                    {% assign image_link_width = 'large' %}
+                  {% endif %}
+                  <ul class="mega-menu__list {{ image_link_width }}">
                     {% for mega_link in block.settings.megamenu.links %}
                       <li>
                         <a class="mega-menu__link {% if mega_link.current %}active{% endif %}" href="{{ mega_link.url }}">
@@ -82,6 +86,29 @@
                       </li>
                     {% endfor %}
                   </ul>
+
+                  <div class="mega-menu__image-links {{ image_link_width }}">
+                    <div class="mega-menu__image-item image-size--{{ block.settings.size1 }}">
+                      <a class="mega-menu__image-link" href="{{ block.settings.link1 }}">
+                        <div class="mega-menu__image">
+                          {{ block.settings.image1 | img_url: '450x' | img_tag }}
+                        </div>
+                        <span class="mega-menu__image-label">
+                          {{ block.settings.label1 }}
+                        </span>
+                      </a>
+                    </div>
+                    <div class="mega-menu__image-item image-size--{{ block.settings.size2 }}">
+                      <a class="mega-menu__image-link" href="{{ block.settings.link2 }}">
+                        <div class="mega-menu__image">
+                          {{ block.settings.image2 | img_url: '450x' | img_tag }}
+                        </div>
+                        <span class="mega-menu__image-label">
+                          {{ block.settings.label2 }}
+                        </span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
                 {% break %}
               {% endif %}
@@ -158,6 +185,20 @@
             "id": "link1",
             "label": "Link"
           }, {
+            "type": "select",
+            "id": "size1",
+            "label": "Size",
+            "options": [
+              {
+                "label": "Large",
+                "value": "large"
+              }, {
+                "label": "Small",
+                "value": "small"
+              }
+            ],
+            "default": "small"
+          }, {
             "type": "header",
             "content": "Image Link - 2"
           }, {
@@ -172,6 +213,20 @@
             "type": "url",
             "id": "link2",
             "label": "Link"
+          }, {
+            "type": "select",
+            "id": "size2",
+            "label": "Size",
+            "options": [
+              {
+                "label": "Large",
+                "value": "large"
+              }, {
+                "label": "Small",
+                "value": "small"
+              }
+            ],
+            "default": "small"
           }
         ]
       }
