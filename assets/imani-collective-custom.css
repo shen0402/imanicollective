@@ -1425,11 +1425,13 @@ body {
   margin-bottom: 25px;
   font-family: brandon-grotesque, sans-serif;
   color: #474645;
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 24px;
+  line-height: 1.2;
   font-style: italic;
   font-weight: 300;
   letter-spacing: 1px;
+  max-width: 400px;
+  margin-left: auto;
 }
 
 .bottom-cta-sub-heading p {
@@ -1647,6 +1649,7 @@ body {
   font-weight: 700;
   text-transform: lowercase;
   letter-spacing: 2px;
+  margin-bottom: 30px;
 }
 
 .bottom-cta-heading-leadership p {
@@ -9772,5 +9775,9 @@ margin-bottom:0px;
   text-align: center;
 }
 
-
+@media (min-width: 768px) {
+  .page--artisans main {
+    padding-bottom: 100px;
+  }
+}
 

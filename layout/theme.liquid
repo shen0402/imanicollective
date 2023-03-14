@@ -138,7 +138,7 @@
     {% render 'swatchify-init' %}
   </head>
 
-  <body {% if template == 'page.instagram' %}class="landing-body"{% endif %}>
+  <body class="template--{{ template.name }} {% if template.name == 'page' %}page--{{ page.handle }}{% endif %} {% if template == 'page.instagram' %}landing-body{% endif %}">
 
     {% section 'jc-custom-header' %}
 
