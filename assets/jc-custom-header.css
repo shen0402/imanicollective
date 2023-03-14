@@ -207,7 +207,18 @@ body {
     padding-top: 230px;
 }
 
-@media (max-width: 989px) {
+.fixed-nav-icon-flex-link, .fixed-nav-social-link, .header__heading-link {
+    transition: 0.3s;
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .fixed-nav-icon-flex-link:hover, .fixed-nav-social-link:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 991px) {
     .jc-custom-announcement-bar {
         padding: 10px 20px;
     }
