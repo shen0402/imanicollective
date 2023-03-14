@@ -1438,7 +1438,6 @@ body {
 
 .bottom-cta-flex-col-inner {
   padding: 100px 40px 100px 0px;
-  background-color: #f6f0e0;
   text-align: right;
 }
 
@@ -1526,7 +1525,8 @@ body {
 }
 
 .hero-text-heading.hero-text-heading-artisan {
-  margin-bottom: 60px;
+  margin-top: 50px;
+  margin-bottom: 0;
 }
 
 .hero-text-sub-heading {
@@ -1645,7 +1645,8 @@ body {
   font-size: 55px;
   line-height: 65px;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: lowercase;
+  letter-spacing: 2px;
 }
 
 .bottom-cta-heading-leadership p {
@@ -1657,7 +1658,7 @@ body {
 }
 
 .location-heading-wrapper-artisan {
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 .location-heading-artisan {
@@ -1668,7 +1669,8 @@ body {
   line-height: 38px;
   text-align: left;
   letter-spacing: 5px;
-  text-transform: lowercase;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 .sort-flex-row-artisan {
@@ -1721,32 +1723,35 @@ body {
 }
 
 .flex-col-artisan {
-  margin-bottom: 80px;
+  margin-bottom: 20px;
   -webkit-box-flex: 0;
   -webkit-flex: 0 16.66667%;
   -ms-flex: 0 16.66667%;
   flex: 0 16.66667%;
+  padding: 0 20px;
 }
 
 .flex-link-artisan {
   -webkit-transition: color 250ms ease;
   transition: color 250ms ease;
-  color: #af7552;
+  color: #474645;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: normal;
 }
 
 .flex-link-artisan:hover {
-  color: #474645;
+  color: #af7552;
 }
 
 .flex-img-artisan {
   width: 100%;
+  border-radius: 50%;
 }
 
 .flex-link-heading-artisan {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 0px;
   font-family: brandon-grotesque, sans-serif;
   font-size: 15px;
@@ -8030,6 +8035,12 @@ margin-bottom:0px;
 }
 
 @media (max-width: 767px) {
+  .location-heading-wrapper-artisan {
+    margin-bottom: 40px;
+  }
+  .flex-row-artisan {
+    margin-bottom: 0px;
+  }
   .announce-bar-text {
     font-size: 18px;
     line-height: 18px;
@@ -8386,6 +8397,7 @@ margin-bottom:0px;
         -webkit-flex-basis: 33.3333%;
         -ms-flex-preferred-size: 33.3333%;
         flex-basis: 33.3333%;
+        padding: 0 10px;
       }
       .modal-top-content-col {
         padding-left: 10px;
@@ -9749,7 +9761,16 @@ margin-bottom:0px;
    
 }
 
-
+.bottom-cta-btn-wrapper .btn-main {
+  background-color: transparent;
+  color: #474645;
+  background-image: url('https://cdn.shopify.com/s/files/1/2534/9108/files/artisans_learn_more.png?v=1678813858');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  min-width: 300px;
+  text-align: center;
+}
 
 
 
