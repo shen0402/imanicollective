@@ -1,4 +1,21 @@
+<style>
+  .jc-custom-announcement-bar {
+    {% if section.settings.announcement_image != blank %}
+      background-image: url('{{ section.settings.announcement_image | img_url: '1990x' }}');
+    {% else %}
+      background: {{ section.settings.announcement_back }}
+      ;
+    {% endif %}
+    color: {{ section.settings.announcement_color }}
+    ;
+  }
+</style>
 <div class="jc-custom-header">
+  {% if section.settings.announcement_message != blank %}
+    <div class="jc-custom-announcement-bar">
+      {{ section.settings.announcement_message }}
+    </div>
+  {% endif %}
   <div class="jc-custom-header__top">
     <div class="jc-custom-header__social-icons">
       {% for block in section.blocks %}
@@ -132,11 +149,36 @@
         "type": "image_picker",
         "id": "logo",
         "label": "Logo"
-      }, {
+      },
+      {
         "type": "link_list",
         "id": "menu",
         "label": "Menu",
         "default": "main-menu"
+      },
+      {
+        "type": "header",
+        "content": "Announcement Bar"
+      },
+      {
+        "type": "richtext",
+        "id": "announcement_message",
+        "label": "Message",
+        "default": "<p>Subscribe to our newsletter to receive 10% off your first order</p>"
+      }, {
+        "type": "color",
+        "id": "announcement_color",
+        "label": "Color",
+        "default": "#474645"
+      }, {
+        "type": "color",
+        "id": "announcement_back",
+        "label": "Background Color",
+        "default": "#af7552"
+      }, {
+        "type": "image_picker",
+        "id": "announcement_image",
+        "label": "Background image"
       }
     ],
     "blocks": [
