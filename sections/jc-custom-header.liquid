@@ -1,0 +1,185 @@
+<div class="jc-custom-header">
+  <div class="jc-custom-header__top">
+    <div class="jc-custom-header__social-icons">
+      {% for block in section.blocks %}
+        {% if block.type == 'social_links' %}
+          <a
+            href="{{ block.settings.link }}"
+            class="fixed-nav-social-link w-inline-block"
+            target="_blank"
+            style="display: inline-block;">
+            <img
+              src="{{ block.settings.image | img_url: '100x' }}"
+              alt="Facebook Logo"
+              class="fixed-nav-social-img">
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="jc-custom-header__heading-logo">
+      <a class="{{ routes.root_url }}" class="header__heading-link">
+        {%- assign logo_alt = section.settings.logo.alt | default: shop.name | escape -%}
+        {%- assign logo_height = 600 | divided_by: section.settings.logo.aspect_ratio -%}
+        {{ section.settings.logo | image_url: width: 600 | image_tag: 
+         class: 'header__heading-logo motion-reduce',
+         widths: '50, 100, 150, 200, 250, 300, 400, 500, 600',
+         height: logo_height,
+         width: 600,
+         alt: logo_alt }}
+      </a>
+    </div>
+    <div class="jc-custom-header__header-icons">
+      <div class="jc-custom-header__header-icon">
+        <a href="#" class="fixed-nav-icon-flex-link search-modal-open fixed-nav-icon-flex-link-first w-inline-block">
+          <img
+            src="https://cdn.shopify.com/s/files/1/2534/9108/files/shop_-_all_products_search_icon_a03b9dc5-50ac-4edc-a218-f78eb761bf86.png?v=1678745452"
+            alt="Magnifying Glass"
+            class="fixed-nav-icon-img">
+        </a>
+      </div>
+      <div class="jc-custom-header__header-icon">
+        <a href="/cart" class="fixed-nav-icon-flex-link fixed-nav-icon-flex-link-right w-inline-block">
+          <img
+            src="https://cdn.shopify.com/s/files/1/2534/9108/files/shop_-_all_products_cart_icon_9269a4df-c37c-4f10-a079-77375a623ffa.png?v=1678745452"
+            alt="Shopping Cart"
+            class="fixed-nav-icon-img">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="jc-custom-header__nav">
+    <ul class="list-menu">
+      {% for link in section.settings.menu.links %}
+        <li>
+          {% assign megamenu = false %}
+          {% for block in section.blocks %}
+            {% if block.type == 'mega_menu' %}
+              {% assign handle = block.settings.menu_handle | handle %}
+              {% assign link_title = link.title | handle %}
+              {% if handle == link_title %}
+                {% assign megamenu = true %}
+                <a class="list-menu__item has-megamenu {% if link.current %}active{% endif %}" href="{{ link.url }}">
+                  {{ link.title | escape }}
+                </a>
+                <div class="mega-menu">
+                  <ul class="mega-menu__list">
+                    {% for mega_link in block.settings.megamenu.links %}
+                      <li>
+                        <a class="mega-menu__link {% if mega_link.current %}active{% endif %}" href="{{ mega_link.url }}">
+                          {{ mega_link.title | escape }}
+                        </a>
+                        {% if mega_link.links != blank %}
+                          <ul class="mega-menu__submenu">
+                            {% for childlink in mega_link.links %}
+                              <li>
+                                <a class="mega-menu__submenu-link {% if childlink.current %}active{% endif %}" href="{{ childlink.url }}">
+                                  {{ childlink.title | escape }}
+                                </a>
+                              </li>
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+                {% break %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          {% unless megamenu %}
+            <a class="list-menu__item {% if link.current %}active{% endif %}" href="{{ link.url }}">
+              {{ link.title | escape }}
+            </a>
+          {% endunless %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "JC Header",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo"
+      }, {
+        "type": "link_list",
+        "id": "menu",
+        "label": "Menu",
+        "default": "main-menu"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "social_links",
+        "name": "Social links",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          }
+        ]
+      }, {
+        "type": "mega_menu",
+        "name": "Mega menu",
+        "settings": [
+          {
+            "type": "text",
+            "id": "menu_handle",
+            "label": "Menu handle"
+          },
+          {
+            "type": "link_list",
+            "id": "megamenu",
+            "label": "Megamenu"
+          },
+          {
+            "type": "header",
+            "content": "Image Link - 1"
+          },
+          {
+            "type": "image_picker",
+            "id": "image1",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "id": "label1",
+            "label": "Label"
+          }, {
+            "type": "url",
+            "id": "link1",
+            "label": "Link"
+          }, {
+            "type": "header",
+            "content": "Image Link - 2"
+          }, {
+            "type": "image_picker",
+            "id": "image2",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "id": "label2",
+            "label": "Label"
+          }, {
+            "type": "url",
+            "id": "link2",
+            "label": "Link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "JC Header"
+      }
+    ]
+  }
+{% endschema %}

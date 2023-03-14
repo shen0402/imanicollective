@@ -1,0 +1,16 @@
+.jc-custom-header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.fixed-nav-social-img, .fixed-nav-icon-img {
+    width: 40px;
+}
+
+.jc-custom-header__header-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

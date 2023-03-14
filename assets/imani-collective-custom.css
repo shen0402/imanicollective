@@ -16,7 +16,6 @@
 }
 
 body {
-  padding-top: 105px;
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   color: #474645;
   font-size: 14px;
@@ -119,10 +118,6 @@ body {
   width: 192px;
 }
 
-.fixed-nav-social-link {
-  margin-right: 40px;
-}
-
 .fixed-nav-social-img {
   width: 24px;
 }
@@ -181,21 +176,16 @@ body {
 }
 
 .fixed-nav-icon-flex-link.fixed-nav-icon-flex-link-first {
-  padding-right: 15px;
   font-weight: 400;
-  border-right: 2px solid #d7bda7;
 }
 
 .fixed-nav-icon-flex-link.fixed-nav-icon-flex-link-right {
-  padding-left: 15px;
-  border-left: 2px solid #d7bda7;
   -webkit-transition: color 250ms ease;
   transition: color 250ms ease;
 }
 
 .fixed-nav-icon-img {
   width: 22px;
-  margin-left: 7px;
 }
 
 .hero-nav-section {
