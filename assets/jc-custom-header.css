@@ -5,6 +5,11 @@
     padding: 50px;
 }
 
+.jc-custom-header__top, .jc-custom-header__nav {
+    max-width: 1540px;
+    margin: 0 auto;
+}
+
 .fixed-nav-social-img, .fixed-nav-icon-img {
     width: 40px;
 }
@@ -34,7 +39,7 @@
     max-height: 442px;
     margin: 0;
     justify-content: space-between;
-    max-width: 1500px;
+    max-width: 1440px;
 }
 
 .list-menu {
