@@ -25,10 +25,10 @@
     display: none;
     position: absolute;
     width: 100%;
-    top: 30px;
+    top: 40px;
     left: 50%;
     transform: translateX(-50%);
-    border: 1px solid #474645;
+    border: 1px solid rgba(71, 70, 69, 0.5);
     background: #fff;
     padding: 30px;
     max-height: 442px;
@@ -42,6 +42,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-bottom: 0
 }
 
 .list-menu__item {
@@ -186,6 +187,19 @@
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.jc-custom-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 5;
+}
+
+body {
+    padding-top: 230px;
 }
 
 @media (max-width: 989px) {
