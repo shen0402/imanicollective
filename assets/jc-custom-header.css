@@ -242,4 +242,12 @@ body {
     .jc-custom-header__nav {
         display: none;
     }
+
+    .jc-custom-header__top {
+        padding: 20px;
+    }
+
+    body {
+        padding-top: 150px;
+    }
 }

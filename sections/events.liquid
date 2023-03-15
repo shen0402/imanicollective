@@ -1,97 +1,154 @@
-<h3 class="mid-heading-internal mid-heading-internal-events">Upcoming Events</h3>
-<div class="bottom-flex-row-press">
-
+{{ 'jc-custom-events.css' | asset_url | stylesheet_tag }}
+<div class="events">
+  {% if section.settings.heading != blank %}
+    <h2 class="event-heading">
+      {{ section.settings.heading }}
+    </h2>
+  {% endif %}
   {% for block in section.blocks %}
-   <div class="bottom-flex-col-press">
-     <div class="bottom-flex-col-inner-press">
-       <div class="bottom-flex-col-top-wrapper-press">
-         <div class="bottom-flex-col-heading-wrapper-press">
-           <div class="bottom-flex-col-date-text-press">{{block.settings.event_date}}</div>
-           <h4 class="bottom-flex-col-heading-press">{{block.settings.event_name}}</h4>
-           <div class="bottom-flex-col-location-text-press">{{block.settings.event_location}}</div>
-           <div class="bottom-flex-col-location-text-press">{{block.settings.event_time}}</div>
-         </div>
-         <div class="bottom-flex-col-text-press">{{block.settings.event_blurb}}</div>
-       </div>
-       <div class="bottom-flex-col-btn-wrapper-press"><a href="{{ block.settings.event_url }}" class="btn-alt w-button" target="_blank">Learn More</a></div>
-     </div>
-   </div>
-  {% endfor %}  
-
+    {% if block.type == 'event' %}
+      <div class="event-item">
+        <div class="event__image">
+          {{ block.settings.image | img_url: '450x' | img_tag }}
+        </div>
+        <div class="event__text">
+          {% if block.settings.heading != blank %}
+            <h2 class="event__heading">
+              {{ block.settings.heading }}
+            </h2>
+          {% endif %}
+          {% if block.settings.date != blank %}
+            <h3 class="event__date">
+              {{ block.settings.date }}
+            </h3>
+          {% endif %}
+          {% if block.settings.description != blank %}
+            <div class="event__description">
+              {{ block.settings.description }}
+            </div>
+          {% endif %}
+          {% if block.settings.location != blank or block.settings.time != blank %}
+            <div class="event__info">
+              {% if block.settings.location != blank %}
+                <div class="event__info-item">
+                  {{ block.settings.location }}
+                </div>
+              {% endif %}
+              {% if block.settings.time != blank %}
+                <div class="event__info-item">
+                  {{ block.settings.time }}
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% else %}
+      <div class="event-item no-event">
+        {% if block.settings.heading != blank %}
+          <h2 class="no-event__heading">
+            {{ block.settings.heading }}
+          </h2>
+        {% endif %}
+        {% if block.settings.description != blank %}
+          <div class="no-event__description">
+            {{ block.settings.description }}
+          </div>
+        {% endif %}
+        {% if block.settings.button_label != blank and block.settings.button_link != blank %}
+          <div class="no-event__button">
+            <a class="no-event__link jc-button" href="{{ block.settings.button_link }}">
+              {{ block.settings.button_label }}
+            </a>
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+  {% endfor %}
 </div>
-
-
-
 {% schema %}
-{
-  "name": "Events" ,
-  "settings": [
+  {
+    "name": "Events",
+    "settings": [
       {
-         "type": "text",
-         "id": "heading_text",
-         "default": "Upcoming Events",
-         "label": "Heading Text"
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "join us at an upcoming event!"
       }
-  ],
-  "blocks": [
-    {
-      "type": "text",
-      "name": "Event",
-      "settings": [
-        
-        {
-          "label": "Event Date",
-          "id": "event_date",
-          "type": "text"
-        },
-        {
-          "label": "Event Name",
-          "id": "event_name",
-          "type": "text"
-        },
-        {
-          "label": "Event Time",
-          "id": "event_time",
-          "type": "text"
-        },
-        {
-          "label": "Event Location",
-          "id": "event_location",
-          "type": "text"
-        },
-        {
-          "label": "Event Summary Text",
-          "id": "event_blurb",
-          "type": "textarea"
-        },
-        {
-          "label": "URL To Events",
-          "id": "event_url",
-          "type": "url"
-        }
-
-
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Tabs",
-      "category": "Custom Content",
-      "blocks": [
-        {
-          "type": "text"
-        }
-      ]
-    }
-  ]
-}
+    ],
+    "blocks": [
+      {
+        "type": "no_event",
+        "name": "No Event",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "No upcoming events"
+          }, {
+            "type": "richtext",
+            "id": "description",
+            "label": "Description",
+            "default": "<p>We have no upcoming events at this time. Please check back in the future! We look forward to seeing you all at markets soon. Hqppy new year!</p>"
+          }, {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button Label",
+            "default": "Learn more"
+          }, {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button Link"
+          }
+        ]
+      }, {
+        "type": "event",
+        "name": "Event",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Silobration"
+          },
+          {
+            "type": "text",
+            "id": "date",
+            "label": "Date",
+            "default": "october 28 - 31"
+          },
+          {
+            "type": "richtext",
+            "id": "description",
+            "label": "Description",
+            "default": "<p>Join us and 80+ other samll businesses at the Silos in Waco for Silobration!</p>"
+          }, {
+            "type": "richtext",
+            "id": "location",
+            "label": "Location",
+            "default": "<p><strong>LOCATION</strong><br>601 Webster Ave.<br>Waco, Texas 76706</p>"
+          }, {
+            "type": "richtext",
+            "id": "time",
+            "label": "Time",
+            "default": "<p><strong>HOURS</strong><br>10am - 6pm</p>"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Events"
+      }
+    ]
+  }
 {% endschema %}
-
-
-
-
-
-
-
-

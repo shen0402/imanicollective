@@ -189,22 +189,33 @@
       "events": {
         "type": "events",
         "blocks": {
-          "1579713434676": {
-            "type": "text",
+          "44fe601c-6be5-44f9-813d-105862964abc": {
+            "type": "no_event",
             "settings": {
-              "event_date": "",
-              "event_name": "No upcoming events",
-              "event_time": "we have no upcoming events at this time. please check back in the future! We look forward to seeing you all at markets soon. Happy New Year!",
-              "event_location": "",
-              "event_blurb": ""
+              "heading": "No upcoming events",
+              "description": "<p>We have no upcoming events at this time. Please check back in the future! We look forward to seeing you all at markets soon. Hqppy new year!<\/p>",
+              "button_label": "Learn more",
+              "button_link": "#"
+            }
+          },
+          "563be350-1ee3-4887-ab24-5b3137ba4dab": {
+            "type": "event",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-06T125433.194.jpg",
+              "heading": "Silobration",
+              "date": "october 28 - 31",
+              "description": "<p>Join us and 80+ other samll businesses at the Silos in Waco for Silobration!<\/p>",
+              "location": "<p><strong>LOCATION<\/strong><br\/>601 Webster Ave.<br\/>Waco, Texas 76706<\/p>",
+              "time": "<p><strong>HOURS<\/strong><br\/>10am - 6pm<\/p>"
             }
           }
         },
         "block_order": [
-          "1579713434676"
+          "44fe601c-6be5-44f9-813d-105862964abc",
+          "563be350-1ee3-4887-ab24-5b3137ba4dab"
         ],
         "settings": {
-          "heading_text": "Upcoming Events"
+          "heading": "join us at an upcoming event!"
         }
       },
       "jc-footer": {

@@ -1,9 +1,4 @@
-{% section 'hero-section-press' %}
-
-
-
 <div class="bottom-wrapper-press">
-  <div class="bottom-bg-holder-press"></div>
   <div class="container-large" id="upcoming-events">
 
     {% section 'events' %}
@@ -27,11 +22,9 @@
 
 <script type="text/javascript">
   $('.hero-scroll-link').click(function()
-        {
-          $('html, body').animate({
-              scrollTop: $( $.attr(this, 'href') ).offset().top-100
-          }, 1000);
-          return false;
-        });
-</script>
-
+  {
+              $('html, body').animate({
+                  scrollTop: $( $.attr(this, 'href') ).offset().top-100
+              }, 1000);
+              return false;
+            });</script>
