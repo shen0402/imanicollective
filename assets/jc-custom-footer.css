@@ -5,6 +5,7 @@
     display: flex;
     gap: 50px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .block--store_info, .block--newsletter {
@@ -46,7 +47,7 @@
 }
 
 .jc-custom-footer__link {
-    padding: 5px 0;
+    padding: 10px 0;
     display: flex;
 }
 
@@ -142,4 +143,14 @@
 
 .social-link:hover {
     transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+    .jc-custom-footer--wrapper {
+        padding: 50px 20px;
+    }
+    .block--store_info, .block--newsletter, .block--menu {
+        width: 100%;
+        max-width: 100%;
+    }
 }
