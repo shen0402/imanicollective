@@ -1,0 +1,32 @@
+<ul class="social-list">
+  {% if settings.social_facebook_link %}
+    <li>
+      <a
+        target="_blank"
+        href="{{ settings.social_facebook_link }}"
+        class="social-link">
+        <img class="" src="https://cdn.shopify.com/s/files/1/2534/9108/files/shop_-_all_products_fb_icon_c4bdef73-ef3e-4f9c-b72e-c626d64bd285.png?v=1678745452">
+      </a>
+    </li>
+  {% endif %}
+  {% if settings.share_facebook %}
+    <li>
+      <a
+        target="_blank"
+        href="{{ settings.social_instagram_link }}"
+        class="social-link">
+        <img class="" src="https://cdn.shopify.com/s/files/1/2534/9108/files/shop_-_all_products_IG_icon_fdfa3ea1-a167-4414-bf91-72815bc97e4b.png?v=1678745452">
+      </a>
+    </li>
+  {% endif %}
+  {% if settings.social_pinterest_link %}
+    <li>
+      <a
+        target="_blank"
+        href="{{ settings.social_pinterest_link }}"
+        class="social-link">
+        <img class="" src="https://cdn.shopify.com/s/files/1/2534/9108/files/shop_-_all_products_pinterest_icon_0ffdb465-b162-4bf5-9edb-1bc76a29539d.png?v=1678745452">
+      </a>
+    </li>
+  {% endif %}
+</ul>

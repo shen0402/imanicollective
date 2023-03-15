@@ -2787,6 +2787,56 @@
           "announcement_back": "#af7552",
           "announcement_image": "shopify:\/\/shop_images\/announcement-bar-back.png"
         }
+      },
+      "jc-custom-footer": {
+        "type": "jc-custom-footer",
+        "blocks": {
+          "f3118bb3-a6aa-4241-8826-ea0fa21a7236": {
+            "type": "store_info",
+            "settings": {
+              "email_heading": "Get in touch",
+              "email_address": "info@imanicollective.com",
+              "store1_heading": "headquarters",
+              "store1_text": "<p>1671 Broadway St Carrollton, TX 75006<\/p>",
+              "store2_heading": "artisan workshop \/ gift shop",
+              "store2_text": "<p>Ndia Kuu<br\/>Mombasa, Kenya<br\/>(Old Town | By Fort Jesus)<\/p>"
+            }
+          },
+          "2b834260-626b-46ea-8888-03f6f9526e91": {
+            "type": "newsletter",
+            "settings": {
+              "heading": "Subscribe to our newsletter",
+              "icon": "shopify:\/\/shop_images\/newsletter.png",
+              "text": "<p>sign up and get 10% off your first order<\/p>",
+              "wholesaler_heading": "Want to become a wholesaler?",
+              "wholesaler_link": "shopify:\/\/pages\/wholesale"
+            }
+          },
+          "d5497a95-2ac9-468e-acb4-88be1dc2e423": {
+            "type": "menu",
+            "settings": {
+              "heading": "Custom care",
+              "menu": "custom-care"
+            }
+          },
+          "bd40c190-6c94-492b-ab3d-fb748c7378ae": {
+            "type": "menu",
+            "settings": {
+              "heading": "Navigation",
+              "menu": "navigation"
+            }
+          }
+        },
+        "block_order": [
+          "f3118bb3-a6aa-4241-8826-ea0fa21a7236",
+          "2b834260-626b-46ea-8888-03f6f9526e91",
+          "d5497a95-2ac9-468e-acb4-88be1dc2e423",
+          "bd40c190-6c94-492b-ab3d-fb748c7378ae"
+        ],
+        "settings": {
+          "background_color": "#f0ddd8",
+          "enable_socila_icon": true
+        }
       }
     },
     "content_for_index": [
