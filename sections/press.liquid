@@ -1,79 +1,99 @@
+<style>
+  {% for block in section.blocks %}
+    #press--{{ block.id }} .flex-col-top-press {
+      background-color: {{ block.settings.press_color }};
+    }
+  {% endfor %}
+</style>
 <h3 class="mid-heading-internal">Recent Articles</h3>
 <div class="flex-row-press">
 
   {% for block in section.blocks %}
-  <div class="flex-col-press">
-    <div class="flex-col-inner-press">
-      {% if block.settings.press_image %}
-        <div class="flex-col-top-press"><img src="{{ block.settings.press_image | img_url: '400x' }}" alt="" class="flex-col-img-press"></div>
+    <div class="flex-col-press" id="press--{{ block.id }}">
+      <div class="flex-col-inner-press">
+        {% if block.settings.press_image %}
+          <div class="flex-col-top-press"><img
+              src="{{ block.settings.press_image | img_url: '400x' }}"
+              alt=""
+              class="flex-col-img-press"></div>
         {% else %}
-        <div class="flex-col-top-press"><div class="flex-col-img-press-holder"></div></div>
-      {% endif %}
-      <div class="flex-col-bottom-press">
-        <div class="flex-col-date-text-press">{{block.settings.press_date}}</div>
-        <h5 class="flex-col-heading-press">{{block.settings.press_name}}</h5>
-        <div class="flex-col-btn-wrapper-press"><a href="{{ block.settings.press_url }}" class="btn-flex-col-press w-button" target="_blank">Read Article</a></div>
+          <div class="flex-col-top-press">
+            <div class="flex-col-img-press-holder"></div>
+          </div>
+        {% endif %}
+        <div class="flex-col-bottom-press">
+          <div class="flex-col-date-text-press">{{ block.settings.press_date }}</div>
+          <h5 class="flex-col-heading-press">{{ block.settings.press_name }}</h5>
+          <div class="flex-col-btn-wrapper-press">
+            <a
+              href="{{ block.settings.press_url }}"
+              class="jc-button"
+              target="_blank">Read Article</a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
   {% endfor %}
-  
+
 
 </div>
 
 
 {% schema %}
-{
-  "name": "Press" ,
-  "settings": [
+  {
+    "name": "Press",
+    "settings": [
       {
-         "type": "text",
-         "id": "heading_text",
-         "default": "recent articles",
-         "label": "Heading Text"
+        "type": "text",
+        "id": "heading_text",
+        "default": "recent articles",
+        "label": "Heading Text"
       }
-  ],
-  "blocks": [
-    {
-      "type": "text",
-      "name": "Press",
-      "settings": [
-        
-        {
-          "label": "Date",
-          "id": "press_date",
-          "type": "text"
-        },
-        {
-          "label": "Press Name",
-          "id": "press_name",
-          "type": "text"
-        },
-        {
-          "label": "URL",
-          "id": "press_url",
-          "type": "url"
-        },
-        {
-          "label": "Image",
-          "id": "press_image",
-          "type": "image_picker"
-        }
-       
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Press",
+        "settings": [
 
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Tabs",
-      "category": "Custom Content",
-      "blocks": [
-        {
-          "type": "text"
-        }
-      ]
-    }
-  ]
-}
+          {
+            "label": "Date",
+            "id": "press_date",
+            "type": "text"
+          },
+          {
+            "label": "Press Name",
+            "id": "press_name",
+            "type": "text"
+          },
+          {
+            "label": "URL",
+            "id": "press_url",
+            "type": "url"
+          },
+          {
+            "label": "Image",
+            "id": "press_image",
+            "type": "image_picker"
+          }, {
+            "type": "color",
+            "id": "press_color",
+            "label": "Color",
+            "default": "#ead7d1"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Tabs",
+        "category": "Custom Content",
+        "blocks": [
+          {
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  }
 {% endschema %}

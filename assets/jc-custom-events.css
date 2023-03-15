@@ -1,3 +1,7 @@
+.events {
+    padding: 0 20px;
+}
+
 .event-heading {
     margin-top: 0px;
     margin-bottom: 100px;
@@ -134,10 +138,6 @@
 }
 
 @media (max-width: 767px) {
-    .events {
-        padding: 0 20px;
-    }
-
     .event-heading {
         letter-spacing: 5px;
         font-size: 42px;
