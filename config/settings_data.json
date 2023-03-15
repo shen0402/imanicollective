@@ -191,6 +191,7 @@
         "blocks": {
           "44fe601c-6be5-44f9-813d-105862964abc": {
             "type": "no_event",
+            "disabled": true,
             "settings": {
               "heading": "No upcoming events",
               "description": "<p>We have no upcoming events at this time. Please check back in the future! We look forward to seeing you all at markets soon. Hqppy new year!<\/p>",
@@ -234,7 +235,8 @@
               "press_date": "September 2020",
               "press_name": "Cause Consumer - Home Goods That Do Good",
               "press_url": "https:\/\/www.causeconsumer.org\/2020\/09\/28\/home-goods-that-better-community\/",
-              "press_image": "shopify:\/\/shop_images\/Untitled_design_3.png"
+              "press_image": "shopify:\/\/shop_images\/Untitled_design_3.png",
+              "press_color": "#ead7d1"
             }
           },
           "1579713113191": {
@@ -243,7 +245,8 @@
               "press_date": "November 2019",
               "press_name": "Cause Box Feature",
               "press_url": "https:\/\/causebox.com\/blog\/impact-stories-collectively-created",
-              "press_image": "shopify:\/\/shop_images\/ICcauseboxwhite-01.png"
+              "press_image": "shopify:\/\/shop_images\/ICcauseboxwhite-01.png",
+              "press_color": "#ead7d1"
             }
           },
           "1573678048947": {
@@ -252,7 +255,8 @@
               "press_date": "January 2019",
               "press_name": "Wit & Grace Magazine - JAN 2019 Special Edition Print",
               "press_url": "https:\/\/www.witandgracemag.com\/",
-              "press_image": "shopify:\/\/shop_images\/witandgrace-w-min.png"
+              "press_image": "shopify:\/\/shop_images\/witandgrace-w-min.png",
+              "press_color": "#ead7d1"
             }
           },
           "1573678146588": {
@@ -261,7 +265,8 @@
               "press_date": "January 2019",
               "press_name": "Babes Who Hustle - Babe #239",
               "press_url": "https:\/\/www.babeswhohustle.com\/home\/babes\/jnuccio",
-              "press_image": "shopify:\/\/shop_images\/babeswhohustle-w-min.png"
+              "press_image": "shopify:\/\/shop_images\/babeswhohustle-w-min.png",
+              "press_color": "#ead7d1"
             }
           },
           "1573678170497": {
@@ -270,7 +275,8 @@
               "press_date": "January 2019",
               "press_name": "The Cause Bar - The Changemaker Series",
               "press_url": "https:\/\/www.thecausebar.com\/blog\/the-cause-bar-changemaker-series-an-interview-with-jenny-nuccio-founder-imani-collective",
-              "press_image": "shopify:\/\/shop_images\/thecausebar-w-min.png"
+              "press_image": "shopify:\/\/shop_images\/thecausebar-w-min.png",
+              "press_color": "#ead7d1"
             }
           },
           "1573678198547": {
@@ -279,7 +285,8 @@
               "press_date": "November 2018",
               "press_name": "November 2018 The Fearless Woman Podcast - Episode 10",
               "press_url": "https:\/\/itunes.apple.com\/us\/podcast\/the-fearless-woman-podcast\/id1415568468?mt=2",
-              "press_image": "shopify:\/\/shop_images\/thefearlesswoman-w-min.png"
+              "press_image": "shopify:\/\/shop_images\/thefearlesswoman-w-min.png",
+              "press_color": "#ead7d1"
             }
           },
           "1573678229709": {
@@ -288,7 +295,8 @@
               "press_date": "October 2018",
               "press_name": "Coffee + People Podcast - Episode 44",
               "press_url": "https:\/\/itunes.apple.com\/us\/podcast\/coffee-people-podcast\/id1335201813?mt=2#episodeGuid=tag%3Asoundcloud%2C2010%3Atracks%2F528744792",
-              "press_image": "shopify:\/\/shop_images\/coffee_peoplepodcast-w-min.png"
+              "press_image": "shopify:\/\/shop_images\/coffee_peoplepodcast-w-min.png",
+              "press_color": "#ead7d1"
             }
           },
           "1573678251753": {
@@ -297,7 +305,8 @@
               "press_date": "October 2018",
               "press_name": "Dough - Issue #8",
               "press_url": "https:\/\/www.joindough.com\/shop-from-women-owned-businesses\/imani-collective?rq=jenny%20nucci",
-              "press_image": "shopify:\/\/shop_images\/dough-w-min.png"
+              "press_image": "shopify:\/\/shop_images\/dough-w-min.png",
+              "press_color": "#ead7d1"
             }
           },
           "1574448528863": {
@@ -306,7 +315,8 @@
               "press_date": "October 2018",
               "press_name": "\"How To Be Sure 'Artisan Made' means 'Ethically Made'\" - Yellow Co. Blog",
               "press_url": "https:\/\/yellowco.co\/blog\/2018\/10\/31\/does-artisan-made-mean-ethically-made\/",
-              "press_image": "shopify:\/\/shop_images\/yellowco-w-min.png"
+              "press_image": "shopify:\/\/shop_images\/yellowco-w-min.png",
+              "press_color": "#ead7d1"
             }
           },
           "1574448601039": {
@@ -315,7 +325,8 @@
               "press_date": "September 2018",
               "press_name": "The Things She Does Podcast - Episode 56",
               "press_url": "https:\/\/itunes.apple.com\/us\/podcast\/the-things-she-does-podcast\/id1293616681",
-              "press_image": "shopify:\/\/shop_images\/thethingsshedoes-w-min.png"
+              "press_image": "shopify:\/\/shop_images\/thethingsshedoes-w-min.png",
+              "press_color": "#ead7d1"
             }
           },
           "1574448636391": {
@@ -324,7 +335,8 @@
               "press_date": "May 2018",
               "press_name": "The Okie Home",
               "press_url": "http:\/\/theokiehome.com\/imani-collective\/",
-              "press_image": "shopify:\/\/shop_images\/theokiehome-w-min.png"
+              "press_image": "shopify:\/\/shop_images\/theokiehome-w-min.png",
+              "press_color": "#ead7d1"
             }
           },
           "1574448665098": {
@@ -332,7 +344,8 @@
             "settings": {
               "press_date": "May 2018",
               "press_name": "Social Flourish Podcast - Episode 14 - What It Means to Leave a Legacy Globally",
-              "press_url": "https:\/\/www.socialflourish.com\/podcast\/episode-14-what-it-means-to-leave-a-legacy-globally"
+              "press_url": "https:\/\/www.socialflourish.com\/podcast\/episode-14-what-it-means-to-leave-a-legacy-globally",
+              "press_color": "#ead7d1"
             }
           },
           "1574448714240": {
@@ -341,7 +354,8 @@
               "press_date": "May 2018",
               "press_name": "Voyage Dallas Magazine Article",
               "press_url": "http:\/\/voyagedallas.com\/interview\/meet-jenny-nuccio-imani-collective-deep-ellum\/",
-              "press_image": "shopify:\/\/shop_images\/voyagedallas-w-min.png"
+              "press_image": "shopify:\/\/shop_images\/voyagedallas-w-min.png",
+              "press_color": "#ead7d1"
             }
           },
           "1574448745394": {
@@ -350,7 +364,8 @@
               "press_date": "April 2018",
               "press_name": "It's Time for Coffee - 005 Jenny Nuccio",
               "press_url": "http:\/\/itstimeforcoffee.libsyn.com\/005-jenny-nuccio",
-              "press_image": "shopify:\/\/shop_images\/timeforcoffee-w-min.png"
+              "press_image": "shopify:\/\/shop_images\/timeforcoffee-w-min.png",
+              "press_color": "#ead7d1"
             }
           },
           "1574448791788": {
@@ -358,7 +373,8 @@
             "settings": {
               "press_date": "April 2018",
               "press_name": "Sister House Collective - Do Good Brand Series",
-              "press_url": "https:\/\/www.sisterhousecollective.com\/do-good-brand-series\/2018\/9\/3\/jenny-nuccio-imani-collective"
+              "press_url": "https:\/\/www.sisterhousecollective.com\/do-good-brand-series\/2018\/9\/3\/jenny-nuccio-imani-collective",
+              "press_color": "#ead7d1"
             }
           },
           "1574448823300": {
@@ -367,7 +383,8 @@
               "press_date": "April 2018",
               "press_name": "5280 Denver Mile High Magazine Feature - Can't Miss Artisans",
               "press_url": "http:\/\/www.5280.com\/2018\/04\/6-cant-miss-makers-at-this-months-spring-flea\/",
-              "press_image": "shopify:\/\/shop_images\/5280-w-min.png"
+              "press_image": "shopify:\/\/shop_images\/5280-w-min.png",
+              "press_color": "#ead7d1"
             }
           },
           "1574448847511": {
@@ -376,7 +393,8 @@
               "press_date": "",
               "press_name": "Lonely Planet - Come see our artisans in Kenya!",
               "press_url": "https:\/\/www.lonelyplanet.com\/kenya\/mombasa\/shopping\/imani-collective\/a\/poi-sho\/1580043\/355339",
-              "press_image": "shopify:\/\/shop_images\/lonelyplanet-w-min.png"
+              "press_image": "shopify:\/\/shop_images\/lonelyplanet-w-min.png",
+              "press_color": "#ead7d1"
             }
           },
           "1574448871463": {
@@ -385,7 +403,8 @@
               "press_date": "October 2017",
               "press_name": "Munchin with Moguls – Episode 22 - Creating an Authentic Community that goes Across Global Boundaries",
               "press_url": "https:\/\/itunes.apple.com\/us\/podcast\/munchin-with-moguls\/id1236381199",
-              "press_image": "shopify:\/\/shop_images\/munchinwithmoguls-w-min.png"
+              "press_image": "shopify:\/\/shop_images\/munchinwithmoguls-w-min.png",
+              "press_color": "#ead7d1"
             }
           },
           "1574448925193": {
@@ -394,7 +413,8 @@
               "press_date": "",
               "press_name": "Citizen Photography",
               "press_url": "https:\/\/www.citizen-photography.com\/imani-collective",
-              "press_image": "shopify:\/\/shop_images\/citizenphotography-w-min.png"
+              "press_image": "shopify:\/\/shop_images\/citizenphotography-w-min.png",
+              "press_color": "#ead7d1"
             }
           },
           "1574448947439": {
@@ -403,7 +423,8 @@
               "press_date": "October 2017",
               "press_name": "San Antonio Express News",
               "press_url": "http:\/\/www.expressnews.com\/lifestyle\/article\/S-A-woman-weaves-life-in-Kenya-to-help-single-12287555.php?t=29aa7f28af01065692&cmpid=email-premium#photo-14371619",
-              "press_image": "shopify:\/\/shop_images\/sanantonioexpressnews-w-min.png"
+              "press_image": "shopify:\/\/shop_images\/sanantonioexpressnews-w-min.png",
+              "press_color": "#ead7d1"
             }
           },
           "1574448978240": {
@@ -412,7 +433,8 @@
               "press_date": "October 2017",
               "press_name": "78209 Magazine – October 2017 Issue",
               "press_url": "http:\/\/78209magazine.com\/the-buzz-in-78209\/in-the-loop-12",
-              "press_image": "shopify:\/\/shop_images\/78209magazine-w-min.png"
+              "press_image": "shopify:\/\/shop_images\/78209magazine-w-min.png",
+              "press_color": "#ead7d1"
             }
           },
           "1574449026886": {
@@ -421,7 +443,8 @@
               "press_date": "October 2017",
               "press_name": "Globe In Feature",
               "press_url": "https:\/\/globein.com\/blog\/imanixchange-dream\/",
-              "press_image": "shopify:\/\/shop_images\/globein-w-min.png"
+              "press_image": "shopify:\/\/shop_images\/globein-w-min.png",
+              "press_color": "#ead7d1"
             }
           }
         },
@@ -1281,7 +1304,9 @@
       "jc-press-cta-section": {
         "type": "jc-press-cta-section",
         "settings": {
-          "main_heading": "Join Our Email List",
+          "main_heading": "join our mailing list",
+          "description": "<p>girl talk, parenting tips, and sales<\/p>",
+          "icon": "shopify:\/\/shop_images\/newsletter.png",
           "main_image": "shopify:\/\/shop_images\/ICemaillist_-01.jpg"
         }
       },
@@ -2794,7 +2819,7 @@
           "logo": "shopify:\/\/shop_images\/imani-collective-logo-min_fea4fc89-7797-42b1-ad2c-bbe91214b287.png",
           "menu": "main-menu-sidekick-custom",
           "announcement_message": "<p>Subscribe to our newsletter to receive 10% off your first order<\/p>",
-          "announcement_color": "#474645",
+          "announcement_color": "#231f20",
           "announcement_back": "#af7552",
           "announcement_image": "shopify:\/\/shop_images\/announcement-bar-back.png"
         }

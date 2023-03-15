@@ -1,50 +1,84 @@
-<div class="cta-section-press" {% if section.settings.main_image %}style="background-image: url('{{ section.settings.main_image | img_url: '1600x' }}');"{% endif %}>
-  <div class="container-large">
-    <div class="cta-content-wrapper">
-      <h3 class="cta-heading-category cta-heading-press">{{section.settings.main_heading}}</h3>
-      <div class="bottom-form-block-brand w-form">
-
-        {% form 'customer' %}
-        {% if form.posted_successfully? %}
-          <div class="jc-form-done">
-            <div>Thank you! Your subscription has been confirmed!</div>
-          </div>
-        {% else %}
-          <input type="hidden" name="contact[accepts_marketing]" value="true">
-          <input type="email" class="bottom-form-input-brand bottom-form-input-press w-input" maxlength="256" name="contact[email]" data-name="Email 4" id="email" required="">
-          <input type="submit" value="Sign Up" data-wait="Please wait..." class="btn-main w-button">
-          {% endif %}
-        {% endform %}
-
-        <div class="w-form-done">
-          <div>Thank you! Your submission has been received!</div>
-        </div>
-        <div class="w-form-fail">
-          <div>Oops! Something went wrong while submitting the form.
-          </div>
-        </div>
-
+<div class="bottom-cta-internal cta-newsletter">
+  <div class="container-xl">
+    <div class="bottom-cta-flex-row">
+      <div class="bottom-cta-flex-col-large">
+        <div class="bottom-cta-flex-col-bg-holder" {% if section.settings.main_image %}style="background-image: url('{{ section.settings.main_image | img_url: '750x' }}');"{% endif %}></div>
       </div>
+      <div class="bottom-cta-flex-col">
+        <div class="bottom-cta-flex-col-inner">
+          <h3 class="bottom-cta-heading">{{ section.settings.main_heading }}</h3>
+          <div class="bottom-cta-sub-heading">{{ section.settings.description }}
+            {% if section.settings.icon != blank %}
+              {{ section.settings.icon | img_url: '100x' | img_tag }}
+            {% endif %}
+          </div>
+          <div class="bottom-form-block-brand w-form">
 
+            {% form 'customer' %}
+              {% if form.posted_successfully? %}
+                <div class="jc-form-done">
+                  <div>Thank you! Your subscription has been confirmed!</div>
+                </div>
+              {% else %}
+                <input
+                  type="hidden"
+                  name="contact[accepts_marketing]"
+                  value="true">
+                <input
+                  type="email"
+                  class="bottom-form-input-brand bottom-form-input-press w-input"
+                  maxlength="256"
+                  name="contact[email]"
+                  data-name="Email 4"
+                  id="email"
+                  placeholder="email address"
+                  required="">
+                <input
+                  type="submit"
+                  value="Sign Up"
+                  data-wait="Please wait..."
+                  class="jc-button">
+              {% endif %}
+            {% endform %}
+
+            <div class="w-form-done">
+              <div>Thank you! Your submission has been received!</div>
+            </div>
+            <div class="w-form-fail">
+              <div>Oops! Something went wrong while submitting the form.
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
 {% schema %}
   {
-    "name": "Newsletter Section" ,
-      "settings": [
-        {
-           "type": "text",
-           "id": "main_heading",
-           "label": "Heading Text",
-           "default": "Join Our Email List"
-        },
-        {
-            "type": "image_picker",
-            "id": "main_image",
-            "label": "Background Image"
-         }
+    "name": "Newsletter Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "main_heading",
+        "label": "Heading Text",
+        "default": "join our mailing list"
+      }, {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description",
+        "default": "<p>girl talk, parenting tips, and sales</p>"
+      }, {
+        "type": "image_picker",
+        "id": "icon",
+        "label": "Icon"
+      }, {
+        "type": "image_picker",
+        "id": "main_image",
+        "label": "Background Image"
+      }
     ]
   }
 {% endschema %}
