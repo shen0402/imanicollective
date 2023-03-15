@@ -56,8 +56,7 @@
     color: #474645;
     font-size: 18px;
     text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3x;
     transition: 0.3s;
     max-width: 300px;
 }
@@ -143,6 +142,13 @@
 
 .social-link:hover {
     transform: scale(1.1);
+}
+
+@media (max-width: 1350px) {
+    .block--store_info, .block--newsletter, .block--menu {
+        width: calc(50% - 25px);
+        max-width: 50%;
+    }
 }
 
 @media (max-width: 767px) {
