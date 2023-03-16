@@ -1,0 +1,63 @@
+<style>
+  .jc-featured-collections {
+    background-color: {{ section.settings.background_color }}
+  }
+</style>
+<div class="jc-featured-collections">
+  <div class="jc-featured-collections-list">
+    {% for block in section.blocks %}
+      <div class="jc-featured-collection-item">
+        <a class="jc-featured-collection__link" href="{{ block.settings.collection.url }}">
+          <div class="jc-featured-collection__image">
+            {{ block.settings.image | img_url: '350x' | img_tag }}
+          </div>
+          <span class="jc-featured-collection__cation">
+            {{ block.settings.caption }}
+          </span>
+          <span class="jc-featured-collection__text">
+            {{ block.settings.text }}
+          </span>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Featured Collections",
+    "settings": [
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background",
+        "default": "#f3eded"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "collection",
+        "name": "Collection",
+        "settings": [
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "Collection"
+          }, {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "id": "caption",
+            "label": "Caption",
+            "default": "Shop"
+          }, {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

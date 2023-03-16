@@ -1,0 +1,62 @@
+<div class="jc-collection-connect">
+  <div class="container-xl">
+    <div class="jc-collection-connect-wrapper">
+      <div class="jc-collection-connect__text">
+        {% if section.settings.heading != blank %}
+          <h4 class="connect-heading">
+            {{ section.settings.heading }}
+          </h4>
+        {% endif %}
+        {% if section.settings.description != blank %}
+          <div class="connect-text">
+            {{ section.settings.description }}
+          </div>
+        {% endif %}
+        {% if section.settings.button_label != blank and section.settings.button_link != blank %}
+          <div class="connect-btn-wrapper">
+            <a class="jc-button jc-secondary-button" href="{{ section.settings.button_link }}">
+              {{ section.settings.button_label }}
+            </a>
+          </div>
+        {% endif %}
+      </div>
+      <div class="jc-collection-connect__image">
+        {{ section.settings.image | img_url: '750x' | img_tag }}
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Collection Connet",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "love your purchase?"
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description",
+        "default": "<p>drop a note to<br>the woman who<br>made your<br>product</p>"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label",
+        "default": "Write now"
+      }, {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      }
+    ]
+  }
+{% endschema %}

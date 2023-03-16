@@ -1,0 +1,78 @@
+<div class="mid-wrapper-shop" id="main-content">
+  <div class="container-large">
+    <div class="sort-wrapper-shop">
+      <div class="sort-flex-row-shop">
+        <div class="sort-text-shop">Sort:</div>
+        <div class="sort-input-wrapper">
+          <select
+            id="price-sort"
+            name="price-sort"
+            class="filter-input-sort w-select">
+            <option value="none">Price</option>
+            <option value="price-ascending">low - high</option>
+            <option value="price-descending">high - low</option>
+          </select>
+        </div>
+
+      </div>
+      <div class="sort-flex-row-shop">
+        <div class="sort-text-shop">Filter:</div>
+        <div class="sort-input-wrapper">
+          <select
+            id="color-filter"
+            name="color-filter"
+            class="filter-input-category w-select">
+            <option value="none">Categories</option>
+            <option value="/collections/all">All</option>
+            {%- for tag in collection.all_tags -%}
+              {% unless tag == 'Rugs' %}
+                <option value="/collections/{{ collection.handle }}/{{ tag | handleize }}">{{ tag }}</option>
+              {% endunless %}
+            {% endfor %}
+          </select>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="flex-row-shop">
+      {% paginate collection.products by 12 %}
+        {% for product in collection.products %}
+
+          {% render 'swatchify-conts' with product, psType: 'collection' %}
+
+          {% assign price = product.price %}
+          {% assign compare_at_price = product.compare_at_price_max %}
+          <div class="flex-col-category">
+            <div class="flex-col-inner-shop">
+              {% if product.available != true %}
+                <div class="flex-col-meta-text-shop">Sold Out</div>
+              {% endif %}
+              <a href="{{product.url}}" class="flex-col-link-block-shop w-inline-block">
+                <div
+                  alt=""
+                  class="flex-col-img-holder-collection"
+                  {% if product.featured_image %}style="background-image: url({{ product.featured_image | img_url: '800x' }});"{% endif %}></div>
+                <div class="flex-col-title-shop">{{ product.title }}</div>
+
+                {% if compare_at_price > price %}
+                  <div class="flex-col-price-shop">
+                    <span style="text-decoration: line-through;font-weight: 400;letter-spacing: 0px;">{{ compare_at_price | money }}</span>
+                    {{ price | money }}</div>
+                {% else %}
+                  <div class="flex-col-price-shop">{{ product.price | money }}</div>
+                {% endif %}
+
+              </a>
+            </div>
+          </div>
+        {% endfor %}
+
+      </div>
+      {% if paginate.pages > 1 %}
+        {% include 'pagination' %}
+      {% endif %}
+    </div>
+    <!-- container-large -->
+  </div>
+{% endpaginate %}

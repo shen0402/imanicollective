@@ -2873,6 +2873,87 @@
           "background_color": "#f0ddd8",
           "enable_socila_icon": true
         }
+      },
+      "jc-collection-banner": {
+        "type": "jc-collection-banner",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/shop_-_all_products_banner.png"
+        }
+      },
+      "jc-collection-grid": {
+        "type": "jc-collection-grid",
+        "settings": {
+        }
+      },
+      "jc-featured-collections": {
+        "type": "jc-featured-collections",
+        "blocks": {
+          "cc2dd14d-4e19-4b50-8fdc-6e84ce786af3": {
+            "type": "collection",
+            "settings": {
+              "collection": "imani-wall-hangings-collection",
+              "image": "shopify:\/\/shop_images\/shop-banners-min.png",
+              "caption": "Shop",
+              "text": "banners"
+            }
+          },
+          "4174e731-e5c3-46ca-8b5a-8cbccfbb2491": {
+            "type": "collection",
+            "settings": {
+              "collection": "just-launched",
+              "image": "shopify:\/\/shop_images\/shop-newarrivals-min.png",
+              "caption": "Shop",
+              "text": "new arrivals"
+            }
+          },
+          "9fb3b432-c817-4007-9780-df17a9d1acde": {
+            "type": "collection",
+            "settings": {
+              "collection": "imani-pillow-collection",
+              "image": "shopify:\/\/shop_images\/shop-pillows-min.png",
+              "caption": "Shop",
+              "text": "pillows"
+            }
+          },
+          "9de6b885-4ce2-4786-998e-180e69b9c27a": {
+            "type": "collection",
+            "settings": {
+              "collection": "imani-holiday-collection",
+              "image": "shopify:\/\/shop_images\/shop-holiday-min.png",
+              "caption": "Shop",
+              "text": "holiday"
+            }
+          },
+          "38518ee2-68f5-4968-9a8f-949cc6ad3131": {
+            "type": "collection",
+            "settings": {
+              "collection": "interactive-play",
+              "image": "shopify:\/\/shop_images\/shop-interactiveplay-min.png",
+              "caption": "Shop",
+              "text": "interactive play"
+            }
+          }
+        },
+        "block_order": [
+          "cc2dd14d-4e19-4b50-8fdc-6e84ce786af3",
+          "4174e731-e5c3-46ca-8b5a-8cbccfbb2491",
+          "9fb3b432-c817-4007-9780-df17a9d1acde",
+          "9de6b885-4ce2-4786-998e-180e69b9c27a",
+          "38518ee2-68f5-4968-9a8f-949cc6ad3131"
+        ],
+        "settings": {
+          "background_color": "#f3eded"
+        }
+      },
+      "jc-collection-connect": {
+        "type": "jc-collection-connect",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/collection-connect.png",
+          "heading": "love your purchase?",
+          "description": "<p>drop a note to<br\/>the woman who<br\/>made your<br\/>product<\/p>",
+          "button_label": "Write now",
+          "button_link": "#"
+        }
       }
     },
     "content_for_index": [

@@ -1,0 +1,34 @@
+<div class="jc-collection-banner">
+  {% if section.settings.image != blank %}
+    {{ section.settings.image | img_url: '1900x' | img_tag: collection.title, 'jc-collection-banner-image' }}
+  {% endif %}
+  <div class="jc-collection-banner-text">
+    <div class="breadcrumb-wrapper">
+      <a href="/collections/all" class="breadcrumb-link w-inline-block">
+        <div>shop</div>
+      </a>
+      <div class="breadcrumb-breaker">/</div>
+      <a href="{{collection.url}}" class="breadcrumb-link w-inline-block">
+        <div>{{ collection.title }}</div>
+      </a>
+    </div>
+    <h2 class="mid-heading-internal">{{ collection.title }}</h2>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Collection banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Collection banner"
+      }
+    ]
+  }
+{% endschema %}

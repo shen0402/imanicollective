@@ -1,39 +1,45 @@
-<div class="cta-section-shop" {% if section.settings.main_image %}style="background-image: url('{{ section.settings.main_image | img_url: '1600x' }}');"{% endif %}>
-  <div class="container-large">
-    <div class="cta-content-wrapper">
-      <h3 class="cta-heading-shop">{{section.settings.main_heading}}</h3>
-      <div class="cta-btn-wrapper"><a href="{{section.settings.button_url}}" class="btn-alt w-button">{{section.settings.button_text}}</a></div>
+<div class="bottom-cta-internal cta-leadership">
+  <div class="container-xl">
+    <div class="bottom-cta-flex-row">
+      <div class="bottom-cta-flex-col-large">
+        <div class="bottom-cta-flex-col-bg-holder bottom-cta-flex-col-bg-holder-leadership" {% if section.settings.main_image %}style="background-image: url('{{ section.settings.main_image | img_url: '1400x' }}');"{% endif %}></div>
+      </div>
+      <div class="bottom-cta-flex-col">
+        <div class="bottom-cta-flex-col-inner">
+          <h3 class="bottom-cta-heading">{{ section.settings.main_heading }}</h3>
+          <div class="bottom-cta-btn-wrapper">
+            <a href="{{section.settings.button_url}}" class="jc-button">{{ section.settings.button_text }}</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
 {% schema %}
   {
-    "name": "CTA Collection All" ,
-      "settings": [
-      	{
-            "type": "image_picker",
-            "id": "main_image",
-            "label": "Background Image"
-        },
-        {
-           "type": "text",
-           "id": "main_heading",
-           "default": "Want to Become a Wholesaler?",
-           "label": "Heading Text"
-        },
-        {
-            "type": "text",
-            "id": "button_text",
-            "default": "Learn More",
-            "label": "Button Text"
-        },
-        {
-            "type": "url",
-            "id": "button_url",
-            "label": "Button Link"
-        }
-         
+    "name": "CTA Collection All",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "main_image",
+        "label": "Background Image"
+      }, {
+        "type": "text",
+        "id": "main_heading",
+        "default": "Want to Become a Wholesaler?",
+        "label": "Heading Text"
+      }, {
+        "type": "text",
+        "id": "button_text",
+        "default": "Learn More",
+        "label": "Button Text"
+      }, {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button Link"
+      }
+
     ]
   }
 {% endschema %}

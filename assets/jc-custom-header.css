@@ -63,7 +63,7 @@
     transition: 0.3s;
 }
 
-.list-menu__item:hover {
+.list-menu__item:hover, .list-menu__item.active {
     color: #af7552;
 }
 
@@ -110,7 +110,7 @@
     font-weight: normal;
 }
 
-.mega-menu__link:hover, .mega-menu__submenu-link:hover {
+.mega-menu__link:hover, .mega-menu__submenu-link:hover, .mega-menu__link.active, .mega-menu__submenu-link.active {
     color: #af7552;
 }
 

@@ -1,91 +1,9 @@
-{% comment %}
-  The contents of the collection.liquid template can be found in /sections/collection-template.liquid
+{% section 'jc-collection-banner' %}
 
+{% section 'jc-collection-grid' %}
 
-{% section 'collection-template' %}
-{% endcomment %}
+{% section 'jc-featured-collections' %}
 
+{% section 'jc-collection-connect' %}
 
-<div class="hero-wrapper-internal">
-  <div class="container-xl">
-    <div class="hero-flex-row">
-      <div class="hero-flex-col-internal-shop">
-        <div class="hero-flex-col-inner-internal-collection">
-          <h1 class="hero-heading">{{collection.title}}</h1>
-          <div class="hero-btn-wrapper"><a href="/collections/all" class="btn-main-hero w-button">Back to All Products</a></div>
-        </div>
-      </div>
-      <div class="hero-flex-col-large-internal-shop">
-        <div class="hero-flex-bg-holder-internal hero-flex-bg-category" {% if collection.image %}style="background-image: url('{{ collection.image | img_url: '1000x' }}');"{% endif %}></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="mid-wrapper-category" id="main-content">
-  <div class="container-mid">
-    <div class="breadcrumb-wrapper">
-      <a href="/" class="breadcrumb-link w-inline-block">
-        <div>home</div>
-      </a>
-      <div class="breadcrumb-breaker">/</div>
-      <a href="/collections/all" class="breadcrumb-link w-inline-block">
-        <div>shop</div>
-      </a>
-      <div class="breadcrumb-breaker">/</div>
-      <a href="{{collection.url}}" class="breadcrumb-link w-inline-block">
-        <div>{{collection.title}}</div>
-      </a>
-     
-     
-    </div>
-    <h2 class="mid-heading-internal">{{collection.title}}</h2>
-    <div class="sort-wrapper-shop">
-      <div class="sort-flex-row-shop">
-        <div class="sort-text-shop">Sort:</div>
-        <div class="sort-input-wrapper">
-        	<select id="price-sort" name="price-sort" class="filter-input-sort w-select">
-        	  <option value="none">Price</option>
-        	  <option value="price-ascending">low - high</option>
-        	  <option value="price-descending">high - low</option>
-        	</select>
-        </div>
-      </div>
-    </div>
-    <div class="flex-row-shop">
-      {% paginate collection.products by 12 %}
-    	{% for product in collection.products %}
-      
-      {% render 'swatchify-conts' with product, psType: 'collection'%}
-      
-      {% assign price = product.price %}
-      {% assign compare_at_price = product.compare_at_price_max %}
-	    	<div class="flex-col-category">
-	    	  <div class="flex-col-inner-shop">
-            {% if product.available != true %}
-              <div class="flex-col-meta-text-shop">Sold Out</div>
-            {% endif %}
-            <a href="{{product.url}}" class="flex-col-link-block-shop w-inline-block">
-	    	  	<div alt="" class="flex-col-img-holder-collection" {% if product.featured_image %}style="background-image: url({{ product.featured_image | img_url: '800x' }});"{% endif %}></div>
-	    	  	<div class="flex-col-title-shop">{{product.title}}</div>
-
-            {% if compare_at_price > price  %}
-            <div class="flex-col-price-shop"><span style="text-decoration: line-through;font-weight: 400;letter-spacing: 0px;">{{ compare_at_price | money }}</span> {{price | money }}</div>
-            {% else %}
-            <div class="flex-col-price-shop">{{product.price | money }}</div>
-            {% endif %}
-          </a></div>
-	    	</div>
-    	{% endfor %}
-
-    </div>
-    {% if paginate.pages > 1 %}
-      {% include 'pagination' %}
-    {% endif %}
-  </div>  <!-- container-small -->
-</div>
-{% endpaginate %}
-{% section 'jc-collection-bottom-row' %}
-{% section 'jc-cta-collection' %}
-
-
-
+{% section 'jc-cta-collection-all' %}

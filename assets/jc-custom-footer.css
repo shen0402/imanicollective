@@ -65,7 +65,7 @@
     text-transform: lowercase;
 }
 
-.jc-custom-footer__link:hover {
+.jc-custom-footer__link:hover, .jc-custom-footer__link.active {
     color: #af7552;
 }
 
