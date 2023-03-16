@@ -1,4 +1,4 @@
-<div class="bottom-cta-internal">
+<div class="bottom-cta-internal cta-leadership">
   <div class="container-xl">
     <div class="bottom-cta-flex-row">
       <div class="bottom-cta-flex-col-large">
@@ -6,9 +6,11 @@
       </div>
       <div class="bottom-cta-flex-col">
         <div class="bottom-cta-flex-col-inner">
-          <div class="bottom-cta-heading-leadership">{{section.settings.main_heading}}</div>
-          <div class="bottom-cta-sub-heading">{{section.settings.sub_heading}}</div>
-          <div class="bottom-cta-btn-wrapper"><a href="/pages/internship" class="btn-main w-button">Learn More</a></div>
+          <h3 class="bottom-cta-heading">{{ section.settings.main_heading }}</h3>
+          <div class="bottom-cta-sub-heading">{{ section.settings.sub_heading }}</div>
+          <div class="bottom-cta-btn-wrapper">
+            <a href="/pages/internship" class="jc-button jc-secondary-button">Learn More</a>
+          </div>
         </div>
       </div>
     </div>
@@ -17,23 +19,21 @@
 
 {% schema %}
   {
-    "name": "CTA" ,
-      "settings": [
-        {
-           "type": "richtext",
-           "id": "main_heading",
-           "label": "Heading Text"
-        },
-        {
-           "type": "richtext",
-           "id": "sub_heading",
-           "label": "Sub Heading Text"
-        },
-         {
-            "type": "image_picker",
-            "id": "main_image",
-            "label": "Main Image"
-         }
+    "name": "CTA",
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "main_heading",
+        "label": "Heading Text"
+      }, {
+        "type": "richtext",
+        "id": "sub_heading",
+        "label": "Sub Heading Text"
+      }, {
+        "type": "image_picker",
+        "id": "main_image",
+        "label": "Main Image"
+      }
     ]
   }
 {% endschema %}

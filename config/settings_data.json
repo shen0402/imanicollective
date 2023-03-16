@@ -763,7 +763,7 @@
           "6a4c8422-f509-4a9f-aa85-d71cfb7ab684"
         ],
         "settings": {
-          "heading_text": "Leadership"
+          "heading_text": "our leadership spans globally across the US and Kenya"
         }
       },
       "jc-banner-section": {
@@ -825,9 +825,9 @@
       "jc-leadership-cta-section": {
         "type": "jc-leadership-cta-section",
         "settings": {
-          "main_heading": "<p>Work<br\/>With Imani<\/p>",
-          "sub_heading": "",
-          "main_image": "shopify:\/\/shop_images\/Untitled_design_-_2022-10-30T113956.904.jpg"
+          "main_heading": "<p>intern with imani<\/p>",
+          "sub_heading": "<p>we'are always looking for new talent<\/p>",
+          "main_image": "shopify:\/\/shop_images\/cta-b.png"
         }
       },
       "jc-artisan-cta-section": {
@@ -2819,7 +2819,7 @@
           "logo": "shopify:\/\/shop_images\/imani-collective-logo-min_fea4fc89-7797-42b1-ad2c-bbe91214b287.png",
           "menu": "main-menu-sidekick-custom",
           "announcement_message": "<p>Subscribe to our newsletter to receive 10% off your first order<\/p>",
-          "announcement_color": "#231f20",
+          "announcement_color": "#474645",
           "announcement_back": "#af7552",
           "announcement_image": "shopify:\/\/shop_images\/announcement-bar-back.png"
         }
