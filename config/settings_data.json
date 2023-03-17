@@ -2952,7 +2952,17 @@
           "heading": "love your purchase?",
           "description": "<p>drop a note to<br\/>the woman who<br\/>made your<br\/>product<\/p>",
           "button_label": "Write now",
-          "button_link": "#"
+          "button_link": "shopify:\/\/pages\/artisans"
+        }
+      },
+      "jc-product-connect": {
+        "type": "jc-product-connect",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/p-connect-1.png",
+          "heading": "love your purchase?",
+          "description": "<p>drop a note to<br\/>the woman who<br\/>made your<br\/>product<\/p>",
+          "button_label": "Write now",
+          "button_link": "shopify:\/\/pages\/artisans"
         }
       }
     },

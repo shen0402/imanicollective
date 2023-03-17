@@ -546,8 +546,8 @@ textarea.w-select {
   float: left;
   width: 100%;
   min-height: 1px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .w-col .w-col {
   padding-left: 0;
@@ -1761,9 +1761,18 @@ textarea.w-select {
   display: block;
   overflow: hidden;
 }
+
+@media (min-width: 768px) {
+  .w-tab-content {
+    width: calc(100% - 100px);
+  }
+}
 .w-tab-pane {
   position: relative;
   display: none;
+  padding: 10px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 .w--tab-active {
   display: block;

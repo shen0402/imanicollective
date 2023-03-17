@@ -1,0 +1,42 @@
+{% unless product.type == 'Gift Card' %}
+  <div class="bottom-section-product">
+    <h3 class="mid-heading-internal">{{ section.settings.heading }}</h3>
+    <div class="container-mid">
+      <div class="flex-row-bottom-product">
+
+        {% for collection in product.collections %}
+          {% if collection.id != 18134433827 and collection.id != 18134663203 %}
+            {% assign same_collection = collection %}
+            {% for product in same_collection.products limit: 4 %}
+              <div class="flex-col-bottom-product">
+                <div class="flex-col-inner-bottom-product">
+                  <a href="{{product.url}}" class="flex-col-link-block-bottom-product w-inline-block">
+                    <div class="flex-col-img-bottom-product-holder" style="background-image: url({{ product.featured_image | img_url: '800x' }});"></div>
+                    <div class="flex-col-title-bottom-product">{{ product.title }}</div>
+                    <div class="flex-col-price-bottom-product">{{ product.price | money }}</div>
+                  </a>
+                </div>
+              </div>
+            {% endfor %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+{% endunless %}
+
+{% schema %}
+  {
+    "name": "Recommendation products",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "you might also like"
+      }
+    ]
+  }
+{% endschema %}
