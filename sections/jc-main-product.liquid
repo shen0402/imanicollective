@@ -116,42 +116,6 @@
 
           <div class="product-options-wrapper">
             <div class="form-block w-form">
-
-              {% comment %}
-              {% form "product", product %}
-
-              {% if product.has_only_default_variant %} 
-              <select name="id" class="product-page-input-hidden w-select">
-              {% for variant in product.variants %}
-              <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %}  value="{{ variant.id }}">{{ variant.title }}</option>
-              {% endfor %}
-              </select>
-
-              {% else %}
-
-
-              <div class="product-options-flex-row">
-              <div class="product-options-label">Option:</div>
-              <div class="select-style">
-              <select name="id" class="product-page-select w-select" >
-              {% for variant in product.variants %}
-              <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %}  value="{{ variant.id }}">{{ variant.title }}</option>
-              {% endfor %}
-              </select>
-              </div>
-              </div>
-
-              {% endif %}
-
-
-              <div class="product-options-flex-row">
-              <div class="product-options-label">Quantity</div>
-              <input type="number" class="product-page-input w-input" maxlength="256" name="quantity" placeholder="1" id="field-2">
-              </div>
-              <div class="product-btn-wrapper"><input type="submit" value="Add to Cart" data-wait="Please wait..." class="btn-alt w-button"></div>
-              {% endform %}
-              {% endcomment %}
-
               {% form "product", product %}
                 {% if product.variants.size > 1 %}
                   {% if product.options[0] %}

@@ -2964,6 +2964,24 @@
           "button_label": "Write now",
           "button_link": "shopify:\/\/pages\/artisans"
         }
+      },
+      "jc-main-product": {
+        "type": "jc-main-product",
+        "settings": {
+        }
+      },
+      "jc-product-features": {
+        "type": "jc-product-features",
+        "settings": {
+          "heading": "features + specs",
+          "image": "shopify:\/\/shop_images\/shop_-_product_page_-_selah_backpack_backpack_layout.png"
+        }
+      },
+      "jc-recommendation-products": {
+        "type": "jc-recommendation-products",
+        "settings": {
+          "heading": "you might also like"
+        }
       }
     },
     "content_for_index": [
