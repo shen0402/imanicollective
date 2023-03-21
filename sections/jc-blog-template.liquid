@@ -1,11 +1,11 @@
 <div class="mid-wrapper-blog">
-  <div class="container-mid">
+  <div class="container-s">
     <div class="blog-list">
       {% for article in blog.articles %}
         <div class="blog-item {% if forloop.index > 7 %}hide{% endif %}">
           <div class="blog-item__image">
             {% if article.image %}
-              {{ article.image | img_url: '1440x' | img_tag }}
+              {{ article.image | img_url: '1100x' | img_tag }}
             {% else %}
               <img src="//cdn.shopify.com/s/files/1/2534/9108/files/message-min.png">
             {% endif %}

@@ -1,21 +1,12 @@
 {% if section.blocks.size > 0 %}
-  <div class="jc-blog-tags">
-    <h3 class="mid-heading-internal">{{ blog.title }}</h3>
-    <div class="container-xl">
-      <div class="blog-tags-list">
-        {% for block in section.blocks %}
-          <div class="blog-tag-item">
-            <a class="blog-tag__link" href="{{ blog.url }}/tagged/{{ block.settings.tag | handle }}">
-              <div class="blog-tag__image">
-                {{ block.settings.image | img_url: '350x' | img_tag }}
-              </div>
-              <span class="blog-tag__label">
-                {{ block.settings.tag }}
-              </span>
-            </a>
-          </div>
-        {% endfor %}
-      </div>
+  <div class="container-s">
+    <h2 class="blog-heading">{{ blog.title }}</h2>
+    <div class="jc-blog-tags-list">
+      {% for block in section.blocks %}
+        <a class="jc-blog-tag__link" href="{{ blog.url }}/tagged/{{ block.settings.tag | handle }}">
+          {{ block.settings.tag }}
+        </a>
+      {% endfor %}
     </div>
   </div>
 {% endif %}
@@ -29,10 +20,6 @@
         "name": "Tag",
         "settings": [
           {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Image"
-          }, {
             "type": "text",
             "id": "tag",
             "label": "Tag"
@@ -42,7 +29,7 @@
     ],
     "presets": [
       {
-        "name": "Blog Tags"
+        "name": "Blog tags"
       }
     ]
   }
