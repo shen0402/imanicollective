@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "main": {
+      "type": "jc-article-template",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
