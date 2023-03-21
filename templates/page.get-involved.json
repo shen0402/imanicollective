@@ -1,0 +1,12 @@
+{
+    "sections": {
+      "main": {
+        "type": "jc-page-get-involved",
+        "settings": {
+        }
+      }
+    },
+    "order": [
+      "main"
+    ]
+  }

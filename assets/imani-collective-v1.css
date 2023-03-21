@@ -3462,7 +3462,7 @@
   
   .btn-text {
     position: relative;
-    z-index: 20;
+    z-index: 2;
   }
   
   .blog-flex-col-main {
