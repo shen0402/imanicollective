@@ -1,0 +1,12 @@
+{
+    "sections": {
+      "main": {
+        "type": "jc-page-the-imani-model",
+        "settings": {
+        }
+      }
+    },
+    "order": [
+      "main"
+    ]
+}
