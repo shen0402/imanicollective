@@ -1,0 +1,12 @@
+{
+    "sections": {
+      "main": {
+        "type": "jc-page-product-care",
+        "settings": {
+        }
+      }
+    },
+    "order": [
+      "main"
+    ]
+  }
