@@ -1,0 +1,52 @@
+<div class="mid-wrapper-blog">
+  <div class="container-mid">
+    <div class="blog-list">
+      {% for article in blog.articles %}
+        <div class="blog-item {% if forloop.index > 7 %}hide{% endif %}">
+          <div class="blog-item__image">
+            {% if article.image %}
+              {{ article.image | img_url: '1440x' | img_tag }}
+            {% else %}
+              <img src="//cdn.shopify.com/s/files/1/2534/9108/files/message-min.png">
+            {% endif %}
+          </div>
+          {% if article.tags != blank %}
+            <h4 class="blog-item__tag">
+              {{ article.tags | first }}
+            </h4>
+          {% endif %}
+          <h3 class="blog-item__title">
+            {{ article.title }}
+          </h3>
+          <div class="blog-item__text">
+            {%- if article.excerpt.size > 0 -%}
+              {{ article.excerpt | strip_html | truncatewords: 30 }}
+            {%- else -%}
+              {{ article.content | strip_html | truncatewords: 30 }}
+            {%- endif -%}
+          </div>
+          <div class="blog-item__button">
+            <a href="{{ article.url }}" class="jc-button">Read now</a>
+          </div>
+        </div>
+      {% endfor %}
+
+    </div>
+    <div class="blog-button hide">
+      <a href="javascript:;" class="jc-button js-load-more">
+        Load more
+      </a>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Blog Grid",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Blog Grid"
+      }
+    ]
+  }
+{% endschema %}
