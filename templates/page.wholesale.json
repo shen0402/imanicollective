@@ -1,0 +1,12 @@
+{
+    "sections": {
+      "main": {
+        "type": "jc-page-wholesale",
+        "settings": {
+        }
+      }
+    },
+    "order": [
+      "main"
+    ]
+}
