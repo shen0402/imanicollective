@@ -1,0 +1,12 @@
+{
+    "sections": {
+      "main": {
+        "type": "jc-page-our-story",
+        "settings": {
+        }
+      }
+    },
+    "order": [
+      "main"
+    ]
+  }
