@@ -56,7 +56,7 @@
     }
   },
   "order": [
-    "blog-tags-with-image",
-    "main"
+    "main",
+    "blog-tags-with-image"
   ]
 }
