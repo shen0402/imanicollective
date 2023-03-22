@@ -1,0 +1,45 @@
+{% assign collection = section.settings.collection %}
+{% assign products = collection.products %}
+<div class="new-arrivals-section">
+  <div class="new-arrivals-content-wrapper">
+    <a href="{{ collection.url }}" class="new-arrivals-link-block w-inline-block">
+      <div class="big-medium-text smaller">{{ collection.title }}</div><img
+        src="{{ 'arrow-icon3x.png' | asset_img_url: '50x' }}"
+        loading="lazy"
+        sizes="50px"
+        alt=""
+        class="arrivals-link-arrow">
+    </a>
+    <div class="new-arrivals-flex-row">
+      {% for product in products limit: 6 %}
+        <div class="new-arrivals-flex-col">
+          <div class="new-arrivals-img-wrapper"><img
+              src="{{ product.featured_image | img_url: '250x' }}"
+              loading="lazy"
+              sizes="(max-width: 991px) 110px, 120px"
+              alt="{{ product.featured_image.alt | default: product.title  }}"
+              class="new-arrivals-img"></div>
+          <div class="eyebrow-text">{{ product.title }}</div>
+          <div class="price-text">{{ product.price | money }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Featured Collection",
+    "settings": [
+      {
+        "type": "collection",
+        "id": "collection",
+        "label": "Collection"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Featured Collection"
+      }
+    ]
+  }
+{% endschema %}

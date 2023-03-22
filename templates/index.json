@@ -1,0 +1,50 @@
+{
+  "sections": {
+    "home-hero": {
+      "type": "jc-hero",
+      "settings": {
+      }
+    },
+    "home-collection": {
+      "type": "jc-collection-list",
+      "settings": {
+      }
+    },
+    "home-featured-collection-1": {
+      "type": "jc-featured-collection",
+      "settings": {
+        "collection": "just-launched"
+      }
+    },
+    "home-richtext": {
+      "type": "jc-richtext",
+      "settings": {
+      }
+    },
+    "home-image-with-text-slider": {
+      "type": "jc-image-with-text-slider",
+      "settings": {
+      }
+    },
+    "home-featured-collection-2": {
+      "type": "jc-featured-collection",
+      "settings": {
+        "collection": "pennants"
+      }
+    },
+    "home-instagram": {
+      "type": "jc-instagram",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "home-hero",
+    "home-collection",
+    "home-featured-collection-1",
+    "home-richtext",
+    "home-image-with-text-slider",
+    "home-featured-collection-2",
+    "home-instagram"
+  ]
+}

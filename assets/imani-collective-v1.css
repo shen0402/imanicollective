@@ -7155,6 +7155,10 @@
       justify-self: center;
     }
   }
+
+  .w-slider-aria-label {
+    display: none;
+  }
   
   @font-face {
     font-family: 'Myriad Pro';
