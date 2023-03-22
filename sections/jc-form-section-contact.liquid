@@ -1,45 +1,127 @@
-<div class="mid-wrapper-contact">
-  <div class="container-xs">
-    <p class="mid-heading-contact">{{section.settings.top_text}}</p>
+<div class="info-header-wrapper">
+  <div class="center-text-wrapper margin-bottom-large">
+    <h1>get in touch</h1>
   </div>
-  <div class="container-mid">
-    <div class="mid-row-contact w-row">
-      <div class="mid-col-left-contact w-col w-col-5 w-col-stack"><img src="{{ section.settings.main_image | img_url: '1000x' }}" alt="{{image.alt}}" class="mid-col-img-contact"></div>
-      <div class="mid-col-right-contact w-col w-col-7 w-col-stack">
-        <div class="mid-col-inner-contact">
-          <div class="form-block-contact w-form">
+</div>
+<div class="two-col-side-section">
+  <div class="two-col-flex-row">
+    <div class="info-links-grid">
+      <a href="/pages/contact" class="info-link-block w-inline-block w--current">
+        <div>get in touch</div>
+      </a>
+      <a href="/pages/shipping-returns" class="info-link-block w-inline-block">
+        <div>shipping + returns</div>
+      </a>
+      <a href="/pages/faqs" class="info-link-block w-inline-block">
+        <div>F.A.Q.s</div>
+      </a>
+      <a
+        href="/pages/product-care"
+        aria-current="page"
+        class="info-link-block w-inline-block">
+        <div>product care</div>
+      </a>
+      <a href="/pages/privacy-policy" class="info-link-block w-inline-block">
+        <div>privacy policy</div>
+      </a>
+    </div>
+    <div class="info-flex-col">
+      <div class="product-info-wrapper">
+        <div class="general-text">{{ section.settings.top_text }}</div>
+      </div>
+      <div class="mid-row-contact w-row">
+        <div class="mid-col-left-contact w-col w-col-4 w-col-stack"><img
+            src="{{ section.settings.main_image | img_url: '1000x' }}"
+            alt="{{image.alt}}"
+            class="mid-col-img-contact"></div>
+        <div class="mid-col-right-contact w-col w-col-8 w-col-stack">
+          <div class="mid-col-inner-contact">
+            <div class="form-block-contact w-form">
 
-            {% form 'contact', id:"Contact-Form" %}
-            {% if form.posted_successfully? %}
-              <div class="jc-form-done">
+              {% form 'contact', id: "Contact-Form" %}
+                {% if form.posted_successfully? %}
+                  <div class="jc-form-done">
+                    <div>Thank you! Your submission has been received!</div>
+                  </div>
+                {% else %}
+                  <input
+                    type="hidden"
+                    name="contact[form-name]"
+                    value="General Contact Form">
+                  <div class="form-group-contact">
+                    <label for="name" class="form-label-contact">Your Name<span class="required">*</span>
+                    </label><input
+                      type="text"
+                      class="form-input-contact w-input"
+                      maxlength="256"
+                      name="contact[Your-Name]"
+                      data-name="Name"
+                      id="Your-Name"
+                      required=""></div>
+                  <div class="form-group-contact">
+                    <label for="email" class="form-label-contact">Email Address<span class="required">*</span>
+                    </label><input
+                      type="email"
+                      class="form-input-contact w-input"
+                      maxlength="256"
+                      name="contact[email]"
+                      data-name="Email"
+                      id="email"
+                      required=""></div>
+                  <div class="form-group-contact">
+                    <label for="Phone-Number" class="form-label-contact">Phone Number<span class="required">*</span>
+                    </label><input
+                      type="text"
+                      class="form-input-contact w-input"
+                      maxlength="256"
+                      name="contact[Phone-Number]"
+                      data-name="Phone Number"
+                      id="Phone-Number"
+                      required=""></div>
+                  <div class="form-group-contact form-group-select-contact">
+                    <label for="Phone-Number-2" class="form-label-contact">I Have A Question About...<span class="required">*</span>
+                    </label>
+                    <select
+                      id="Question-About"
+                      name="contact[Question-About]"
+                      class="form-input-contact form-input-area-contact w-select">
+                      <option value="blank">(Choose An Option)</option>
+                      <option value="Imani-Products ">Imani Products</option>
+                      <option value="Volunteering">Volunteering
+                      </option>
+                      <option value="Internships">Internships</option>
+                      <option value="Partnerships">Partnerships</option>
+                      <option value="Brand-Ambassador-Program">Brand Ambassador Program</option>
+                      <option value="Press-and-Events">Press + Events</option>
+                      <option value="Donations">Donations</option>
+                      <option value="Wholesale">Wholesale</option>
+                    </select>
+                  </div>
+                  <div class="form-group-contact form-group-area">
+                    <label for="Message" class="form-label-contact">Your Message<span class="required">*</span>
+                    </label>
+                    <textarea
+                      data-name="Message"
+                      maxlength="5000"
+                      id="Message"
+                      name="contact[Message]"
+                      required=""
+                      class="form-input-contact form-input-contact-area w-input"></textarea>
+                  </div>
+                  <div class="form-btn-wrapper-contact"><input
+                      type="submit"
+                      value="Submit"
+                      data-wait="Please wait..."
+                      class="jc-button"></div>
+                {% endif %}
+              {% endform %}
+
+              <div class="w-form-done">
                 <div>Thank you! Your submission has been received!</div>
               </div>
-            {% else %}
-            <input type="hidden" name="contact[form-name]" value="General Contact Form">
-              <div class="form-group-contact"><label for="name" class="form-label-contact">Your Name<span class="required">*</span></label><input type="text" class="form-input-contact w-input" maxlength="256" name="contact[Your-Name]" data-name="Name" id="Your-Name" required=""></div>
-              <div class="form-group-contact"><label for="email" class="form-label-contact">Email Address<span class="required">*</span></label><input type="email" class="form-input-contact w-input" maxlength="256" name="contact[email]" data-name="Email" id="email" required=""></div>
-              <div class="form-group-contact"><label for="Phone-Number" class="form-label-contact">Phone Number<span class="required">*</span></label><input type="text" class="form-input-contact w-input" maxlength="256" name="contact[Phone-Number]" data-name="Phone Number" id="Phone-Number" required=""></div>
-              <div class="form-group-contact form-group-select-contact"><label for="Phone-Number-2" class="form-label-contact">I Have A Question About...<span class="required">*</span></label><select id="Question-About" name="contact[Question-About]" class="form-input-contact form-input-area-contact w-select">
-                <option value="blank">(Choose An Option)</option>
-                <option value="Imani-Products ">Imani Products</option>
-                <option value="Volunteering">Volunteering </option>
-                <option value="Internships">Internships</option>
-                <option value="Partnerships">Partnerships</option>
-                <option value="Brand-Ambassador-Program">Brand Ambassador Program</option>
-                <option value="Press-and-Events">Press + Events</option>
-                <option value="Donations">Donations</option>
-                <option value="Wholesale">Wholesale</option>
-              </select></div>
-              <div class="form-group-contact form-group-area"><label for="Message" class="form-label-contact">Your Message<span class="required">*</span></label><textarea data-name="Message" maxlength="5000" id="Message" name="contact[Message]" required="" class="form-input-contact form-input-contact-area w-input"></textarea></div>
-              <div class="form-btn-wrapper-contact"><input type="submit" value="Submit" data-wait="Please wait..." class="btn-main w-button"></div>
-              {% endif %}
-            {% endform %}
-
-            <div class="w-form-done">
-              <div>Thank you! Your submission has been received!</div>
-            </div>
-            <div class="w-form-fail">
-              <div>Oops! Something went wrong while submitting the form.</div>
+              <div class="w-form-fail">
+                <div>Oops! Something went wrong while submitting the form.</div>
+              </div>
             </div>
           </div>
         </div>
@@ -48,23 +130,19 @@
   </div>
 </div>
 
-
 {% schema %}
   {
-    "name": "Form Section" ,
-      "settings": [
-        {
-           "type": "textarea",
-           "id": "top_text",
-           "label": "Top Text"
-        },
-         {
-            "type": "image_picker",
-            "id": "main_image",
-            "label": "Main Image"
-         }
+    "name": "Form Section",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "top_text",
+        "label": "Top Text"
+      }, {
+        "type": "image_picker",
+        "id": "main_image",
+        "label": "Main Image"
+      }
     ]
   }
 {% endschema %}
-
-
