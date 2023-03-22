@@ -6288,8 +6288,33 @@ select:-webkit-autofill:focus {
   margin-top: 40px;
 }
 
-.meta-content-wrapper.rte h4 {
+.meta-content-wrapper.rte h4, .meta-content-wrapper.rte div b {
   margin-top: 20px;
+  font-style: italic;
+  color: #bb9883;
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: normal;
+}
+
+.meta-content-wrapper.rte h4 b {
+  font-weight: normal;
+}
+
+@media (max-width: 767px) {
+  .meta-content-wrapper.rte h4, .meta-content-wrapper.rte div b {
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 4px;
+  }
+}
+
+@media (max-width: 479px) {
+  .meta-content-wrapper.rte h4, .meta-content-wrapper.rte div b {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 3px;
+  }
 }
 
 .meta-content-wrapper.rte a {
@@ -10561,6 +10586,9 @@ margin-bottom:0px;
     -ms-flex: 0 100%;
     flex: 0 100%;
   }
+}
+.info-flex-col .meta-content-wrapper.rte, .meta-content-wrapper.rte h3:first-of-type {
+  margin-top: 0;
 }
 @keyframes fadeIn {
   0% {

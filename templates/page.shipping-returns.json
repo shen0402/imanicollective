@@ -1,0 +1,12 @@
+{
+    "sections": {
+      "main": {
+        "type": "jc-shipping-returns",
+        "settings": {
+        }
+      }
+    },
+    "order": [
+      "main"
+    ]
+  }

@@ -1,0 +1,12 @@
+{
+    "sections": {
+      "main": {
+        "type": "jc-privacy-policy",
+        "settings": {
+        }
+      }
+    },
+    "order": [
+      "main"
+    ]
+  }

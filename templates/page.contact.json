@@ -3,7 +3,7 @@
     "main": {
       "type": "jc-form-section-contact",
       "settings": {
-        "top_text": "If you have any questions about our artisans or the wonderful products they produce, please fill out the form below and we’ll be in contact shortly.",
+        "top_text": "If you have any questions about your order, our artisans, or the wonderful products they produce? please fill out the form below and we'll be in contact within 1-2 business days.",
         "main_image": "shopify:\/\/shop_images\/contact_contact-11.png"
       }
     }
