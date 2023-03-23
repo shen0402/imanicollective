@@ -183,6 +183,7 @@
     line-height: 46px;
     font-weight: 500;
     letter-spacing: 8px;
+    text-transform: lowercase;
   }
   
   .big-medium-text.margin-b-15.white-text {
@@ -1980,8 +1981,8 @@
     overflow: hidden;
     width: 27vw;
     height: 27vw;
-    max-height: 380px;
-    max-width: 380px;
+    max-height: 390px;
+    max-width: 390px;
     padding-bottom: 30px;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -2091,6 +2092,13 @@
     -ms-flex-align: center;
     align-items: center;
     text-align: center;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .new-arrivals-flex-col:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
   }
   
   .new-arrivals-img-wrapper {
@@ -2277,14 +2285,14 @@
     max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 100px;
   }
   
   .instagram-placeholder {
     margin-top: 20px;
     margin-bottom: 60px;
-    padding-top: 90px;
-    padding-bottom: 90px;
-    background-color: #e1c3c3;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
   }
 

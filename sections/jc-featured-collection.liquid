@@ -3,7 +3,14 @@
 <div class="new-arrivals-section">
   <div class="new-arrivals-content-wrapper">
     <a href="{{ collection.url }}" class="new-arrivals-link-block w-inline-block">
-      <div class="big-medium-text smaller">{{ collection.title }}</div><img
+      <div class="big-medium-text smaller">
+        {% if section.settings.heading != blank %}
+          {{ section.settings.heading }}
+        {% else %}
+          {{ collection.title }}
+        {% endif %}
+      </div>
+      <img
         src="{{ 'arrow-icon3x.png' | asset_img_url: '50x' }}"
         loading="lazy"
         sizes="50px"
@@ -12,7 +19,7 @@
     </a>
     <div class="new-arrivals-flex-row">
       {% for product in products limit: 6 %}
-        <div class="new-arrivals-flex-col">
+        <a class="new-arrivals-flex-col" href="{{ product.url }}">
           <div class="new-arrivals-img-wrapper"><img
               src="{{ product.featured_image | img_url: '250x' }}"
               loading="lazy"
@@ -21,7 +28,7 @@
               class="new-arrivals-img"></div>
           <div class="eyebrow-text">{{ product.title }}</div>
           <div class="price-text">{{ product.price | money }}</div>
-        </div>
+        </a>
       {% endfor %}
     </div>
   </div>
@@ -31,6 +38,10 @@
     "name": "Featured Collection",
     "settings": [
       {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      }, {
         "type": "collection",
         "id": "collection",
         "label": "Collection"
