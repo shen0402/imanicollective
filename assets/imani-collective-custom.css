@@ -625,7 +625,7 @@ body {
 .connect-text {
   margin-bottom: 0px;
   margin-left: auto;
-  
+  text-align: right;
   font-size: 14px;
   line-height: 1.2;
   font-weight: 300;
@@ -2383,9 +2383,8 @@ body {
 .mid-heading-internal {
   margin-top: 0px;
   margin-bottom: 50px;
-  
-  font-size: 48px;
-  line-height: 50px;
+  font-size: 40px;
+  line-height: 46px;
   text-align: center;
   letter-spacing: 10px;
   text-transform: lowercase;
@@ -4980,6 +4979,8 @@ body {
    transition: border-color 250ms ease;
    width: 80px;
    height: 80px;
+   border-radius: 50%;
+   overflow: hidden;
 }
 
 .tab-menu-link-inner-product:hover {
@@ -5190,11 +5191,11 @@ body {
 }
 
 .product-social-link {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .product-social-img {
-  width: 28px;
+  width: 40px;
 }
 
 .product-description-text {
@@ -7958,7 +7959,9 @@ margin-bottom:0px;
         padding-left: 10px;
       }
       .mid-heading-internal {
-        font-size: 42px;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 6px;
       }
       .sort-wrapper-shop {
         margin-bottom: 50px;
