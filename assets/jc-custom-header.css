@@ -30,7 +30,7 @@
     display: none;
     position: absolute;
     width: 100%;
-    top: 40px;
+    top: 80px;
     left: 50%;
     transform: translateX(-50%);
     border: 1px solid rgba(71, 70, 69, 0.5);
@@ -51,7 +51,7 @@
 }
 
 .list-menu__item {
-    padding: 10px 50px;
+    padding: 30px 50px;
     display: flex;
     font-family: brandon-grotesque,sans-serif;
     color: #333;
