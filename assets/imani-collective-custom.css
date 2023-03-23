@@ -1635,6 +1635,12 @@ body {
   letter-spacing: 10px;
 }
 
+#shopify-section-leadership-grid .mid-heading-leader {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mid-flex-row-leader {
   position: relative;
   z-index: 2;
