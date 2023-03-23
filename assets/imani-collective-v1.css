@@ -2287,6 +2287,13 @@
     background-color: #e1c3c3;
     text-align: center;
   }
+
+  .instagram-content {
+    width: 87%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
   
   .modal-reach-out {
     position: fixed;
@@ -4497,8 +4504,11 @@
     }
   
     .instagram-text-wrapper {
-      margin-right: 15px;
       text-align: center;
+    }
+
+    .instagram-content {
+      width: calc(100% - 40px);
     }
   
     .modal-content-wrapper {
