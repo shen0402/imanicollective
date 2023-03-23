@@ -6308,6 +6308,11 @@ select:-webkit-autofill:focus {
   font-weight: normal;
 }
 
+.meta-content-wrapper.rte div b {
+  margin-bottom: 10px;
+  display: block;
+}
+
 .meta-content-wrapper.rte h4 b {
   font-weight: normal;
 }
