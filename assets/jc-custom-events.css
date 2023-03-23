@@ -11,6 +11,8 @@
     text-align: center;
     letter-spacing: 10px;
     text-transform: lowercase;
+    color: #333;
+    font-style: normal;
 }
 
 .event-item.no-event {
@@ -74,7 +76,7 @@
     margin: 0 0 30px 0;
     font-family: brandon-grotesque, sans-serif;
     font-style: italic;
-    color: #af7552;
+    color: #bb9883;
     font-weight: 400;
     letter-spacing: 5px;
     font-size: 48px;

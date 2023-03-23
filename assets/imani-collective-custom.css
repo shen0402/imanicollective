@@ -1429,9 +1429,8 @@ body {
 .bottom-cta-heading {
   margin-top: 0px;
   margin-bottom: 30px;
-  
-  font-size: 48px;
-  line-height: 50px;
+  font-size: 40px;
+  line-height: 46px;
   letter-spacing: 10px;
   text-transform: lowercase;
 }
@@ -3816,10 +3815,15 @@ body {
 
 .flex-col-date-text-press {
   margin-bottom: 10px;
-  
-  font-size: 18px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.flex-col-bottom-press .jc-button {
+  font-size: 11px;
+  min-width: 200px;
 }
 
 .flex-col-heading-press {
