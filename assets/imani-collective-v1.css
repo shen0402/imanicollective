@@ -411,6 +411,7 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 100px;
   }
   
   .influencer-flex-col-img-wrapper {
