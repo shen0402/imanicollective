@@ -2,7 +2,7 @@
   <div class="center-text-wrapper smaller-width-alt margin-b-40">
     <h1 class="margin-b-40">sustainability</h1>
     <div class="general-text margin-b-40">At Imani Collective, we strive to be transparent in our impact and social enterprise model. Every year we make it a top priority to care for the well-being of our artisans and the communities &quot;without compromising the ability of future generations to meet their own needs.&quot;</div>
-    <div class="general-text">We support the United Nations 2030 Agenda for Sustainable Development, which has set forth 17 SDGs that serve as a &quot;call to action to end poverty, protect the planet, and ensure all people enjoy peace and prosperity by 2030. Our primary SDGs of focus are:</div>
+    <div id="top" class="general-text">We support the United Nations 2030 Agenda for Sustainable Development, which has set forth 17 SDGs that serve as a &quot;call to action to end poverty, protect the planet, and ensure all people enjoy peace and prosperity by 2030. Our primary SDGs of focus are:</div>
     <div class="sustainability-flex-row">
       <div class="sustainability-flex-col-2"><img
           src="{{ 'sustainability_1---no-poverty.png' | asset_img_url: '250x' }}"
@@ -18,7 +18,7 @@
           sizes="(max-width: 479px) 100vw, (max-width: 767px) 20vw, (max-width: 991px) 19vw, 154px"
           alt="Drawing of two hands holding a rope"
           class="sus-img">
-        <div class="general-text">8 - Decent work and economic growth</div>
+        <div id="mobile_top" class="general-text">8 - Decent work and economic growth</div>
       </div>
       <div class="sustainability-flex-col-2"><img
           src="{{ 'donor-landing-page_1.png' | asset_img_url: '250x' }}"
@@ -26,7 +26,7 @@
           sizes="(max-width: 479px) 100vw, (max-width: 767px) 23vw, (max-width: 991px) 19vw, 154px"
           alt=""
           class="sus-img">
-        <div id="top" class="general-text">12 - Responsible consumption and production</div>
+        <div class="general-text">12 - Responsible consumption and production</div>
       </div>
     </div>
   </div>
@@ -344,7 +344,7 @@
           </div>
         </div>
       </div>
-      <div data-w-tab="Tab 3" class="w-tab-pane">
+      <div data-w-tab="Tab 3" class="w-tab-pane w--tab-active">
         <div class="center-text-wrapper">
           <h2 class="margin-b-30">We are a women-owned socio-economic empowerment program expanding across the globe. We strive to create a space that puts people before products.</h2>
           <div class="culture-flex-row">
@@ -518,7 +518,15 @@
     </div>
   </div>
   <div class="center-text-wrapper">
-    <a href="#top" class="general-btn skinnier center-align w-inline-block"><img
+    <a href="#top" class="general-btn skinnier center-align w-inline-block mobile-hide"><img
+        src="{{ 'collaborations_reach-out.png' | asset_img_url: '250x' }}"
+        loading="lazy"
+        sizes="133px"
+        alt=""
+        class="btn-img">
+      <div class="btn-text">BACK TO TOP</div>
+    </a>
+    <a href="#mobile_top" class="general-btn skinnier center-align w-inline-block desktop-hide"><img
         src="{{ 'collaborations_reach-out.png' | asset_img_url: '250x' }}"
         loading="lazy"
         sizes="133px"

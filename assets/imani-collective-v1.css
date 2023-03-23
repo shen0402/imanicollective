@@ -3479,6 +3479,7 @@
   .btn-text {
     position: relative;
     z-index: 2;
+    text-transform: uppercase;
   }
   
   .blog-flex-col-main {
@@ -7177,6 +7178,10 @@
 
   .w-slider-aria-label {
     display: none;
+  }
+
+  .sustainability-tab-section {
+    margin-bottom: 100px;
   }
   
   @font-face {

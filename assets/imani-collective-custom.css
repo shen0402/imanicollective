@@ -10593,6 +10593,16 @@ margin-bottom:0px;
 .info-flex-col .meta-content-wrapper.rte, .meta-content-wrapper.rte h3:first-of-type {
   margin-top: 0;
 }
+@media (max-width: 767px) {
+  .mobile-hide {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .desktop-hide {
+    display: none;
+  }
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;

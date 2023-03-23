@@ -117,7 +117,7 @@
     <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
-    {% if template.name == 'index' or page.title == 'Our Impact' or page.title == 'Sustainability' %}
+    {% if template.name == 'index' or page.handle == 'our-impact' or page.handle == 'sustainability' %}
       <script
         src="{{ 'imani-collective-v1.js' | asset_url }}"
         type="text/javascript"
