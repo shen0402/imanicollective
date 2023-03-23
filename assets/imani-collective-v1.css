@@ -545,6 +545,10 @@
   .product-info-wrapper {
     margin-bottom: 40px;
   }
+
+  .product-info-wrapper .big-medium-text {
+    text-transform: uppercase;
+  }
   
   .blog-hero-section {
     margin-top: 60px;
@@ -1730,6 +1734,7 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 100px;
   }
   
   .collab-flex-col {
