@@ -3,7 +3,7 @@
 
   {% for block in section.blocks %}
     <div class="mid-flex-col-leader">
-      <div class="mid-flex-col-inner-leader">
+      <div class="mid-flex-col-inner-leader flex-link-artisan" data-ix="artisan-modal-open">
         <div class="mid-flex-col-img"><img
             src="{{ block.settings.leadership_image | img_url: '400x' }}"
             alt="{{block.settings.leadership_name}} Headshot"
@@ -11,6 +11,45 @@
         <div class="mid-flex-col-bottom-wrapper">
           <h5 class="mid-flex-col-heading-leadership">{{ block.settings.leadership_name }}</h5>
           <h6 class="mid-flex-col-sub-heading-leadership">{{ block.settings.leadership_position }}</h6>
+        </div>
+      </div>
+      <div class="modal-artisan">
+        <div class="modal-content-wrapper">
+          <div class="modal-top-wrapper">
+            <div class="modal-top-img-holder"><img
+                src="{{ block.settings.leadership_image | img_url: '400x' }}"
+                alt=""
+                class="modal-img"></div>
+            <div class="modal-top-content-col">
+              <p class="modal-top-content-heading">
+                {{ block.settings.leadership_name }},</p>
+              <p class="modal-top-content-heading">{{ block.settings.leadership_position }}</p>
+            </div>
+            <div class="modal-top-content-col">
+              <p class="modal-top-content-sbuheading">
+                <b>Hometown</b>
+                <span>{{ block.settings.hometown }}</span>
+              </p>
+              <p class="modal-top-content-sbuheading">
+                <b>Can't Live Without</b>
+                <span>{{ block.settings.live }}</span>
+              </p>
+              <p class="modal-top-content-sbuheading">
+                <b>Latest Obsession</b>
+                <span>{{ block.settings.latest_obsesstion }}</span>
+              </p>
+              <p class="modal-top-content-sbuheading">
+                <b>Favorite thing about working at Imani</b>
+                <span>{{ block.settings.favorite }}</span>
+              </p>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="modal-close-btn"
+            data-ix="artisan-modal-close">
+            <img src="https://cdn.shopify.com/s/files/1/2534/9108/files/new-popup-close.png?v=1679616438">
+          </a>
         </div>
       </div>
     </div>
@@ -21,7 +60,17 @@
 <!--flex row -->
 
 
-
+<script type="text/javascript">
+  $(document).ready(function() { 
+  $('[data-ix="artisan-modal-open"]').click(function(e) {
+                        e.preventDefault();
+                        $('body').css('overflow', 'hidden');
+                      });
+                      $('a[data-ix="artisan-modal-close"]').click(function(e) {
+                          e.preventDefault();
+                          $('body').css('overflow', 'auto');
+                      });
+                    });</script>
 {% schema %}
   {
     "name": "Leadership",
@@ -42,16 +91,38 @@
             "label": "Name",
             "id": "leadership_name",
             "type": "text"
-          }, {
+          },
+          {
             "label": "Position",
             "id": "leadership_position",
             "type": "text"
-          }, {
+          },
+          {
             "label": "Leadership Image (400px by 400px dimensions)",
             "id": "leadership_image",
             "type": "image_picker"
+          },
+          {
+            "type": "text",
+            "id": "hometown",
+            "label": "Home town",
+            "default": "san antonio"
+          }, {
+            "type": "text",
+            "id": "live",
+            "label": "Can't Live Without",
+            "default": "family"
+          }, {
+            "type": "text",
+            "id": "latest_obsesstion",
+            "default": "gummy worms",
+            "label": "Latest Obsession"
+          }, {
+            "type": "text",
+            "id": "favorite",
+            "label": "Favorite thing about working at Imani",
+            "default": "my community"
           }
-
         ]
       }
     ]
