@@ -13,99 +13,19 @@
     </div>
   </div>
 </div>
-{% comment %}
-<div class="bottom-wrapper-artisans">
-  <div class="container-mid">
-    <div class="bottom-heading-wrapper-artisans w-clearfix">
-      <h3 class="bottom-heading-artisans">Monthly Artisan<br>Highlight</h3>
-    </div>
-    <div>
-      <div class="bottom-row-artisans w-row">
-        <div class="bottom-col-left-artisans w-col w-col-7">
-          <div class="bottom-col-inner-artisans">
-            <div class="bottom-vid-wrapper-artisans">
-              <div style="padding-top:56.17021276595745%" id="w-node-c24f316460d5-50d2681a" class="w-embed-youtubevideo bottom-vid-artisans"><iframe src="https://www.youtube.com/embed/CdEbPEO79WE?rel=0&controls=1&autoplay=0&mute=0&start=0" frameborder="0" style="position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:auto" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div>
-            </div>
-            <p class="bottom-col-left-text-artisans"><strong>Name: </strong>Rachel</p>
-            <p class="bottom-col-left-text-artisans"><strong>Position:</strong> General artisan</p>
-            <p class="bottom-col-left-text-artisans"><strong>Years with Imani:</strong> 2</p>
-            <p class="bottom-col-left-text-artisans"><strong>Family:</strong> Single</p>
-            <p class="bottom-col-left-text-artisans-alt">What do you love most about being a part of the Imani Collective family?</p>
-            <p class="bottom-col-left-text-artisans">The love, community, and passion to do what I love.</p>
-            <p class="bottom-col-left-text-artisans"><strong>Fun fact:</strong> I like swimming, laughing, writing, and I really love traveling</p>
-          </div>
-        </div>
-        <div class="bottom-col-right-artisans w-col w-col-5">
-          <div class="bottom-col-content-wrapper-artisans"><img src="//cdn.shopify.com/s/files/1/2534/9108/files/message-min.png" alt="Notebook" class="bottom-col-img-artisans">
-            <p class="bottom-col-text-artisans">drop a note to the<br>woman who made<br>your product</p>
-            <div class="bottom-col-btn-wrapper-artisans" data-ix="artisan-modal-open"><a href="#" class="btn-alt w-button">Write To Rachel</a></div>
-
-            <div class="modal-artisan">
-              <div class="modal-content-wrapper">
-                <div class="modal-top-wrapper">
-                  <div class="modal-top-img-holder"><img src="https://cdn.shopify.com/s/files/1/2534/9108/files/rachel-headshot-min_e20c3b30-9ba0-4b80-a828-0425f799be29_400x.jpg?v=1574450105" alt="" class="modal-img"></div>
-                  <div class="modal-top-content-col" style="text-align: left;">
-                    <p class="modal-top-content-text"><strong>Name:</strong> Rachel</p>
-                    <p class="modal-top-content-text"><strong>Position: </strong> General artisan</p>
-                    <p class="modal-top-content-text"><strong>Years with Imani:</strong> 2</p>
-                    <p class="modal-top-content-text"><strong>Family:</strong> Single</p>
-                    <p class="modal-top-content-text-alt">What do you love most about being a part of the Imani Collective family?</p>
-                    <p class="modal-top-content-text">The love, community, and passion to do what I love.</p>
-                    <p class="modal-top-content-text"><strong>Fun fact:</strong> I like swimming, laughing, writing, and I really love traveling</p>
-                  </div>
-                </div>
-                <div class="modal-bottom-wrapper">
-                  <div class="modal-form-block w-form">
-
-                    {% form 'contact' %}
-                    {% if form.posted_successfully? %}
-                      <div class="jc-form-done">
-                        <div>Thank you! Your submission has been received!</div>
-                      </div>
-                    {% else %}
-                    <input type="hidden" name="contact[form-name]" value="Artisan Form Rachel">
-                      <div class="modal-form-heading">SEND <span style="text-transform: uppercase;">Rachel</span> YOUR THANKS!</div>
-                      <div class="modal-form-text">Your purchase truly empowers and so do your words!</div>
-                      <div class="modal-form-group w-row">
-                        <div class="modal-form-col w-col w-col-6"><input type="text" class="modal-form-input w-input" maxlength="256" name="contact[Your-Name]" data-name="Your-Name" placeholder="Your Name*" id="Your-Name" required=""></div>
-                        <div class="modal-form-col w-col w-col-6"><input type="email" class="modal-form-input w-input" maxlength="256" name="contact[email]" data-name="Email" placeholder="Your Email Address" id="email" required=""></div>
-                      </div>
-                      <div class="modal-input-wrapper"><textarea placeholder="Share your appreciation! All of our thank you letters are printed and displayed on our community board!" maxlength="5000" id="Message" name="contact[Message]" data-name="Message" class="modal-form-input modal-form-input-area w-input"></textarea></div>
-                      <div class="modal-btn-wrapper"><input type="submit" value="Submit" data-wait="Please wait..." class="modal-form-btn w-button"></div>
-                      {% endif %}
-                    {% endform %}
-
-                  </div>
-                </div><a href="#" class="modal-close-btn" data-ix="artisan-modal-close">X</a></div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-{% endcomment %}
 {% section 'jc-artisan-cta-section' %}
 
 
 <script type="text/javascript">
   $(document).ready(function() { 
-
-        $('a[data-ix="artisan-modal-open"]').click(function(e) {
-            e.preventDefault();
-            $('body').css('overflow', 'hidden');
-        });
-
-        $('a[data-ix="artisan-modal-close"]').click(function(e) {
-            e.preventDefault();
-            $('body').css('overflow', 'auto');
-        });
-
-   });
-</script>
-
-
-
-
-
+  $('a[data-ix="artisan-modal-open"]').click(function(e) {
+              e.preventDefault();
+              $('body').css('overflow', 'hidden');
+          });
+  
+          $('a[data-ix="artisan-modal-close"]').click(function(e) {
+              e.preventDefault();
+              $('body').css('overflow', 'auto');
+          });
+  
+     });</script>
