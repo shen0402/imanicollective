@@ -232,6 +232,13 @@ body {
     width: 100%;
     max-width: 600px;
     height: auto;
+    transition: 0.3s;
+}
+
+@media (min-width: 768px) {
+    .scrollled .header__heading-logo {
+        max-width: 300px;
+    }
 }
 
 .mega-menu__image-arrow {
