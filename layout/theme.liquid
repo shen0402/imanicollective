@@ -1,4 +1,4 @@
-{% if customer or request.path contains '/account' %}
+{% if request.path == '/' or request.path contains '/account' or customer %}
   <!doctype html>
   <html class="no-js" lang="{{ shop.locale }}">
     <head>
