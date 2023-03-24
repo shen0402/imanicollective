@@ -13,6 +13,7 @@
 @media (min-width: 992px) {
     .jc-custom-header__nav {
         display: block !important;
+        transform: translateX(0);
     }
 }
 
@@ -259,9 +260,6 @@ body {
         font-size: 12px;
         line-height: 12px;
     }
-    .jc-custom-header__nav {
-        display: none;
-    }
 
     .jc-custom-header__top {
         padding: 20px;
@@ -294,7 +292,20 @@ body {
         height: calc(100vh - 130px);
         overflow-y: auto;
         overflow-x: hidden;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
+        background-color: #f6f0e0f2;
+        padding-top: 20px;
+        position: fixed;
+        width: 90%;
+        top: 178px;
+        right: 0;
+        z-index: 5;
+        transition: 1s;
+        transform: translateX(100%);
+    }
+
+    .jc-custom-header__nav.active {
+        transform: translateX(0);
     }
     
     .jc-custom-header__nav .list-menu {
@@ -311,6 +322,26 @@ body {
     
     .jc-custom-header__nav .list-menu__item {
         padding: 10px 20px;
+    }
+
+    .hamburger-icon {
+        margin-left: 2px;
+        margin-top: 2px;
+        font-size: 28px;
+    }
+
+    .w-icon-nav-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .open .w-icon-nav-menu:before {
+        color: transparent;
+        background-image: url('https://cdn.shopify.com/s/files/1/2534/9108/files/new-popup-close.png?v=1679616438');
+        background-repeat: no-repeat;
+        background-size: 65%;
+        background-position: center;
     }
 }
 

@@ -2106,6 +2106,12 @@
     transition: 0.5s;
     transform: scale(1.1);
   }
+
+  @media (max-width: 767px) {
+    .new-arrivals-flex-col {
+      width: 50%;
+    }
+  }
   
   .new-arrivals-img-wrapper {
     width: 120px;

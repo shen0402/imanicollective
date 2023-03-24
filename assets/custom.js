@@ -13,7 +13,8 @@ $(document).on('click', '.quantity-icon', function(){
 
 $(document).on('click', '.hamburger-icon', function(e){
     e.preventDefault();
-    $('.jc-custom-header__nav').slideToggle("slow");
+    $(this).toggleClass('open');
+    $('.jc-custom-header__nav').toggleClass("active");
     $('body').toggleClass('overflow-hidden');
 });
 
