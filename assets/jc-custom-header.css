@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
+    padding: 30px 50px 0;
 }
 
 .jc-custom-header__top, .jc-custom-header__nav {
@@ -219,7 +219,7 @@
 }
 
 body {
-    padding-top: 230px;
+    padding-top: 214px;
 }
 
 .fixed-nav-icon-flex-link, .fixed-nav-social-link, .header__heading-link {
@@ -264,11 +264,11 @@ body {
     }
 
     .jc-custom-header__top {
-        padding: 0 20px;
+        padding: 20px;
     }
 
     body {
-        padding-top: 150px;
+        padding-top: 175px;
     }
 
     .mega-menu {
