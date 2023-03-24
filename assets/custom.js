@@ -11,6 +11,17 @@ $(document).on('click', '.quantity-icon', function(){
     $input.val(qty);
 });
 
+$(document).on('click', '.hamburger-icon', function(e){
+    e.preventDefault();
+    $('.jc-custom-header__nav').slideToggle("slow");
+    $('body').toggleClass('overflow-hidden');
+});
+
+$(document).on('click', '.has-megamenu', function(e){
+    e.preventDefault();
+    $(this).closest('li').find('.mega-menu').slideToggle("slow");
+});
+
 $(document).ready(function(){
     var limit_blog = 7;
     var current_show_blogs = limit_blog;
