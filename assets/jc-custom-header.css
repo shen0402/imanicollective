@@ -289,7 +289,7 @@ body {
     }
 
     .jc-custom-header__nav {
-        height: calc(100vh - 130px);
+        height: calc(100vh - 178px);
         overflow-y: auto;
         overflow-x: hidden;
         padding-bottom: 20px;
