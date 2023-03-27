@@ -205,7 +205,7 @@
     font-family: brandon-grotesque,sans-serif;
     text-align: center;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -230,15 +230,9 @@ body {
 
 .header__heading-logo {
     width: 100%;
-    max-width: 600px;
+    max-width: 300px;
     height: auto;
     transition: 0.3s;
-}
-
-@media (min-width: 768px) {
-    .scrollled .header__heading-logo {
-        max-width: 300px;
-    }
 }
 
 .mega-menu__image-arrow {

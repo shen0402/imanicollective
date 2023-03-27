@@ -21,7 +21,7 @@
     margin-top: 0px;
     margin-bottom: 10px;
     font-family: brandon-grotesque, sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 23px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -40,7 +40,7 @@
 .jc-custom-footer__text p, .jc-custom-footer__link {
     font-family: brandon-grotesque,sans-serif;
     color: #333;
-    font-size: 18px;
+    font-size: 14px;
     text-decoration: none;
     letter-spacing: 2px;
     transition: 0.3s;
@@ -54,7 +54,7 @@
 .jc-custom-footer__store-text {
     font-family: brandon-grotesque,sans-serif;
     color: #333;
-    font-size: 18px;
+    font-size: 14px;
     text-decoration: none;
     letter-spacing: 3x;
     transition: 0.3s;

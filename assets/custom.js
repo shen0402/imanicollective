@@ -41,11 +41,3 @@ $(document).ready(function(){
         });
     }
 });
-
-$(window).on('load scroll', function(){
-    if ($(this).scrollTop() > 10) {
-        $('body').addClass('scrollled');
-    } else {
-        $('body').removeClass('scrollled');
-    }
-});
