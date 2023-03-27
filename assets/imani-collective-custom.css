@@ -10749,6 +10749,10 @@ margin-bottom:0px;
     margin-top: 0;
   }
 }
+
+.empty-page-content .jc-button {
+  min-width: 300px;
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
