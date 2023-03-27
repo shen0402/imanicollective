@@ -1653,14 +1653,14 @@ body {
 }
 
 .mid-flex-col-leader {
-  max-width: 300px;
+  max-width: 400px;
   margin-bottom: 50px;
   padding-right: 15px;
   padding-left: 15px;
   -webkit-box-flex: 0;
-  -webkit-flex: 0 30%;
-  -ms-flex: 0 30%;
-  flex: 0 30%;
+  -webkit-flex: 0 33.3%;
+  -ms-flex: 0 33.3%;
+  flex: 0 33.3%;
 }
 
 .mid-flex-col-inner-leader {
