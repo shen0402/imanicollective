@@ -5091,9 +5091,9 @@ body {
   margin-top: 0px;
   margin-bottom: 50px;
   
-  font-size: 42px;
-  line-height: 50px;
-  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500;
   letter-spacing: 5px;
   text-transform: lowercase;
 }
@@ -5101,9 +5101,9 @@ body {
 .price-text-product, .price-text-product span {
   
   color: #333;
-  font-size: 42px;
-  line-height: 26px;
-  font-weight: 700 !important;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500 !important;
   letter-spacing: 5px;
 }
 
@@ -9351,7 +9351,6 @@ margin-bottom:0px;
       }
       .col-heading-product {
         margin-bottom: 30px;
-        font-size: 38px;
       }
       
       .product-btn-wrapper {
@@ -10287,10 +10286,6 @@ margin-bottom:0px;
     width: 100%;
   }
 
-  .price-text-product, .price-text-product span {
-    font-size: 38px;
-  }
-
   .swatchify-cont .ps-header {
     margin-right: 40px;
   }
@@ -10637,6 +10632,8 @@ margin-bottom:0px;
   line-height: 36px;
   font-weight: 500;
   letter-spacing: 7px;
+  color: #333;
+  font-style: normal;
 }
 
 .template--article .social-list {
