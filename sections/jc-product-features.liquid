@@ -1,17 +1,17 @@
-<div class="prduct-features">
-  {% if section.settings.heading != blank %}
-    <h3 class="mid-heading-internal" style="margin-bottom: 0;">
-      {{ section.settings.heading }}
-    </h3>
-  {% endif %}
-  {% if section.settings.image != blank %}
+{% if product.metafields.custom.feature_image != blank %}
+  <div class="prduct-features">
+    {% if section.settings.heading != blank %}
+      <h3 class="mid-heading-internal" style="margin-bottom: 0;">
+        {{ section.settings.heading }}
+      </h3>
+    {% endif %}
     <div class="container-mid">
       <div class="prduct-features__image">
-        {{ section.settings.image | img_url: '1400x' | img_tag }}
+        {{ product.metafields.custom.feature_image | img_url: '1400x' | img_tag }}
       </div>
     </div>
-  {% endif %}
-</div>
+  </div>
+{% endif %}
 {% schema %}
   {
     "name": "Product features",
@@ -21,10 +21,6 @@
         "id": "heading",
         "label": "Heading",
         "default": "features + specs"
-      }, {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Image"
       }
     ]
   }
