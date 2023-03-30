@@ -1442,12 +1442,11 @@ body {
 .bottom-cta-sub-heading {
   margin-top: 0px;
   margin-bottom: 25px;
-  
   color: #333;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.2;
-  letter-spacing: 2px;
-  margin-bottom: 30px;
+  letter-spacing: 2.5px;
+  margin-bottom: 40px;
 }
 
 .cta-newsletter .bottom-cta-sub-heading {
@@ -1460,7 +1459,6 @@ body {
 
 .cta-leadership .bottom-cta-flex-col-inner {
   max-width: 350px;
-  margin: auto;
   text-align: left;
 }
 
@@ -1732,14 +1730,13 @@ body {
 
 .bottom-cta-heading-leadership {
   margin-top: 0px;
-  
   color: #333;
-  font-size: 55px;
-  line-height: 65px;
-  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  font-weight: 500;
+  letter-spacing: 8px;
   text-transform: lowercase;
-  letter-spacing: 2px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .bottom-cta-heading-leadership p {
@@ -1876,8 +1873,8 @@ body {
   max-width: 800px;
   margin-right: auto;
   margin-left: auto;
-  background-image: url(weaving-hands-icon-copy-43x.png);
-  background-size: 85%;
+  background-image: url('collaborations_shape-13-min.png');
+  background-size: 96%;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
@@ -1892,6 +1889,7 @@ body {
   align-items: center;
   background-color: #ffffff;
   flex-direction: column;
+  padding-bottom: 40px;
 }
 
 @media (min-width: 768px) {
@@ -1948,7 +1946,7 @@ body {
 }
 
 .modal-top-content-heading {
-  font-size: 32px;
+  font-size: 26px;
   line-height: 1.2;
   text-transform: uppercase;
   font-weight: 700;
@@ -7889,10 +7887,6 @@ margin-bottom:0px;
       font-size: 42px;
       line-height: 50px;
     }
-    .bottom-cta-sub-heading {
-      font-size: 30px;
-      line-height: 38px;
-    }
     .bottom-cta-flex-col-inner {
       padding-right: 20px;
       padding-left: 20px;
@@ -7936,8 +7930,8 @@ margin-bottom:0px;
       display: none;
     }
     .bottom-cta-heading-leadership {
-      font-size: 50px;
-      line-height: 60px;
+      font-size: 34px;
+      line-height: 40px;
     }
     .modal-artisan {
       padding-right: 10px;
@@ -8356,6 +8350,7 @@ margin-bottom:0px;
 @media (max-width: 767px) {
   .modal-content-wrapper {
     background-image: none;
+    padding-bottom: 0;
   }
   .location-heading-wrapper-artisan {
     margin-bottom: 40px;
@@ -8675,10 +8670,6 @@ margin-bottom:0px;
         font-size: 38px;
         line-height: 44px;
       }
-      .bottom-cta-sub-heading {
-        font-size: 30px;
-        line-height: 40px;
-      }
       .bottom-cta-flex-col-inner {
         padding-top: 80px;
         padding-bottom: 80px;
@@ -8710,8 +8701,9 @@ margin-bottom:0px;
         letter-spacing: 1px;
       }
       .bottom-cta-heading-leadership {
-        font-size: 38px;
-        line-height: 44px;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 6px;
       }
       .flex-col-artisan {
         -webkit-flex-basis: 33.3333%;
@@ -10038,15 +10030,18 @@ margin-bottom:0px;
 .bottom-cta-btn-wrapper .btn-main {
   background-color: transparent;
   color: #333;
-  background-image: url('https://cdn.shopify.com/s/files/1/2534/9108/files/artisans_learn_more.png?v=1678813858');
+  background-image: url('//cdn.shopify.com/s/files/1/2534/9108/t/13/assets/blog_load-more_250x.png?v=137695535503770437761679943911');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
   background-position: center;
-  min-width: 300px;
+  min-width: 250px;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 20px;
   font-weight: 500;
   margin-right: -20px;
+  height: 40px;
+  padding: 11px;
 }
 
 .jc-button {
@@ -10080,6 +10075,8 @@ margin-bottom:0px;
 @media (max-width: 767px) {
   .bottom-cta-btn-wrapper .btn-main {
     margin-right: 0;
+    height: 33px;
+    padding: 7px;
   }
 }
 
@@ -10669,19 +10666,24 @@ margin-bottom:0px;
 .info-flex-col .meta-content-wrapper.rte, .meta-content-wrapper.rte h3:first-of-type {
   margin-top: 0;
 }
+@media (min-width: 768px) {
+  .info-flex-col h2, .info-flex-col h4, .meta-content-wrapper.rte div b {
+    font-size: 28px !important;
+  }
+}
 @media (max-width: 767px) {
   .mobile-hide {
-    display: none;
+    display: none !important;
   }
 }
 @media (min-width: 768px) {
   .desktop-hide {
-    display: none;
+    display: none !important;
   }
 }
 @media (min-width: 991px) {
   .large-up-hide {
-    display: none;
+    display: none !important;
   }
 }
 .pwzrjss6 {
@@ -10740,6 +10742,71 @@ margin-bottom:0px;
 
 .empty-page-content .jc-button {
   min-width: 300px;
+}
+
+.modal-heading {
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-style: normal;
+  color: #333;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.get-invovled .modal-form-input.modal-form-input-area {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  min-height: 0;
+  height: auto;
+  text-align: left;
+  line-height: 1.1;
+}
+
+.get-invovled .modal-top-wrapper, .get-invovled .modal-top-content-col {
+  width: 100%;
+}
+
+.get-invovled .modal-top-content-col {
+  max-width: 500px;
+}
+
+.get-invovled .modal-btn-wrapper, .get-invovled .modal-close-btn {
+  position: relative;
+  top: unset;
+  left: unset;
+  right: unset;
+  bottom: unset;
+  margin-top: 30px;
+}
+
+.get-invovled .modal-close-btn {
+  padding: 0;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  display: block;
+  max-width: 100%;
+  margin-top: 15px;
+}
+
+@media (max-width: 767px) {
+  .get-invovled .modal-form-input {
+    text-align: left;
+  }
+
+  .get-invovled .w-col, .get-invovled .modal-input-wrapper {
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #collaboration-button {
+    margin-right: -20px;
+  }
 }
 @keyframes fadeIn {
   0% {

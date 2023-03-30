@@ -28,126 +28,35 @@
     <h2 class="margin-b-15">want to experience working with an ethical brand?</h2>
     <div class="general-text">Whether you&#x27;re looking to hone in on your design skills, learn more about marketing strategy, or spend time in Kenya seeing our ethical manufacturing firsthand, we have the place for you to learn and make an impact.</div>
     <div class="job-openings-wrapper">
-      <div class="job-opening-flex-row">
-        <div class="location-wrapper">
-          <div class="smaller-italic-text">Dallas, Texas</div>
+      {% if section.blocks.size > 0 %}
+        {% for block in section.blocks %}
+          {% if block.type == 'job' %}
+            <div class="job-opening-flex-row">
+              <div class="location-wrapper">
+                <div class="smaller-italic-text">{{ block.settings.title }}</div>
+              </div>
+              <div class="job-name-wrapper">
+                <div>{{ block.settings.location }}</div>
+              </div>
+              <a
+                data-w-id="b84be03f-04ea-c585-5602-bfe8e036d937"
+                href="{{ block.settings.link }}"
+                class="general-btn skinnier align-right center-mob w-inline-block"><img
+                  src="{{ 'collaborations_reach-out.png' | asset_img_url: '250x' }}"
+                  loading="lazy"
+                  sizes="(max-width: 479px) 133px, (max-width: 767px) 26vw, 133px"
+                  alt=""
+                  class="btn-img">
+                <div class="btn-text">LEARN MORE</div>
+              </a>
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% else %}
+        <div class="general-text">
+          <p>We have no job openings at this time. Please check back in the future!</p>
         </div>
-        <div class="job-name-wrapper">
-          <div>MARKETING + EVENTS INTERNSHIP</div>
-        </div>
-        <a
-          data-w-id="b84be03f-04ea-c585-5602-bfe8e036d937"
-          href="#"
-          class="general-btn skinnier align-right center-mob w-inline-block"><img
-            src="{{ 'collaborations_reach-out.png' | asset_img_url: '250x' }}"
-            loading="lazy"
-            sizes="(max-width: 479px) 133px, (max-width: 767px) 26vw, 133px"
-
-            alt=""
-            class="btn-img">
-          <div class="btn-text">LEARN MORE</div>
-        </a>
-      </div>
-      <div class="job-opening-flex-row">
-        <div class="location-wrapper">
-          <div class="smaller-italic-text">Mombasa, Kenya</div>
-        </div>
-        <div class="job-name-wrapper">
-          <div>KENYA INTERNSHIP</div>
-        </div>
-        <a
-          data-w-id="b9c62522-d8b9-e8f4-3208-b7b40be52a56"
-          href="#"
-          class="general-btn skinnier align-right center-mob w-inline-block"><img
-            src="{{ 'collaborations_reach-out.png' | asset_img_url: '250x' }}"
-            loading="lazy"
-            sizes="(max-width: 479px) 133px, (max-width: 767px) 25vw, 133px"
-
-            alt=""
-            class="btn-img">
-          <div class="btn-text">LEARN MORE</div>
-        </a>
-      </div>
-      <div class="job-opening-flex-row">
-        <div class="location-wrapper">
-          <div class="smaller-italic-text">remote</div>
-        </div>
-        <div class="job-name-wrapper">
-          <div>development + strategic partnerships internship</div>
-        </div>
-        <a
-          data-w-id="5f94c810-785b-7ece-19ec-3d6ca0af7d43"
-          href="#"
-          class="general-btn skinnier align-right center-mob w-inline-block"><img
-            src="{{ 'collaborations_reach-out.png' | asset_img_url: '250x' }}"
-            loading="lazy"
-            sizes="(max-width: 479px) 133px, (max-width: 767px) 26vw, 133px"
-
-            alt=""
-            class="btn-img">
-          <div class="btn-text">LEARN MORE</div>
-        </a>
-      </div>
-      <div class="job-opening-flex-row">
-        <div class="location-wrapper">
-          <div class="smaller-italic-text">remote</div>
-        </div>
-        <div class="job-name-wrapper">
-          <div>STORYTELLING + DONOR RELATION INTERNSHIP</div>
-        </div>
-        <a
-          data-w-id="c5d9baf5-f784-489a-5bd4-9d783dd566a0"
-          href="#"
-          class="general-btn skinnier align-right center-mob w-inline-block"><img
-            src="{{ 'collaborations_reach-out.png' | asset_img_url: '250x' }}"
-            loading="lazy"
-            sizes="(max-width: 479px) 133px, (max-width: 767px) 26vw, 133px"
-
-            alt=""
-            class="btn-img">
-          <div class="btn-text">LEARN MORE</div>
-        </a>
-      </div>
-      <div class="job-opening-flex-row">
-        <div class="location-wrapper">
-          <div class="smaller-italic-text">remote</div>
-        </div>
-        <div class="job-name-wrapper">
-          <div>GRANT WRITING INTERNSHIP</div>
-        </div>
-        <a
-          data-w-id="83cc3da3-cdc0-8e34-de1b-6d090ef38161"
-          href="#"
-          class="general-btn skinnier align-right center-mob w-inline-block"><img
-            src="{{ 'collaborations_reach-out.png' | asset_img_url: '250x' }}"
-            loading="lazy"
-            sizes="(max-width: 479px) 133px, (max-width: 767px) 26vw, 133px"
-
-            alt=""
-            class="btn-img">
-          <div class="btn-text">LEARN MORE</div>
-        </a>
-      </div>
-      <div class="job-opening-flex-row">
-        <div class="location-wrapper">
-          <div class="smaller-italic-text">remote</div>
-        </div>
-        <div class="job-name-wrapper">
-          <div>CONTENT CREATION INTERN</div>
-        </div>
-        <a
-          data-w-id="207de80c-473d-6152-df72-2adb40cd969e"
-          href="#"
-          class="general-btn skinnier align-right center-mob w-inline-block"><img
-            src="{{ 'collaborations_reach-out.png' | asset_img_url: '250x' }}"
-            loading="lazy"
-            sizes="(max-width: 479px) 133px, (max-width: 767px) 26vw, 133px"
-
-            alt=""
-            class="btn-img">
-          <div class="btn-text">LEARN MORE</div>
-        </a>
-      </div>
+      {% endif %}
     </div>
   </div>
 </div>
@@ -156,11 +65,10 @@
     <div class="involved-info-text-wrapper">
       <div class="big-medium-text margin-b-15">brand affiliates</div>
       <div class="general-text margin-b-40">We want to see our artisan made goods in your beautiful homes + spaces. We want to share our heart with you + watch you share it with the world. You don&#x27;t need to have thousands of followers to apply. We just want to spread some Imani Collective goodness!</div>
-      <a href="#" class="general-btn center-mob w-inline-block"><img
+      <a href="https://theimanicollective.grin.live/affiliateapplication" class="general-btn center-mob w-inline-block"><img
           src="{{ 'blog_load-more.png' | asset_img_url: '250x' }}"
           loading="lazy"
           sizes="250px"
-
           alt=""
           class="btn-img">
         <div class="btn-text">APPLY NOW</div>
@@ -186,11 +94,10 @@
         <span class="artisans-break">artisans in kenya?</span>
       </h2>
       <div class="general-text margin-b-15">We will spend time at both Imani workshops 0 in Old Town + Mtepeni - where you will have the opportunity to learn + explore what is happening in the &quot;boots on the ground&quot; operations of Imani Collective. You will serve a key role in assisting us to strengthen, improve + grow our holistic programs, and continue to advocate for us globally. Your Imani Experience will be tailored specifically to your team based on the experience, passions + skills you possess individually + collectively.</div>
-      <a href="#" class="general-btn align-right center-mob w-inline-block"><img
+      <a href="https://imanicollective-ourimpact.org/imani-experience" class="general-btn align-right center-mob w-inline-block"><img
           src="{{ 'blog_load-more.png' | asset_img_url: '250x' }}"
           loading="lazy"
           sizes="250px"
-
           alt=""
           class="btn-img">
         <div class="btn-text">LEARN MORE</div>
@@ -201,11 +108,10 @@
     <div class="involved-info-text-wrapper">
       <div class="big-medium-text margin-b-15">impact partners</div>
       <div class="general-text margin-b-40 tighter-width-left-side">Embracing proactive and strategic collectiveness for mutual and global gain.</div>
-      <a href="#" class="general-btn center-mob w-inline-block"><img
+      <a href="https://imanicollective-ourimpact.org/impact-partners" class="general-btn center-mob w-inline-block"><img
           src="{{ 'blog_load-more.png' | asset_img_url: '250x' }}"
           loading="lazy"
           sizes="250px"
-
           alt=""
           class="btn-img">
         <div class="btn-text">LEARN MORE</div>
@@ -228,11 +134,10 @@
     <div class="involved-info-text-wrapper right-side give">
       <div class="big-medium-text margin-b-15">give</div>
       <div class="general-text margin-b-40">Walk alongside us as we fight to break the generational cycle of poverty in Kenya through holistic artisan empowerment. Our goal is to raise $100,000 by year-end to cover all expenses for our 2021 holistic programs, which are at the heart of our mission. Support our Artisans. Your generosity empowers.</div>
-      <a href="#" class="general-btn align-right center-mob w-inline-block"><img
+      <a href="https://imanicollective-ourimpact.org/donate" class="general-btn align-right center-mob w-inline-block"><img
           src="{{ 'blog_load-more.png' | asset_img_url: '250x' }}"
           loading="lazy"
           sizes="250px"
-
           alt=""
           class="btn-img">
         <div class="btn-text">DONATE</div>
@@ -247,15 +152,78 @@
       </h2>
       <div class="general-text margin-b-40 tighter-width-left-side smaller-land-down">We are always looking for help in our markets and various events throughout the year. If you are in the Dallas area or know of a market or event you would like to represent us in, let us know!</div>
       <div class="general-text margin-b-40 tighter-width-left-side">Tell us a little about yourself and our team will get back to you as soon as possible.</div>
-      <a href="#" class="general-btn skinnier center-mob w-inline-block"><img
+      <a
+        href="javascript:;"
+        class="general-btn skinnier center-mob w-inline-block flex-link-artisan"
+        data-ix="artisan-modal-open"><img
           src="{{ 'collaborations_reach-out.png' | asset_img_url: '250x' }}"
           loading="lazy"
           sizes="133px"
-
           alt=""
           class="btn-img">
         <div class="btn-text">REACH OUT</div>
       </a>
+      <div class="modal-artisan get-invovled">
+        <div class="modal-content-wrapper">
+          <div class="modal-top-wrapper">
+            <div class="modal-top-content-col">
+              <h2 class="modal-heading">
+                Reach out
+              </h2>
+              <div class="modal-form">
+                {% form 'contact' %}
+                  {% if form.posted_successfully? %}
+                    <div class="jc-form-done">
+                      <div>Thank you! Your submission has been received!</div>
+                    </div>
+                  {% else %}
+                    <div class="modal-form-group w-row">
+                      <div class="modal-form-col w-col w-col-6"><input
+                          type="text"
+                          class="modal-form-input w-input"
+                          maxlength="256"
+                          name="contact[Your-Name]"
+                          data-name="Your-Name"
+                          placeholder="Your Name"
+                          id="Your-Name"
+                          required=""></div>
+                      <div class="modal-form-col w-col w-col-6"><input
+                          type="email"
+                          class="modal-form-input w-input"
+                          maxlength="256"
+                          name="contact[email]"
+                          data-name="Email"
+                          placeholder="Your Email Address"
+                          id="email"
+                          required=""></div>
+                    </div>
+                    <div class="modal-input-wrapper">
+                      <textarea
+                        placeholder="message"
+                        maxlength="5000"
+                        id="Message"
+                        name="contact[Message]"
+                        data-name="Message"
+                        class="modal-form-input modal-form-input-area w-input"></textarea>
+                    </div>
+                    <div class="modal-btn-wrapper"><input
+                        type="submit"
+                        value="Submit"
+                        data-wait="Please wait..."
+                        class="jc-button"></div>
+                  {% endif %}
+                {% endform %}
+              </div>
+            </div>
+            <a
+              href="javascript:;"
+              class="modal-close-btn"
+              data-ix="artisan-modal-close">
+              nevermind
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="involved-info-img"><img
         src="{{ 'get-involved_volunteer.png' | asset_img_url: '500x' }}"
@@ -332,6 +300,27 @@
   {
     "name": "get involved",
     "settings": [],
+    "blocks": [
+      {
+        "type": "job",
+        "name": "Job",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          }, {
+            "type": "text",
+            "id": "location",
+            "label": "Location"
+          }, {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          }
+        ]
+      }
+    ],
     "presets": [
       {
         "name": "get involved"

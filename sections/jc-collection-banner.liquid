@@ -3,16 +3,21 @@
     {{ section.settings.image | img_url: '1900x' | img_tag: collection.title, 'jc-collection-banner-image' }}
   {% endif %}
   <div class="jc-collection-banner-text">
+    {% assign collection_title = collection.title | downcase %}
+    {% if collection_title == 'imani pillow collection' %}
+      {% assign collection_title = 'pillows' %}
+    {% endif %}
     <div class="breadcrumb-wrapper">
       <a href="/collections/all" class="breadcrumb-link w-inline-block">
         <div>shop</div>
       </a>
       <div class="breadcrumb-breaker">/</div>
       <a href="{{collection.url}}" class="breadcrumb-link w-inline-block">
-        <div>{{ collection.title }}</div>
+
+        <div>{{ collection_title }}</div>
       </a>
     </div>
-    <h2 class="mid-heading-internal">{{ collection.title }}</h2>
+    <h2 class="mid-heading-internal">{{ collection_title }}</h2>
   </div>
 </div>
 {% schema %}

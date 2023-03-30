@@ -263,11 +263,11 @@ body {
     }
 
     .jc-custom-header__top {
-        padding: 20px;
+        padding: 20px 10px;
     }
 
     body {
-        padding-top: 175px;
+        padding-top: 154px;
     }
 
     .mega-menu {
@@ -290,15 +290,15 @@ body {
     }
 
     .jc-custom-header__nav {
-        height: calc(100vh - 178px);
+        height: calc(100vh - 154px);
         overflow-y: auto;
         overflow-x: hidden;
         padding-bottom: 20px;
-        background-color: #f6f0e0f2;
+        background-color: #f3eded;
         padding-top: 20px;
         position: fixed;
         width: 90%;
-        top: 178px;
+        top: 154px;
         right: 0;
         z-index: 5;
         transition: 1s;
@@ -344,6 +344,17 @@ body {
         background-size: 65%;
         background-position: center;
     }
+
+    .header__heading-logo {
+        max-width: 250px;
+    }
+}
+
+.mobile-nav-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
 }
 
 body.overflow-hidden {

@@ -191,16 +191,16 @@
         "blocks": {
           "44fe601c-6be5-44f9-813d-105862964abc": {
             "type": "no_event",
-            "disabled": true,
             "settings": {
               "heading": "No upcoming events",
-              "description": "<p>We have no upcoming events at this time. Please check back in the future! We look forward to seeing you all at markets soon. Hqppy new year!<\/p>",
-              "button_label": "Learn more",
-              "button_link": "#"
+              "description": "<p>We have no upcoming events at this time. Please check back in the future! We look forward to seeing you all at markets soon.<\/p>",
+              "button_label": "",
+              "button_link": ""
             }
           },
           "563be350-1ee3-4887-ab24-5b3137ba4dab": {
             "type": "event",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-06T125433.194.jpg",
               "heading": "Silobration",
@@ -2973,8 +2973,7 @@
       "jc-product-features": {
         "type": "jc-product-features",
         "settings": {
-          "heading": "features + specs",
-          "image": "shopify:\/\/shop_images\/shop_-_product_page_-_selah_backpack_backpack_layout.png"
+          "heading": "features + specs"
         }
       },
       "jc-recommendation-products": {

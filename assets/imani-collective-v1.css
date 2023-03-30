@@ -382,7 +382,7 @@
   }
   
   .our-story-hero-section {
-    height: 32em;
+    height: 40em;
   }
   
   .info-img-left {
@@ -2137,7 +2137,7 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    height: 35em;
+    height: 42em;
     padding-bottom: 40px;
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
