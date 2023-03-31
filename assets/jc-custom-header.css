@@ -267,7 +267,7 @@ body {
     }
 
     body {
-        padding-top: 154px;
+        padding-top: 124px;
     }
 
     .mega-menu {
@@ -298,7 +298,7 @@ body {
         padding-top: 20px;
         position: fixed;
         width: 90%;
-        top: 154px;
+        top: 124px;
         right: 0;
         z-index: 5;
         transition: 1s;
