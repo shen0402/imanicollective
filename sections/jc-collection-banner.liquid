@@ -3,9 +3,9 @@
     {{ section.settings.image | img_url: '1900x' | img_tag: collection.title, 'jc-collection-banner-image' }}
   {% endif %}
   <div class="jc-collection-banner-text">
-    {% assign collection_title = collection.title | downcase %}
-    {% if collection_title == 'imani pillow collection' %}
-      {% assign collection_title = 'pillows' %}
+    {% assign collection_title = collection.title %}
+    {% if collection.metafields.custom.short_title != blank %}
+      {% assign collection_title = collection.metafields.custom.short_title %}
     {% endif %}
     <div class="breadcrumb-wrapper">
       <a href="/collections/all" class="breadcrumb-link w-inline-block">
