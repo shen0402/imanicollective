@@ -521,15 +521,95 @@
             "settings": {
               "leadership_name": "Jenny Nuccio",
               "leadership_position": "Founder + CEO",
-              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-14T134019.478.jpg"
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-14T134019.478.jpg",
+              "hometown": "San Antonio, Texas",
+              "live": "chips and queso",
+              "latest_obsesstion": "roller skating",
+              "favorite": "Hands down our people. We have truly created something beautiful together."
             }
           },
-          "1581005932741": {
+          "dd769074-b306-4e2f-bcfd-6bafdfa7b945": {
             "type": "text",
             "settings": {
-              "leadership_name": "Hailey Bickham",
-              "leadership_position": "Art Director",
-              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2022-11-01T113652.461.jpg"
+              "leadership_name": "David Mwangi Mwenda",
+              "leadership_position": "Chief Operations Officer",
+              "leadership_image": "shopify:\/\/shop_images\/9.jpg",
+              "hometown": "",
+              "live": "",
+              "latest_obsesstion": "",
+              "favorite": ""
+            }
+          },
+          "1581005987285": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Annette Wilson",
+              "leadership_position": "Chief Marketing Officer",
+              "leadership_image": "shopify:\/\/shop_images\/1_bd0d0db3-149e-4b7e-a8bd-81ac250680d3.jpg",
+              "hometown": "kaysville, Utah",
+              "live": "family...or cheese",
+              "latest_obsesstion": "white chocolate covered cashews",
+              "favorite": "The incredible friendships I've made (both stateside and around the world), the focus on empowering working moms, and the opportunity to be a part of something so much bigger than myself."
+            }
+          },
+          "4908834b-b310-4a49-960e-e955b083c335": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Paloma Diaz",
+              "leadership_position": "Chief Design Officer",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2022-11-07T132835.378.jpg",
+              "hometown": "",
+              "live": "",
+              "latest_obsesstion": "",
+              "favorite": ""
+            }
+          },
+          "fa71b473-20ee-45d1-a6ad-0a273da739fa": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Ellie Williams",
+              "leadership_position": "Head of Market Research and Sales",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2022-10-31T111200.515.jpg",
+              "hometown": "Hyannis, Massachusetts",
+              "live": "coffee + a good book",
+              "latest_obsesstion": "Trader Joe’s peanut butter cups",
+              "favorite": "our work culture, the friendships I’ve created with coworkers, and that I get to be a small part of empowering other humans to become their best version of themselves!"
+            }
+          },
+          "1581005949992": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Kevin Mbogho",
+              "leadership_position": "Chief Sustainability Officer",
+              "leadership_image": "shopify:\/\/shop_images\/5.jpg",
+              "hometown": "Mombasa, Kenya",
+              "live": "Ninja(my wife), Coffee, all-white converse",
+              "latest_obsesstion": "photography",
+              "favorite": "The artisans, our entire team, and the friendship created (both in Kenya and state side)."
+            }
+          },
+          "78ee9d1f-af09-4e24-aa27-230ed2fae651": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Kelly Wanjala",
+              "leadership_position": "Chief Production Officer",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-14T134416.807.jpg",
+              "hometown": "",
+              "live": "",
+              "latest_obsesstion": "",
+              "favorite": ""
+            }
+          },
+          "a2a4113f-f310-42ef-8287-153ee62450e3": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Gedion Brian Nyangoje",
+              "leadership_position": "Head of Warehouse - Kenya",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-14T134416_807_400x_jpg.webp",
+              "hometown": "Homabay, Kenya",
+              "live": "Music",
+              "latest_obsesstion": "SOS album by SZA",
+              "favorite": "The diversity"
             }
           },
           "1581005647702": {
@@ -537,47 +617,11 @@
             "settings": {
               "leadership_name": "Femida Otieno",
               "leadership_position": "Head of Corporate Partnerships",
-              "leadership_image": "shopify:\/\/shop_images\/6.jpg"
-            }
-          },
-          "dd769074-b306-4e2f-bcfd-6bafdfa7b945": {
-            "type": "text",
-            "settings": {
-              "leadership_name": "David Mwangi Mwenda",
-              "leadership_position": "Head of Finance and Administration",
-              "leadership_image": "shopify:\/\/shop_images\/9.jpg"
-            }
-          },
-          "78ee9d1f-af09-4e24-aa27-230ed2fae651": {
-            "type": "text",
-            "settings": {
-              "leadership_name": "Kelly Wanjala",
-              "leadership_position": "Head of Operations",
-              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-14T134416.807.jpg"
-            }
-          },
-          "1581005949992": {
-            "type": "text",
-            "settings": {
-              "leadership_name": "Kevin Mbogho",
-              "leadership_position": "Head of Sustainability",
-              "leadership_image": "shopify:\/\/shop_images\/5.jpg"
-            }
-          },
-          "4908834b-b310-4a49-960e-e955b083c335": {
-            "type": "text",
-            "settings": {
-              "leadership_name": "Paloma Diaz",
-              "leadership_position": "Lead Designer",
-              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2022-11-07T132835.378.jpg"
-            }
-          },
-          "1581005987285": {
-            "type": "text",
-            "settings": {
-              "leadership_name": "Annette Wilson",
-              "leadership_position": "Director of Marketing",
-              "leadership_image": "shopify:\/\/shop_images\/1_bd0d0db3-149e-4b7e-a8bd-81ac250680d3.jpg"
+              "leadership_image": "shopify:\/\/shop_images\/6.jpg",
+              "hometown": "Old Town, Mombasa, Kenya",
+              "live": "My bible + George",
+              "latest_obsesstion": "Kitchen gardening",
+              "favorite": "The love, passion, zeal and commitment within the entire workforce working together and making a difference."
             }
           },
           "2a89ae3c-1677-44a5-bbe5-878e3c5a8613": {
@@ -585,7 +629,11 @@
             "settings": {
               "leadership_name": "Maxine Ellerston",
               "leadership_position": "Marketing Assistant",
-              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2022-11-07T133657.199.jpg"
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2022-11-07T133657.199.jpg",
+              "hometown": "",
+              "live": "",
+              "latest_obsesstion": "",
+              "favorite": ""
             }
           },
           "1581006021988": {
@@ -593,23 +641,11 @@
             "settings": {
               "leadership_name": "Belinda Agallo",
               "leadership_position": "Interim Executive Director - Kenya",
-              "leadership_image": "shopify:\/\/shop_images\/4_de81e1b4-a920-4f93-a7db-ae5c26a9a488.jpg"
-            }
-          },
-          "fa71b473-20ee-45d1-a6ad-0a273da739fa": {
-            "type": "text",
-            "settings": {
-              "leadership_name": "Ellie Williams",
-              "leadership_position": "Director of Operations and Sales",
-              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2022-10-31T111200.515.jpg"
-            }
-          },
-          "72bb4043-7fe9-431f-9a60-3f4d17ad1f9a": {
-            "type": "text",
-            "settings": {
-              "leadership_name": "Blake Bennett",
-              "leadership_position": "Fulfillment Associate",
-              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-14T140143.533.jpg"
+              "leadership_image": "shopify:\/\/shop_images\/4_de81e1b4-a920-4f93-a7db-ae5c26a9a488.jpg",
+              "hometown": "Homabay County, Kenya",
+              "live": "the internet",
+              "latest_obsesstion": "watching series",
+              "favorite": "Laughing with the artisans"
             }
           },
           "dda59d3d-b82c-47fa-a248-3d194ec18d05": {
@@ -617,7 +653,35 @@
             "settings": {
               "leadership_name": "Allison Shaw",
               "leadership_position": "Director of Events - Stateside",
-              "leadership_image": "shopify:\/\/shop_images\/Untitled_design-2.jpg"
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design-2.jpg",
+              "hometown": "",
+              "live": "",
+              "latest_obsesstion": "",
+              "favorite": ""
+            }
+          },
+          "ddf733f0-1853-4321-ab88-d3708c337043": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Geoffrey Karanja",
+              "leadership_position": "Sales and Marketing Lead - Kenya",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-14T134416_807_400x_jpg.webp",
+              "hometown": "",
+              "live": "",
+              "latest_obsesstion": "",
+              "favorite": ""
+            }
+          },
+          "ec6c95fa-57a5-41dd-be83-739d1720198f": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Valentine Mbaabu",
+              "leadership_position": "Head of Communication",
+              "leadership_image": "shopify:\/\/shop_images\/7.jpg",
+              "hometown": "Meru, Kenya",
+              "live": "My Freedom & independence",
+              "latest_obsesstion": "True Crime documentaries",
+              "favorite": "The chance to experience multiple cultures."
             }
           },
           "1581006128959": {
@@ -625,7 +689,11 @@
             "settings": {
               "leadership_name": "Rahab Mumbi",
               "leadership_position": "Events and Markets Coordinator - Kenya",
-              "leadership_image": "shopify:\/\/shop_images\/1_da0d695f-40d8-46dd-957d-887500c719ee.jpg"
+              "leadership_image": "shopify:\/\/shop_images\/1_da0d695f-40d8-46dd-957d-887500c719ee.jpg",
+              "hometown": "Mombasa, Kenya",
+              "live": "Coffee + Sneakers",
+              "latest_obsesstion": "Choco puff cereals+ greys anatomy tv show.",
+              "favorite": "The culture,work ethics and how everyone is sold out in what they do."
             }
           },
           "1581006145810": {
@@ -633,23 +701,11 @@
             "settings": {
               "leadership_name": "Caroline Wacera",
               "leadership_position": "Head of Supplies",
-              "leadership_image": "shopify:\/\/shop_images\/3_15b49e09-ef4a-470e-8197-0fd3848cb11c.jpg"
-            }
-          },
-          "ec6c95fa-57a5-41dd-be83-739d1720198f": {
-            "type": "text",
-            "settings": {
-              "leadership_name": "Valentine Mbaabu",
-              "leadership_position": "Head of Communications & PR",
-              "leadership_image": "shopify:\/\/shop_images\/7.jpg"
-            }
-          },
-          "d5515625-4298-49b5-b732-846b0d6fe470": {
-            "type": "text",
-            "settings": {
-              "leadership_name": "Dennis Onyancha",
-              "leadership_position": "Kenya Content Creator",
-              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_95.jpg"
+              "leadership_image": "shopify:\/\/shop_images\/3_15b49e09-ef4a-470e-8197-0fd3848cb11c.jpg",
+              "hometown": "Mombasa, Kenya",
+              "live": "Tea + Music",
+              "latest_obsesstion": "SZA's new album SOS",
+              "favorite": "Imani gives one an opportunity to grow."
             }
           },
           "cd1ed79a-89c3-4e4e-974d-f88d53c11e22": {
@@ -657,7 +713,23 @@
             "settings": {
               "leadership_name": "Ramadhan Munga",
               "leadership_position": "Production Assitant + Head of Screen Printing",
-              "leadership_image": "shopify:\/\/shop_images\/8.jpg"
+              "leadership_image": "shopify:\/\/shop_images\/8.jpg",
+              "hometown": "Kwale, Kenya",
+              "live": "My family",
+              "latest_obsesstion": "Designing",
+              "favorite": "The love of the Imani team, the care  and they help the workers to grow on what they do at Imani."
+            }
+          },
+          "5e052a1b-99aa-4d91-986e-5286a3ac7723": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Collins Bosire",
+              "leadership_position": "Sales and Marketing Assistant - Kenya",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-14T134416_807_400x_jpg.webp",
+              "hometown": "Keroka, Nyamira County, Kenya",
+              "live": "Workouts",
+              "latest_obsesstion": "Eating sour finger millet porridge.",
+              "favorite": "Brings about a turquoise aura effect amidst the diversity."
             }
           },
           "7e0e2edb-d1f9-412f-96b0-0234e49a1213": {
@@ -665,15 +737,23 @@
             "settings": {
               "leadership_name": "Rachel Akoth",
               "leadership_position": "Production Assistant - Old Town",
-              "leadership_image": "shopify:\/\/shop_images\/14.jpg"
+              "leadership_image": "shopify:\/\/shop_images\/14.jpg",
+              "hometown": "Homabay, Kadel, Kenya",
+              "live": "Family",
+              "latest_obsesstion": "Shoes",
+              "favorite": "The diversity"
             }
           },
           "1581006167032": {
             "type": "text",
             "settings": {
-              "leadership_name": "Fridah Akumu",
+              "leadership_name": "Davis Khamisi",
               "leadership_position": "Production Assistant - Mtepeni",
-              "leadership_image": "shopify:\/\/shop_images\/fridah-headshot-min_cddc5388-cddc-4ba0-8dce-926aaaa94bdd.jpg"
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-14T134416_807_400x_jpg.webp",
+              "hometown": "",
+              "live": "",
+              "latest_obsesstion": "",
+              "favorite": ""
             }
           },
           "d4c92679-b2e7-4c6a-9654-e83e22ad7cab": {
@@ -681,7 +761,11 @@
             "settings": {
               "leadership_name": "Brian Munyoki",
               "leadership_position": "Turkana Director",
-              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_94.jpg"
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_94.jpg",
+              "hometown": "Kitui, Kenya",
+              "live": "Parfume",
+              "latest_obsesstion": "Historical Airline documentaries",
+              "favorite": "Holistic growth"
             }
           },
           "ace0d160-a719-4599-a3ce-43f75493eadd": {
@@ -689,15 +773,47 @@
             "settings": {
               "leadership_name": "Belinda Napuu",
               "leadership_position": "Production Assistant - Turkana",
-              "leadership_image": "shopify:\/\/shop_images\/67.jpg"
+              "leadership_image": "shopify:\/\/shop_images\/67.jpg",
+              "hometown": "",
+              "live": "",
+              "latest_obsesstion": "",
+              "favorite": ""
             }
           },
           "6927a909-a7fa-4738-93b4-876fc541f251": {
             "type": "text",
             "settings": {
               "leadership_name": "Fredrick Odhiambo",
-              "leadership_position": "Finance Assistant",
-              "leadership_image": "shopify:\/\/shop_images\/2_348a221d-db9a-4db2-be53-cd5749289072.jpg"
+              "leadership_position": "Finance Assistant - Kenya",
+              "leadership_image": "shopify:\/\/shop_images\/2_348a221d-db9a-4db2-be53-cd5749289072.jpg",
+              "hometown": "Rarieda, Siaya County, Kenya",
+              "live": "Nothing to be specific",
+              "latest_obsesstion": "Karamo Show",
+              "favorite": "The people, diverse culture, love, zeal, energy, and the opportunity to be in a space where you can make mistakes, learn, and grow."
+            }
+          },
+          "f5e2c809-9342-4551-9182-a8ae30e54303": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Linet Nyamogi",
+              "leadership_position": "Finance Assistant - Kenya",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-14T134416_807_400x_jpg.webp",
+              "hometown": "",
+              "live": "",
+              "latest_obsesstion": "",
+              "favorite": ""
+            }
+          },
+          "b95b2c1d-7edb-4273-90f9-29ddc68f6152": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Faith Muthoni",
+              "leadership_position": "HR Officer - Kenya",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-14T134416_807_400x_jpg.webp",
+              "hometown": "",
+              "live": "",
+              "latest_obsesstion": "",
+              "favorite": ""
             }
           },
           "b71ae0a8-4fc5-49ab-a754-1940070cd4ea": {
@@ -705,7 +821,11 @@
             "settings": {
               "leadership_name": "Mwanamzungu Ramadhan",
               "leadership_position": "Quality Control - Old Town",
-              "leadership_image": "shopify:\/\/shop_images\/13.jpg"
+              "leadership_image": "shopify:\/\/shop_images\/13.jpg",
+              "hometown": "Wasini, Kenya",
+              "live": "Watching Movies",
+              "latest_obsesstion": "Cooking",
+              "favorite": "Team work"
             }
           },
           "232bcf68-ca17-4158-8317-e3e7695a5234": {
@@ -713,7 +833,11 @@
             "settings": {
               "leadership_name": "Cuty Akiniyi",
               "leadership_position": "Quality Control - Old Town",
-              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_53.jpg"
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_53.jpg",
+              "hometown": "Kwale, Wasini, Kenya",
+              "live": "Prayers",
+              "latest_obsesstion": "Watching YouTube Videos",
+              "favorite": "Relationships created among the artisans and staff."
             }
           },
           "d16f88b3-722a-400b-8bc5-ccd336d2ef46": {
@@ -721,7 +845,11 @@
             "settings": {
               "leadership_name": "Zawadi Nyazi",
               "leadership_position": "Quality Control - Mtepeni",
-              "leadership_image": "shopify:\/\/shop_images\/11.jpg"
+              "leadership_image": "shopify:\/\/shop_images\/11.jpg",
+              "hometown": "",
+              "live": "",
+              "latest_obsesstion": "",
+              "favorite": ""
             }
           },
           "6a4c8422-f509-4a9f-aa85-d71cfb7ab684": {
@@ -729,38 +857,122 @@
             "settings": {
               "leadership_name": "Mbodze Tsuma",
               "leadership_position": "Quality Control - Mtepeni",
-              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_57.jpg"
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_57.jpg",
+              "hometown": "",
+              "live": "",
+              "latest_obsesstion": "",
+              "favorite": ""
+            }
+          },
+          "3eb542b0-a289-43f9-9778-4eb9a5cad4ce": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Anitah Aturinda",
+              "leadership_position": "Graphic Designer",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-14T134416_807_400x_jpg.webp",
+              "hometown": "Rukungiri, Uganda",
+              "live": "My phone",
+              "latest_obsesstion": "Documentaries",
+              "favorite": "The community and purpose we work towards everyday."
+            }
+          },
+          "b7b99e56-8b91-4e6d-83f7-9fedc4b14450": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Damaris Thuo",
+              "leadership_position": "Sales and Marketing Assistant - Kenya",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-14T134416_807_400x_jpg.webp",
+              "hometown": "",
+              "live": "",
+              "latest_obsesstion": "",
+              "favorite": ""
+            }
+          },
+          "b3face72-2c4d-4ccb-ba8d-0854342482e8": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Josephat Kenga",
+              "leadership_position": "Shop Attendant - Kenya",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-14T134416_807_400x_jpg.webp",
+              "hometown": "",
+              "live": "",
+              "latest_obsesstion": "",
+              "favorite": ""
+            }
+          },
+          "2b186852-a39e-4141-859e-f0030b8e9cb9": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Yassir Mohammed",
+              "leadership_position": "Photographer + Videographer",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-14T134416_807_400x_jpg.webp",
+              "hometown": "",
+              "live": "",
+              "latest_obsesstion": "",
+              "favorite": ""
+            }
+          },
+          "bfd99255-1115-4bcf-a8fc-1f01928b3af1": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Mwanaisha Kassim",
+              "leadership_position": "Quality Control - Old Town",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-14T134416_807_400x_jpg.webp",
+              "hometown": "",
+              "live": "",
+              "latest_obsesstion": "",
+              "favorite": ""
+            }
+          },
+          "c34e1db2-665f-4ee1-ad72-aa66c65f0ab1": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Evelyn Mbaru",
+              "leadership_position": "Quality Control - Mtepeni",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-14T134416_807_400x_jpg.webp",
+              "hometown": "",
+              "live": "",
+              "latest_obsesstion": "",
+              "favorite": ""
             }
           }
         },
         "block_order": [
           "1581005602038",
-          "1581005932741",
-          "1581005647702",
           "dd769074-b306-4e2f-bcfd-6bafdfa7b945",
-          "78ee9d1f-af09-4e24-aa27-230ed2fae651",
-          "1581005949992",
-          "4908834b-b310-4a49-960e-e955b083c335",
           "1581005987285",
+          "4908834b-b310-4a49-960e-e955b083c335",
+          "fa71b473-20ee-45d1-a6ad-0a273da739fa",
+          "1581005949992",
+          "78ee9d1f-af09-4e24-aa27-230ed2fae651",
+          "a2a4113f-f310-42ef-8287-153ee62450e3",
+          "1581005647702",
           "2a89ae3c-1677-44a5-bbe5-878e3c5a8613",
           "1581006021988",
-          "fa71b473-20ee-45d1-a6ad-0a273da739fa",
-          "72bb4043-7fe9-431f-9a60-3f4d17ad1f9a",
           "dda59d3d-b82c-47fa-a248-3d194ec18d05",
+          "ddf733f0-1853-4321-ab88-d3708c337043",
+          "ec6c95fa-57a5-41dd-be83-739d1720198f",
           "1581006128959",
           "1581006145810",
-          "ec6c95fa-57a5-41dd-be83-739d1720198f",
-          "d5515625-4298-49b5-b732-846b0d6fe470",
           "cd1ed79a-89c3-4e4e-974d-f88d53c11e22",
+          "5e052a1b-99aa-4d91-986e-5286a3ac7723",
           "7e0e2edb-d1f9-412f-96b0-0234e49a1213",
           "1581006167032",
           "d4c92679-b2e7-4c6a-9654-e83e22ad7cab",
           "ace0d160-a719-4599-a3ce-43f75493eadd",
           "6927a909-a7fa-4738-93b4-876fc541f251",
+          "f5e2c809-9342-4551-9182-a8ae30e54303",
+          "b95b2c1d-7edb-4273-90f9-29ddc68f6152",
           "b71ae0a8-4fc5-49ab-a754-1940070cd4ea",
           "232bcf68-ca17-4158-8317-e3e7695a5234",
           "d16f88b3-722a-400b-8bc5-ccd336d2ef46",
-          "6a4c8422-f509-4a9f-aa85-d71cfb7ab684"
+          "6a4c8422-f509-4a9f-aa85-d71cfb7ab684",
+          "3eb542b0-a289-43f9-9778-4eb9a5cad4ce",
+          "b7b99e56-8b91-4e6d-83f7-9fedc4b14450",
+          "b3face72-2c4d-4ccb-ba8d-0854342482e8",
+          "2b186852-a39e-4141-859e-f0030b8e9cb9",
+          "bfd99255-1115-4bcf-a8fc-1f01928b3af1",
+          "c34e1db2-665f-4ee1-ad72-aa66c65f0ab1"
         ],
         "settings": {
           "heading_text": "our leadership spans globally across the US and Kenya"
