@@ -8826,6 +8826,9 @@ margin-bottom:0px;
       .mid-section-leader {
         padding-top: 40px;
       }
+      .page--our-leadership .mid-section-leader {
+        padding-bottom: 0;
+      }
 
 
       .hero-flex-col-internal-shop {

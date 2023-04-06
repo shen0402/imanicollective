@@ -967,6 +967,10 @@
   .faire-section {
     margin-bottom: 70px;
   }
+
+  .page--wholesale .faire-section {
+    margin-bottom: 0;
+  }
   
   .peeba-btn-wrapper {
     margin-top: 60px;
