@@ -1401,6 +1401,8 @@ body {
 
 .cta-newsletter .bottom-cta-flex-col-inner {
   text-align: left;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .cta-newsletter .jc-button {
