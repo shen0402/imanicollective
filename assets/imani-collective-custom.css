@@ -1954,6 +1954,10 @@ body {
   }
 }
 
+.flex-col-artisan .modal-bottom-wrapper {
+  max-width: 500px;
+}
+
 .modal-top-content-heading {
   font-size: 20px;
   line-height: 1.2;
