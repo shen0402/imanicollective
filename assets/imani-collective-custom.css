@@ -1394,6 +1394,12 @@ body {
   flex: 0 40%;
 }
 
+@media (min-width: 768px) {
+  .cta-leadership .bottom-cta-flex-col {
+    padding-left: 70px;
+  }
+}
+
 .cta-newsletter .bottom-cta-flex-col {
   max-width: 500px;
   margin-left: auto;
@@ -1422,6 +1428,7 @@ body {
 
 .bottom-cta-flex-col-bg-holder.bottom-cta-flex-col-bg-holder-leadership {
   background-image: url('//cdn.shopify.com/s/files/1/2534/9108/files/internship-min.jpg');
+  background-position: 50% 85%;
 }
 
 .bottom-cta-flex-col-bg-holder.bottom-cta-flex-col-bg-holder-artisans {
