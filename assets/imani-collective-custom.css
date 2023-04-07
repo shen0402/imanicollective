@@ -6270,15 +6270,22 @@ select:-webkit-autofill:focus {
   padding-right: 10px;
 }
 
+.template--article .hero-wrapper-meta {
+  background-image: url('blog_article_background.jpg');
+  background-position: 50% -20px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 
 .hero-heading-article {
   margin-top: 0px;
   margin-bottom: 0;
-  font-size: 28px;
+  font-size: 32px;
   line-height: 36px;
   font-weight: 500;
   letter-spacing: 7px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .hero-heading-meta {
@@ -6355,6 +6362,11 @@ select:-webkit-autofill:focus {
 
 .meta-content-wrapper-article.rte h3 * {
   color: #333 !important;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 7px;
+  font-size: 38px;
+  line-height: 44px;
 }
 
 @media (max-width: 767px) {
@@ -10664,6 +10676,8 @@ margin-bottom:0px;
   font-size: 11px;
   line-height: 14px;
   letter-spacing: 2.5px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 @media (max-width: 479px) {
