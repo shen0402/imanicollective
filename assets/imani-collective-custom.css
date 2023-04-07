@@ -628,7 +628,7 @@ body {
   text-align: right;
   font-size: 16px;
   line-height: 1.2;
-  letter-spacing: 4px;
+  letter-spacing: 1.5px;
   font-weight: 400;
 }
 
@@ -1447,7 +1447,7 @@ body {
   color: #333;
   font-size: 16px;
   line-height: 1.2;
-  letter-spacing: 2.5px;
+  letter-spacing: 1.5px;
   margin-bottom: 40px;
 }
 
@@ -5296,7 +5296,7 @@ body {
 
 .product-description-text {
   margin-bottom: 20px;
-  
+  letter-spacing: 1.5px;
   font-size: 18px;
   line-height: 28px;
 }
@@ -6320,7 +6320,7 @@ select:-webkit-autofill:focus {
   margin-top: 40px;
   font-size: 17px;
   line-height: 26px;
-  letter-spacing: 3px;
+  letter-spacing: 1.5px;
   width: 65%;
   margin-left: auto;
   margin-right: auto;
@@ -10519,7 +10519,7 @@ margin-bottom:0px;
   font-size: 19px;
   line-height: 24px;
   font-style: italic;
-  letter-spacing: 3.5px;
+  letter-spacing: 1.5px;
   margin-bottom: 15px;
 }
 .blog-item__button {
