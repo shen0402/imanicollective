@@ -5102,7 +5102,7 @@ body {
 
 .col-heading-product {
   margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   
   font-size: 28px;
   line-height: 36px;
@@ -5121,17 +5121,11 @@ body {
 }
 
 .product-options-wrapper {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .swatchify-cont {
   margin-bottom: 0 !important;
-}
-
-@media (max-width: 767px) {
-  .product-options-wrapper {
-    margin-top: 30px;
-  }
 }
 
 .product-options-flex-row {
@@ -5234,8 +5228,8 @@ body {
 }
 
 .product-btn-wrapper {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .product-btn-wrapper .jc-button {
@@ -9359,14 +9353,7 @@ margin-bottom:0px;
       .col-right-product {
         padding-top: 40px;
       }
-      .col-heading-product {
-        margin-bottom: 30px;
-      }
       
-      .product-btn-wrapper {
-        margin-top: 30px;
-        margin-bottom: 30px;
-      }
       .connect-center-img-mobile {
          position: static;
   
