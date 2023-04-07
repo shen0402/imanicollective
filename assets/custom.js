@@ -23,6 +23,12 @@ $(document).on('click', '.has-megamenu', function(e){
     $(this).closest('li').find('.mega-menu').slideToggle("slow");
 });
 
+$(document).on('click', '.product-accordion__header', function(e){
+    e.preventDefault();
+    $(this).toggleClass('active');
+    $(this).next().slideToggle();
+});
+
 $(document).ready(function(){
     var limit_blog = 7;
     var current_show_blogs = limit_blog;

@@ -218,7 +218,15 @@
             </div>
           </div>
           <div class="product-description-wrapper">
-            <div class="product-description-text">{{ product.description }}</div>
+            {% assign description = product.description | remove: '<p data-mce-fragment="1">' | remove: '</p>'   %}
+            {% assign description = description | replace: '<strong data-mce-fragment="1">', '</div><p class="product-accordion__header">' %}
+            {% assign description = description | replace: '<b data-mce-fragment="1">', '</div><p class="product-accordion__header">' %}
+            {% assign description = description | replace: '</strong>', '</p><div class="product-accordion__content">' %}
+            {% assign description = description | replace: '</b>', '</p><div class="product-accordion__content">' %}
+            {% assign description = description | remove_first: '</div>'  %}
+            {% assign description = description | replace: '<div class="product-accordion__content"><br data-mce-fragment="1">', '<div class="product-accordion__content">' %}
+            {% assign description = description | replace: '<br data-mce-fragment="1"></div>', '</div>' %}
+            <div class="product-description-text">{{ description }}</div>
 
           </div>
           <div class="product-social-wrapper">

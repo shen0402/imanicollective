@@ -10816,6 +10816,31 @@ margin-bottom:0px;
   margin-top: 15px;
 }
 
+.product-accordion__header {
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  padding-right: 20px;
+}
+
+.product-accordion__header::before {
+  content: '+';
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+
+.product-accordion__header.active::before {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.product-accordion__content {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .get-invovled .modal-form-input {
     text-align: left;
