@@ -5295,11 +5295,13 @@ body {
   width: 40px;
 }
 
-.product-description-text {
+.product-description-text, .product-description-text * {
   margin-bottom: 20px;
   letter-spacing: 1.5px;
-  font-size: 18px;
+  font-size: 18px !important;
   line-height: 28px;
+  font-family: brandon-grotesque, sans-serif !important;
+  color: #333 !important;
 }
 
 .product-description-flex-row {
