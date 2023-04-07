@@ -5346,6 +5346,11 @@ body {
   color: #333 !important;
 }
 
+.product-description-text a:hover {
+  transition: 0.3s;
+  color: #af7552 !important;
+}
+
 .product-description-flex-row {
   display: -webkit-box;
   display: -webkit-flex;
