@@ -3028,7 +3028,7 @@
           "00a8ea38-8391-460a-9fb5-dc55a2d5539d"
         ],
         "settings": {
-          "logo": "shopify:\/\/shop_images\/new-logo.png",
+          "logo": "shopify:\/\/shop_images\/new-logo_aa3691f3-848d-4178-a28c-46b261b59c7b.png",
           "menu": "main-menu-sidekick-custom",
           "announcement_message": "<p>Subscribe to our newsletter to receive 10% off your first order<\/p>",
           "announcement_color": "#474645",
@@ -3045,9 +3045,9 @@
               "email_heading": "Get in touch",
               "email_address": "info@imanicollective.com",
               "store1_heading": "headquarters",
-              "store1_text": "<p>505 Fountain Pkwy #535053<\/p>",
+              "store1_text": "<p><a href=\"\/collections\/best-sellers\" title=\"Best Sellers\">505 Fountain Pkwy #535053<\/a><\/p>",
               "store2_heading": "artisan workshop \/ gift shop",
-              "store2_text": "<p>Grand Prairie, TX 75050<\/p>"
+              "store2_text": "<p><a href=\"\/collections\/best-sellers\" title=\"Best Sellers\">Grand Prairie, TX 75050<\/a><\/p>"
             }
           },
           "2b834260-626b-46ea-8888-03f6f9526e91": {
