@@ -101,14 +101,15 @@
       </div>
       <div class="col-right-product w-col w-col-6">
         <div class="col-right-inner-product">
-          {% if product.tags contains 'Top Rated' %}
-            <h2 class="product-tag">
-              <span>Top</span>
-              <span>Rated</span>
-            </h2>
-          {% endif %}
-          <h1 class="col-heading-product">{{ product.title }}</h1>
-
+          <div class="product-header">
+            <h1 class="col-heading-product">{{ product.title }}</h1>
+            {% if product.tags contains 'Top Rated' %}
+              <h2 class="product-tag">
+                <span>Top</span>
+                <span>Rated</span>
+              </h2>
+            {% endif %}
+          </div>        
           {% if compare_at_price > price %}
             <div class="price-text-product">
               <span style="text-decoration: line-through;font-weight: 400;letter-spacing: 2px;">{{ compare_at_price | money }}</span>

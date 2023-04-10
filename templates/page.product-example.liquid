@@ -86,7 +86,7 @@
               <span>Rated</span>
             </h2>
           {% endif %}
-          <h1 class="col-heading-product">Llama Animal Pillow</h1>
+          <h1 class="col-heading-product {% if product.tags contains 'Top Rated' %}product-has-tag{% endif %}">Llama Animal Pillow</h1>
           <div class="price-text-product">$28.00</div>
           <div class="product-options-wrapper">
             <div class="form-block w-form">
