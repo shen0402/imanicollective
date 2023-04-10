@@ -10918,6 +10918,9 @@ margin-bottom:0px;
     margin-right: -20px;
   }
 }
+.involved-info-text-wrapper .flex-link-artisan {
+  font-weight: 700;
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
