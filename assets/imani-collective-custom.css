@@ -6318,7 +6318,6 @@ select:-webkit-autofill:focus {
   background-image: url('blog_article_background.jpg');
   background-position: 50% -20px;
   background-size: 100%;
-  background-repeat: no-repeat;
 }
 
 .hero-heading-article {
@@ -6368,6 +6367,7 @@ select:-webkit-autofill:focus {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 50%;
 }
 
 .meta-content-wrapper-article.rte {
