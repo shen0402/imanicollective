@@ -5339,6 +5339,10 @@ body {
   color: #333 !important;
 }
 
+.product-description-text a {
+  color: #f0ddd7 !important;
+}
+
 .product-description-text a:hover {
   transition: 0.3s;
   color: #af7552 !important;
