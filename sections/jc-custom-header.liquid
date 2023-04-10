@@ -10,12 +10,12 @@
     ;
   }
 </style>
+{% if section.settings.announcement_message != blank %}
+  <div class="jc-custom-announcement-bar">
+    {{ section.settings.announcement_message }}
+  </div>
+{% endif %}
 <div class="jc-custom-header">
-  {% if section.settings.announcement_message != blank %}
-    <div class="jc-custom-announcement-bar">
-      {{ section.settings.announcement_message }}
-    </div>
-  {% endif %}
   <div class="jc-custom-header__top">
     <div class="jc-custom-header__header-icon large-up-hide">
       <a href="/cart" class="fixed-nav-icon-flex-link fixed-nav-icon-flex-link-right w-inline-block hamburger-icon">
