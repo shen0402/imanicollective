@@ -84,7 +84,6 @@
               {% endfor %}
             </div>
             <div class="w-tab-content">
-
               {% for image in product.images %}
                 <div data-w-tab="Tab {{ forloop.index }}" class="w-tab-pane {% if forloop.index == 1 %}w--tab-active{% endif %}">
                   <div class="tab-inner-product"><img
@@ -93,8 +92,12 @@
                       class="tab-img-product"></div>
                 </div>
               {% endfor %}
-
-
+              <a class="tab-button tab-previous" href="javascript:;">
+                <img src="https://cdn.shopify.com/s/files/1/2534/9108/files/shop_-_all_products_arrow_icon_left.png?v=1678980373" class="tab-button-img">
+              </a>
+              <a class="tab-button tab-next" href="javascript:;">
+                <img src="https://cdn.shopify.com/s/files/1/2534/9108/files/shop_-_all_products_arrow_icon_5ac8bc0f-5b07-40ed-928b-31e2a9458150.png?v=1678980372" class="tab-button-img">
+              </a>
             </div>
           </div>
         </div>

@@ -29,6 +29,28 @@ $(document).on('click', '.product-accordion__header', function(e){
     $(this).next().slideToggle();
 });
 
+$(document).on('click', '.tab-next', function(e){
+    e.preventDefault();
+    $('.tab-menu-link-product.w--current').next().click();
+    $('.pwzrjss6').each(function(index){
+        if (this.style.borderColor == 'black') {
+            $(this).closest('.PwzrGrid-item').next().find('.pwzrjss6').click();
+            return false;
+        }
+    });
+});
+
+$(document).on('click', '.tab-previous', function(e){
+    e.preventDefault();
+    $('.tab-menu-link-product.w--current').prev().click();
+    $('.pwzrjss6').each(function(index){
+        if (this.style.borderColor == 'black') {
+            $(this).closest('.PwzrGrid-item').prev().find('.pwzrjss6').click();
+            return false;
+        }
+    });
+});
+
 
 $(document).ready(function(){
     var limit_blog = 7;
@@ -46,6 +68,17 @@ $(document).ready(function(){
                 }
             });
         });
+    }
+
+    if ($('.pwzrswiper-container').length) {
+        $('.pwzrswiper-container').append(`
+            <a class="tab-button tab-previous" href="javascript:;">
+                <img src="https://cdn.shopify.com/s/files/1/2534/9108/files/shop_-_all_products_arrow_icon_left.png?v=1678980373" class="tab-button-img">
+            </a>
+            <a class="tab-button tab-next" href="javascript:;">
+                <img src="https://cdn.shopify.com/s/files/1/2534/9108/files/shop_-_all_products_arrow_icon_5ac8bc0f-5b07-40ed-928b-31e2a9458150.png?v=1678980372" class="tab-button-img">
+            </a>
+        `);
     }
 });
 
