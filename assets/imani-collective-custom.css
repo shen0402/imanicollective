@@ -10960,6 +10960,15 @@ margin-bottom:0px;
 .tab-button-img {
   max-width: 40px;
 }
+
+@media (min-width: 768px) {
+  .pwzrjss2 .PwzrGrid-container {
+    overflow-y: auto !important;
+    flex-wrap: nowrap !important;
+    max-height: 460px !important;
+    justify-content: flex-start !important;
+  }
+}
 @media (max-width: 767px) {
   .w-tab-content {
     margin-bottom: 50px;

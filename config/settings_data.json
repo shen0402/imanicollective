@@ -546,10 +546,10 @@
               "leadership_name": "Annette Wilson",
               "leadership_position": "Chief Marketing Officer",
               "leadership_image": "shopify:\/\/shop_images\/1_bd0d0db3-149e-4b7e-a8bd-81ac250680d3.jpg",
-              "hometown": "kaysville, Utah",
+              "hometown": "Kaysville, Utah",
               "live": "family...or cheese",
               "latest_obsesstion": "white chocolate covered cashews",
-              "favorite": "The incredible friendships I've made (both stateside and around the world), the focus on empowering working moms, and the opportunity to be a part of something so much bigger than myself."
+              "favorite": "The incredible friendships I've made (both stateside and around the world), the focus on empowering working moms, and the opportunity be a part of something so much bigger than myself."
             }
           },
           "4908834b-b310-4a49-960e-e955b083c335": {
@@ -558,10 +558,10 @@
               "leadership_name": "Paloma Diaz",
               "leadership_position": "Chief Design Officer",
               "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2022-11-07T132835.378.jpg",
-              "hometown": "",
-              "live": "",
-              "latest_obsesstion": "",
-              "favorite": ""
+              "hometown": "Dallas, Texas",
+              "live": "Sunshine and coffee",
+              "latest_obsesstion": "Daydreaming about living somewhere tropical",
+              "favorite": "Creating beautiful things with beautiful people."
             }
           },
           "fa71b473-20ee-45d1-a6ad-0a273da739fa": {
@@ -630,10 +630,10 @@
               "leadership_name": "Maxine Ellerston",
               "leadership_position": "Marketing Assistant",
               "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2022-11-07T133657.199.jpg",
-              "hometown": "",
-              "live": "",
-              "latest_obsesstion": "",
-              "favorite": ""
+              "hometown": "Temecula, California",
+              "live": "My camera and a dirty soda",
+              "latest_obsesstion": "Cooking",
+              "favorite": "The creative work culture and the empowerment of working moms"
             }
           },
           "1581006021988": {
@@ -682,6 +682,18 @@
               "live": "My Freedom & independence",
               "latest_obsesstion": "True Crime documentaries",
               "favorite": "The chance to experience multiple cultures."
+            }
+          },
+          "9cd1a780-4627-472c-ac32-7bb4a8ebb0df": {
+            "type": "text",
+            "settings": {
+              "leadership_name": "Kira Echeandia",
+              "leadership_position": "Non-Profit Social Media + Communications Manager",
+              "leadership_image": "shopify:\/\/shop_images\/CC30EE9D-CF57-4822-8CD3-106DD8D54AAE_1_105_c.jpg",
+              "hometown": "Aubrey, Texas",
+              "live": "My Community",
+              "latest_obsesstion": "Playing frisbee with my dog",
+              "favorite": "Working with such a kind and fun team and sharing Impact stories"
             }
           },
           "1581006128959": {
@@ -750,10 +762,10 @@
               "leadership_name": "Davis Khamisi",
               "leadership_position": "Production Assistant - Mtepeni",
               "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-14T134416_807_400x_jpg.webp",
-              "hometown": "",
-              "live": "",
-              "latest_obsesstion": "",
-              "favorite": ""
+              "hometown": "Western Kenya",
+              "live": "Hope + Self Belief",
+              "latest_obsesstion": "Hiking, Bike road trips, traveling",
+              "favorite": "Ability to social relate with everyone and being part of the Imani family."
             }
           },
           "d4c92679-b2e7-4c6a-9654-e83e22ad7cab": {
@@ -952,6 +964,7 @@
           "dda59d3d-b82c-47fa-a248-3d194ec18d05",
           "ddf733f0-1853-4321-ab88-d3708c337043",
           "ec6c95fa-57a5-41dd-be83-739d1720198f",
+          "9cd1a780-4627-472c-ac32-7bb4a8ebb0df",
           "1581006128959",
           "1581006145810",
           "cd1ed79a-89c3-4e4e-974d-f88d53c11e22",
