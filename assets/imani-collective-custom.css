@@ -6446,6 +6446,10 @@ select:-webkit-autofill:focus {
     letter-spacing: 7px;
     margin-bottom: 20px;
   }
+  .top-img-article {
+    width: 75%;
+    height: 75%;
+  }
 }
 
 .meta-content-wrapper.rte {
