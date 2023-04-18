@@ -10692,6 +10692,10 @@ margin-bottom:0px;
     margin-left: 10px;
     flex: 1;
   }
+
+  .blog-item__tag {
+    text-align: center;
+  }
 }
 
 .blog-heading {
