@@ -6502,7 +6502,8 @@ select:-webkit-autofill:focus {
     text-decoration: none;
     color: #af7552;
     -webkit-transition: color 250ms ease;
-    transition: color 250ms ease
+    transition: color 250ms ease;
+    word-break: break-all;
 }
 
 .meta-content-wrapper.rte a:hover {
