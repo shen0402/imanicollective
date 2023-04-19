@@ -58,6 +58,20 @@
             "number": "0%",
             "text": "of artisans have access to good healthcare"
           }
+        },
+        "7d5a07a5-3758-4983-aa8c-1056142c2cdb": {
+          "type": "button",
+          "settings": {
+            "btn_label": "SEE OUR ENVIRONMENTAL SUSTAINABILITY REPORT",
+            "btn_link": "https:\/\/static.showit.co\/file\/Awis6dsRQBOl348nJTZrpA\/191139\/sustainability_report_2022_edit_-compressed.pdf"
+          }
+        },
+        "6c4e6227-65e4-473e-9eb7-050ec2d0d2a8": {
+          "type": "button",
+          "settings": {
+            "btn_label": "SEE OUR LATEST <br> IMPACT REPORT",
+            "btn_link": "https:\/\/mcusercontent.com\/3a1ecc51bdea229e05327c57e\/files\/f5131e38-88dc-698c-8d39-8dc2eb82ddd4\/impact_report_2022_reduced_size.pdf"
+          }
         }
       },
       "block_order": [
@@ -68,7 +82,9 @@
         "ee6738a9-624f-4571-8f33-b7aeb72900dc",
         "5dcb8bc5-edce-464a-a157-df42ffaf487b",
         "e4b93a5f-17ed-4543-afe3-dd4d07fb9278",
-        "667cd7c8-898b-4d7f-aad5-9a95d7cfa01f"
+        "667cd7c8-898b-4d7f-aad5-9a95d7cfa01f",
+        "7d5a07a5-3758-4983-aa8c-1056142c2cdb",
+        "6c4e6227-65e4-473e-9eb7-050ec2d0d2a8"
       ],
       "settings": {
       }
