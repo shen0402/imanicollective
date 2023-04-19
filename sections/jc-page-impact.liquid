@@ -75,14 +75,14 @@
     <div class="glance-text-wrapper">
       <h2 class="margin-b-30 negative-margin-r">dignified employment</h2>
       <div class="glance-inner-flex-row">
-        <div class="glance-inner-flex-col">
-          <div class="big-medium-text margin-b-10">00</div>
-          <div class="general-text">artisans in extreme poverty employed</div>
-        </div>
-        <div class="glance-inner-flex-col">
-          <div class="big-medium-text margin-b-10">00</div>
-          <div class="general-text">Living Above the $1.90 Poverty Line</div>
-        </div>
+        {% for block in section.blocks %}
+          {% if block.type == 'dignified_employment' %}
+            <div class="glance-inner-flex-col">
+              <div class="big-medium-text margin-b-10">{{ block.settings.number }}</div>
+              <div class="general-text">{{ block.settings.text }}</div>
+            </div>
+          {% endif %}
+        {% endfor %}
       </div>
     </div>
     <div class="glance-img-flex"><img
@@ -113,18 +113,14 @@
     <div class="glance-text-wrapper alt">
       <h2 class="margin-b-30">economic independence</h2>
       <div class="glance-inner-flex-row second">
-        <div class="glance-inner-flex-col">
-          <div class="big-medium-text margin-b-10">00</div>
-          <div class="general-text">artisans own land or a home</div>
-        </div>
-        <div class="glance-inner-flex-col">
-          <div class="big-medium-text margin-b-10">00</div>
-          <div class="general-text">artisans have an entrepreneurial business</div>
-        </div>
-        <div class="glance-inner-flex-col">
-          <div class="big-medium-text margin-b-10">00</div>
-          <div class="general-text">artisans have a bank account</div>
-        </div>
+        {% for block in section.blocks %}
+          {% if block.type == 'economic_independence' %}
+            <div class="glance-inner-flex-col">
+              <div class="big-medium-text margin-b-10">{{ block.settings.number }}</div>
+              <div class="general-text">{{ block.settings.text }}</div>
+            </div>
+          {% endif %}
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -139,18 +135,14 @@
           class="grad-img">
       </div>
       <div class="glance-inner-flex-row second transformed-communities">
-        <div class="glance-inner-flex-col com">
-          <div class="big-medium-text margin-b-10">0%</div>
-          <div class="general-text">of artisans hold a leadership position in their community</div>
-        </div>
-        <div class="glance-inner-flex-col com">
-          <div class="big-medium-text margin-b-10">0%</div>
-          <div class="general-text">of artisans are educating at least one child</div>
-        </div>
-        <div class="glance-inner-flex-col com">
-          <div class="big-medium-text margin-b-10">0%</div>
-          <div class="general-text">of artisans have access to good healthcare</div>
-        </div>
+        {% for block in section.blocks %}
+          {% if block.type == 'transformed_communities' %}
+            <div class="glance-inner-flex-col com">
+              <div class="big-medium-text margin-b-10">{{ block.settings.number }}</div>
+              <div class="general-text">{{ block.settings.text }}</div>
+            </div>
+          {% endif %}
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -296,6 +288,54 @@
   {
     "name": "Impact",
     "settings": [],
+    "blocks": [
+      {
+        "type": "dignified_employment",
+        "name": "dignified employment",
+        "settings": [
+          {
+            "type": "text",
+            "id": "number",
+            "label": "Number",
+            "default": "00"
+          }, {
+            "type": "textarea",
+            "id": "text",
+            "label": "Text"
+          }
+        ]
+      }, {
+        "type": "economic_independence",
+        "name": "economic independence",
+        "settings": [
+          {
+            "type": "text",
+            "id": "number",
+            "label": "Number",
+            "default": "00"
+          }, {
+            "type": "textarea",
+            "id": "text",
+            "label": "Text"
+          }
+        ]
+      }, {
+        "type": "transformed_communities",
+        "name": "transformed communities",
+        "settings": [
+          {
+            "type": "text",
+            "id": "number",
+            "label": "Number",
+            "default": "00"
+          }, {
+            "type": "textarea",
+            "id": "text",
+            "label": "Text"
+          }
+        ]
+      }
+    ],
     "presets": [
       {
         "name": "Impact"
