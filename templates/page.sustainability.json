@@ -1,12 +1,32 @@
 {
-    "sections": {
-      "main": {
-        "type": "jc-page-sustainability",
-        "settings": {
+  "sections": {
+    "main": {
+      "type": "jc-page-sustainability",
+      "blocks": {
+        "0230dc1b-a4b6-492c-99e6-798d180a3784": {
+          "type": "button",
+          "settings": {
+            "btn_label": "SEE OUR ENVIRONMENTAL SUSTAINABILITY REPORT",
+            "btn_link": "https:\/\/static.showit.co\/file\/Awis6dsRQBOl348nJTZrpA\/191139\/sustainability_report_2022_edit_-compressed.pdf"
+          }
+        },
+        "f3c60f1c-f1d3-4f45-b222-adf9b7cc938b": {
+          "type": "button",
+          "settings": {
+            "btn_label": "SEE OUR LATEST <br> IMPACT REPORT",
+            "btn_link": "https:\/\/mcusercontent.com\/3a1ecc51bdea229e05327c57e\/files\/f5131e38-88dc-698c-8d39-8dc2eb82ddd4\/impact_report_2022_reduced_size.pdf"
+          }
         }
+      },
+      "block_order": [
+        "0230dc1b-a4b6-492c-99e6-798d180a3784",
+        "f3c60f1c-f1d3-4f45-b222-adf9b7cc938b"
+      ],
+      "settings": {
       }
-    },
-    "order": [
-      "main"
-    ]
+    }
+  },
+  "order": [
+    "main"
+  ]
 }

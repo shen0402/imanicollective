@@ -3,6 +3,11 @@
     "home-hero": {
       "type": "jc-hero",
       "settings": {
+        "image": "shopify:\/\/shop_images\/BA6B6751-min.jpg",
+        "heading": "THE SELAH",
+        "text": "IN PARTNERSHIP WITH TIBEB",
+        "btn_label": "SHOP NOW",
+        "btn_link": "shopify:\/\/collections\/frontpage"
       }
     },
     "home-collection": {

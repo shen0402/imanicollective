@@ -1,23 +1,64 @@
-<div class="home-hero-section">
+<style>
+  {% if section.settings.image != blank %}
+    #section--{{ section.id }}{
+      background-image: url('{{ section.settings.image | img_url: '1900x' }}');
+    }
+  {% endif %}
+</style>
+<div class="home-hero-section" id="section--{{ section.id }}">
   <div class="home-hero-text-wrapper">
     <div class="center-text-wrapper">
-      <div class="smaller-medium-text margin-b-10 white-text">THE SELAH</div>
-      <div class="general-text margin-b-20 white-text">IN PARTNERSHIP WITH TIBEB</div>
-      <a href="/collections/frontpage" class="general-btn center-align w-inline-block"><img
-          src="{{ 'pink-btn.png' | asset_img_url: '250x' }}"
-          loading="lazy"
-          sizes="(max-width: 479px) 100vw, 250px"
-          alt=""
-          class="btn-img">
-        <div class="btn-text">SHOP NOW</div>
-      </a>
+      {% if section.settings.heading != blank %}
+        <div class="smaller-medium-text margin-b-10 white-text">{{ section.settings.heading }}</div>
+      {% endif %}
+      {% if section.settings.text != blank %}
+        <div class="general-text margin-b-20 white-text">{{ section.settings.text }}</div>
+      {% endif %}
+      {% if section.settings.btn_label != blank and section.settings.btn_link != blank %}
+        <a href="{{ section.settings.btn_link }}" class="general-btn center-align w-inline-block"><img
+            src="{{ 'pink-btn.png' | asset_img_url: '250x' }}"
+            loading="lazy"
+            sizes="(max-width: 479px) 100vw, 250px"
+            alt=""
+            class="btn-img">
+          <div class="btn-text">{{ section.settings.btn_label }}</div>
+        </a>
+      {% endif %}
     </div>
   </div>
 </div>
 {% schema %}
   {
     "name": "Home Image Banner",
-    "settings": [],
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "THE SELAH"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text",
+        "default": "IN PARTNERSHIP WITH TIBEB"
+      },
+      {
+        "type": "text",
+        "id": "btn_label",
+        "label": "Button Label",
+        "default": "SHOP NOW"
+      }, {
+        "type": "url",
+        "id": "btn_link",
+        "label": "Button Link"
+      }
+    ],
     "presets": [
       {
         "name": "Home Image Banner"
