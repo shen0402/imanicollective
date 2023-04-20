@@ -10984,6 +10984,10 @@ margin-bottom:0px;
     justify-content: flex-start !important;
   }
 }
+.prduct-features__image {
+  max-width: 850px;
+  margin: 0 auto;
+}
 @media (max-width: 767px) {
   .w-tab-content {
     margin-bottom: 50px;
