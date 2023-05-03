@@ -280,6 +280,11 @@
     width: 420px;
     margin-top: 13px;
   }
+
+  .story-flex-row._2023 {
+    width: 420px;
+    margin-top: 13px;
+  }
   
   .story-flex-row._2015 {
     margin-top: 12px;
@@ -291,9 +296,9 @@
   }
   
   .story-timeline-img {
-    height: 95.5%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    height: 111.5%;
+    margin-top: -17px;
+    margin-bottom: 0;
     -o-object-fit: cover;
     object-fit: cover;
   }
@@ -3666,6 +3671,11 @@
       width: 80%;
       margin-top: 20px;
     }
+
+    .story-flex-row._2023 {
+      width: 80%;
+      margin-top: 20px;
+    }
   
     .story-flex-row._2015 {
       margin-bottom: 19px;
@@ -3676,7 +3686,8 @@
     }
   
     .story-timeline-img {
-      height: 94%;
+      height: 109%;
+      margin-top: -38px;
     }
   
     .our-story-hero-section {
@@ -4075,6 +4086,14 @@
     }
   
     .story-flex-row._2020 {
+      -webkit-box-align: end;
+      -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      text-align: right;
+    }
+
+    .story-flex-row._2023 {
       -webkit-box-align: end;
       -webkit-align-items: flex-end;
       -ms-flex-align: end;
@@ -5027,6 +5046,16 @@
     }
   
     .story-flex-row._2020 {
+      width: 90%;
+      margin-top: -10px;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .story-flex-row._2023 {
       width: 90%;
       margin-top: -10px;
       -webkit-box-align: start;
@@ -6393,6 +6422,19 @@
     -ms-grid-row-align: start;
     align-self: start;
   }
+
+  #w-node-b891d546-fcf4-8742-e415-dec278cfcf2a-a4a84312 {
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: 2;
+    -ms-grid-row: 12;
+    grid-row-start: 12;
+    -ms-grid-row-span: 1;
+    grid-row-end: 13;
+    -ms-grid-row-align: start;
+    align-self: start;
+  }
   
   #w-node-_44466dd7-4561-527d-f93b-e2d5fc1ddb6f-a4a84311 {
     -ms-grid-column: 3;
@@ -7064,6 +7106,13 @@
     }
   
     #w-node-b891d546-fcf4-8742-e415-dec278cfcf2a-a4a84311 {
+      -ms-grid-column: 2;
+      grid-column-start: 2;
+      -ms-grid-column-span: 1;
+      grid-column-end: 3;
+    }
+
+    #w-node-b891d546-fcf4-8742-e415-dec278cfcf2a-a4a84312 {
       -ms-grid-column: 2;
       grid-column-start: 2;
       -ms-grid-column-span: 1;
