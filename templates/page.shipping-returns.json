@@ -1,12 +1,14 @@
 {
-    "sections": {
-      "main": {
-        "type": "jc-shipping-returns",
-        "settings": {
-        }
+  "sections": {
+    "main": {
+      "type": "jc-shipping-returns",
+      "settings": {
+        "heading": "Shipping + Returns",
+        "content": "<h4>SHIPPING<\/h4><p>We do our best to have in stock items shipped promptly. Please allow 3 - 5 business days for your order to ship. Packages will be shipped during office hours Monday - Friday. You will receive a shipping confirmation once your order has been shipped. If you don’t want to miss our shipping emails, please add <a href=\"mailto:orders@imanicollective.com\" title=\"mailto:orders@imanicollective.com\">orders@imanicollective.com<\/a> as a safe sender.<\/p><h4>How much is US domestic shipping?<\/h4><p>US ground shipping is calculated at checkout. You have the option to choose between multiple shipping options, including expedited shipping. Delivery takes 5 - 7 business days for standard US shipping and 2 business days for expedited shipping. *Delivery time will go into effect once your item has been shipped.<\/p><h4>Do you ship internationally?<\/h4><p>Yes, we ship worldwide! All shipping fees will be calculated at checkout. International orders are not eligible for expedited shipping, shipping discounts, or returns. Please allow 2 - 4 weeks for international orders. International delivery times are subject to customs clearance, which may cause delays. <\/p><p>All prices on our website are in USD.<\/p><p>*Depending on the country of delivery, your shipment may be subject to a customs clearance. Fees are determined by the customs department. Imani Collective does not collect taxes, customs or duties at the time of purchase for international orders. Therefore, international orders ship with these potential additional fees unpaid. We cannot determine what these fees will be in advance. We recommend contacting your local customs office with any questions. Be prepared to possibly be charged such fees upon delivery. Payment of fees is the responsibility of the customer.<\/p><h4>WHOLESALE SHIPPING<\/h4><p>Imani Collective currently ships to the US and Canada only. All wholesale orders are taken through FAIRE.COM. For more information on our wholesale shipping policy, click here.<\/p><h4>RETURN POLICY<\/h4><p>Thank you for shopping with us! We know online shopping can be a bit tricky, so we want to make our return process easy for you.<\/p><p>*Note: Items found in LAST CHANCE (clearance\/discontinued) are final sale and non-refundable.<\/p><h4>Domestic Returns<\/h4><p>To return items, please ensure that items still have their tags and are in new condition. Returns will be accepted 30 days after order date.<\/p><p>To initiate your return, please email <a href=\"mailto:orders@imanicollective.com\" title=\"mailto:orders@imanicollective.com\">orders@imanicollective.com<\/a> with the subject title “RETURN.” Please include your order number, date of purchase, and email address used when purchasing. All this information can be found on your order confirmation email. You will be emailed a shipping label to use on your return. The cost of shipping your return will be deducted from your refund +  will vary based on the weight and quantity of items returned. Please allow 5 - 10 business days for the amount to reflect in your account.<\/p><h4>Exchanges<\/h4><p>We do offer exchanges on Domestic US orders. Email <a href=\"mailto:orders@imanicollective.com\" title=\"mailto:orders@imanicollective.com\">orders@imanicollective.com<\/a> with the subject “EXCHANGE” and include order number, date of purchase, and email address used when purchasing. Indicate you’d like an exchange instead of a return and which items you’d like to exchange. Exchanges may be subject to additional shipping fees.<\/p><h4>International Returns<\/h4><p>At this time, we do not accept returns internationally. If you have any questions or concerns about your purchase once you receive it, please contact <a href=\"mailto:orders@imanicollective.com\" title=\"mailto:orders@imanicollective.com\">orders@imanicollective.com<\/a> and we will do what we can to make it right.<\/p>"
       }
-    },
-    "order": [
-      "main"
-    ]
-  }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

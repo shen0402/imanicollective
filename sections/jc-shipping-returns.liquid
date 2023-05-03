@@ -1,6 +1,6 @@
 <div class="info-header-wrapper">
   <div class="center-text-wrapper margin-bottom-large">
-    <h1>{{ page.title }}</h1>
+    <h1>{{ section.settings.heading }}</h1>
   </div>
 </div>
 <div class="two-col-side-section">
@@ -27,8 +27,25 @@
     </div>
     <div class="info-flex-col">
       <div class="meta-content-wrapper rte">
-        {{ page.content }}
+        {{ section.settings.content }}
       </div>
     </div>
   </div>
 </div>
+{% schema %}
+  {
+    "name": "Shipping & returns",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Shipping + Returns"
+      }, {
+        "type": "richtext",
+        "id": "content",
+        "label": "Content"
+      }
+    ]
+  }
+{% endschema %}
