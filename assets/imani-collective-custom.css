@@ -5112,8 +5112,9 @@ body {
 }
 
 .product-header {
-  display: flex;
-  align-items: center;
+  display: inline-flex;
+  position: relative;
+  max-width: calc(100% - 120px);
 }
 
 .product-tag {
@@ -5135,7 +5136,9 @@ body {
   letter-spacing: 2px;
   font-weight: 700;
   color: #333;
-  margin-left: 10px;
+  position: absolute;
+  top: 0;
+  right: -120px;
 }
 
 .col-heading-product {
@@ -5149,8 +5152,7 @@ body {
 }
 
 .product-header .col-heading-product {
-  margin-bottom: 0;
-  margin-top: -10px;
+  margin-bottom: 20px;
 }
 
 .price-text-product, .price-text-product span {

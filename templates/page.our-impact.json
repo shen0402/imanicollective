@@ -6,36 +6,36 @@
         "0d588ab0-3663-4e38-9a1c-fced9ca9708b": {
           "type": "dignified_employment",
           "settings": {
-            "number": "00",
-            "text": "artisans in extreme poverty employed"
+            "number": "100+",
+            "text": "artisans employed"
           }
         },
         "10c3676c-82da-447d-b5b8-8fdbcd95c9f5": {
           "type": "dignified_employment",
           "settings": {
-            "number": "00",
-            "text": "Living Above the $1.90 Poverty Line"
+            "number": "100%",
+            "text": "living above the poverty line"
           }
         },
         "3a452d2c-1ef7-4548-a058-134a906026f7": {
           "type": "economic_independence",
           "settings": {
-            "number": "00",
-            "text": "artisans own land or a home"
+            "number": "34%",
+            "text": "artisans own land"
           }
         },
         "bb6eb409-bde0-4645-9637-8bd7ce0b8d72": {
           "type": "economic_independence",
           "settings": {
-            "number": "00",
-            "text": "artisans have an entrepreneurial business"
+            "number": "10",
+            "text": "artisans who received a business grant from Imani Collective"
           }
         },
         "ee6738a9-624f-4571-8f33-b7aeb72900dc": {
           "type": "economic_independence",
           "settings": {
-            "number": "00",
-            "text": "artisans have a bank account"
+            "number": "59%",
+            "text": "artisans who opened a bank account"
           }
         },
         "5dcb8bc5-edce-464a-a157-df42ffaf487b": {
@@ -48,8 +48,8 @@
         "e4b93a5f-17ed-4543-afe3-dd4d07fb9278": {
           "type": "transformed_communities",
           "settings": {
-            "number": "0%",
-            "text": "of artisans are educating at least one child"
+            "number": "85%",
+            "text": "sent children to primary school:"
           }
         },
         "667cd7c8-898b-4d7f-aad5-9a95d7cfa01f": {
