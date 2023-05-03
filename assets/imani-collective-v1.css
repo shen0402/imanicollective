@@ -1053,7 +1053,7 @@
     margin-top: 60px;
     padding-bottom: 60px;
     background-image: url('get-involved_shape-arch.png'), url('get-involved_shape.png');
-    background-position: 60% 113%, 0px 100px;
+    background-position: 60% 108%, 0px 100px;
     background-size: 230px, 200px;
     background-repeat: no-repeat, no-repeat;
   }
@@ -1077,6 +1077,10 @@
     -ms-flex-align: center;
     align-items: center;
   }
+
+  .get-involved-flex-row.reverse {
+    flex-direction: row-reverse;
+  }
   
   .get-involved-img-wrapper {
     -webkit-box-flex: 0;
@@ -1094,6 +1098,10 @@
     text-align: right;
   }
   
+  .get-involved-flex-row.reverse .get-involved-flex-text {
+    text-align: left;
+  }
+
   .job-openings-section {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -5393,6 +5401,16 @@
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column;
+    }
+
+    .get-involved-flex-row.reverse {
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+
+    .get-involved-flex-row.reverse .get-involved-flex-text {
+      text-align: center;
     }
   
     .get-involved-img-wrapper {

@@ -10944,6 +10944,10 @@ margin-bottom:0px;
   #collaboration-button {
     margin-right: -20px;
   }
+
+  .get-involved-flex-row.reverse #collaboration-button {
+    margin-left: -20px;
+  }
 }
 .involved-info-text-wrapper .flex-link-artisan {
   font-weight: 700;
