@@ -1,12 +1,65 @@
 {
-    "sections": {
-      "main": {
-        "type": "jc-page-faqs",
-        "settings": {
+  "sections": {
+    "main": {
+      "type": "jc-page-faqs",
+      "blocks": {
+        "1752293e-0ec2-42a1-a0ef-dd49381533d5": {
+          "type": "faq",
+          "settings": {
+            "question": "When was Imani + Kids started?",
+            "answer": "<p>Imani Collective officially began in 2013 and was originally launched as Imani Tumaini Upendo (which in Swahili means Faith, Hope, Love.) We started with 16 women in the Mtepeni Village just outside Mombasa, Kenya. In 2017, we rebranded as Imani Collective. Since then, we have grown to empower over 100 artisans in three different Kenyan locations. In 2023, Imani Collective became an umbrella to multiple brands that empower our artisans. Imani + Kids became the sub brand that focuses on creating children’s decor and toys. To see all our brands, head over to <a href=\"https:\/\/imanicollective.com\" title=\"https:\/\/imanicollective.com\">imanicollective.com<\/a>. <\/p>"
+          }
+        },
+        "aa8995c5-0778-419d-a021-2c3adf7d9107": {
+          "type": "faq",
+          "settings": {
+            "question": "How many artisans are a part of your impact?",
+            "answer": "<p>We currently empower just over 100 artisans and staff in Kenya. <a href=\"\/pages\/artisans\" title=\"Artisans\">CLICK HERE<\/a> to see all our artisans and learn more about them!<\/p>"
+          }
+        },
+        "7704dd5b-1d81-4f42-b0ca-021d875e5fde": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I learn more about being involved with Imani Collective’s impact?",
+            "answer": "<p>We are always looking for people interested in walking alongside us! You can find more information about how you can be involved in creating change on our impact website: <a href=\"https:\/\/imanicollective-ourimpact.org\/\" title=\"https:\/\/imanicollective-ourimpact.org\/\">imanicollective-ourimpact.org<\/a><\/p>"
+          }
+        },
+        "3cc574ed-e16a-4974-bd84-93e5c80fe518": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I get the wrinkles out of my banner?",
+            "answer": "<p>Your banner will arrive folded in your package upon delivery. Before hanging, place your banner print side down on an ironing board and iron on a medium heat. Do not iron on the front side directly on the screen  print. Do not use high heat or keep iron in one place for too long. You can also steam the banner, but steam from the back side of the banner. Do not place it in the dryer to get rid of wrinkles\/creases.To see more product care instructions, <a href=\"\/pages\/product-care\" title=\"Product care\">CLICK HERE<\/a>.<\/p>"
+          }
+        },
+        "d22d4516-b1bf-46c8-8541-f988b1d0812c": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I become a wholesaler?",
+            "answer": "<p>We have multiple platforms to choose from when you’re looking to wholesale with us! You can either <a href=\"https:\/\/imanicollective-wholesale.com\/\" title=\"https:\/\/imanicollective-wholesale.com\/\">buy from us directly<\/a> OR we are available on other platforms listed <a href=\"\/pages\/wholesale\" title=\"Wholesale\">HERE<\/a>. <\/p>"
+          }
+        },
+        "38bfb899-7c58-4cdc-816e-71d0ddaa3f00": {
+          "type": "faq",
+          "settings": {
+            "question": "How can I thank my artisan for their work?",
+            "answer": "<p>Our artisans love to hear how their work is appreciated. If you’d like to send your artisan a thank you note, you can head to our <a href=\"\/pages\/artisans\" title=\"Artisans\">artisan page<\/a>, find your artisan, click on their photo, and then click on the button to write them a thank you message. We print out and deliver these messages weekly!<\/p>"
+          }
         }
+      },
+      "block_order": [
+        "1752293e-0ec2-42a1-a0ef-dd49381533d5",
+        "aa8995c5-0778-419d-a021-2c3adf7d9107",
+        "7704dd5b-1d81-4f42-b0ca-021d875e5fde",
+        "3cc574ed-e16a-4974-bd84-93e5c80fe518",
+        "d22d4516-b1bf-46c8-8541-f988b1d0812c",
+        "38bfb899-7c58-4cdc-816e-71d0ddaa3f00"
+      ],
+      "settings": {
+        "heading": "Here to answer your most frequently asked questions!"
       }
-    },
-    "order": [
-      "main"
-    ]
-  }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

@@ -1455,6 +1455,15 @@
     margin-bottom: 40px;
   }
   
+  .faq-individual a {
+    color: #9f6427;
+    text-decoration: none;
+  }
+
+  .faq-individual a:hover {
+    text-decoration: underline;
+  }
+  
   .donate-hero-section {
     margin-top: 140px;
     margin-bottom: 40px;

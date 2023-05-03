@@ -27,35 +27,45 @@
     </div>
     <div class="info-flex-col">
       <div class="faq-top-wrapper">
-        <div class="general-text margin-b-15">Here to answer your most frequently asked questions!</div>
+        <div class="general-text margin-b-15">{{ section.settings.heading }}</div>
       </div>
-      <div class="faq-individual">
-        <h2 class="margin-b-15">When was Imani Collective started?</h2>
-        <div class="general-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-      </div>
-      <div class="faq-individual">
-        <h2 class="margin-b-15">How many artisans?</h2>
-        <div class="general-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-      </div>
-      <div class="faq-individual">
-        <h2 class="margin-b-15">How do I get the wrinkles out of my banner?</h2>
-        <div class="general-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-      </div>
-      <div class="faq-individual">
-        <h2 class="margin-b-15">How do I become a wholesaler?</h2>
-        <div class="general-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-      </div>
-      <div class="faq-individual">
-        <h2 class="margin-b-15">How can I thank my artisan for their work?</h2>
-        <div class="general-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-      </div>
+      {% for block in section.blocks %}
+        <div class="faq-individual">
+          <h2 class="margin-b-15">{{ block.settings.question }}</h2>
+          <div class="general-text">{{ block.settings.answer }}</div>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </div>
 {% schema %}
   {
     "name": "FAQs",
-    "settings": [],
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Here to answer your most frequently asked questions!"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "faq",
+        "name": "Faq",
+        "settings": [
+          {
+            "type": "text",
+            "id": "question",
+            "label": "Question"
+          }, {
+            "type": "richtext",
+            "id": "answer",
+            "label": "Answer"
+          }
+        ]
+      }
+    ],
     "presets": [
       {
         "name": "FAQs"
