@@ -1,5 +1,5 @@
 <div class="our-story-hero-section"><img
-    src="{{ 'kenya-landscape-min_5034edcd-7a98-4c14-9715-0aad4910c8b9.png' | asset_img_url: '1990x' }}"
+    src="{{ section.settings.image | img_url: '1990x' }}"
     loading="lazy"
     sizes="100vw"
     alt=""
@@ -189,13 +189,13 @@
     <div class="influencer-flex-col-text">
       <div class="big-medium-text margin-b-15">be an influencer for ethical purchases</div>
       <div class="general-text margin-b-40">Become a brand affiliate</div>
-      <a href="https://theimanicollective.grin.live/affiliateapplication" class="general-btn align-right center-mob w-inline-block"><img
+      <a href="{{ section.settings.button_link }}" class="general-btn align-right center-mob w-inline-block"><img
           src="{{ 'blog_load-more.png' | asset_img_url: '250x' }}"
           loading="lazy"
           sizes="(max-width: 479px) 94vw, 250px"
           alt=""
           class="btn-img">
-        <div class="btn-text">APPLY NOW</div>
+        <div class="btn-text">{{ section.settings.button_label }}</div>
       </a>
     </div>
   </div>
@@ -203,7 +203,28 @@
 {% schema %}
   {
     "name": "Our story",
-    "settings": [],
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "header",
+        "content": "Apply Button"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Label",
+        "default": "APPLY NOW"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Link"
+      }
+    ],
     "presets": [
       {
         "name": "Our story"

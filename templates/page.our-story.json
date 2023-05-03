@@ -1,12 +1,15 @@
 {
-    "sections": {
-      "main": {
-        "type": "jc-page-our-story",
-        "settings": {
-        }
+  "sections": {
+    "main": {
+      "type": "jc-page-our-story",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/kenya-landscape-min_1990x_cb4b7959-4cff-472e-838f-255110b6160f.webp",
+        "button_label": "APPLY NOW",
+        "button_link": "https:\/\/theimanicollective.grin.live\/affiliateapplication"
       }
-    },
-    "order": [
-      "main"
-    ]
-  }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
