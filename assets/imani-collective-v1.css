@@ -1008,6 +1008,10 @@
     -ms-flex-align: center;
     align-items: center;
   }
+
+  .faire-flex-col .large-img {
+    transform: scale(1.5);
+  }
   
   .faire-icon-wrapper {
     display: -webkit-box;
