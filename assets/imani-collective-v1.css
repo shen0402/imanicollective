@@ -1746,6 +1746,16 @@
   .collaboration-individual.tibeb {
     padding-left: 6.8%;
   }
+
+  .collaboration-individual.reserve {
+    padding-left: 6.8%;
+  }
+
+  @media (min-width: 480px) {
+    .collaboration-individual.reserve {
+      flex-direction: row-reverse;
+    }
+  }
   
   .collaboration-individual.breathing-room {
     padding-left: 20px;
@@ -5658,6 +5668,10 @@
     }
   
     .collaboration-individual.tibeb {
+      padding-left: 0px;
+    }
+
+    .collaboration-individual.reserve {
       padding-left: 0px;
     }
   

@@ -1,12 +1,60 @@
 {
-    "sections": {
-      "main": {
-        "type": "jc-page-collaboration",
-        "settings": {
+  "sections": {
+    "main": {
+      "type": "jc-page-collaboration",
+      "blocks": {
+        "e48f51cb-81db-4bc4-a220-7696b4f5bbb2": {
+          "type": "collaboration",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/collaboration1.webp",
+            "heading": "Kristen Peers",
+            "description": "<p>Kristen is an artist + illustrator based in Texas. She is the first of our new Artist Edition Series! Her visually simple, yet emotionally complex illustrations are a magical mixture of writing, humor, & the weird things that make us human. We have loved working with her + seeing some of her popular illustrations come to life on our banners, hang signs, and pillows.<\/p>",
+            "instagram_label": "KB.ILLUSTRATION",
+            "instagram_link": "https:\/\/www.instagram.com\/kb.illustration\/",
+            "button_label": "SHOP THIS COLLECTION",
+            "button_link": "shopify:\/\/collections\/kristen-peers-collection",
+            "reserve": false
+          }
+        },
+        "a34007b7-3bd3-4b2f-aa28-559327d15eff": {
+          "type": "collaboration",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/collaboration2.webp",
+            "heading": "Tibeb",
+            "description": "<p>Tibeb Leather Works is an Ethiopian based social enterprise whose values + standards closely match our own. They provide employment + training opportunities for marginalized women in their community. In addition to the incredible quality of their products, their strong belief in women empowerment, fair wages, and positive social impact are some of the many reasons we chose to collaborate with Tibeb on the Selah backpacks.<\/p>",
+            "instagram_label": "TIbeb_leather_works",
+            "instagram_link": "https:\/\/www.instagram.com\/tibeb_leather_works",
+            "button_label": "SHOP THIS COLLECTION",
+            "button_link": "shopify:\/\/collections\/backpacks",
+            "reserve": true
+          }
+        },
+        "27c4937f-4661-47e9-bb56-a1d82cbed571": {
+          "type": "collaboration",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/collaboration3.webp",
+            "heading": "Breathing Room",
+            "description": "<p>We believe that choosing the objects that make up your home are important. Holly Blakey at Breathing Room Organization creates spaces that make people happy.<\/p><p>\"I've had many clients over the years say \"this is now my happy place.\"\"<br\/>– Holly Blakey, Founder of Breathing Room Organization<\/p>",
+            "instagram_label": "breathing.room.home",
+            "instagram_link": "https:\/\/www.instagram.com\/breathing.room.home\/",
+            "button_label": "SHOP THIS COLLECTION",
+            "button_link": "shopify:\/\/products\/happy-place-banner",
+            "reserve": false
+          }
         }
+      },
+      "block_order": [
+        "e48f51cb-81db-4bc4-a220-7696b4f5bbb2",
+        "a34007b7-3bd3-4b2f-aa28-559327d15eff",
+        "27c4937f-4661-47e9-bb56-a1d82cbed571"
+      ],
+      "settings": {
+        "heading": "collaborations",
+        "description": "<p>At Imani Collective, we've always believed in collaboration over competition. Working with other artists, creators, and brands has been one way for us to empower each other. We choose brands that align with our values and are excited about being a part of what our artisans are doing in Kenya.<\/p>"
       }
-    },
-    "order": [
-      "main"
-    ]
-  }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
