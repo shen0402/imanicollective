@@ -1969,7 +1969,7 @@
     display: flex;
     overflow: hidden;
     height: 45em;
-    padding-bottom: 30px;
+    padding-bottom: 70px;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -1982,6 +1982,12 @@
     background-position: 50% 59%;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  .image-banner-slider .w-slider {
+    height: 45em;
+    padding-bottom: 0;
+    background-color: transparent;
   }
   
   .home-hero-text-wrapper {
@@ -4529,6 +4535,12 @@
   
     .home-hero-section {
       height: 30em;
+    }
+
+    .image-banner-slider .w-slider {
+      height: 30em;
+      padding-bottom: 0;
+      background-color: transparent;
     }
   
     .new-arrivals-flex-row {

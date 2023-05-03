@@ -1,62 +1,99 @@
 <style>
-  {% if section.settings.image != blank %}
-    #section--{{ section.id }}{
-      background-image: url('{{ section.settings.image | img_url: '1900x' }}');
-    }
-  {% endif %}
+  {% for block in section.blocks %}
+    {% if block.settings.image != blank %}
+      #section--{{ block.id }}{
+        background-image: url('{{ block.settings.image | img_url: '1900x' }}');
+      }
+    {% endif %}
+  {% endfor %}
 </style>
-<div class="home-hero-section" id="section--{{ section.id }}">
-  <div class="home-hero-text-wrapper">
-    <div class="center-text-wrapper">
-      {% if section.settings.heading != blank %}
-        <div class="smaller-medium-text margin-b-10 white-text">{{ section.settings.heading }}</div>
-      {% endif %}
-      {% if section.settings.text != blank %}
-        <div class="general-text margin-b-20 white-text">{{ section.settings.text }}</div>
-      {% endif %}
-      {% if section.settings.btn_label != blank and section.settings.btn_link != blank %}
-        <a href="{{ section.settings.btn_link }}" class="general-btn center-align w-inline-block"><img
-            src="{{ 'pink-btn.png' | asset_img_url: '250x' }}"
-            loading="lazy"
-            sizes="(max-width: 479px) 100vw, 250px"
-            alt=""
-            class="btn-img">
-          <div class="btn-text">{{ section.settings.btn_label }}</div>
-        </a>
-      {% endif %}
+<div class="image-banner-slider">
+  <div
+    data-delay="4000"
+    data-animation="slide"
+    class="w-slider"
+    data-autoplay="true"
+    data-easing="ease"
+    data-hide-arrows="false"
+    data-disable-swipe="false"
+    data-autoplay-limit="0"
+    data-nav-spacing="3"
+    data-duration="500"
+    data-infinite="true">
+    <div class="w-slider-mask">
+      {% for block in section.blocks %}
+        <div class="w-slide">
+          <div class="home-hero-section" id="section--{{ block.id }}">
+            <div class="home-hero-text-wrapper">
+              <div class="center-text-wrapper">
+                {% if block.settings.heading != blank %}
+                  <div class="smaller-medium-text margin-b-10 white-text">{{ block.settings.heading }}</div>
+                {% endif %}
+                {% if block.settings.text != blank %}
+                  <div class="general-text margin-b-20 white-text">{{ block.settings.text }}</div>
+                {% endif %}
+                {% if block.settings.btn_label != blank and block.settings.btn_link != blank %}
+                  <a href="{{ block.settings.btn_link }}" class="general-btn center-align w-inline-block"><img
+                      src="{{ 'pink-btn.png' | asset_img_url: '250x' }}"
+                      loading="lazy"
+                      sizes="(max-width: 479px) 100vw, 250px"
+                      alt=""
+                      class="btn-img">
+                    <div class="btn-text">{{ block.settings.btn_label }}</div>
+                  </a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
     </div>
+    <div class="image-banner-slider__arrow w-slider-arrow-left">
+      <div class="arrow-icon left-side w-icon-slider-left"></div>
+    </div>
+    <div class="image-banner-slider__arrow w-slider-arrow-right">
+      <div class="arrow-icon w-icon-slider-right"></div>
+    </div>
+    <div class="image-banner-slider__nav w-slider-nav w-slider-nav-invert w-round"></div>
   </div>
 </div>
 {% schema %}
   {
     "name": "Home Image Banner",
-    "settings": [
+    "settings": [],
+    "blocks": [
       {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Image"
-      },
-      {
-        "type": "text",
-        "id": "heading",
-        "label": "Heading",
-        "default": "THE SELAH"
-      },
-      {
-        "type": "textarea",
-        "id": "text",
-        "label": "Text",
-        "default": "IN PARTNERSHIP WITH TIBEB"
-      },
-      {
-        "type": "text",
-        "id": "btn_label",
-        "label": "Button Label",
-        "default": "SHOP NOW"
-      }, {
-        "type": "url",
-        "id": "btn_link",
-        "label": "Button Link"
+        "type": "banner",
+        "name": "Image Banner",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "THE SELAH"
+          },
+          {
+            "type": "textarea",
+            "id": "text",
+            "label": "Text",
+            "default": "IN PARTNERSHIP WITH TIBEB"
+          },
+          {
+            "type": "text",
+            "id": "btn_label",
+            "label": "Button Label",
+            "default": "SHOP NOW"
+          }, {
+            "type": "url",
+            "id": "btn_link",
+            "label": "Button Link"
+          }
+        ]
       }
     ],
     "presets": [

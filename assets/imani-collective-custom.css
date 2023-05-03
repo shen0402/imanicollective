@@ -11003,6 +11003,14 @@ margin-bottom:0px;
     margin-bottom: 50px;
   }
 }
+.image-banner-slider__arrow {
+  color: #333;
+  font-size: 23px;
+}
+.image-banner-slider__nav {
+  font-size: 8px;
+  line-height: 9px;
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;

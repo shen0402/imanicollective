@@ -2,12 +2,44 @@
   "sections": {
     "home-hero": {
       "type": "jc-hero",
+      "blocks": {
+        "7dadcfb2-98e1-4989-a205-ce9c13a28e0c": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BA6B6751-min.jpg",
+            "heading": "THE SELAH",
+            "text": "IN PARTNERSHIP WITH TIBEB",
+            "btn_label": "SHOP NOW",
+            "btn_link": "shopify:\/\/collections\/frontpage"
+          }
+        },
+        "3135b41c-acc5-4744-8ecc-86fe01a18a5e": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/kenya-landscape-min_1990x_cb4b7959-4cff-472e-838f-255110b6160f.webp",
+            "heading": "THE SELAH",
+            "text": "IN PARTNERSHIP WITH TIBEB",
+            "btn_label": "SHOP NOW",
+            "btn_link": "shopify:\/\/collections\/best-sellers"
+          }
+        },
+        "20f48bb8-d1db-4812-9452-a64df816e715": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/47BB2CF9-FD30-4426-A2DB-4FBD8DED8831.png",
+            "heading": "THE SELAH",
+            "text": "IN PARTNERSHIP WITH TIBEB",
+            "btn_label": "SHOP NOW",
+            "btn_link": "shopify:\/\/collections\/backpacks"
+          }
+        }
+      },
+      "block_order": [
+        "7dadcfb2-98e1-4989-a205-ce9c13a28e0c",
+        "3135b41c-acc5-4744-8ecc-86fe01a18a5e",
+        "20f48bb8-d1db-4812-9452-a64df816e715"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/BA6B6751-min.jpg",
-        "heading": "THE SELAH",
-        "text": "IN PARTNERSHIP WITH TIBEB",
-        "btn_label": "SHOP NOW",
-        "btn_link": "shopify:\/\/collections\/frontpage"
       }
     },
     "home-collection": {
