@@ -1,6 +1,6 @@
 <div class="info-header-wrapper">
   <div class="center-text-wrapper margin-bottom-large">
-    <h1>how to care for your Imani products</h1>
+    <h1>{{ section.settings.heading }}</h1>
   </div>
 </div>
 <div class="two-col-side-section">
@@ -26,43 +26,47 @@
       </a>
     </div>
     <div class="info-flex-col">
-      <div class="product-info-wrapper">
-        <div class="big-medium-text margin-b-15">BANNERS</div>
-        <div class="general-text margin-b-15">Spot clean only. Do not put in dryer.</div>
-        <div class="general-text">Your banner will arrive folded in your package upon delivery. Before hanging, place your banner print side down on an ironing board and iron on a medium heat. Do not iron on the front side directly on the screen  print. Do not use high heat or keep iron in one place for too long. You can also steam the banner, but steam from the back side of the banner. Do not place it in the dryer to get rid of wrinkles/creases.</div>
-      </div>
-      <div class="product-info-wrapper">
-        <div class="big-medium-text margin-b-15">PILLOWS</div>
-        <div class="general-text margin-b-15">Spot clean preferred, but can be washed in washing machine. Wash in washing machine on gentle cycle. Reshape and lay flat to dry. Do not put in dryer.</div>
-      </div>
-      <div class="product-info-wrapper">
-        <div class="big-medium-text margin-b-15">LEATHER BACKPACKS</div>
-        <div class="general-text">Use an all natural leather conditioner to restore its luster and add shine to dehydrated leather while protecting it from damage. Do not get wet. Wipe fabric interior with damp cloth.</div>
-      </div>
-      <div class="product-info-wrapper">
-        <div class="big-medium-text margin-b-15">FLOOR MATS</div>
-        <div class="general-text margin-b-15">Wash in washing machine on gentle cycle with cold water. Hang dry.</div>
-        <div class="general-text">Your floor mat will arrive folded in your package upon delivery. Place your floor mat print side down on ironing board and iron on a low/medium heat. Do not iron on front side directly on print. Do not use high heat or keep iron in one place for too long. You can also steam the floor mat, but steam from the back side. Do not place in dryer to get rid of wrinkles/creases.</div>
-      </div>
-      <div class="product-info-wrapper">
-        <div class="big-medium-text margin-b-15">FARMERS MARKET TOTE</div>
-        <div class="general-text">Wash in washing machine on gentle cycle with cold water. Do not dry in dryer. Reshape plush produce and lay flat to dry.</div>
-      </div>
-            <div class="product-info-wrapper">
-        <div class="big-medium-text margin-b-15">BASKETS</div>
-        <div class="general-text">Do not submerge baskets in water. Clean basket with damp washcloth.</div>
-      </div>
-      <div class="product-info-wrapper">
-        <div class="big-medium-text margin-b-15">RUGS</div>
-        <div class="general-text">Wash rugs with gentle carpet cleaner. Test cleaner on indiscrete area to test for color bleeding.  At home carpet cleaning machines can be used, but again test for color bleeding before proceeding with the entire rug. Because it is made of wool, any warm/hot water will create an odor during cleaning. This smell will go away once it’s dry.</div>
-      </div>
+      {% for block in section.blocks %}
+        <div class="product-info-wrapper">
+          <div class="big-medium-text margin-b-15">
+            {{ block.settings.heading }}
+          </div>
+          <div class="general-text">
+            {{ block.settings.description }}
+          </div>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </div>
 {% schema %}
   {
     "name": "Product Care",
-    "settings": [],
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "how to care for your Imani products"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "item",
+        "name": "Item",
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+          }, {
+            "type": "richtext",
+            "id": "description",
+            "label": "Description"
+          }
+        ]
+      }
+    ],
     "presets": [
       {
         "name": "Product Care"
