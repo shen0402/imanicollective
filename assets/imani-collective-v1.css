@@ -1090,6 +1090,12 @@
   .get-involved-flex-row.reverse {
     flex-direction: row-reverse;
   }
+
+ @media (min-width: 480px) {
+  .get-involved-hero .get-involved-flex-row {
+    margin-bottom: 0;
+  }
+ }
   
   .get-involved-img-wrapper {
     -webkit-box-flex: 0;
