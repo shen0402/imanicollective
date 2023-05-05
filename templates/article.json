@@ -1,41 +1,46 @@
 {
   "sections": {
+    "main": {
+      "type": "jc-article-template",
+      "settings": {
+      }
+    },
     "blog-tags-with-image": {
       "type": "jc-blog-tags-with-image",
       "blocks": {
         "ad09bc1f-9000-45b6-843d-68c8248669d0": {
           "type": "tag",
           "settings": {
-            "image": "shopify:\/\/shop_images\/blog_artisan_spotlight.png",
-            "tag": "artisan spotlight"
+            "image": "shopify:\/\/shop_images\/artisan_highlight.png",
+            "tag": "artisan highlight"
           }
         },
         "e04759d1-d379-4cea-9126-14f3c53f559c": {
           "type": "tag",
           "settings": {
-            "image": "shopify:\/\/shop_images\/blog_the_collective.png",
-            "tag": "the collective"
+            "image": "shopify:\/\/shop_images\/impact_11b92c11-bd0a-4af5-bf11-baa305d5fbde.png",
+            "tag": "impact"
           }
         },
         "584c27a3-86c7-4c82-b512-78d261084574": {
           "type": "tag",
           "settings": {
-            "image": "shopify:\/\/shop_images\/blog_feature.png",
-            "tag": "feature friday"
+            "image": "shopify:\/\/shop_images\/lifestyle.png",
+            "tag": "lifestyle"
           }
         },
         "0ede1e91-a7e4-4711-b1e6-084423e46103": {
           "type": "tag",
           "settings": {
-            "image": "shopify:\/\/shop_images\/blog_podcasts.png",
-            "tag": "podcasts"
+            "image": "shopify:\/\/shop_images\/letters_from_the_founder.png",
+            "tag": "letters from the founder"
           }
         },
         "014ac927-fdfa-456b-988c-5a5b40a72a3f": {
           "type": "tag",
           "settings": {
-            "image": "shopify:\/\/shop_images\/blog_new_articles.png",
-            "tag": "new articles"
+            "image": "shopify:\/\/shop_images\/featured_articles.png",
+            "tag": "featured articles"
           }
         }
       },
@@ -46,11 +51,6 @@
         "0ede1e91-a7e4-4711-b1e6-084423e46103",
         "014ac927-fdfa-456b-988c-5a5b40a72a3f"
       ],
-      "settings": {
-      }
-    },
-    "main": {
-      "type": "jc-article-template",
       "settings": {
       }
     }
