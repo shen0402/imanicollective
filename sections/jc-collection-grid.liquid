@@ -39,8 +39,6 @@
       {% paginate collection.products by 12 %}
         {% for product in collection.products %}
 
-          {% render 'swatchify-conts' with product, psType: 'collection' %}
-
           {% assign price = product.price %}
           {% assign compare_at_price = product.compare_at_price_max %}
           <div class="flex-col-category">

@@ -156,8 +156,6 @@
       <ul class="grid grid--uniform{% if collection.products_count > 0 %} grid--view-items{% endif %}">
         {% for product in collection.products %}
         
-        {% render 'swatchify-conts' with product, psType: 'collection'%}
-        
           <li class="grid__item grid__item--{{section.id}} {{ grid_item_width }}">
             {% include 'product-card-grid', max_height: max_height %}
           </li>
