@@ -7,6 +7,9 @@
       background-position: center;
     }
   {% endif %}
+  #every-purchase--{{ section.id }}{
+    background-color: {{ section.settings.color }}
+  }
 </style>
 <div class="every-purchase-section" id="every-purchase--{{ section.id }}">
   <div class="every-purchase-text-wrapper">
@@ -28,23 +31,31 @@
     "name": "Home richtext",
     "settings": [
       {
+        "type": "header",
+        "content": "Background"
+      },
+      {
         "type": "image_picker",
         "id": "image",
         "label": "Image"
+      },
+      {
+        "type": "color",
+        "id": "color",
+        "label": "Color",
+        "default": "#bb9884"
       },
       {
         "type": "text",
         "id": "heading",
         "label": "Heading",
         "default": "every purchase empowers another human."
-      },
-      {
+      }, {
         "type": "richtext",
         "id": "description",
         "label": "Description",
         "default": "<p>At Imani Collective, empowerment is the heartbeat of what we do. We not only provide ethical employment opportunity, but community + holistic support programs. Join us in empowering artisans.</p>"
-      },
-      {
+      }, {
         "type": "header",
         "content": "Button"
       }, {
