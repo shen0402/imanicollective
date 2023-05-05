@@ -1,4 +1,4 @@
-<div class="ethically-made-section">
+<div class="ethically-made-section" id="ethically-made-section--{{ section.id }}">
   <div
     data-delay="4000"
     data-animation="slide"
@@ -12,157 +12,32 @@
     data-duration="500"
     data-infinite="true">
     <div class="w-slider-mask">
-      <div class="w-slide">
-        <div class="ethical-slider-inner">
-          <div class="ethically-made-flex-row">
-            <div class="ethically-made-img-flex-col"><img
-                src="{{ 'impact-partners_photo2.png' | asset_img_url: '450x' }}"
-                loading="lazy"
-                sizes="(max-width: 479px) 76vw, (max-width: 767px) 32vw, 36vw"
-                alt="Two women laughing and smiling each with one arm up. The are holding hands with the arm that is up and look very happy"
-                class="ethically-made-img"><img
-                src="{{ 'our-story_world-changer-hang-sign-icon.png' | asset_img_url: '450x' }}"
-                loading="lazy"
-                sizes="(max-width: 479px) 90px, 14vw"
-                alt=""
-                class="ethically-made-img-smaller"></div>
-            <div class="ethically-made-flex-col-text">
-              <div class="big-medium-text margin-b-15">ethically made</div>
-              <div class="general-text margin-b-40 smaller-margin-mob">Every purchase made at Imani Collective feeds directly into our artisans salaries, benefits, and holistic programs.</div>
-              <a href="/collections/all" class="general-btn skinnier align-right center-mob w-inline-block"><img
-                  src="{{ 'shorter-pink-btn.png' | asset_img_url: '250x' }}"
+      {% for block in section.blocks %}
+        <div class="w-slide">
+          <div class="ethical-slider-inner">
+            <div class="ethically-made-flex-row">
+              <div class="ethically-made-img-flex-col"><img
+                  src="{{ block.settings.image | img_url: '780x' }}"
                   loading="lazy"
-                  sizes="133px"
+                  sizes="(max-width: 479px) 76vw, (max-width: 767px) 32vw, 36vw"
                   alt=""
-                  class="btn-img">
-                <div class="btn-text">SHOP</div>
-              </a>
+                  class="ethically-made-img"></div>
+              <div class="ethically-made-flex-col-text">
+                <div class="big-medium-text margin-b-15">{{ block.settings.header }}</div>
+                <div class="general-text margin-b-40 tighter-width full-land smaller-margin-mob">{{ block.settings.description }}</div>
+                <a href="{{ block.settings.button_link }}" class="general-btn align-right center-mob w-inline-block"><img
+                    src="{{ 'pink-btn.png' | asset_img_url: '250x' }}"
+                    loading="lazy"
+                    sizes="(max-width: 479px) 90vw, 250px"
+                    alt=""
+                    class="btn-img">
+                  <div class="btn-text">{{ block.settings.button_label }}</div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="w-slide">
-        <div class="ethical-slider-inner">
-          <div class="ethically-made-flex-row">
-            <div class="ethically-made-img-flex-col">
-              <div class="ethically-made-name-wrapper">
-                <h2>meet asha</h2>
-              </div><img
-                src="{{ 'asha3x.png' | asset_img_url: '450x' }}"
-                loading="lazy"
-                sizes="(max-width: 479px) 76vw, (max-width: 767px) 32vw, 36vw"
-                alt=""
-                class="ethically-made-img"><img
-                src="{{ 'paper-and-pen-icon3x.png' | asset_img_url: '450x' }}"
-                loading="lazy"
-                sizes="(max-width: 479px) 25vw, (max-width: 767px) 20vw, 30vw"
-                alt=""
-                class="ethically-made-img pen-paper">
-            </div>
-            <div class="ethically-made-flex-col-text">
-              <div class="big-medium-text margin-b-15">connect to an artisan</div>
-              <div class="general-text margin-b-40 tighter-width full-land smaller-margin-mob">drop a note to the woman who made your product</div>
-              <a href="/pages/artisans" class="general-btn align-right center-mob w-inline-block"><img
-                  src="{{ 'pink-btn.png' | asset_img_url: '250x' }}"
-                  loading="lazy"
-                  sizes="(max-width: 479px) 90vw, 250px"
-
-                  alt=""
-                  class="btn-img">
-                <div class="btn-text">WRITE NOW</div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="w-slide">
-        <div class="ethical-slider-inner">
-          <div class="ethically-made-flex-row">
-            <div class="ethically-made-img-flex-col"><img
-                src="{{ 'home-page_kids---impact.png' | asset_img_url: '450x' }}"
-                loading="lazy"
-                alt=""
-                class="ethically-made-img"><img
-                src="{{ 'impact-partners_rise-program.png' | asset_img_url: '450x' }}"
-                loading="lazy"
-                sizes="(max-width: 479px) 90px, 14vw"
-                alt="Slide icon"
-                class="ethically-made-img-smaller align-bottom"></div>
-            <div class="ethically-made-flex-col-text">
-              <div class="big-medium-text margin-b-15">our impact</div>
-              <div class="general-text margin-b-40 smaller-margin-mob">The foundation of who we are lies in our holistic programs. We believe that radical transformation can happen through the empowerment of the whole person. We are more than a job, we are a collective - a family - that provides for our women + men in all facets of life.</div>
-              <a href="/pages/our-impact" class="general-btn align-right center-mob w-inline-block"><img
-                  src="{{ 'pink-btn.png' | asset_img_url: '250x' }}"
-                  loading="lazy"
-                  sizes="(max-width: 479px) 90vw, 250px"
-
-                  alt=""
-                  class="btn-img">
-                <div class="btn-text">LEARN MORE</div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="w-slide">
-        <div class="ethical-slider-inner">
-          <div class="ethically-made-flex-row">
-            <div class="ethically-made-img-flex-col"><img
-                src="{{ 'women---model3x.png' | asset_img_url: '450x' }}"
-                loading="lazy"
-                sizes="(max-width: 479px) 76vw, (max-width: 767px) 32vw, 36vw"
-                alt=""
-                class="ethically-made-img"><img
-                src="{{ 'model_hand-and-heart-icon.png' | asset_img_url: '450x' }}"
-                loading="lazy"
-                sizes="(max-width: 479px) 90px, 14vw"
-                alt="Hand cupped upward with a heart floating above it"
-                class="ethically-made-img-smaller align-mid-bottom"></div>
-            <div class="ethically-made-flex-col-text">
-              <div class="big-medium-text margin-b-15">our model</div>
-              <div class="general-text margin-b-40 smaller-margin-mob">At Imani Collective we strive to be transparent in not only our impact, but also of our business and social enterprise model.</div>
-              <a href="/pages/the-imani-model" class="general-btn align-right center-mob w-inline-block"><img
-                  src="{{ 'pink-btn.png' | asset_img_url: '250x' }}"
-                  loading="lazy"
-                  sizes="(max-width: 479px) 90vw, 250px"
-
-                  alt=""
-                  class="btn-img">
-                <div class="btn-text">LEARN MORE</div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="w-slide">
-        <div class="ethical-slider-inner">
-          <div class="ethically-made-flex-row">
-            <div class="ethically-made-img-flex-col"><img
-                src="{{ 'women---partnerships3x.png' | asset_img_url: '450x' }}"
-                loading="lazy"
-                sizes="(max-width: 479px) 76vw, (max-width: 767px) 32vw, 36vw"
-                alt=""
-                class="ethically-made-img"><img
-                src="{{ 'model_weaving-hands-icon.png' | asset_img_url: '450x' }}"
-                loading="lazy"
-                sizes="(max-width: 479px) 90px, 14vw"
-                alt="Drawing of two hands holding a rope"
-                class="ethically-made-img-smaller align-bottom-no-negative-margin"></div>
-            <div class="ethically-made-flex-col-text">
-              <div class="big-medium-text margin-b-15">partnerships</div>
-              <div class="general-text margin-b-40 tighter-width full-land smaller-margin-mob">Embracing proactive and strategic collectiveness for mutual and global gain.</div>
-              <a href="/pages/collaboration" class="general-btn align-right center-mob w-inline-block"><img
-                  src="{{ 'pink-btn.png' | asset_img_url: '250x' }}"
-                  loading="lazy"
-                  sizes="(max-width: 479px) 90vw, 250px"
-                  alt=""
-                  class="btn-img">
-                <div class="btn-text">LEARN MORE</div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
     </div>
     <div class="hide-arrow w-slider-arrow-left"></div>
     <div class="ethically-made-arrow w-slider-arrow-right">
@@ -180,6 +55,41 @@
   {
     "name": "Image with text slider",
     "settings": [],
+    "blocks": [
+      {
+        "type": "slider",
+        "name": "Slider",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "header",
+            "label": "Header"
+          },
+          {
+            "type": "richtext",
+            "id": "description",
+            "label": "Description"
+          },
+          {
+            "type": "header",
+            "content": "Button"
+          }, {
+            "type": "text",
+            "id": "button_label",
+            "label": "Label"
+          }, {
+            "type": "url",
+            "id": "button_link",
+            "label": "Link"
+          }
+        ]
+      }
+    ],
     "presets": [
       {
         "name": "Image with text slider"

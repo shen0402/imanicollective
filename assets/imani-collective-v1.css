@@ -2283,8 +2283,8 @@
   }
   
   .ethically-made-img {
-    width: 36vw;
-    max-width: 510px;
+    width: 100%;
+    max-width: 780px;
     -o-object-fit: contain;
     object-fit: contain;
   }

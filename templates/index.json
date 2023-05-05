@@ -61,6 +61,7 @@
       "type": "jc-richtext",
       "settings": {
         "image": "shopify:\/\/shop_images\/kenya-landscape-min_1990x_cb4b7959-4cff-472e-838f-255110b6160f.webp",
+        "color": "#bb9884",
         "heading": "every purchase empowers another human.",
         "description": "<p>At Imani Collective, empowerment is the heartbeat of what we do. We not only provide ethical employment opportunity, but community + holistic support programs. Join us in empowering artisans.<\/p>",
         "button_label": "LEARN MORE",
@@ -69,7 +70,56 @@
     },
     "home-image-with-text-slider": {
       "type": "jc-image-with-text-slider",
+      "blocks": {
+        "0dc9facc-c682-46d0-a211-1483a8548d35": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ethically1.png",
+            "header": "ethically made",
+            "description": "<p>Every purchase made at Imani Collective feeds directly into our artisans salaries, benefits, and holistic programs.<\/p>",
+            "button_label": "SHOP",
+            "button_link": "shopify:\/\/collections"
+          }
+        },
+        "a6de4ede-4efe-4a8c-8459-c8f699c14286": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ethically2.png",
+            "header": "connect to an artisan",
+            "description": "<p>drop a note to the woman who made your product<\/p>",
+            "button_label": "WRITE NOW",
+            "button_link": "shopify:\/\/pages\/artisans"
+          }
+        },
+        "f59bf02c-003e-4e81-8f66-c565efca11cd": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ethically3.png",
+            "header": "our impact",
+            "description": "<p>The foundation of who we are lies in our holistic programs. We believe that radical transformation can happen through the empowerment of the whole person. We are more than a job, we are a collective - a family - that provides for our women + men in all facets of life.<\/p>",
+            "button_label": "LEARN MORE",
+            "button_link": "shopify:\/\/pages\/our-impact"
+          }
+        },
+        "08b4c3d5-3d66-453e-9af4-59c0a09bb8fd": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ethically4.png",
+            "header": "our model",
+            "description": "<p>At Imani Collective we strive to be transparent in not only our impact, but also of our business and social enterprise model.<\/p>",
+            "button_label": "LEARN MORE",
+            "button_link": "shopify:\/\/pages\/the-imani-model"
+          }
+        }
+      },
+      "block_order": [
+        "0dc9facc-c682-46d0-a211-1483a8548d35",
+        "a6de4ede-4efe-4a8c-8459-c8f699c14286",
+        "f59bf02c-003e-4e81-8f66-c565efca11cd",
+        "08b4c3d5-3d66-453e-9af4-59c0a09bb8fd"
+      ],
       "settings": {
+        "color": "#f3eded"
       }
     },
     "home-featured-collection-2": {
