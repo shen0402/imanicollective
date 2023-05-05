@@ -1,22 +1,63 @@
-<div class="every-purchase-section">
+<style>
+  {% if section.settings.image != blank %}
+    #every-purchase--{{ section.id }}{
+      background-image: url('{{ section.settings.image | img_url: '1900x' }}');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  {% endif %}
+</style>
+<div class="every-purchase-section" id="every-purchase--{{ section.id }}">
   <div class="every-purchase-text-wrapper">
-    <div class="big-medium-text margin-b-15 white-text">Every purchase empowers another human.</div>
-    <div class="general-text white-text tighter-width margin-b-15">At Imani Collective, empowerment is the heartbeat of what we do. We not only provide ethical employment opportunity, but community + holistic support programs. Join us in empowering artisans.</div>
-    <a href="/pages/our-impact" class="general-btn center-mob w-inline-block"><img
+    <div class="big-medium-text margin-b-15 white-text">{{ section.settings.heading }}</div>
+    <div class="general-text white-text tighter-width margin-b-15">{{ section.settings.description }}</div>
+    <a href="{{ section.settings.button_link }}" class="general-btn center-mob w-inline-block"><img
         src="{{ 'pink-btn.png' | asset_img_url: '250x' }}"
         loading="lazy"
         sizes="(max-width: 479px) 90vw, 250px"
 
         alt=""
         class="btn-img">
-      <div class="btn-text">LEARN MORE</div>
+      <div class="btn-text">{{ section.settings.button_label }}</div>
     </a>
   </div>
 </div>
 {% schema %}
   {
     "name": "Home richtext",
-    "settings": [],
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "every purchase empowers another human."
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description",
+        "default": "<p>At Imani Collective, empowerment is the heartbeat of what we do. We not only provide ethical employment opportunity, but community + holistic support programs. Join us in empowering artisans.</p>"
+      },
+      {
+        "type": "header",
+        "content": "Button"
+      }, {
+        "type": "text",
+        "id": "button_label",
+        "label": "Label",
+        "default": "LEARN MORE"
+      }, {
+        "type": "url",
+        "id": "button_link",
+        "label": "Link"
+      }
+    ],
     "presets": [
       {
         "name": "Home richtext"

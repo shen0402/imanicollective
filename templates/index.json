@@ -57,6 +57,11 @@
     "home-richtext": {
       "type": "jc-richtext",
       "settings": {
+        "image": "shopify:\/\/shop_images\/kenya-landscape-min_1990x_cb4b7959-4cff-472e-838f-255110b6160f.webp",
+        "heading": "every purchase empowers another human.",
+        "description": "<p>At Imani Collective, empowerment is the heartbeat of what we do. We not only provide ethical employment opportunity, but community + holistic support programs. Join us in empowering artisans.<\/p>",
+        "button_label": "LEARN MORE",
+        "button_link": "shopify:\/\/pages\/our-impact"
       }
     },
     "home-image-with-text-slider": {
