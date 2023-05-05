@@ -344,14 +344,15 @@
               <div class="general-text">We believe women hold the key to long-term social change. That&#x27;s why we provide the educational resources and opportunities they need to create sustainable livelihoods for themselves and for future generations. We believe education bridges skill and knowledge, while equipping a woman to tap into her highest capacity. Education at Imani Collective is not limited to technical skills.</div>
             </div>
             <div class="gen-emp-flex-col-right">
-              <div class="percentage-row">
-                <div class="big-medium-text">14.5%</div>
-                <div class="general-text">men with dignified employment</div>
-              </div>
-              <div class="percentage-row">
-                <div class="big-medium-text">84.5%</div>
-                <div class="general-text">women with dignified employment</div>
-              </div><img
+              {% for block in section.blocks %}
+                {% if block.type == 'gender_empowerment' %}
+                  <div class="percentage-row">
+                    <div class="big-medium-text">{{ block.settings.number }}</div>
+                    <div class="general-text">{{ block.settings.text }}</div>
+                  </div>
+                {% endif %}
+              {% endfor %}
+              <img
                 sizes="180px"
                 src="{{ 'model_people.png' | asset_img_url: '250x' }}"
                 loading="lazy"
@@ -507,7 +508,8 @@
             "label": "Button Link"
           }
         ]
-      }, {
+      },
+      {
         "type": "icon_with_text",
         "name": "Icon with text",
         "settings": [
@@ -521,7 +523,8 @@
             "label": "Text"
           }
         ]
-      }, {
+      },
+      {
         "type": "kenya_wage",
         "name": "Kenya Wage",
         "settings": [
@@ -543,7 +546,8 @@
             "label": "LIVING WAGE*"
           }
         ]
-      }, {
+      },
+      {
         "type": "stateside_wage",
         "name": "Stateside Wage",
         "settings": [
@@ -563,6 +567,20 @@
             "type": "text",
             "id": "living_wage",
             "label": "LIVING WAGE*"
+          }
+        ]
+      }, {
+        "type": "gender_empowerment",
+        "name": "Gender Empowerment",
+        "settings": [
+          {
+            "type": "text",
+            "id": "number",
+            "label": "Number"
+          }, {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
           }
         ]
       }

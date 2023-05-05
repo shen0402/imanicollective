@@ -82,6 +82,20 @@
             "lowest_wage": "$18.00",
             "living_wage": "$17.82"
           }
+        },
+        "0c8806d7-a014-4df1-b20d-f2a6fb8088dd": {
+          "type": "gender_empowerment",
+          "settings": {
+            "number": "14.5%",
+            "text": "men with dignified employment"
+          }
+        },
+        "b8b09358-e7b9-4c6d-8bfc-ee9c9dbe5bc3": {
+          "type": "gender_empowerment",
+          "settings": {
+            "number": "84.5%",
+            "text": "women with dignified employment"
+          }
         }
       },
       "block_order": [
@@ -94,7 +108,9 @@
         "bca3162a-74a6-419d-8385-cd316b8d6caa",
         "fffe34dc-5323-449b-8805-322504ab9d8e",
         "f8e1630e-688c-4b21-90f3-fb2118e67969",
-        "388e45c8-19db-422d-a524-22d555bb9573"
+        "388e45c8-19db-422d-a524-22d555bb9573",
+        "0c8806d7-a014-4df1-b20d-f2a6fb8088dd",
+        "b8b09358-e7b9-4c6d-8bfc-ee9c9dbe5bc3"
       ],
       "settings": {
       }
