@@ -37,6 +37,51 @@
             "image": "shopify:\/\/shop_images\/donor-landing-page_1.webp",
             "text": "12 - Responsible consumption and production"
           }
+        },
+        "35a329af-fd94-40da-999f-c83e355ef54c": {
+          "type": "kenya_wage",
+          "settings": {
+            "city": "Kenya",
+            "minimum_wage": "15,120 KSH",
+            "lowest_wage": "x KSH",
+            "living_wage": "x KSH"
+          }
+        },
+        "bca3162a-74a6-419d-8385-cd316b8d6caa": {
+          "type": "kenya_wage",
+          "settings": {
+            "city": "Turkana",
+            "minimum_wage": "16,076 KSH",
+            "lowest_wage": "19,696 KSH",
+            "living_wage": "18,000 KSH"
+          }
+        },
+        "fffe34dc-5323-449b-8805-322504ab9d8e": {
+          "type": "kenya_wage",
+          "settings": {
+            "city": "Mtepeni",
+            "minimum_wage": "16,076 KSH",
+            "lowest_wage": "19,969 KSH",
+            "living_wage": "18,000 KSH"
+          }
+        },
+        "f8e1630e-688c-4b21-90f3-fb2118e67969": {
+          "type": "kenya_wage",
+          "settings": {
+            "city": "Mombasa",
+            "minimum_wage": "21,000 KSH",
+            "lowest_wage": "22,158 KSH",
+            "living_wage": "20,100 KSH"
+          }
+        },
+        "388e45c8-19db-422d-a524-22d555bb9573": {
+          "type": "stateside_wage",
+          "settings": {
+            "city": "Dallas",
+            "minimum_wage": "$7.25",
+            "lowest_wage": "$18.00",
+            "living_wage": "$17.82"
+          }
         }
       },
       "block_order": [
@@ -44,7 +89,12 @@
         "f3c60f1c-f1d3-4f45-b222-adf9b7cc938b",
         "e4c3e930-f0b0-4221-aedb-235aabece50a",
         "daccd0f7-75cc-4940-8d79-ffe59b975b7b",
-        "8da35ae3-a187-4905-8160-127d377cb22f"
+        "8da35ae3-a187-4905-8160-127d377cb22f",
+        "35a329af-fd94-40da-999f-c83e355ef54c",
+        "bca3162a-74a6-419d-8385-cd316b8d6caa",
+        "fffe34dc-5323-449b-8805-322504ab9d8e",
+        "f8e1630e-688c-4b21-90f3-fb2118e67969",
+        "388e45c8-19db-422d-a524-22d555bb9573"
       ],
       "settings": {
       }

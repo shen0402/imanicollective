@@ -209,22 +209,14 @@
               <div id="w-node-_4bb7932a-c8fd-02a3-24cb-e7b21fbe3ae6-0d1b3d65" class="general-text bold-text">MINIMUM WAGE*</div>
               <div id="w-node-d15ff9d1-138b-dfe8-98e4-144d911173c8-0d1b3d65" class="general-text bold-text">IMANI&#x27;S LOWEST WAGE</div>
               <div id="w-node-_0e463f80-b696-2f66-bb86-314c8a4036b9-0d1b3d65" class="general-text bold-text">LIVING WAGE*</div>
-              <div id="w-node-_90e4c26d-5fda-82d5-9665-e3a6c6132482-0d1b3d65" class="general-text">Kenya</div>
-              <div id="w-node-_0ec8340a-084c-2a02-e757-72b9cb0441ba-0d1b3d65" class="general-text">15,120 KSH</div>
-              <div id="w-node-e667ee3c-5a1f-c6af-2d9c-de96d883a1ef-0d1b3d65" class="general-text">x KSH</div>
-              <div id="w-node-_34e113cb-8c6b-11fa-3aac-0fddfca1634e-0d1b3d65" class="general-text">x KSH</div>
-              <div id="w-node-_90cf507e-aeae-0374-fc23-f5a0f0418f39-0d1b3d65" class="general-text">Turkana</div>
-              <div id="w-node-_5956e435-e864-ca82-ded5-db5a0647aba5-0d1b3d65" class="general-text">16,076 KSH</div>
-              <div id="w-node-_63243362-6b9b-85e7-d265-12d35c4d4b1b-0d1b3d65" class="general-text">19,696 KSH</div>
-              <div id="w-node-_83a4a3a5-0211-dd84-1bdb-6affd7ebe67e-0d1b3d65" class="general-text">18,000 KSH</div>
-              <div id="w-node-e766346b-900a-2544-b4ce-364e429e79ea-0d1b3d65" class="general-text">Mtepeni</div>
-              <div id="w-node-_3920941d-3145-ceb9-704b-e106d87964f2-0d1b3d65" class="general-text">16,076 KSH</div>
-              <div id="w-node-a68bf1ad-c06c-76ff-0649-6ef99c027729-0d1b3d65" class="general-text">19,969 KSH</div>
-              <div id="w-node-d9f9f941-6561-d4d1-f8a5-4e6935a967f4-0d1b3d65" class="general-text">18,000 KSH</div>
-              <div id="w-node-f143e953-66de-d0da-51d9-f504a1776661-0d1b3d65" class="general-text">Mombasa</div>
-              <div id="w-node-_905f27f8-1828-bf7b-808d-a9c0b4375932-0d1b3d65" class="general-text">21,000 KSH</div>
-              <div id="w-node-_3f96de42-095d-c064-2fff-c10aeb69762a-0d1b3d65" class="general-text">22,158 KSH</div>
-              <div id="w-node-_40f8fb4f-d9c3-a268-3b7f-4d157bf650e0-0d1b3d65" class="general-text">20,100 KSH</div>
+              {% for block in section.blocks %}
+                {% if block.type == 'kenya_wage' %}
+                  <div class="general-text city-wage">{{ block.settings.city }}</div>
+                  <div class="general-text wage-number">{{ block.settings.minimum_wage }}</div>
+                  <div class="general-text wage-number">{{ block.settings.lowest_wage }}</div>
+                  <div class="general-text wage-number">{{ block.settings.living_wage }}</div>
+                {% endif %}
+              {% endfor %}
             </div>
             <div class="general-text">* All wages shown are for a single adult, per month</div>
           </div>
@@ -235,10 +227,14 @@
               <div id="w-node-_289e6d41-fe20-c1d0-d56b-ab9689dc0cd8-0d1b3d65" class="general-text bold-text">MINIMUM WAGE*</div>
               <div id="w-node-_289e6d41-fe20-c1d0-d56b-ab9689dc0cda-0d1b3d65" class="general-text bold-text">IMANI&#x27;S LOWEST WAGE</div>
               <div id="w-node-_289e6d41-fe20-c1d0-d56b-ab9689dc0cdc-0d1b3d65" class="general-text bold-text">LIVING WAGE**</div>
-              <div id="w-node-_289e6d41-fe20-c1d0-d56b-ab9689dc0cde-0d1b3d65" class="general-text">Dallas</div>
-              <div id="w-node-_289e6d41-fe20-c1d0-d56b-ab9689dc0ce0-0d1b3d65" class="general-text">$7.25</div>
-              <div id="w-node-_289e6d41-fe20-c1d0-d56b-ab9689dc0ce2-0d1b3d65" class="general-text">$18.00</div>
-              <div id="w-node-_289e6d41-fe20-c1d0-d56b-ab9689dc0ce4-0d1b3d65" class="general-text">$17.82</div>
+              {% for block in section.blocks %}
+                {% if block.type == 'stateside_wage' %}
+                  <div class="general-text city-wage">{{ block.settings.city }}</div>
+                  <div class="general-text wage-number">{{ block.settings.minimum_wage }}</div>
+                  <div class="general-text wage-number">{{ block.settings.lowest_wage }}</div>
+                  <div class="general-text wage-number">{{ block.settings.living_wage }}</div>
+                {% endif %}
+              {% endfor %}
             </div>
             <div class="general-text">*wage per month</div>
             <div class="general-text">** for a single adult</div>
@@ -523,6 +519,50 @@
             "type": "textarea",
             "id": "text",
             "label": "Text"
+          }
+        ]
+      }, {
+        "type": "kenya_wage",
+        "name": "Kenya Wage",
+        "settings": [
+          {
+            "type": "text",
+            "id": "city",
+            "label": "City"
+          }, {
+            "type": "text",
+            "id": "minimum_wage",
+            "label": "MINIMUM WAGE*"
+          }, {
+            "type": "text",
+            "id": "lowest_wage",
+            "label": "IMANI'S LOWEST WAGE"
+          }, {
+            "type": "text",
+            "id": "living_wage",
+            "label": "LIVING WAGE*"
+          }
+        ]
+      }, {
+        "type": "stateside_wage",
+        "name": "Stateside Wage",
+        "settings": [
+          {
+            "type": "text",
+            "id": "city",
+            "label": "City"
+          }, {
+            "type": "text",
+            "id": "minimum_wage",
+            "label": "MINIMUM WAGE*"
+          }, {
+            "type": "text",
+            "id": "lowest_wage",
+            "label": "IMANI'S LOWEST WAGE"
+          }, {
+            "type": "text",
+            "id": "living_wage",
+            "label": "LIVING WAGE*"
           }
         ]
       }
