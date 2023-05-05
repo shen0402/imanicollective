@@ -96,6 +96,28 @@
             "number": "84.5%",
             "text": "women with dignified employment"
           }
+        },
+        "9f266d0f-50fc-4d1a-8312-a2a7064663f2": {
+          "type": "slider",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/impact-partners_childcare.webp",
+            "header1": "In-house childcare",
+            "description1": "<p>structured program for artisans' children to attend during the day while parents work, which includes themed curriculum, field trips, English courses, primary school entrance test preparation, creative crafts and more.<\/p>",
+            "image2": "shopify:\/\/shop_images\/impact-partners_food-program.webp",
+            "header2": "Food program",
+            "description2": "<p>daily well-balanced meals<\/p>"
+          }
+        },
+        "e753d3b1-ff24-453d-8c8e-526dadc348df": {
+          "type": "slider",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/impact-partners_home-visits.webp",
+            "header1": "Home visits",
+            "description1": "<p>twice-per-month trips to visit artisans and their families, where we check in and present a love offering gift bag<\/p>",
+            "image2": "shopify:\/\/shop_images\/impact-partners_special-events.webp",
+            "header2": "Special events",
+            "description2": "<p>monthly artisan, employee and children's birthday celebrations, in addition to holiday parties, cultural field trips and an end-of-year celebration.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -110,7 +132,9 @@
         "f8e1630e-688c-4b21-90f3-fb2118e67969",
         "388e45c8-19db-422d-a524-22d555bb9573",
         "0c8806d7-a014-4df1-b20d-f2a6fb8088dd",
-        "b8b09358-e7b9-4c6d-8bfc-ee9c9dbe5bc3"
+        "b8b09358-e7b9-4c6d-8bfc-ee9c9dbe5bc3",
+        "9f266d0f-50fc-4d1a-8312-a2a7064663f2",
+        "e753d3b1-ff24-453d-8c8e-526dadc348df"
       ],
       "settings": {
       }

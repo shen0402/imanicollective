@@ -381,50 +381,32 @@
             data-duration="500"
             data-infinite="true">
             <div class="w-slider-mask">
-              <div class="w-slide">
-                <div class="hol-flex-row">
-                  <div class="hol-flex-col"><img
-                      src="{{ 'impact-partners_childcare.png' | asset_img_url: '450x' }}"
-                      loading="lazy"
-                      sizes="(max-width: 479px) 110px, 130px"
-                      alt="Two socks drawn"
-                      class="hol-img">
-                    <h2 class="smaller-h2 sus-slider">In-house childcare</h2>
-                    <div class="general-text">structured program for artisans&#x27; children to attend during the day while parents work, which includes themed curriculum, field trips, English courses, primary school entrance test preparation, creative crafts and more.</div>
+              {% for block in section.blocks %}
+                {% if block.type == 'slider' %}
+                  <div class="w-slide">
+                    <div class="hol-flex-row">
+                      <div class="hol-flex-col"><img
+                          src="{{ block.settings.image1 | img_url: '450x' }}"
+                          loading="lazy"
+                          sizes="(max-width: 479px) 110px, 130px"
+                          alt="Drawing of a building with a door, two stories, and a roof. The building is light pink and the roof is light brown"
+                          class="hol-img team-building">
+                        <h2 class="smaller-h2 sus-slider">{{ block.settings.header1 }}</h2>
+                        <div class="general-text">{{ block.settings.description1 }}</div>
+                      </div>
+                      <div class="hol-flex-col"><img
+                          src="{{ block.settings.image2 | img_url: '450x' }}"
+                          loading="lazy"
+                          sizes="(max-width: 479px) 110px, 130px"
+                          alt="Drawing of a building with a door, two stories, and a roof. The building is light pink and the roof is light brown"
+                          class="hol-img team-building">
+                        <h2 class="smaller-h2 sus-slider">{{ block.settings.header2 }}</h2>
+                        <div class="general-text">{{ block.settings.description2 }}</div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="hol-flex-col"><img
-                      src="{{ 'impact-partners_food-program.png' | asset_img_url: '450x' }}"
-                      loading="lazy"
-                      sizes="(max-width: 479px) 110px, 130px"
-                      alt="A drawing of a banana and a radish"
-                      class="hol-img">
-                    <h2 class="smaller-h2 sus-slider">Food program</h2>
-                    <div class="general-text">daily well-balanced meals</div>
-                  </div>
-                </div>
-              </div>
-              <div class="w-slide">
-                <div class="hol-flex-row">
-                  <div class="hol-flex-col"><img
-                      src="{{ 'impact-partners_home-visits.png' | asset_img_url: '450x' }}"
-                      loading="lazy"
-                      sizes="(max-width: 479px) 110px, 130px"
-                      alt="Drawing of a building with a door, two stories, and a roof. The building is light pink and the roof is light brown"
-                      class="hol-img team-building">
-                    <h2 class="smaller-h2 sus-slider">Home visits</h2>
-                    <div class="general-text">twice-per-month trips to visit artisans and their families, where we check in and present a love offering gift bag</div>
-                  </div>
-                  <div class="hol-flex-col"><img
-                      src="{{ 'impact-partners_special-events.png' | asset_img_url: '450x' }}"
-                      loading="lazy"
-                      sizes="(max-width: 479px) 110px, 130px"
-                      alt="Drawing of a cake with a candle in the center"
-                      class="hol-img team-building">
-                    <h2 class="smaller-h2 sus-slider">Special events</h2>
-                    <div class="general-text">monthly artisan, employee and children&#x27;s birthday celebrations, in addition to holiday parties, cultural field trips and an end-of-year celebration.</div>
-                  </div>
-                </div>
-              </div>
+                {% endif %}
+              {% endfor %}
             </div>
             <div class="arrow-sustainability w-slider-arrow-left">
               <div class="arrow-icon left-side w-icon-slider-left"></div>
@@ -581,6 +563,45 @@
             "type": "text",
             "id": "text",
             "label": "Text"
+          }
+        ]
+      }, {
+        "type": "slider",
+        "name": "Slider",
+        "settings": [
+          {
+            "type": "header",
+            "content": "First Item"
+          },
+          {
+            "type": "image_picker",
+            "id": "image1",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "header1",
+            "label": "Header"
+          },
+          {
+            "type": "richtext",
+            "id": "description1",
+            "label": "Description"
+          }, {
+            "type": "header",
+            "content": "Second Item"
+          }, {
+            "type": "image_picker",
+            "id": "image2",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "id": "header2",
+            "label": "Header"
+          }, {
+            "type": "richtext",
+            "id": "description2",
+            "label": "Description"
           }
         ]
       }
