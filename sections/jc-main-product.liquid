@@ -182,9 +182,12 @@
                   {% endif %}
                 {% endif %}
 
-                <div class="jc-swatch-wrapper">
-                  {% render 'swatchify-conts' with product, psType: 'product' %}
-                </div>
+                {% comment %}
+                  <div class="jc-swatch-wrapper">
+                    {% render 'swatchify-conts' with product, psType: 'product' %}
+                  </div>
+                {% endcomment %}
+                
                 <input
                   type="hidden"
                   name="id"
@@ -228,14 +231,19 @@
             </div>
           </div>
           <div class="product-description-wrapper">
-            {% assign description = product.description | remove: '<p data-mce-fragment="1">' | remove: '</p>'   %}
-            {% assign description = description | replace: '<strong data-mce-fragment="1">', '</div><p class="product-accordion__header">' %}
-            {% assign description = description | replace: '<b data-mce-fragment="1">', '</div><p class="product-accordion__header">' %}
-            {% assign description = description | replace: '</strong>', '</p><div class="product-accordion__content">' %}
-            {% assign description = description | replace: '</b>', '</p><div class="product-accordion__content">' %}
-            {% assign description = description | remove_first: '</div>'  %}
-            {% assign description = description | replace: '<div class="product-accordion__content"><br data-mce-fragment="1">', '<div class="product-accordion__content">' %}
-            {% assign description = description | replace: '<br data-mce-fragment="1"></div>', '</div>' %}
+            {% if product.description contains 'data-mce-fragment="1"' %}
+              {% assign description = product.description | remove: '<p data-mce-fragment="1">' | remove: '</p>'   %}
+              {% assign description = description | replace: '<strong data-mce-fragment="1">', '</div><p class="product-accordion__header">' %}
+              {% assign description = description | replace: '<b data-mce-fragment="1">', '</div><p class="product-accordion__header">' %}
+              {% assign description = description | replace: '</strong>', '</p><div class="product-accordion__content">' %}
+              {% assign description = description | replace: '</b>', '</p><div class="product-accordion__content">' %}
+              {% assign description = description | remove_first: '</div>'  %}
+              {% assign description = description | replace: '<div class="product-accordion__content"><br data-mce-fragment="1">', '<div class="product-accordion__content">' %}
+              {% assign description = description | replace: '<br data-mce-fragment="1"></div>', '</div>' %}
+            {% else %}
+              {% assign description = product.description %}
+            {% endif %}
+            
             <div class="product-description-text">{{ description }}</div>
 
           </div>

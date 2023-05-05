@@ -5202,12 +5202,11 @@ body {
   -ms-flex-align: center;
   align-items: center;
   grid-auto-columns: 1fr;
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto auto;
   grid-template-rows: auto auto;
+  margin-bottom: 20px;
 }
 
 .product-options-label {
@@ -5215,7 +5214,6 @@ body {
   -webkit-flex: 0 15%;
   -ms-flex: 0 15%;
   flex: 0 15%;
-  margin-right: 20px;
   
   font-size: 18px;
   line-height: 18px;
@@ -5233,17 +5231,17 @@ body {
   padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
-  border-color: #af7552;
+  border-color: #000;
   border-radius: 1px;
   background-color: transparent;
   
-  color: #af7552;
+  color: #000;
   font-size: 15px;
   text-align: left;
 }
 
 .product-page-select:focus {
-  border-color: #af7552;
+  border-color: #000;
 }
 
 .product-page-input {
@@ -7780,23 +7778,32 @@ margin-bottom:0px;
 }
 
 .select-style {
-    border: 1px solid #af7552;
-    width: 300px;
+    border: 1px solid #000;
     border-radius: 1px;
     overflow: hidden;
-    background: transparent url("//cdn.shopify.com/s/files/1/2534/9108/files/cheveron-down-min.png") no-repeat;
-    background-position: 99% 50%;
-    background-size: 20px 20px;
     text-align:center;
+    position: relative;
+}
+.select-style::before {
+  content: '>';
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  top: 12px;
+  right: 7px;
+  transform: rotate(90deg);
 }
 .select-style select {
-    padding: 5px 8px;
-    width: 130%;
+    padding: 5px 8px 4px;
+    padding-right: 30px;
+    width: 100%;
     border: none;
     box-shadow: none;
     background: transparent;
     background-image: none;
     -webkit-appearance: none;
+    -moz-appearance: none;
+    min-width: 100px;
 }
 .select-style select:focus {
     outline: none;
@@ -11061,6 +11068,12 @@ margin-bottom:0px;
   .jc-404-section {
     padding: 100px 20px;
   }
+}
+.tabs-wrapper-product {
+  display: block !important;
+}
+.rio-media-gallery {
+  display: none !important;
 }
 @keyframes fadeIn {
   0% {

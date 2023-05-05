@@ -148,8 +148,9 @@
     </script>
     {% include 'productwiz-rio' %}
 
+    {% comment %}
     {% render 'swatchify-init' %}
-  </head>
+    {% endcomment %}</head>
 
   <body class="template--{{ template.name }} {% if template.name == 'page' %}page--{{ page.handle }}{% endif %} {% if template == 'page.instagram' %}landing-body{% endif %}">
 
