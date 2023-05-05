@@ -16,11 +16,35 @@
             "btn_label": "SEE OUR LATEST <br> IMPACT REPORT",
             "btn_link": "https:\/\/mcusercontent.com\/3a1ecc51bdea229e05327c57e\/files\/f5131e38-88dc-698c-8d39-8dc2eb82ddd4\/impact_report_2022_reduced_size.pdf"
           }
+        },
+        "e4c3e930-f0b0-4221-aedb-235aabece50a": {
+          "type": "icon_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sustainability_1---no-poverty.webp",
+            "text": "1 - No Poverty"
+          }
+        },
+        "daccd0f7-75cc-4940-8d79-ffe59b975b7b": {
+          "type": "icon_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/model_weaving-hands-icon.webp",
+            "text": "8 - Decent work and economic growth"
+          }
+        },
+        "8da35ae3-a187-4905-8160-127d377cb22f": {
+          "type": "icon_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/donor-landing-page_1.webp",
+            "text": "12 - Responsible consumption and production"
+          }
         }
       },
       "block_order": [
         "0230dc1b-a4b6-492c-99e6-798d180a3784",
-        "f3c60f1c-f1d3-4f45-b222-adf9b7cc938b"
+        "f3c60f1c-f1d3-4f45-b222-adf9b7cc938b",
+        "e4c3e930-f0b0-4221-aedb-235aabece50a",
+        "daccd0f7-75cc-4940-8d79-ffe59b975b7b",
+        "8da35ae3-a187-4905-8160-127d377cb22f"
       ],
       "settings": {
       }

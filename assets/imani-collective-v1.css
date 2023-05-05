@@ -53,6 +53,9 @@
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+  }
+
+  .home-hero-text-wrapper .center-text-wrapper {
     max-width: 500px;
   }
   

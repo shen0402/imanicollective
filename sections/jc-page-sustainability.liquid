@@ -4,30 +4,18 @@
     <div class="general-text margin-b-40">At Imani Collective, we strive to be transparent in our impact and social enterprise model. Every year we make it a top priority to care for the well-being of our artisans and the communities &quot;without compromising the ability of future generations to meet their own needs.&quot;</div>
     <div id="top" class="general-text">We support the United Nations 2030 Agenda for Sustainable Development, which has set forth 17 SDGs that serve as a &quot;call to action to end poverty, protect the planet, and ensure all people enjoy peace and prosperity by 2030&quot;. Our primary SDGs of focus are:</div>
     <div class="sustainability-flex-row">
-      <div class="sustainability-flex-col-2"><img
-          src="{{ 'sustainability_1---no-poverty.png' | asset_img_url: '250x' }}"
-          loading="lazy"
-          sizes="(max-width: 479px) 100vw, (max-width: 767px) 20vw, (max-width: 991px) 19vw, 154px"
-          alt=""
-          class="sus-img">
-        <div class="general-text">1 - No Poverty</div>
-      </div>
-      <div class="sustainability-flex-col-2"><img
-          src="{{ 'model_weaving-hands-icon.png' | asset_img_url: '250x' }}"
-          loading="lazy"
-          sizes="(max-width: 479px) 100vw, (max-width: 767px) 20vw, (max-width: 991px) 19vw, 154px"
-          alt="Drawing of two hands holding a rope"
-          class="sus-img">
-        <div id="mobile_top" class="general-text">8 - Decent work and economic growth</div>
-      </div>
-      <div class="sustainability-flex-col-2"><img
-          src="{{ 'donor-landing-page_1.png' | asset_img_url: '250x' }}"
-          loading="lazy"
-          sizes="(max-width: 479px) 100vw, (max-width: 767px) 23vw, (max-width: 991px) 19vw, 154px"
-          alt=""
-          class="sus-img">
-        <div class="general-text">12 - Responsible consumption and production</div>
-      </div>
+      {% for block in section.blocks %}
+        {% if block.type == 'icon_with_text' %}
+          <div class="sustainability-flex-col-2"><img
+              src="{{ block.settings.image | img_url: '250x' }}"
+              loading="lazy"
+              sizes="(max-width: 479px) 100vw, (max-width: 767px) 20vw, (max-width: 991px) 19vw, 154px"
+              alt=""
+              class="sus-img">
+            <div class="general-text">{{ block.settings.text }}</div>
+          </div>
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
   <div class="center-text-wrapper">
@@ -521,6 +509,20 @@
             "type": "url",
             "id": "btn_link",
             "label": "Button Link"
+          }
+        ]
+      }, {
+        "type": "icon_with_text",
+        "name": "Icon with text",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
+            "type": "textarea",
+            "id": "text",
+            "label": "Text"
           }
         ]
       }
