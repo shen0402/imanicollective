@@ -211,7 +211,8 @@
                     type="submit"
                     value="{{jc_btn_text}}"
                     data-wait="Please wait..."
-                    class="jc-button jc-secondary-button">
+                    class="jc-button jc-secondary-button"
+                    {% unless jc_available %}disabled{% endunless %}>
                 </div>
               {% endform %}
 
