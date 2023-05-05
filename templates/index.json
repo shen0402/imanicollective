@@ -10,7 +10,8 @@
             "heading": "THE SELAH",
             "text": "IN PARTNERSHIP WITH TIBEB",
             "btn_label": "SHOP NOW",
-            "btn_link": "shopify:\/\/collections\/frontpage"
+            "btn_link": "shopify:\/\/collections\/frontpage",
+            "align": "left"
           }
         },
         "3135b41c-acc5-4744-8ecc-86fe01a18a5e": {
@@ -20,7 +21,8 @@
             "heading": "THE SELAH",
             "text": "IN PARTNERSHIP WITH TIBEB",
             "btn_label": "SHOP NOW",
-            "btn_link": "shopify:\/\/collections\/best-sellers"
+            "btn_link": "shopify:\/\/collections\/best-sellers",
+            "align": "center"
           }
         },
         "20f48bb8-d1db-4812-9452-a64df816e715": {
@@ -30,7 +32,8 @@
             "heading": "THE SELAH",
             "text": "IN PARTNERSHIP WITH TIBEB",
             "btn_label": "SHOP NOW",
-            "btn_link": "shopify:\/\/collections\/backpacks"
+            "btn_link": "shopify:\/\/collections\/backpacks",
+            "align": "right"
           }
         }
       },

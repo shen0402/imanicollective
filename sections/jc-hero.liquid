@@ -5,6 +5,19 @@
         background-image: url('{{ block.settings.image | img_url: '1900x' }}');
       }
     {% endif %}
+    #section--{{ block.id }} .center-text-wrapper {
+        {% case block.settings.align %}
+          {% when 'left' %}
+            margin-right: auto;
+            margin-left: 0;
+          {% when 'right' %}
+            margin-right: 0;
+            margin-left: auto;
+          {% else %}
+            margin-right: auto;
+            margin-left: auto;
+          {% endcase %}
+      }
   {% endfor %}
 </style>
 <div class="image-banner-slider">
@@ -92,6 +105,23 @@
             "type": "url",
             "id": "btn_link",
             "label": "Button Link"
+          }, {
+            "type": "select",
+            "id": "align",
+            "label": "Content Align",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              }, {
+                "value": "center",
+                "label": "Center"
+              }, {
+                "value": "right",
+                "label": "Right"
+              }
+            ],
+            "default": "center"
           }
         ]
       }
