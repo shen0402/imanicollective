@@ -5063,6 +5063,22 @@ body {
   width: 100px;
 }
 
+@media (min-width: 768px) {
+  .tabs-menu-product {
+    max-height: 468px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .tabs-menu-product::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 .tab-menu-link-product {
   margin-right: 0px;
   margin-left: 0px;
