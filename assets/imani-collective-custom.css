@@ -11011,6 +11011,41 @@ margin-bottom:0px;
   font-size: 8px;
   line-height: 9px;
 }
+.jc-404-section {
+  max-width: 1540px;
+  padding: 100px 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+.jc-404-section .big-medium-text {
+  text-transform: capitalize;
+}
+.jc-404-section .general-text {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #bb9883;
+}
+.jc-404__image {
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+}
+.jc-404__image img {
+  width: 100%;
+  height: auto;
+}
+.jc-404__button {
+  margin-top: 30px;
+}
+.jc-404__button .general-btn {
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .jc-404-section {
+    padding: 100px 20px;
+  }
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;

@@ -3206,6 +3206,16 @@
         "settings": {
           "heading": "you might also like"
         }
+      },
+      "jc-404-page": {
+        "type": "jc-404-page",
+        "settings": {
+          "heading": "Oopsie Daisy!",
+          "description": "<p>Looks like this page does not exist. Find your way back by clicking the button below!<\/p>",
+          "image": "shopify:\/\/shop_images\/lifestyles.png",
+          "button_label": "HOME PAGE",
+          "button_link": ""
+        }
       }
     },
     "content_for_index": [
