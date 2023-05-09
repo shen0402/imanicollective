@@ -5072,6 +5072,11 @@ body {
     justify-content: flex-start;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    padding-left: 10px;
+  }
+
+  ..tabs-product {
+    padding-left: 20px;
   }
 
   .tabs-menu-product::-webkit-scrollbar {
