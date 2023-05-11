@@ -665,7 +665,7 @@
             "settings": {
               "leadership_name": "Geoffrey Karanja",
               "leadership_position": "Sales and Marketing Lead - Kenya",
-              "leadership_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-14T134416_807_400x_jpg.webp",
+              "leadership_image": "shopify:\/\/shop_images\/Untitled_design-22.jpg",
               "hometown": "",
               "live": "",
               "latest_obsesstion": "",
@@ -1445,64 +1445,57 @@
           "1586192479047": {
             "type": "text",
             "settings": {
-              "button_text": "IMANICOLLECTIVE.COM",
-              "button_link": "https:\/\/imanicollective.com\/"
+              "button_text": "imani-kids.com",
+              "button_link": "https:\/\/imani-kids.com"
             }
           },
           "1586192503056": {
             "type": "text",
             "settings": {
-              "button_text": "DONATE",
+              "button_text": "donate",
               "button_link": "https:\/\/imanicollective-ourimpact.org"
             }
           },
           "a292edb9-474f-4344-8614-441f28680985": {
             "type": "text",
             "settings": {
-              "button_text": "JOIN OUR TEXT LIST",
+              "button_text": "join our text list",
               "button_link": "https:\/\/imanicollective.attn.tv\/p\/RUK\/landing-page"
             }
           },
           "29c173f4-f663-4910-8dd0-78473b8bb368": {
             "type": "text",
             "settings": {
-              "button_text": "SHOP WHOLESALE",
-              "button_link": "https:\/\/imanicollective.com\/pages\/wholesale"
+              "button_text": "shop wholesale",
+              "button_link": "shopify:\/\/pages\/wholesale"
             }
           },
           "d079be91-6c9e-44b4-9f5d-8978329790c8": {
             "type": "text",
             "settings": {
-              "button_text": "AFFILIATE PROGRAM",
+              "button_text": "affiliate program",
               "button_link": "https:\/\/theimanicollective.grin.live\/affiliateapplication"
             }
           },
           "a3ed1404-9111-4c76-ab5a-4752b0271111": {
             "type": "text",
             "settings": {
-              "button_text": "2022 IMPACT REPORT",
+              "button_text": "2022  impact report",
               "button_link": "https:\/\/mcusercontent.com\/3a1ecc51bdea229e05327c57e\/files\/f5131e38-88dc-698c-8d39-8dc2eb82ddd4\/impact_report_2022_reduced_size.pdf"
             }
           },
           "a51188fe-8fbb-452e-8fb8-0244b63ad8dc": {
             "type": "text",
             "settings": {
-              "button_text": "SUBSCRIBE TO EMAIL LIST",
+              "button_text": "subscribe to email list",
               "button_link": "https:\/\/imani-collective.myshopify.com\/pages\/press-and-events#email-list"
             }
           },
           "0f60cb8b-2847-4ec2-b21a-67f4ce452c9a": {
             "type": "text",
             "settings": {
-              "button_text": "ETSY SHOP",
+              "button_text": "etsy shop",
               "button_link": "https:\/\/www.etsy.com\/shop\/ImaniCollective"
-            }
-          },
-          "1586192489659": {
-            "type": "text",
-            "settings": {
-              "button_text": "EAST AFRICA SHOP",
-              "button_link": "https:\/\/www.instagram.com\/imanicollectivesoko\/"
             }
           }
         },
@@ -1514,8 +1507,7 @@
           "d079be91-6c9e-44b4-9f5d-8978329790c8",
           "a3ed1404-9111-4c76-ab5a-4752b0271111",
           "a51188fe-8fbb-452e-8fb8-0244b63ad8dc",
-          "0f60cb8b-2847-4ec2-b21a-67f4ce452c9a",
-          "1586192489659"
+          "0f60cb8b-2847-4ec2-b21a-67f4ce452c9a"
         ],
         "settings": {
         }
@@ -3008,11 +3000,11 @@
             "settings": {
               "menu_handle": "Shop",
               "megamenu": "shop",
-              "image1": "shopify:\/\/shop_images\/BA6B2556-min.jpg",
+              "image1": "shopify:\/\/shop_images\/9_3e9c0390-740c-4a5b-86ee-6e42f1bf3147.jpg",
               "label1": "Shop all",
               "link1": "shopify:\/\/collections",
               "size1": "small",
-              "image2": "shopify:\/\/shop_images\/Screen_Shot_2022-12-20_at_1.37.16_PM-min.png",
+              "image2": "shopify:\/\/shop_images\/P1880236.jpg",
               "label2": "New arrivals",
               "link2": "shopify:\/\/collections\/just-launched",
               "size2": "small"

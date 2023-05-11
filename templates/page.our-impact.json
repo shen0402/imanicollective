@@ -27,36 +27,36 @@
         "bb6eb409-bde0-4645-9637-8bd7ce0b8d72": {
           "type": "economic_independence",
           "settings": {
-            "number": "10",
-            "text": "artisans who received a business grant from Imani Collective"
+            "number": "59%",
+            "text": "artisans who opened a bank account"
           }
         },
         "ee6738a9-624f-4571-8f33-b7aeb72900dc": {
           "type": "economic_independence",
           "settings": {
-            "number": "59%",
-            "text": "artisans who opened a bank account"
+            "number": "34%",
+            "text": "artisans purchased their own land:"
           }
         },
         "5dcb8bc5-edce-464a-a157-df42ffaf487b": {
           "type": "transformed_communities",
           "settings": {
-            "number": "0%",
-            "text": "of artisans hold a leadership position in their community"
+            "number": "8",
+            "text": "started adult learning class"
           }
         },
         "e4b93a5f-17ed-4543-afe3-dd4d07fb9278": {
           "type": "transformed_communities",
           "settings": {
             "number": "85%",
-            "text": "sent children to primary school:"
+            "text": "sent children to primary school"
           }
         },
         "667cd7c8-898b-4d7f-aad5-9a95d7cfa01f": {
           "type": "transformed_communities",
           "settings": {
-            "number": "0%",
-            "text": "of artisans have access to good healthcare"
+            "number": "10",
+            "text": "Artisans received entrepreneurial grant"
           }
         },
         "7d5a07a5-3758-4983-aa8c-1056142c2cdb": {

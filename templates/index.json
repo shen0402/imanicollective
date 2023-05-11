@@ -6,34 +6,34 @@
         "7dadcfb2-98e1-4989-a205-ce9c13a28e0c": {
           "type": "banner",
           "settings": {
-            "image": "shopify:\/\/shop_images\/BA6B6751-min.jpg",
-            "heading": "THE SELAH",
-            "text": "IN PARTNERSHIP WITH TIBEB",
+            "image": "shopify:\/\/shop_images\/9_3e9c0390-740c-4a5b-86ee-6e42f1bf3147.jpg",
+            "heading": "PLAYROOM READY",
+            "text": "SHOP ALL COLLECTIONS",
             "btn_label": "SHOP NOW",
-            "btn_link": "shopify:\/\/collections\/frontpage",
-            "align": "left"
+            "btn_link": "shopify:\/\/collections\/all",
+            "align": "center"
           }
         },
         "3135b41c-acc5-4744-8ecc-86fe01a18a5e": {
           "type": "banner",
           "settings": {
-            "image": "shopify:\/\/shop_images\/kenya-landscape-min_1990x_cb4b7959-4cff-472e-838f-255110b6160f.webp",
-            "heading": "THE SELAH",
-            "text": "IN PARTNERSHIP WITH TIBEB",
-            "btn_label": "SHOP NOW",
-            "btn_link": "shopify:\/\/collections\/best-sellers",
+            "image": "shopify:\/\/shop_images\/1_8f6d16e1-83c0-43b1-beca-07f547cbe30c.jpg",
+            "heading": "LET IT BE WILD GIFT BOX",
+            "text": "LIMITED EDITION",
+            "btn_label": "SHOP GIFT BOX",
+            "btn_link": "shopify:\/\/products\/preorder-let-it-be-wild-exclusive-gift-box",
             "align": "center"
           }
         },
         "20f48bb8-d1db-4812-9452-a64df816e715": {
           "type": "banner",
           "settings": {
-            "image": "shopify:\/\/shop_images\/47BB2CF9-FD30-4426-A2DB-4FBD8DED8831.png",
-            "heading": "THE SELAH",
-            "text": "IN PARTNERSHIP WITH TIBEB",
+            "image": "shopify:\/\/shop_images\/3_5c62be15-18e9-4d16-96ed-5ceff9b8c67e.jpg",
+            "heading": "NEW ARRIVALS",
+            "text": "FROM NEWBORNS TO TEENS WE HAVE YOU COVERED",
             "btn_label": "SHOP NOW",
-            "btn_link": "shopify:\/\/collections\/backpacks",
-            "align": "right"
+            "btn_link": "shopify:\/\/collections\/just-launched",
+            "align": "center"
           }
         }
       },
@@ -119,7 +119,6 @@
         "08b4c3d5-3d66-453e-9af4-59c0a09bb8fd"
       ],
       "settings": {
-        "color": "#f3eded"
       }
     },
     "home-featured-collection-2": {
