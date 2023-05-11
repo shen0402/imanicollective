@@ -40,6 +40,7 @@
         },
         "35a329af-fd94-40da-999f-c83e355ef54c": {
           "type": "kenya_wage",
+          "disabled": true,
           "settings": {
             "city": "Kenya",
             "minimum_wage": "15,120 KSH",
