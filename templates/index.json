@@ -47,7 +47,39 @@
     },
     "home-collection": {
       "type": "jc-collection-list",
+      "blocks": {
+        "578b0f28-7745-4f12-aed7-c6e4e9c79ba4": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BA6B4310-min_450x_0a7b5688-5bf1-47d5-9795-7b34d753c3cc.webp",
+            "button_label": "INTERACTIVE PLAY",
+            "button_link": "shopify:\/\/collections\/interactive-play"
+          }
+        },
+        "c043641c-4920-4a40-bc54-5232d1b16159": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BA6B3393-min_450x_1.webp",
+            "button_label": "BANNERS",
+            "button_link": "shopify:\/\/collections\/imani-wall-hangings-collection"
+          }
+        },
+        "9049c1aa-6563-42b0-b321-85d55c40bf70": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BA6B3393-min_450x_3d2f005e-31f2-4199-9209-6fa55fe4e2c8.webp",
+            "button_label": "PILLOWS",
+            "button_link": "shopify:\/\/collections\/imani-pillow-collection"
+          }
+        }
+      },
+      "block_order": [
+        "578b0f28-7745-4f12-aed7-c6e4e9c79ba4",
+        "c043641c-4920-4a40-bc54-5232d1b16159",
+        "9049c1aa-6563-42b0-b321-85d55c40bf70"
+      ],
       "settings": {
+        "heading": "ethically made by empowered artisans in Kenya"
       }
     },
     "home-featured-collection-1": {
